@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/3.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/3.0.0 http://maven.apache.org/maven-v3_0_0.xsd">
+  <pomVersion>1</pomVersion>
+  <groupId>cassandra</groupId>
+  <artifactId>RiskModels</artifactId>
+  <name>RiskModels</name>
+  <currentVersion>SNAPSHOT</currentVersion>
+  <organization>
+    <name>Axioma, Inc.</name>
+    <url>http://www.axiomainc.com/</url>
+    <logo>http://www.axiomainc.com/content/images/logo_home.gif</logo>
+  </organization>
+  <inceptionYear>2006</inceptionYear>
+
+  <description>
+	The RiskModels package contains the Python scripts which work with the MarketDB to create the ModelDB.
+  </description>
+  <shortDescription>RiskModel Python Scripts</shortDescription>
+  <url>http://www.axiomainc.com/</url>
+  <issueTrackingUrl>http://intranet.axiomainc.com/bugzilla</issueTrackingUrl>
+  <siteDirectory>${siteDirectory}</siteDirectory>
+  <repository>
+    <connection>scm:svn:http://subversion.axiomainc.com/svn/Cassandra/RiskModels/branches/4.2</connection>
+    <url>http://subversion.axiomainc.com/svn</url>
+  </repository>
+  
+   <dependencies>
+    <dependency>
+      <groupId>derby</groupId>
+      <artifactId>derby</artifactId>
+      <!-- Derby 10.1 can't read databases created with 10.4,
+	   so we have to wait with the upgrade here until all customers
+	   have switched to Medusa 6.0 or higher. -->
+      <version>10.1.2.1</version>
+      <properties>
+        <jar.manifest.classpath>true</jar.manifest.classpath>
+      </properties>
+    </dependency>
+   </dependencies>
+
+  <build>
+    <nagEmailAddress>sschmieta@axiomainc.com</nagEmailAddress>   
+    <sourceDirectory>Derby</sourceDirectory>
+    <aspectSourceDirectory/>
+    <sourceModifications/>
+    <unitTest/>
+    <defaultGoal>java:compile</defaultGoal>
+
+    <!-- Resources that are packaged up inside the JAR file -->
+  </build>
+</project>

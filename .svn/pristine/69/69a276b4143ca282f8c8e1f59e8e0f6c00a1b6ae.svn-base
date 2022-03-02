@@ -1,0 +1,49 @@
+#!/usr/bin/env perl 
+
+use File::Basename;
+
+# map of file type to number of fields to retain
+my %fileTypes = ('.idm' => 8,
+                 '.rsk' => 5);
+
+my ($basename) = $0 =~ m/.*\/(.*)/;
+die "Usage: $basename directory [backup directory]\n" if ($#ARGV < 0);
+
+my $directory = $ARGV[0];
+die "$directory is not a directory" if (! -d $directory);
+my $backupdir;
+if ($#ARGV > 0) {
+  $backupdir = $ARGV[1];
+} else {
+  $backupdir = $directory;
+}
+die "$backupdir is not a directory" if (! -d $backupdir);
+
+foreach my $ext ( keys %fileTypes ) {
+
+  my @filelist = glob( $directory . "/*" . $ext );
+
+  my $extension = '.orig';
+
+  foreach (@filelist) {
+    if (-e "$backupdir/" . basename($_) . $extension) {
+      #print "Orig file for $_ already exists--skipping\n";
+      next;
+    }
+    open(INFILE, $_);
+    system("mv $_ $backupdir/" . basename($_) . $extension);
+    #rename( $_, $_ . $extension );
+    open(ARGVOUT, ">$_");
+    select(ARGVOUT);
+    while (<INFILE>) {
+      if (/\|/) {
+        chomp;
+        my @F = split('\|');
+        $_ = join( '|', @F[0..$fileTypes{$ext}-1] ) . "\n";
+      }
+      print;  # this prints to original filename
+    }
+    close(ARGVOUT);
+    close(INFILE);
+  }
+}

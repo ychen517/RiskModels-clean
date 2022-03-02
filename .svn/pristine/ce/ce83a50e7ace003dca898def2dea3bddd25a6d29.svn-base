@@ -1,0 +1,21 @@
+[handlers]
+keys=logfile
+
+[formatters]
+keys=standard
+
+[loggers]
+keys=root
+
+[formatter_standard]
+format=%(asctime)s %(levelname)s %(message)s
+
+[handler_logfile]
+class=FileHandler
+formatter=standard
+level=INFO
+args=('log_file_name', 'w')
+
+[logger_root]
+level=NOTSET
+handlers=logfile

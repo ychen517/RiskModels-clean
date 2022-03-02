@@ -1,0 +1,11 @@
+{
+    "modelIdTransferCommands": [
+        "~~~modelDbTransfer.doTransfer('glprod','DRQS2RB7M2', 'DRQS2RB7M211','2019-01-16:2019-01-16',commit=False, partOfTransaction=True,sectionList=['GICSCustomAU', 'GICSCustomAU2', 'GICSCustomCA', 'GICSCustomCN', 'GICSCustomEM2', 'GICSCustomEU', 'GICSCustomGB', 'GICSCustomJP', 'GICSCustomJP-2008', 'GICSCustomJP-2014', 'GICSCustomJP-2016', 'GICSCustomNA', 'GICSCustomNoMortgageREITs2018', 'GICSCustomTW', 'IndustryGICS-2008', 'IndustryGICS-2014', 'IndustryGICS-2016', 'IndustryGICS-2018', 'IndustryGroupGICS', 'IndustryGroupGICS-2008', 'IndustryGroupGICS-2016', 'IndustryGroupGICS-2018', 'EstimateCurrencyDataModelDB', 'AssetEstimateData', 'FundamentalCurrencyData', 'FundamentalNumberData', 'SandP.Xpressfeed.FundamentalData', 'SubIssueData', 'SubIssueReturn', 'SubIssueDivYield'], modelDb=modelDb, marketDb=marketDb)~~~",
+        "~~~modelDbTransfer.doTransfer('glprod','DRQS2RB7M2', 'DRQS2RB7M211','2019-01-16:2019-01-16',commit=False, partOfTransaction=True,sectionList=['SubIssueCumulativeReturn'], modelDb=modelDb, marketDb=marketDb)~~~",
+        "### newFromDt not < oldFromDt, cumulative return resync not necessary. ('None'!<'2007-11-23')"
+    ],
+    "marketIdTransferCommands": [
+        "~~~marketDbTransfer.doTransfer('glprod','GRLT1UDLP3', '2019-01-16:2019-01-16', commit=False, partOfTransaction=True, sectionList=['FTIDGlobalCode', 'FTIDDomesticUSCode', 'FTIDDomesticCACode', 'FTIDGlobalSecType', 'FTIDDomesticSecType', 'DataStream2InfoCode', 'DataStream2SecType', 'IBESUSCode', 'IBESGlobalCode', 'SEDOL', 'CUSIP', 'ISIN', 'RIC', 'Ticker', 'Name', 'GVKEY', 'GVKEY_XPRESSFEED', 'Company', 'CompanyName', 'PrimListing', 'Country', 'LotSize', 'DRRatio', 'FactSetID', 'FreeFloat', 'TSO', 'Dividends', 'AdjustmentFactors', 'PriceVolume', 'Return', 'VendorReturn', 'GICS-2018', 'GICS-2016', 'GICS-2014', 'GICS-2008', 'GICS-2006', 'GICS-2005', 'GICS-2004', 'GICS-2003', 'GICS-2002', 'GICS-2001', 'fundamentalData', 'fundamentalData2', 'SandP.Xpressfeed.FundamentalData', 'TradingCurrency', 'RootID', 'TradingStatus', 'EstimateCurrencyData', 'AssetEstimateData.US', 'AssetEstimateData.GLOBAL', 'HomeCountry', 'HomeCountry2', 'AxiomaSecType', 'FactSetFundAttributes', 'FactSetFundPriceRatioAttributes'], marketDb=marketDb, axiomaDb=axiomaDb)~~~"
+    ],
+    "sid": "glsdg"
+}

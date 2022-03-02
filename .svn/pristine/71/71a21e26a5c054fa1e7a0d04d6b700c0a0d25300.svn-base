@@ -1,0 +1,7 @@
+{
+    "modelIdTransferCommands": [],
+    "marketIdTransferCommands": [
+        "~~~marketDbTransfer.doTransfer('glsdg', 'OBTV4AG890', '2017-01-01:2017-01-15', commit=True, partOfTransaction=False, sectionList=['IDCFundsDividends', 'IDCFundsPrice', 'IDCFundsReturn'])~~~"
+    ],
+    "sid": "glsdg"
+}

@@ -1,0 +1,15 @@
+[general]
+date=2007-09-19
+asset-returns=1
+currency-returns=1
+factor-returns=7
+
+[source]
+user=modeldb
+passwd=modeldbprod
+sid=rmprod
+
+[target]
+user=modeldb
+passwd=modeldb
+sid=casregen

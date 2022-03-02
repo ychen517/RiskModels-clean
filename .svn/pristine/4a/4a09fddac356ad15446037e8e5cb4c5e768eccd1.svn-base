@@ -1,0 +1,10 @@
+{
+    "connect" : {
+        "url" : "(http://tethys/test/axioma/Integration/Integration.svc",
+        "user" : "regTest’",
+        "password" : "regTest’"
+    },
+    "store" : {
+        "base" : "/home/nborshansky/riskStore"
+    } 
+}

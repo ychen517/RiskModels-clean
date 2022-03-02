@@ -1,0 +1,96 @@
+jdbc:derby:@@databases@@/DbModel-@@model@@;@@CREATE_OPTIONS@@;
+CALL SYSCS_UTIL.SYSCS_SET_DATABASE_PROPERTY( 
+    'derby.storage.pageReservedSpace',
+    '0');
+
+CREATE TABLE FACTOR_TYPE 
+(
+id   		   SMALLINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+name   		   VARCHAR(32) NOT NULL,
+description        VARCHAR(128),
+CONSTRAINT TYPE_ID_PK PRIMARY KEY  (id),
+CONSTRAINT TYPE_NAME_UNIQ UNIQUE  (name)
+);
+
+CREATE TABLE FACTOR 
+(
+id   		   SMALLINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 0, INCREMENT BY 1),
+name   		   VARCHAR(64) NOT NULL,
+description        VARCHAR(128),
+return		   DOUBLE PRECISION,
+factor_type_id     SMALLINT NOT NULL,
+cumulative_return  DOUBLE PRECISION,
+CONSTRAINT FACTOR_ID_PK PRIMARY KEY (id),
+CONSTRAINT FACTOR_NAME_UNIQ UNIQUE (name),
+CONSTRAINT FACTOR_TYPE_REF FOREIGN KEY (factor_type_id) REFERENCES FACTOR_TYPE(id)
+);
+
+CREATE TABLE COVARIANCE 
+(
+factor_id_1   	   SMALLINT NOT NULL,
+factor_id_2        SMALLINT NOT NULL,
+value     	   DOUBLE NOT NULL,
+CONSTRAINT FACTOR1_FACTOR2_PK PRIMARY KEY (factor_id_1, factor_id_2),
+CONSTRAINT COV_FACTOR1_REF FOREIGN KEY (factor_id_1) REFERENCES FACTOR(id),
+CONSTRAINT COV_FACTOR2_REF FOREIGN KEY (factor_id_2) REFERENCES FACTOR(id)
+);
+
+CREATE TABLE SPECIFIC_COVARIANCE
+(      
+axioma1_id         VARCHAR(9) NOT NULL,
+axioma2_id         VARCHAR(9) NOT NULL,
+covariance         DOUBLE PRECISION,
+CONSTRAINT SPC_PK PRIMARY KEY (axioma1_id, axioma2_id)
+);
+
+CREATE TABLE RISK_MODEL_INSTANCE
+(
+DT                   VARCHAR(10) NOT NULL,
+has_exposures        SMALLINT NOT NULL,
+has_returns          SMALLINT NOT NULL,
+has_risks            SMALLINT NOT NULL,
+is_final             SMALLINT NOT NULL
+);
+
+@@exposure_create@@
+CREATE INDEX EXPOSURE_MCAP_INDEX ON EXPOSURE (mcap);
+
+CREATE TABLE CHARACTERISTIC 
+(
+axioma_id   	   VARCHAR(9) NOT NULL,
+beta_pred     	   REAL,
+beta_hist     	   REAL,
+risk_spec     	   DOUBLE,
+risk_total     	   REAL,
+est_univ_flag      SMALLINT,
+@@new_fields@@
+mcap		   REAL,
+src		   VARCHAR(12),
+@@beta_fields@@
+@@rmm_fields@@
+@@cn_rmm_fields@@
+CONSTRAINT CHARAC_ID_PK PRIMARY KEY(axioma_id)
+);
+
+CREATE TABLE CLASSIFICATION 
+(
+id   		   	INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 0, INCREMENT BY 1),
+name   		   	VARCHAR(64) NOT NULL,
+description        	VARCHAR(128),
+isLeaf			SMALLINT NOT NULL,
+isRoot			SMALLINT NOT NULL,
+CONSTRAINT CLASS_PK PRIMARY KEY (id),
+CONSTRAINT CLASS_NAME_UQ UNIQUE (name)
+);
+
+CREATE TABLE CLASSIFICATION_HIERARCHY 
+(
+parent_classification_id  INTEGER NOT NULL,
+child_classification_id   INTEGER NOT NULL,
+weight		   	  DOUBLE PRECISION NOT NULL,
+CONSTRAINT PARENTID_CHILDID_PK PRIMARY KEY (parent_classification_id, child_classification_id),
+CONSTRAINT CLSHIER_PARENT_REF FOREIGN KEY (parent_classification_id) REFERENCES CLASSIFICATION(id),
+CONSTRAINT CLSHIER_CHILD_REF FOREIGN KEY (child_classification_id) REFERENCES CLASSIFICATION(id)
+);
+
+

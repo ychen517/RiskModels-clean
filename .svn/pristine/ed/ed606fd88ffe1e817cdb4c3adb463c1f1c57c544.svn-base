@@ -1,0 +1,12 @@
+jdbc:derby:@@databases@@/DbShortfall-@@region@@;@@CREATE_OPTIONS@@;
+CALL SYSCS_UTIL.SYSCS_SET_DATABASE_PROPERTY( 
+    'derby.storage.pageReservedSpace',
+    '0');
+
+CREATE TABLE SHORTFALL
+(		
+axioma_id 		VARCHAR(9) NOT NULL,
+shortfall               varchar(40) NOT NULL,
+checksum                BIGINT NOT NULL,
+CONSTRAINT ASSET_PK PRIMARY KEY (axioma_id)
+);

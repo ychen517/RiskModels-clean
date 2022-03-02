@@ -1,0 +1,231 @@
+-4050|US3AxiomaMH-M-Rv5|US Research Macro Risk Model v5|AXUS3-MH-M-Rv5|USD|United States
+-4070|US3AxiomaMH-M-Rv7|US Research Macro Risk Model v7|AXUS3-MH-M-Rv7|USD|United States
+-21|AU4Research-S|Australia Statistical Factor Risk Model|AXAU4-R-S|AUD|Australia
+-20|AU4Research|AU Research Model|AXAU4-R|AUD|Australia
+-18|US3Research|US Research Model|AXUS3-R|USD|United States
+-19|APxJPResearch|Asia-Pacific-ex-Japan ResearchModel|AXAPxJP-R|USD|Asia-Pacific
+-17|WWxUSResearch|World-Wide ex-US ResearchModel|AXWWxUS-R|USD|World-Wide (Global)
+-16|NAResearch|North America Research Model|AXNA-R|USD|North America
+-15|CNResearch|China Research Model|AXCN-R|CNY|China
+-14|APResearch|Asia-Pacific Research Model|AXAP-R|USD|Asia-Pacific
+-13|CAResearch|Canada Research Model|AXCA-R|CAD|Canada
+-12|FXResearchEUR|Currency Research Model EUR|AXFX-R|EUR|
+-10|FXResearchUSD|Currency Research Model USD|AXFX-R|USD|
+-9|EMResearch|EM Research Model|AXEM-R|USD|Emerging Markets
+-8|AUResearch|AU Research Model|AXAU-R|AUD|Australia
+-7|EUResearch|EU Research Model|AXEU-R|EUR|Europe
+-6|WWResearch|Global Research Model|AXWW-R|USD|World-Wide (Global)
+-5|JPResearch|JP Research Model|AXJP-R|JPY|Japan
+-4|TWResearch|TW Research Model|AXTW-R|TWD|Taiwan
+-3|GBResearch|GB Research Model|AXGB-R|GBP|United Kingdom
+-2|USResearch|US Research Model|AXUS-R|USD|United States
+3|US Axioma|United States Fundamental Factor Risk Model|AXUS|USD|United States
+4|UKAxioma|United Kingdom Fundamental Factor Risk Model|AXUK|GBP|United Kingdom
+5|USAxiomaST|United States Fundamental Factor Risk Model (Short-Term)|AXUS-ST|USD|United States
+6|TWAxioma|Taiwan Statistical Factor Risk Model|AXTW|TWD|Taiwan
+7|UKAxiomaTM|United Kingdom Fundamental Factor Risk Model (Trading)|AXUK-TM|GBP|United Kingdom
+8|JPAxioma|Japan Fundamental Factor Risk Model|AXJP|JPY|Japan
+9|EUAxioma|European Fundamental Factor Risk Model|AXEU|EUR|Europe
+10|EMAxioma|Emerging Markets Fundamental Factor Risk Model|AXEM|USD|Emerging Markets
+11|WWAxioma|World-Wide (Global) Fundamental Factor Risk Model|AXWW|USD|World-Wide (Global)
+12|FXAxiomaUSD|Currency Risk Model|AXFX-USD|USD|
+13|FXAxiomaEUR|Currency Risk Model|AXFX-EUR|EUR|
+14|JPAxioma-S|Japan Statistical Factor Risk Model|AXJP-S|JPY|Japan
+15|EMAxioma-S|Emerging Markets Statistical Factor Risk Model|AXEM-S|USD|Emerging Markets
+16|EUAxioma-S|European Statistical Factor Risk Model|AXEU-S|EUR|Europe
+17|WWAxioma-S|World-Wide (Global) Statistical Factor Risk Model|AXWW-S|USD|World-Wide (Global)
+18|CAAxiomaMH|Canada Fundamental Factor Risk Model|AXCA-MH|CAD|Canada
+19|CAAxiomaMH-S|Canada Statistical Factor Risk Model|AXCA-MH-S|CAD|Canada
+20|US2AxiomaMH|United States Fundamental Factor Risk Model|AXUS2-MH|USD|United States
+21|US2AxiomaMH-S|United States Statistical Factor Risk Model|AXUS2-MH-S|USD|United States
+22|US2AxiomaSH|United States Fundamental Factor Risk Model (Short-Horizon)|AXUS2-SH|USD|United States
+23|US2AxiomaSH-S|United States Statistical Factor Risk Model (Short-Horizon)|AXUS2-SH-S|USD|United States
+24|AUAxiomaMH|Australia Fundamental Factor Risk Model|AXAU-MH|AUD|Australia
+25|AUAxiomaMH-S|Australia Statistical Factor Risk Model|AXAU-MH-S|AUD|Australia
+26|JP2AxiomaMH|Japan Fundamental Factor Risk Model|AXJP2-MH|JPY|Japan
+27|JP2AxiomaMH-S|Japan Statistical Factor Risk Model|AXJP2-MH-S|JPY|Japan
+28|GBAxiomaMH|United Kingdom Fundamental Factor Risk Model|AXGB-MH|GBP|United Kingdom
+29|GBAxiomaMH-S|United Kingdom Statistical Factor Risk Model|AXGB-MH-S|GBP|United Kingdom
+30|WW2AxiomaMH|World-Wide (Global) Fundamental Factor Risk Model|AXWW2-MH|USD|World-Wide (Global)
+31|WW2AxiomaMH-S|World-Wide (Global) Statistical Factor Risk Model|AXWW2-MH-S|USD|World-Wide (Global)
+32|EU2AxiomaMH|European Fundamental Factor Risk Model|AXEU2-MH|EUR|Europe
+33|EU2AxiomaMH-S|European Statistical Factor Risk Model|AXEU2-MH-S|EUR|Europe
+34|EM2AxiomaMH|Emerging Markets Fundamental Factor Risk Model|AXEM2-MH|USD|Emerging Markets
+35|EM2AxiomaMH-S|Emerging Markets Statistical Factor Risk Model|AXEM2-MH-S|USD|Emerging Markets
+36|FX2AxiomaUSD|Currency Risk Model|AXFX2-USD|USD|
+37|FX2AxiomaEUR|Currency Risk Model|AXFX2-EUR|EUR|
+38|APAxiomaMH|Asia-Pacific Fundamental Factor Risk Model|AXAP-MH|USD|Asia-Pacific
+39|APAxiomaMH-S|Asia-Pacific Statistical Factor Risk Model|AXAP-MH-S|USD|Asia-Pacific
+40|CNAxiomaMH|China Fundamental Factor Risk Model|AXCN-MH|CNY|China
+41|CNAxiomaMH-S|China Statistical Factor Risk Model|AXCN-MH-S|CNY|China
+42|TWAxiomaMH-S|Taiwan Statistical Factor Risk Model|AXTW-MH-S|TWD|Taiwan
+43|APxJPAxiomaMH|Asia-Pacific-ex-Japan Fundamental Factor Risk Model|AXAPxJP-MH|USD|Asia-Pacific
+44|APxJPAxiomaMH-S|Asia-Pacific-ex-Japan Statistical Factor Risk Model|AXAPxJP-MH-S|USD|Asia-Pacific
+45|NAAxiomaMH|North America Fundamental Factor Risk Model|AXNA-MH|USD|North America
+46|NAAxiomaMH-S|North America Statistical Factor Risk Model|AXNA-MH-S|USD|North America
+47|WWxUSAxiomaMH|World-Wide (Global) ex-US Fundamental Factor Risk Model|AXWWxUS-MH|USD|World-Wide (Global)
+48|WWxUSAxiomaMH-S|World-Wide (Global) ex-US Statistical Factor Risk Model|AXWWxUS-MH-S|USD|World-Wide (Global)
+49|CAAxiomaSH|Canada Fundamental Factor Risk Model (Short-Horizon)|AXCA-SH|CAD|Canada
+50|CAAxiomaSH-S|Canada Statistical Factor Risk Model (Short-Horizon)|AXCA-SH-S|CAD|Canada
+51|AUAxiomaSH|Australia Fundamental Factor Risk Model (Short-Horizon)|AXAU-SH|AUD|Australia
+52|AUAxiomaSH-S|Australia Statistical Factor Risk Model (Short-Horizon)|AXAU-SH-S|AUD|Australia
+53|GBAxiomaSH|United Kingdom Fundamental Factor Risk Model (Short-Horizon)|AXGB-SH|GBP|United Kingdom
+54|GBAxiomaSH-S|United Kingdom Statistical Factor Risk Model (Short-Horizon)|AXGB-SH-S|GBP|United Kingdom
+55|JP2AxiomaSH|Japan Fundamental Factor Risk Model (Short-Horizon)|AXJP2-SH|JPY|Japan
+56|JP2AxiomaSH-S|Japan Statistical Factor Risk Model (Short-Horizon)|AXJP2-SH-S|JPY|Japan
+57|CNAxiomaSH|China Fundamental Factor Risk Model (Short-Horizon)|AXCN-SH|CNY|China
+58|CNAxiomaSH-S|China Statistical Factor Risk Model (Short-Horizon)|AXCN-SH-S|CNY|China
+60|WW21AxiomaSH|World-Wide (Global) Fundamental Factor Risk Model (Short-Horizon)|AXWW21-SH|USD|World-Wide (Global)
+61|WW21AxiomaSH-S|World-Wide (Global) Statistical Factor Risk Model (Short-Horizon)|AXWW21-SH-S|USD|World-Wide (Global)
+62|EU21AxiomaSH|Europe Fundamental Factor Risk Model (Short-Horizon)|AXEU21-SH|EUR|Europe
+63|EU21AxiomaSH-S|Europe Statistical Factor Risk Model (Short-Horizon)|AXEU21-SH-S|EUR|Europe
+64|EM21AxiomaSH|Emerging Markets Fundamental Factor Risk Model (Short-Horizon)|AXEM21-SH|USD|Emerging Markets
+65|EM21AxiomaSH-S|Emerging Markets Statistical Factor Risk Model (Short-Horizon)|AXEM21-SH-S|USD|Emerging Markets
+66|FX2AxiomaUSD-SH|Currency Risk Model (Short-Horizon)|AXFX2-SH-USD|USD|
+67|FX2AxiomaEUR-SH|Currency Risk Model (Short-Horizon)|AXFX2-SH-EUR|EUR|
+68|AP21AxiomaSH|Asia-Pacific Fundamental Factor Risk Model (Short-Horizon)|AXAP21-SH|USD|Asia-Pacific
+69|AP21AxiomaSH-S|Asia-Pacific Statistical Factor Risk Model (Short-Horizon)|AXAP21-SH-S|USD|Asia-Pacific
+70|APxJP21AxiomaSH|Asia-Pacific-ex-Japan Fundamental Factor Risk Model (Short-Horizon)|AXAPxJP21-SH|USD|Asia-Pacific
+71|APxJP21AxiomaSH-S|Asia-Pacific-ex-Japan Statistical Factor Risk Model (Short-Horizon)|AXAPxJP21-SH-S|USD|Asia-Pacific
+72|NA21AxiomaSH|North America Fundamental Factor Risk Model (Short-Horizon)|AXNA21-SH|USD|North America
+73|NA21AxiomaSH-S|North America Statistical Factor Risk Model (Short-Horizon)|AXNA21-SH-S|USD|North America
+74|WWxUS21AxiomaSH|World-Wide (Global) ex-US Fundamental Factor Risk Model (Short-Horizon)|AXWWxUS21-SH|USD|World-Wide (Global)
+75|WWxUS21AxiomaSH-S|World-Wide (Global) ex-US Statistical Factor Risk Model (Short-Horizon)|AXWWxUS21-SH-S|USD|World-Wide (Global)
+76|WW21AxiomaMH|World-Wide (Global) Fundamental Factor Risk Model|AXWW21-MH|USD|World-Wide (Global)
+77|WW21AxiomaMH-S|World-Wide (Global) Statistical Factor Risk Model|AXWW21-MH-S|USD|World-Wide (Global)
+78|EU21AxiomaMH|Europe Fundamental Factor Risk Model|AXEU21-MH|EUR|Europe
+79|EU21AxiomaMH-S|Europe Statistical Factor Risk Model|AXEU21-MH-S|EUR|Europe
+80|EM21AxiomaMH|Emerging Markets Fundamental Factor Risk Model|AXEM21-MH|USD|Emerging Markets
+81|EM21AxiomaMH-S|Emerging Markets Statistical Factor Risk Model|AXEM21-MH-S|USD|Emerging Markets
+82|AP21AxiomaMH|Asia-Pacific Fundamental Factor Risk Model|AXAP21-MH|USD|Asia-Pacific
+83|AP21AxiomaMH-S|Asia-Pacific Statistical Factor Risk Model|AXAP21-MH-S|USD|Asia-Pacific
+84|APxJP21AxiomaMH|Asia-Pacific-ex-Japan Fundamental Factor Risk Model|AXAPxJP21-MH|USD|Asia-Pacific
+85|APxJP21AxiomaMH-S|Asia-Pacific-ex-Japan Statistical Factor Risk Model|AXAPxJP21-MH-S|USD|Asia-Pacific
+86|NA21AxiomaMH|North America Fundamental Factor Risk Model|AXNA21-MH|USD|North America
+87|NA21AxiomaMH-S|North America Statistical Factor Risk Model|AXNA21-MH-S|USD|North America
+88|WWxUS21AxiomaMH|World-Wide (Global) ex-US Fundamental Factor Risk Model|AXWWxUS21-MH|USD|World-Wide (Global)
+89|WWxUS21AxiomaMH-S|World-Wide (Global) ex-US Statistical Factor Risk Model|AXWWxUS21-MH-S|USD|World-Wide (Global)
+90|TWAxiomaMH|Taiwan Fundamental Factor Risk Model|AXTW-MH|TWD|Taiwan
+91|TWAxiomaSH|Taiwan Fundamental Factor Risk Model (Short-Horizon)|AXTW-SH|TWD|Taiwan
+92|TWAxiomaSH-S|Taiwan Statistical Factor Risk Model (Short-Horizon)|AXTW-SH-S|TWD|Taiwan
+93|APxJP22AxiomaMH|Asia-Pacific-ex-Japan Fundamental Factor Risk Model|AXAPxJP22-MH|USD|Asia-Pacific
+94|APxJP22AxiomaMH-S|Asia-Pacific-ex-Japan Statistical Factor Risk Model|AXAPxJP22-MH-S|USD|Asia-Pacific
+95|APxJP22AxiomaSH|Asia-Pacific-ex-Japan Fundamental Factor Risk Model (Short-Horizon)|AXAPxJP22-SH|USD|Asia-Pacific
+96|APxJP22AxiomaSH-S|Asia-Pacific-ex-Japan Statistical Factor Risk Model (Short-Horizon)|AXAPxJP22-SH-S|USD|Asia-Pacific
+97|AP22AxiomaMH|Asia-Pacific Fundamental Factor Risk Model|AXAP22-MH|USD|Asia-Pacific
+98|AP22AxiomaMH-S|Asia-Pacific Statistical Factor Risk Model|AXAP22-MH-S|USD|Asia-Pacific
+99|AP22AxiomaSH|Asia-Pacific Fundamental Factor Risk Model (Short-Horizon)|AXAP22-SH|USD|Asia-Pacific
+100|AP22AxiomaSH-S|Asia-Pacific Statistical Factor Risk Model (Short-Horizon)|AXAP22-SH-S|USD|Asia-Pacific
+101|WW22AxiomaMH|World-Wide (Global) Fundamental Factor Risk Model|AXWW22-MH|USD|World-Wide (Global)
+102|WW22AxiomaMH-S|World-Wide (Global) Statistical Factor Risk Model|AXWW22-MH-S|USD|World-Wide (Global)
+103|WW22AxiomaSH|World-Wide (Global) Fundamental Factor Risk Model (Short-Horizon)|AXWW22-SH|USD|World-Wide (Global)
+104|WW22AxiomaSH-S|World-Wide (Global) Statistical Factor Risk Model (Short-Horizon)|AXWW22-SH-S|USD|World-Wide (Global)
+105|US3AxiomaMH|United States Fundamental Factor Risk Model|AXUS3-MH|USD|United States
+106|US3AxiomaMH-S|United States Statistical Factor Risk Model|AXUS3-MH-S|USD|United States
+107|US3AxiomaSH|United States Fundamental Factor Risk Model (Short-Horizon)|AXUS3-SH|USD|United States
+108|US3AxiomaSH-S|United States Statistical Factor Risk Model (Short-Horizon)|AXUS3-SH-S|USD|United States
+109|US3AxiomaFL|United States Fundamental Factor Library Risk Model|AXUS3-FL|USD|United States
+201|US3AxiomaMH-M|United States Macroeconomic Factor Risk Model|AXUS3-MH-M|USD|United States
+202|US4AxiomaMH|United States Fundamental Factor Risk Model|AXUS4-MH|USD|United States
+203|US4AxiomaSH|United States Fundamental Factor Risk Model (Short-Horizon)|AXUS4-SH|USD|United States
+204|US4AxiomaMH-S|United States Statistical Factor Risk Model|AXUS4-MH-S|USD|United States
+205|US4AxiomaSH-S|United States Statistical Factor Risk Model (Short-Horizon)|AXUS4-SH-S|USD|United States
+206|AU4AxiomaMH|Australia Fundamental Factor Risk Model|AXAU4-MH|AUD|Australia
+207|AU4AxiomaMH-S|Australia Statistical Factor Risk Model|AXAU4-MH-S|AUD|Australia
+208|AU4AxiomaSH|Australia Fundamental Factor Risk Model (Short-Horizon)|AXAU4-SH|AUD|Australia
+209|AU4AxiomaSH-S|Australia Statistical Factor Risk Model (Short-Horizon)|AXAU4-SH-S|AUD|Australia
+210|JP4AxiomaMH|Japan Fundamental Factor Risk Model|AXJP4-MH|JPY|Japan
+211|JP4AxiomaMH-S|Japan Statistical Factor Risk Model|AXJP4-MH-S|JPY|Japan
+212|JP4AxiomaSH|Japan Fundamental Factor Risk Model (Short-Horizon)|AXJP4-SH|JPY|Japan
+213|JP4AxiomaSH-S|Japan Statistical Factor Risk Model (Short-Horizon)|AXJP4-SH-S|JPY|Japan
+214|US4AxiomaFL|United States Fundamental Factor Library Risk Model|AXUS4-FL|USD|United States
+215|USSC4AxiomaMH|United States Small Cap Fundamental Factor Risk Model|AXUSSC4-MH|USD|United States
+216|USSC4AxiomaSH|United States Small Cap Fundamental Factor Risk Model (Short-Horizon)|AXUSSC4-SH|USD|United States
+217|USSC4AxiomaMH-S|United States Small Cap Statistical Factor Risk Model|AXUSSC4-MH-S|USD|United States
+218|USSC4AxiomaSH-S|United States Small Cap Statistical Factor Risk Model (Short-Horizon)|AXUSSC4-SH-S|USD|United States
+220|FX4AxiomaUSD-MH|Currency Risk Model|AXFX4-MH-USD|USD|
+221|FX4AxiomaUSD-SH|Currency Risk Model (Short-Horizon)|AXFX4-SH-USD|USD|
+230|WW4AxiomaMH|World-Wide (Global) Fundamental Factor Risk Model|AXWW4-MH|USD|World-Wide (Global)
+231|WW4AxiomaSH|World-Wide (Global) Fundamental Factor Risk Model (Short-Horizon)|AXWW4-SH|USD|World-Wide (Global)
+232|WW4AxiomaMH-S|World-Wide (Global) Statistical Factor Risk Model|AXWW4-MH-S|USD|World-Wide (Global)
+233|WW4AxiomaSH-S|World-Wide (Global) Statistical Factor Risk Model (Short-Horizon)|AXWW4-SH-S|USD|World-Wide (Global)
+234|WW4AxiomaFL|World-Wide (Global) Fundamental Factor Library Risk Model|AXWW4-FL|USD|World-Wide (Global)
+235|WW4PreAxiomaMH|World-Wide (Global) Fundamental Factor Risk Model|AXWW4-MH|USD|World-Wide (Global)
+240|WWxUS4AxiomaMH|World-Wide (Global) ex-US Fundamental Factor Risk Model|AXWWxUS4-MH|USD|World-Wide (Global)
+241|WWxUS4AxiomaSH|World-Wide (Global) ex-US Fundamental Factor Risk Model (Short-Horizon)|AXWWxUS4-SH|USD|World-Wide (Global)
+242|WWxUS4AxiomaMH-S|World-Wide (Global) ex-US Statistical Factor Risk Model|AXWWxUS4-MH-S|USD|World-Wide (Global)
+243|WWxUS4AxiomaSH-S|World-Wide (Global) ex-US Statistical Factor Risk Model (Short-Horizon)|AXWWxUS4-SH-S|USD|World-Wide (Global)
+244|FX4AxiomaEUR-MH|Currency Risk Model|AXFX4-MH-EUR|EUR|
+245|FX4AxiomaEUR-SH|Currency Risk Model (Short Horizon)|AXFX4-SH-EUR|EUR|
+246|EU4AxiomaMH|European Fundamental Factor Risk Model|AXEU4-MH|EUR|Europe
+247|EU4AxiomaSH|European Fundamental Factor Risk Model (Short-Horizon)|AXEU4-SH|EUR|Europe
+248|EU4AxiomaMH-S|European Statistical Factor Risk Model|AXEU4-MH-S|EUR|Europe
+249|EU4AxiomaSH-S|European Statistical Factor Risk Model (Short-Horizon)|AXEU4-SH-S|EUR|Europe
+270|EU4AxiomaFL|European Fundamental Factor Library Risk Model|AXEU4-FL|EUR|Europe
+250|EM4AxiomaMH_Legacy|Emerging Markets Fundamental Factor Risk Model GICS2016|AXEM40-MH|USD|Emerging Markets
+251|EM4AxiomaSH_Legacy|Emerging Markets Fundamental Factor Risk Model (Short-Horizon) GICS2016|AXEM40-SH|USD|Emerging Markets
+252|EM4AxiomaMH-S_Legacy|Emerging Markets Statistical Factor Risk Model GICS2016|AXEM40-MH-S|USD|Emerging Markets
+253|EM4AxiomaSH-S_Legacy|Emerging Markets Statistical Factor Risk Model (Short-Horizon) GICS2016|AXEM40-SH-S|USD|Emerging Markets
+254|AP4AxiomaMH_Legacy|Asia-Pacific Fundamental Factor Risk Model GICS2016|AXAP40-MH|USD|Asia-Pacific
+255|AP4AxiomaSH_Legacy|Asia-Pacific Fundamental Factor Risk Model (Short-Horizon) GICS2016|AXAP40-SH|USD|Asia-Pacific
+256|AP4AxiomaMH-S_Legacy|Asia-Pacific Statistical Factor Risk Model GICS2016|AXAP40-MH-S|USD|Asia-Pacific
+257|AP4AxiomaSH-S_Legacy|Asia-Pacific Statistical Factor Risk Model (Short-Horizon) GICS2016|AXAP40-SH-S|USD|Asia-Pacific
+258|APxJP4AxiomaMH_Legacy|Asia-Pacific ex-Japan Fundamental Factor Risk Model GICS2016|AXAPxJP40-MH|USD|Asia-Pacific
+259|APxJP4AxiomaSH_Legacy|Asia-Pacific ex-Japan Fundamental Factor Risk Model (Short-Horizon) GICS2016|AXAPxJP40-SH|USD|Asia-Pacific
+260|APxJP4AxiomaMH-S_Legacy|Asia-Pacific ex-Japan Statistical Factor Risk Model GICS2016|AXAPxJP40-MH-S|USD|Asia-Pacific
+261|APxJP4AxiomaSH-S_Legacy|Asia-Pacific ex-Japan Statistical Factor Risk Model (Short-Horizon) GICS2016|AXAPxJP40-SH-S|USD|Asia-Pacific
+262|CN4AxiomaMH|China Fundamental Factor Risk Model|AXCN4-MH|CNY|China
+263|CN4AxiomaSH|China Fundamental Factor Risk Model (Short-Horizon)|AXCN4-SH|CNY|China
+264|CN4AxiomaMH-S|China Statistical Factor Risk Model|AXCN4-MH-S|CNY|China
+265|CN4AxiomaSH-S|China Statistical Factor Risk Model (Short-Horizon)|AXCN4-SH-S|CNY|China
+266|EM4AxiomaMH|Emerging Market Fundamental Factor Risk Model|AXEM4-MH|USD|Emerging Markets
+275|EM4AxiomaSH|Emerging Market Fundamental Factor Risk Model (Short-Horizon)|AXEM4-SH|USD|Emerging Markets
+276|EM4AxiomaMH-S|Emerging Market Statistical Factor Risk Model|AXEM4-MH-S|USD|Emerging Markets
+277|EM4AxiomaSH-S|Emerging Market Statistical Factor Risk Model (Short-Horizon)|AXEM4-SH-S|USD|Emerging Markets
+267|AP4AxiomaMH|Asia-Pacific Fundamental Factor Risk Model|AXAP4-MH|USD|Asia-Pacific
+278|AP4AxiomaSH|Asia-Pacific Fundamental Factor Risk Model (Short-Horizon)|AXAP4-SH|USD|Asia-Pacific
+279|AP4AxiomaMH-S|Asia-Pacific Statistical Factor Risk Model|AXAP4-MH-S|USD|Asia-Pacific
+280|AP4AxiomaSH-S|Asia-Pacific Statistical Factor Risk Model (Short-Horizon)|AXAP4-SH-S|USD|Asia-Pacific
+281|APxJP4AxiomaMH|Asia-Pacific ex-Japan Fundamental Factor Risk Model|AXAPxJP4-MH|USD|Asia-Pacific
+282|APxJP4AxiomaSH|Asia-Pacific ex-Japan Fundamental Factor Risk Model (Short-Horizon)|AXAPxJP4-SH|USD|Asia-Pacific
+283|APxJP4AxiomaMH-S|Asia-Pacific ex-Japan Statistical Factor Risk Model|AXAPxJP4-MH-S|USD|Asia-Pacific
+284|APxJP4AxiomaSH-S|Asia-Pacific ex-Japan Statistical Factor Risk Model (Short-Horizon)|AXAPxJP4-SH-S|USD|Asia-Pacific
+285|EM4AxiomaFL|Emerging Market Fundamental Factor Library  Risk Model|AXEM4-FL|USD|Emerging Markets
+286|AP4AxiomaFL|Asia-Pacific Fundamental Factor Library  Risk Model|AXAP4-FL|USD|Asia-Pacific
+287|APxJP4AxiomaFL|Asia-Pacific ex-Japan Fundamental Factor Library  Risk Model|AXAPxJP4-FL|USD|Asia-Pacific
+288|CN4AxiomaFL|China Fundamental Factor Library  Risk Model|AXCN4-FL|CNY|China
+290|WW41AxiomaMH|World-Wide (Global) GICS 2018 Fundamental Factor Risk Model|AXWW41-MH|USD|World-Wide (Global)
+291|WW41AxiomaSH|World-Wide (Global) GICS 2018 Fundamental Factor Risk Model (Short-Horizon)|AXWW41-SH|USD|World-Wide (Global)
+292|WW41AxiomaMH_S|World-Wide (Global) GICS 2018 Statistical Factor Risk Model|AXWW41-MH-S|USD|World-Wide (Global)
+293|WW41AxiomaSH_S|World-Wide (Global) GICS 2018 Statistical Factor Risk Model (Short-Horizon)|AXWW41-SH-S|USD|World-Wide (Global)
+300|WW41AxiomaEL|World-Wide (Global) Extended Factor Library|AXWW41-EL|USD|World-Wide (Global)
+310|UK4AxiomaMH|United Kingdom Fundamental Factor Risk Model|AXUK4-MH|GBP|United Kingdom
+311|UK4AxiomaSH|United Kingdom Fundamental Factor Risk Model (Short-Horizon)|AXUK4-SH|GBP|United Kingdom
+312|UK4AxiomaMH-S|United Kingdom Statistical Factor Risk Model|AXUK4-MH-S|GBP|United Kingdom
+313|UK4AxiomaSH-S|United Kingdom Statistical Factor Risk Model (Short-Horizon)|AXUK4-SH-S|GBP|United Kingdom
+314|UK4AxiomaFL|United Kingdom Fundamental Factor Library|AXUK4-FL|GBP|United Kingdom
+320|CA4AxiomaMH|Canada Fundamental Factor Risk Model|AXCA4-MH|CAD|Canada
+321|CA4AxiomaSH|Canada Fundamental Factor Risk Model (Short-Horizon)|AXCA4-SH|CAD|Canada
+322|CA4AxiomaMH-S|Canada Statistical Factor Risk Model|AXCA4-MH-S|CAD|Canada
+323|CA4AxiomaSH-S|Canada Statistical Factor Risk Model (Short-Horizon)|AXCA4-SH-S|CAD|Canada
+324|CA4AxiomaFL|Canada Fundamental Factor Library|AXCA4-FL|CAD|Canada
+330|NA4AxiomaMH|North America Fundamental Factor Risk Model|AXNA4-MH|USD|North America
+331|NA4AxiomaSH|North America Fundamental Factor Risk Model (Short-Horizon)|AXNA4-SH|USD|North America
+332|NA4AxiomaMH-S|North America Statistical Factor Risk Model|AXNA4-MH-S|USD|North America
+333|NA4AxiomaSH-S|North America Statistical Factor Risk Model (Short-Horizon)|AXNA4-SH-S|USD|North America
+334|NA4AxiomaFL|North America Fundamental Factor Library|AXNA4-FL|USD|North America
+335|DMxUS4AxiomaMH|Developed Markets ex US Fundamental Factor Risk Model|AXDMxUS4-MH|USD|Developed Markets ex US
+336|DMxUS4AxiomaSH|Developed Markets ex US Fundamental Factor Risk Model (Short-Horizon)|AXDMxUS4-SH|USD|Developed Markets ex US
+337|DMxUS4AxiomaMH-S|Developed Markets ex US Statistical Factor Risk Model|AXDMxUS4-MH-S|USD|Developed Markets ex US
+338|DMxUS4AxiomaSH-S|Developed Markets ex US Statistical Factor Risk Model (Short-Horizon)|AXDMxUS4-SH-S|USD|Developed Markets ex US
+339|DMxUS4AxiomaFL|Developed Markets ex US Fundamental Factor Library|AXDMxUS4-FL|USD|Developed Markets ex US
+400|WWLM4AxiomaMH|World-Wide (Global) Linked Fundamental Risk Model|AXWWLM4-MH|USD|World-Wide (Global)
+401|WWLM4AxiomaSH|World-Wide (Global) Linked Fundamental Risk Model (Short-Horizon)|AXWWLM4-SH|USD|World-Wide (Global)
+402|US41AxiomaMH|United States Fundamental Factor Risk Model|AXUS41-MH|USD|United States
+403|US41AxiomaSH|United States Fundamental Factor Risk Model (Short-Horizon)|AXUS41-SH|USD|United States
+410|NALM4AxiomaMH|North America Linked Fundamental Risk Model|AXNALM4-MH|USD|North America
+411|NALM4AxiomaSH|North America Linked Fundamental Risk Model (Short-Horizon)|AXNALM4-SH|USD|North America
+501|WWMP4AxiomaMH|World-Wide (Global) Macro Projection Fundamental Risk Model|AXWWMP4-MH|USD|World-Wide (Global)
+2000|FIAxioma2014MH|Fixed Income Model|AXFI|USD|United States
+2500|FIAxioma2014MH1|Fixed Income Model1|AXFI1|USD|United States
+3000|Univ10AxiomaMH|Universal Model|AXUN-MH|USD|United States

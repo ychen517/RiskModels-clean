@@ -1,0 +1,17 @@
+{
+   
+    "updateLastTradingDateCommands": [],
+    "marketIdTransferCommands": [
+        "~~~marketDbTransfer.doTransfer('glsdg','G8SMCFAGR7', '2017-05-05:2017-05-10', commit=False, partOfTransaction=True, sectionList=['SEDOL'], marketDb=marketDb, axiomaDb=axiomaDb)~~~"
+    ],
+    "sid": "glsdg",
+    "marketIdUpdateCommands": [
+        "alter session set nls_date_format='YYYY-MM-DD'",
+        "update ASSET_REF set thru_dt='2017-05-05' , ref='manual by npermikova; manual by npermikova; manual by npermikova; manual by npermikova; manual by npermikova; manual by npermikova; manual by npermikova; B235TQ4-AU' where axioma_id='G8SMCFAGR7' and from_dt='2007-09-11' and thru_dt='2017-05-10'",
+        "### No homecountry2 record found for this axiomaId"
+    ],
+    "qaReportsCommands": [
+        "runQaReports('glsdg','G8SMCFAGR7', 'npermikova')"
+    ]
+    
+}

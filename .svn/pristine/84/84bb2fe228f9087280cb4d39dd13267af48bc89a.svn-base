@@ -1,0 +1,4 @@
+CALL SYSCS_UTIL.SYSCS_IMPORT_DATA(null,'ASSET', null, null, '@@dump@@/Composite-@@composite@@_Asset', '|', null, null, 1);
+CALL SYSCS_UTIL.SYSCS_IMPORT_DATA(null,'COMPOSITE_CONSTITUENTS', null, null, '@@dump@@/Composite-@@composite@@_Constituents', '|', null, null, 1);
+
+jdbc:derby:;shutdown=true;

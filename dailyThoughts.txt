@@ -1,0 +1,9 @@
+The risk model is a linear decomposition of the market-related risk into factors. These factors represent macro-economic or fundamental entities or the different industries of the economy. 
+
+Often the risk is measured relative to a benchmark, where the goal is to track the benchmark within a certain target percentage (the active risk or tracking error). 
+
+Leverage,Value and Growth factor exposures are closely depending on fundamental data. So for the expsoure change sections for these three factors, if the 'FUND UPD?' is 1, there's hardly anything suspicious
+
+Axioma regional and global models by default have most of the risk concentrated on the market factor. The risk from market factor can be moved to other factors. 
+
+End of File

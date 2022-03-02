@@ -1,0 +1,20 @@
+1|CAAxioma|AXCA|Canada Factor Risk Model Family
+2|US2Axioma|AXUS2|United States Factor Risk Model Family
+3|WW22Axioma|AXWW22|World-Wide (Global) Factor Risk Model Family
+4|CNAxioma|AXCN|China Factor Risk Model Family
+5|GBAxioma|AXGB|United Kingdom Factor Risk Model Family
+6|US3Axioma|AXUS3|United States Factor Risk Model Family
+7|APxJP21Axioma|AXAPxJP21|Asia-Pacific-ex-Japan  Factor Risk Model Family
+8|EM21Axioma|AXEM21|Emerging Markets  Factor Risk Model Family
+9|EU21Axioma|AXEU21|Europe Factor Risk Model Family
+10|AP22Axioma|AXAP22|Asia-Pacific  Factor Risk Model Family
+11|JP2Axioma|AXJP2|Japan Factor Risk Model Family
+12|TWAxioma|AXTW|Taiwan Factor Risk Model Family
+13|WW21Axioma|AXWW21|World-Wide (Global) Factor Risk Model Family
+14|WWxUS21Axioma|AXWWxUS21|World-Wide (Global) ex-US Factor Risk Model Family
+15|US3AxiomaFL|AXUS3FL|United States Factor Library Risk Model Family
+16|CommodityModel|AXCOM|Commodity Futures Risk Model Family
+17|AP21Axioma|AXAP21|Asia-Pacific  Factor Risk Model Family
+18|APxJP22Axioma|AXAPxJP22|Asia-Pacific-ex-Japan  Factor Risk Model Family
+19|AUAxioma|AXAU|Australia  Factor Risk Model Family
+20|NA21Axioma|AXNA21|North America Factor Risk Model Family

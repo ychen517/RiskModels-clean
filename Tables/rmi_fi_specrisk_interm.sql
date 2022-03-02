@@ -1,0 +1,39 @@
+--The purpose of this table is to holding intermediate values used in estimating specific risk
+-- for fixed income models.
+-- The table holds the daily specific risk estimated cross-sectionally for a group of assets defined using the
+-- Category1 – Category4 columns.
+
+DROP TABLE RMI_FI_SPECRISK_INTERM CASCADE CONSTRAINTS;
+CREATE TABLE RMI_FI_SPECRISK_INTERM 
+(
+  RMS_ID NUMBER NOT NULL 
+, CURRENCY VARCHAR2(3) NOT NULL 
+, CATEGORY1 VARCHAR2(20) NOT NULL 
+, CATEGORY2 VARCHAR2(20) NOT NULL 
+, CATEGORY3 VARCHAR2(20) NOT NULL 
+, CATEGORY4 VARCHAR2(20) NOT NULL 
+, DT DATE NOT NULL 
+, CROSS_SPEC_RISK NUMBER NOT NULL 
+, CONSTRAINT RMI_FI_SPECRISK_INTERM_PK PRIMARY KEY 
+  (
+    RMS_ID 
+  , CURRENCY 
+  , CATEGORY1 
+  , CATEGORY2 
+  , CATEGORY3 
+  , CATEGORY4 
+  , DT 
+  )
+  ENABLE 
+);
+
+ALTER TABLE RMI_FI_SPECRISK_INTERM
+ADD CONSTRAINT RMI_FI_SPECRISK_INTERM_RI_FK1 FOREIGN KEY
+(
+  RMS_ID 
+)
+REFERENCES RISK_MODEL_SERIE
+(
+  SERIAL_ID 
+)
+ON DELETE CASCADE ENABLE;

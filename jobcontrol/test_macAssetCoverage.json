@@ -1,0 +1,8 @@
+{
+    "inputLines": "Ticker|WCP CN Equity|2014-12-22\nTicker|VET CN Equity|2014-12-22",
+    "assetList": "[('Ticker', 'WCP CN Equity', '2014-12-22'), ('Ticker', 'VET CN Equity', '2014-12-22')]",
+    "macDbId": "devtest",
+    "macAssetCoverageCommands": [
+        "macNonDjango.getCombinedResults(macDbId, inputLines, assetList,deleteSecIdNotFound='N')"
+    ]
+}

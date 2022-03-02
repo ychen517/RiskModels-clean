@@ -1,0 +1,35 @@
+jdbc:derby:@@databases@@/DbAsset-@@region@@;@@CREATE_OPTIONS@@;
+CALL SYSCS_UTIL.SYSCS_SET_DATABASE_PROPERTY( 
+    'derby.storage.pageReservedSpace',
+    '0');
+
+CREATE TABLE ASSET 
+(		
+axioma_id 		VARCHAR(9) NOT NULL,
+adv_5d			DOUBLE PRECISION,
+adv_20d			DOUBLE PRECISION,
+corp_action_flag	SMALLINT,
+debt2equity		DOUBLE PRECISION,
+div_yield		DOUBLE PRECISION,
+ebitda			DOUBLE PRECISION,
+growth_earn_1yr		DOUBLE PRECISION,
+growth_income_1yr	DOUBLE PRECISION,
+market_cap		DOUBLE PRECISION,
+p2earn			DOUBLE PRECISION,
+p2book			DOUBLE PRECISION,
+p2sales			DOUBLE PRECISION,
+@@supplemental@@price_ucp	DOUBLE PRECISION,
+return_1d		DOUBLE PRECISION,
+return_5d		DOUBLE PRECISION,
+return_20d		DOUBLE PRECISION,
+return_60d		DOUBLE PRECISION,
+@@cum_return@@
+roll_over_flag		SMALLINT,
+non_trad_indicator	SMALLINT,
+proxy_returns		DOUBLE PRECISION,
+vol_1d                  DOUBLE PRECISION,
+@@mdv_cols@@
+@@rmm_fields@@
+@@cn_rmm_fields@@
+CONSTRAINT ASSET_PK PRIMARY KEY (axioma_id)
+);

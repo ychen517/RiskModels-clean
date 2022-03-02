@@ -1,0 +1,122 @@
+[global]
+startDate=1997-01-01
+endDate=2007-09-13
+
+[checkISINvsIdentifier]
+localPrefix=TW
+TLNHMKRJ18|TW0002301009|1983-01-26|2002-11-04|L2301|1983-01-26|2002-11-04|TSE Electronics,TSE8 Electrical,TSE TAIEX
+
+[checkOverlappingIDs]
+identifiers=issuer,sedol,isin,cusip,ticker,valor
+
+[checkUniqueIDs]
+identifiers=issuer,sedol,isin,cusip,ticker
+
+[checkMissingBenchmarkIDs]
+identifiers=issuer,sedol,isin,ticker
+benchmarks=TSE Chemical, TSE Biotech Medical, TSE Semiconductor, TSE Computer and Peripheral, TSE Optoelectronic, TSE Comm Internet, TSE Elec Parts and Components, TSE Electronic Products Dist, TSE Information Service, TSE Other Electronic, TSE Gas and Electricity, TSE Cement, TSE Food, TSE Plastics, TSE Textiles, TSE Electric and Machinery, TSE Elec Appl Cable, TSE Chem Biotech Health, TSE Glass and Ceramics, TSE Paper and Pulp, TSE Steel and Iron, TSE Rubber, TSE Automobile, TSE Electronics, TSE Construction, TSE Transportation, TSE Tourism, TSE Finance, TSE Trading and Consumer Goods, TSE Others, TSE TAIEX, OTC Biotech Medical, OTC Semiconductor, OTC Computer and Peripheral, OTC Optoelectronic, OTC Comm Internet, OTC Elec Parts and Components, OTC Electronic Products Dist, OTC Information Service, OTC Textiles, OTC Electric and Machinery, OTC Cable, OTC Chemicals, OTC Metals, OTC Electronics, OTC Construction, OTC Transportation, OTC Tourism, OTC Financials, OTC Securities, OTC Non-Financials, OTC Index, FTSE-TSEC Mid-Cap 100, FTSE-TSEC Technology, FTSE-TSEC 50, FTSE-TSEC Eight Industries, FTSE-TSEC Dividend+
+
+[checkBenchmarkSums]
+benchmarks=TSE Chemical, TSE Biotech Medical, TSE Semiconductor, TSE Computer and Peripheral, TSE Optoelectronic, TSE Comm Internet, TSE Elec Parts and Components, TSE Electronic Products Dist, TSE Information Service, TSE Other Electronic, TSE Gas and Electricity, TSE Cement, TSE Food, TSE Plastics, TSE Textiles, TSE Electric and Machinery, TSE Elec Appl Cable, TSE Chem Biotech Health, TSE Glass and Ceramics, TSE Paper and Pulp, TSE Steel and Iron, TSE Rubber, TSE Automobile, TSE Electronics, TSE Construction, TSE Transportation, TSE Tourism, TSE Finance, TSE Trading and Consumer Goods, TSE Others, TSE TAIEX, OTC Biotech Medical, OTC Semiconductor, OTC Computer and Peripheral, OTC Optoelectronic, OTC Comm Internet, OTC Elec Parts and Components, OTC Electronic Products Dist, OTC Information Service, OTC Textiles, OTC Electric and Machinery, OTC Cable, OTC Chemicals, OTC Metals, OTC Electronics, OTC Construction, OTC Transportation, OTC Tourism, OTC Financials, OTC Securities, OTC Non-Financials, OTC Index, FTSE-TSEC Mid-Cap 100, FTSE-TSEC Technology, FTSE-TSEC 50, FTSE-TSEC Eight Industries, FTSE-TSEC Dividend+
+tolerance=0.05
+
+[checkBenchmarkSizeChanges]
+benchmarks=TSE Cement, TSE Food, TSE Plastics, TSE Textiles, TSE Electric and Machinery, TSE Elec Appl Cable, TSE Chem Biotech Health, TSE Glass and Ceramics, TSE Paper and Pulp, TSE Steel and Iron, TSE Rubber, TSE Automobile, TSE Electronics, TSE Construction, TSE Transportation, TSE Tourism, TSE Finance, TSE Trading and Consumer Goods, TSE Others, TSE TAIEX, OTC Textiles, OTC Electric and Machinery, OTC Chemicals, OTC Metals, OTC Electronics, OTC Construction, OTC Transportation, OTC Tourism, OTC Index, FTSE-TSEC Mid-Cap 100, FTSE-TSEC Technology, FTSE-TSEC 50, FTSE-TSEC Eight Industries, FTSE-TSEC Dividend+
+rmg-id=3
+rel-tolerance=0.1
+abs-tolerance=3
+# Valid changes confirmed by Natasha
+TSE Electric and Machinery|1997-11-28|17|1997-12-01|21
+TSE Electric and Machinery|2000-10-31|23|2000-11-01|28
+TSE Chem Biotech Health|2001-10-31|24|2001-11-01|28
+TSE Electronics|2000-10-31|102|2000-11-01|130
+TSE Others|2000-10-31|25|2000-11-01|29
+TSE Electronics|2001-10-31|146|2001-11-01|183
+TSE Electronics|2002-09-30|197|2002-10-01|228
+TSE Others|2007-06-29|39|2007-07-02|33
+TSE TAIEX|2000-10-31|454|2000-11-01|508
+OTC Electric and Machinery|1998-03-31|6|1998-04-01|11
+OTC Electric and Machinery|2000-09-08|18|2000-09-11|12
+OTC Electronics|1997-01-31|15|1997-02-01|20
+OTC Electronics|1998-04-30|40|1998-05-02|45
+OTC Electronics|1998-06-30|46|1998-07-02|51
+OTC Electronics|1999-01-30|57|1999-02-01|65
+OTC Electronics|2000-09-08|129|2000-09-11|104
+OTC Electronics|2001-04-30|131|2001-05-02|148
+OTC Electronics|2001-09-14|162|2001-09-19|126
+OTC Electronics|2002-02-27|137|2002-03-01|160
+OTC Electronics|2002-08-23|197|2002-08-26|170
+OTC Construction|1999-01-30|9|1999-02-01|13
+OTC Tourism|1998-04-30|0|1998-05-02|1
+OTC Index|1999-01-30|154|1999-02-01|171
+OTC Index|2000-09-08|285|2000-09-11|232
+OTC Index|2001-09-14|325|2001-09-19|277
+OTC Index|2002-08-23|360|2002-08-26|324
+# No index data from FTSE on Saturdays
+FTSE-TSEC Mid-Cap 100|2006-10-13|100|2006-10-14|0
+FTSE-TSEC Mid-Cap 100|2006-10-14|0|2006-10-16|100
+FTSE-TSEC Technology|2006-10-13|48|2006-10-14|0
+FTSE-TSEC Technology|2006-10-14|0|2006-10-16|48
+FTSE-TSEC 50|2006-10-13|50|2006-10-14|0
+FTSE-TSEC 50|2006-10-14|0|2006-10-16|50
+FTSE-TSEC Dividend+|2006-10-13|30|2006-10-14|0
+FTSE-TSEC Dividend+|2006-10-14|0|2006-10-16|30
+FTSE-TSEC Mid-Cap 100|2007-03-02|100|2007-03-03|0
+FTSE-TSEC Mid-Cap 100|2007-03-03|0|2007-03-05|100
+FTSE-TSEC Technology|2007-03-02|52|2007-03-03|0
+FTSE-TSEC Technology|2007-03-03|0|2007-03-05|52
+FTSE-TSEC 50|2007-03-02|50|2007-03-03|0
+FTSE-TSEC 50|2007-03-03|0|2007-03-05|50
+FTSE-TSEC Eight Industries|2007-03-02|70|2007-03-03|0
+FTSE-TSEC Eight Industries|2007-03-03|0|2007-03-05|70
+FTSE-TSEC Dividend+|2007-03-02|30|2007-03-03|0
+FTSE-TSEC Dividend+|2007-03-03|0|2007-03-05|30
+FTSE-TSEC Mid-Cap 100|2007-04-13|100|2007-04-14|0
+FTSE-TSEC Mid-Cap 100|2007-04-14|0|2007-04-16|100
+FTSE-TSEC Technology|2007-04-13|55|2007-04-14|0
+FTSE-TSEC Technology|2007-04-14|0|2007-04-16|55
+FTSE-TSEC 50|2007-04-13|50|2007-04-14|0
+FTSE-TSEC 50|2007-04-14|0|2007-04-16|50
+FTSE-TSEC Eight Industries|2007-04-13|68|2007-04-14|0
+FTSE-TSEC Eight Industries|2007-04-14|0|2007-04-16|68
+FTSE-TSEC Dividend+|2007-04-13|30|2007-04-14|0
+FTSE-TSEC Dividend+|2007-04-14|0|2007-04-16|30
+FTSE-TSEC Mid-Cap 100|2007-06-22|100|2007-06-23|0
+FTSE-TSEC Mid-Cap 100|2007-06-23|0|2007-06-25|100
+FTSE-TSEC Technology|2007-06-22|55|2007-06-23|0
+FTSE-TSEC Technology|2007-06-23|0|2007-06-25|55
+FTSE-TSEC 50|2007-06-22|50|2007-06-23|0
+FTSE-TSEC 50|2007-06-23|0|2007-06-25|50
+FTSE-TSEC Eight Industries|2007-06-22|69|2007-06-23|0
+FTSE-TSEC Eight Industries|2007-06-23|0|2007-06-25|69
+FTSE-TSEC Dividend+|2007-06-22|29|2007-06-23|0
+FTSE-TSEC Dividend+|2007-06-23|0|2007-06-25|29
+
+[checkBenchmarkSizeChanges]
+benchmarks=OTC Cable, OTC Financials, OTC Securities, OTC Non-Financials
+endDate=2007-07-01
+rmg-id=3
+rel-tolerance=0.1
+abs-tolerance=3
+# Valid changes confirmed by Natasha
+OTC Cable|2000-09-08|6|2000-09-11|2
+OTC Non-Financials|1997-01-31|55|1997-02-01|61
+OTC Non-Financials|1999-01-30|149|1999-02-01|165
+OTC Non-Financials|2000-09-08|281|2000-09-11|228
+OTC Non-Financials|2001-09-14|320|2001-09-19|272
+OTC Non-Financials|2002-08-23|356|2002-08-26|320
+
+[checkBenchmarkSizeChanges]
+benchmarks=TSE Chemical, TSE Biotech Medical, TSE Semiconductor, TSE Computer and Peripheral, TSE Optoelectronic, TSE Comm Internet, TSE Elec Parts and Components, TSE Electronic Products Dist, TSE Information Service, TSE Other Electronic, TSE Gas and Electricity, OTC Biotech Medical, OTC Semiconductor, OTC Computer and Peripheral, OTC Optoelectronic, OTC Comm Internet, OTC Elec Parts and Components, OTC Electronic Products Dist, OTC Information Service
+startDate=2007-07-02
+rmg-id=3
+rel-tolerance=0.1
+abs-tolerance=3
+
+[checkOverlappingClassifications]
+revision-ids=10,11
+
+[checkNonLeafClassifications]
+revision-ids=10,11
+
+[checkConflictingSequenceNumbers]

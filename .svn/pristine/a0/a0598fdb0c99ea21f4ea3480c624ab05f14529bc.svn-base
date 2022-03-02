@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<project 
+  xmlns:j="jelly:core" 
+  xmlns:maven="jelly:maven" 
+  xmlns:ant="jelly:ant" 
+  xmlns:u="jelly:util"
+  xmlns:deploy="deploy"
+  >
+  <!-- update the svn repository -->
+  <goal name="svnup" description="update SVN repository">
+    <ant:exec executable="svn">
+      <ant:arg line="up ."/>
+    </ant:exec>
+  </goal>
+  
+  <!-- clean binary distribution-->
+  <goal name="dist-clean" description="clean dist directory">
+    <attainGoal name="clean"/>
+    <ant:delete dir="${basedir}/../../dist/${maven.final.name}" />
+    <!-- <ant:delete dir="${basedir}/../../dist/${maven.final.name}.zip" /> -->
+  </goal>
+  
+  <!-- prepare binary distribution-->
+  <goal name="dist-prepare" description="prepare dist directory">
+    <attainGoal name="dist-clean"/>
+    <ant:mkdir dir="${basedir}/../../dist/${pom.artifactId}/" />
+    <!-- <ant:mkdir dir="${basedir}/../../dist/${maven.final.name}/lib" /> -->
+  </goal>
+
+  <!-- distribution ZIP file -->
+  <goal name="dist-build" description="build project distribution">
+    <!-- <attainGoal name="dist-prepare"/> -->
+    <attainGoal name="jar:jar"/>
+    <deploy:copy-deps todir="${basedir}/../../dist/lib"/>
+    <ant:copy file="${maven.build.dir}/${maven.final.name}.jar" todir="${basedir}/../../dist/lib"/>
+    <ant:copy todir="${basedir}/../../dist/scripts/${pom.artifactId}/">
+      <fileset dir="${basedir}">
+        <include name="**/*.py"/>
+        <include name="**/*.sh"/>
+        <include name="**/*.sql"/>
+        <include name="**/log.config"/>
+        <include name="Derby/create_db*.template"/>
+        <include name="Derby/load_db*.template"/>
+      </fileset>
+    </ant:copy>
+    <ant:chmod perm="a+x">
+        <fileset dir="${basedir}/../../dist/scripts/${pom.artifactId}/">
+          <include name="**/*.sh"/>
+        </fileset>
+    </ant:chmod>
+    
+  </goal>
+  
+</project>

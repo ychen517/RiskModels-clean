@@ -1,0 +1,3 @@
+CALL SYSCS_UTIL.SYSCS_IMPORT_DATA(null,'FUNDAMENTAL', null, null, '@@dump@@/Fundamental-@@region@@_Fundamental', '|', null, null, 1);
+
+jdbc:derby:;shutdown=true;

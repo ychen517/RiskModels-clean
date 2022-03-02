@@ -1,0 +1,17 @@
+11|North America|North America|
+12|Latin America|Latin America|
+13|Europe|Europe|
+14|Asia ex-Pacific|Asia ex-Pacific|
+15|Pacific|Pacific|
+16|Middle East|Middle East|
+17|Africa|Africa|
+100|EU-A|Europe-All|EUR
+101|EU-DM|Europe-DM|EUR
+102|EU-EM|Europe-EM|EUR
+103|EM-A|Emerging Markets-All|USD
+104|WW-A|Global-All|USD
+105|EM-B|Emerging Market inc. Domestic China|USD
+106|AP-A|Asia Pacific|USD
+107|EM-A2|Emerging Markets-All Version 2|USD
+108|NA-A|North America-All|USD
+109|DMxUS|Developed Markets ex US|USD

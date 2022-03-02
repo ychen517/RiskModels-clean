@@ -1,0 +1,31 @@
+# ID|Name|Description
+0|Style|Style and fundamental factors
+1|Industry|Industry classification
+2|Country|Country classification
+3|Currency|Currency classification
+4|Market|Market factor
+5|Local|Local market factors
+6|Statistical|Statistical factors
+#7|Macro|Macroeconomic time-series factors - unused?
+8|Commodity|Commodity futures factors
+9|Core Macro|Core macroeconomic time-series factors
+10|Market-Traded Macro|Market-traded macroeconomic time-series factors
+11|Equity|Equity time-series factors
+12|Sector|Sector sensitivity factors
+13|FixedIncome|Fixed Income factors
+14|Sovereign Zero|Sovereign zero coupon factors
+15|Swap Spread|Swap spread factors
+16|Ratings Spread|Ratings spread factors
+17|Specialist ABS|Specialist ABS factors
+18|Eurozone Spread|Eurozone zero coupon spreads over base funding curve
+19|CorpRatingsSectorSpread|Corporate Ratings-Sector over Ratings Curve
+20|IssuerSpread|Corporate Issuer Spreads over ratings-sector
+21|Break-Even Inflation|Breakeven Inflation spread curves
+22|Swaption Implied Volatility|Swaption ATM volatility
+23|Equity Implied Volatility|Equity Option Implied volatility
+24|Canadian Provincial Spread|Canadian Provincial Spread
+25|Supranational Spread|Surpranational Spread factors
+26|Agency Spread|Agency spreads
+27|Covered Bond|Covered Bond factors
+28|Regional Intercept|Regional Intercepts for linked models
+29|Latent|Latent factors

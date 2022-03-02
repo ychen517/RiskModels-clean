@@ -1,0 +1,100 @@
+-3|United States Small Cap|11|XU|XXU|-5
+-2|Domestic China|14|XC|XXC|8
+-1|Euro Zone|13|EU|XEU|1
+1|United States|11|US|USA|-5
+2|United Kingdom|13|GB|GBR|0
+3|Taiwan|14|TW|TWN|8
+4|Japan|15|JP|JPN|9
+5|Argentina|12|AR|ARG|-3
+6|Australia|15|AU|AUS|10
+7|Austria|13|AT|AUT|1
+8|Belgium|13|BE|BEL|1
+9|Brazil|12|BR|BRA|-3
+10|Canada|11|CA|CAN|-5
+11|Chile|12|CL|CHL|-4
+12|China|14|CN|CHN|8
+13|Colombia|12|CO|COL|-5
+14|Czech Republic|13|CZ|CZE|1
+15|Denmark|13|DK|DNK|1
+16|Egypt|17|EG|EGY|2
+17|Finland|13|FI|FIN|2
+18|France|13|FR|FRA|1
+19|Germany|13|DE|DEU|1
+20|Greece|13|GR|GRC|2
+21|Hong Kong|15|HK|HKG|8
+22|Hungary|13|HU|HUN|1
+23|India|14|IN|IND|5.5
+24|Indonesia|14|ID|IDN|7
+25|Ireland|13|IE|IRL|0
+26|Israel|16|IL|ISR|2
+27|Italy|13|IT|ITA|1
+28|Korea, Republic of|14|KR|KOR|9
+29|Luxembourg|13|LU|LUX|1
+30|Malaysia|14|MY|MYS|8
+31|Mexico|12|MX|MEX|-6
+32|Morocco|17|MA|MAR|0
+33|Netherlands|13|NL|NLD|1
+34|New Zealand|15|NZ|NZL|12
+35|Norway|13|NO|NOR|1
+36|Pakistan|14|PK|PAK|5
+37|Peru|12|PE|PER|-5
+38|Philippines|14|PH|PHL|8
+39|Poland|13|PL|POL|1
+40|Portugal|13|PT|PRT|0
+41|Russian Federation|13|RU|RUS|3
+42|Singapore|15|SG|SGP|8
+43|South Africa|17|ZA|ZAF|2
+44|Spain|13|ES|ESP|1
+45|Sweden|13|SE|SWE|1
+46|Switzerland|13|CH|CHE|1
+47|Thailand|14|TH|THA|7
+48|Turkey|13|TR|TUR|2
+49|Bahrain|16|BH|BHR|3
+50|Botswana|17|BW|BWA|2
+51|Bulgaria|13|BG|BGR|2
+52|Croatia|13|HR|HRV|1
+53|Cyprus|13|CY|CYP|2
+54|Estonia|13|EE|EST|2
+55|Iceland|13|IS|ISL|0
+56|Jordan|16|JO|JOR|2
+57|Kuwait|16|KW|KWT|3
+58|Latvia|13|LV|LVA|2
+59|Lithuania|13|LT|LTU|2
+60|Mauritius|17|MU|MUS|4
+61|Oman|16|OM|OMN|4
+62|Romania|13|RO|ROU|2
+63|Slovakia|13|SK|SVK|1
+64|Slovenia|13|SI|SVN|1
+65|Sri Lanka|14|LK|LKA|5.5
+66|United Arab Emirates|16|AE|ARE|4
+67|Venezuela|12|VE|VEN|-4.5
+68|Panama|12|PA|PAN|-5
+69|Malta|13|MT|MLT|1
+70|Kazakhstan|13|KZ|KAZ|5
+71|Kenya|17|KE|KEN|3
+72|Lebanon|16|LB|LBN|2
+73|Nigeria|17|NG|NGA|1
+74|Qatar|16|QA|QAT|3
+75|Saudi Arabia|16|SA|SAU|3
+76|Tunisia|17|TN|TUN|1
+77|Ukraine|13|UA|UKR|2
+78|Vietnam|14|VN|VNM|7
+79|Serbia|13|RS|SRB|2
+80|Macedonia, Republic of|13|MK|MKD|2
+81|Ivory Coast|17|CI|CIV|0
+82|Ghana|17|GH|GHA|0
+83|Jamaica|12|JM|JAM|-5
+84|Trinidad and Tobago|12|TT|TTO|-4
+85|Bangladesh|14|BD|BGD|6
+86|Zambia|17|ZM|ZMB|2
+87|Ecuador|12|EC|ECU|-5
+88|Namibia|17|NA|NAM|1
+89|Bosnia and Herzegovina|13|BA|BIH|2
+90|Montenegro|13|ME|MNE|2
+91|Malawi|17|MW|MWI|2
+92|Palestine, State of|16|PS|PSE|2
+93|Tanzania|17|TZ|TZA|3
+94|Zimbabwe|17|ZW|ZWE|2
+95|Uruguay|12|UY|URY|-3
+96|Uganda|17|UG|UGA|3
+97|The Dominican Republic|12|DO|DOM|-4

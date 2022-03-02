@@ -1,0 +1,24 @@
+1|GICSIndustries|GICS INDUSTRY CLASSIFICATION|1
+2|GICSIndustryGroups|GICS Industry Groups|1
+3|GICSCustom-JP|GICS Variant for Japan|1
+5|GICSCustom-GB|GICS Variant for Great Britain|1
+6|GICSCustom-AU|GICS Variant for Australia|1
+7|GICSCustom-CA|GICS Variant for Canada|1
+43|GICSCustom-CA4|GICS 2018 Variant for CA4|1
+9|GICSCustom-CN|GICS Variant for China|1
+12|GICSCustom-NA|GICS Variant for North America|1
+44|GICSCustom-NA4|GICS 2018 Variant for North America|1
+13|GICSCustom-TW|GICS Variant for Taiwan|1
+20|GICSCustom-SubInd|GICS subindustries|1
+30|GICSCustom-US|GICS Variant for USA|1
+31|GICSCustom-NoOE|GICS without Office Electronics|1
+32|GICSCustom-NoMortgageREITs|GICS without Mortgage REITs|1
+34|GICSCustom-EU|GICS variant for EU4|1
+35|GICSCustom-EM|GICS variant for EM4|1
+38|GICSCustom-EM2|GICS 2018 variant for EM4|1
+39|GICSCustom-NoMortgageREITs2018|GICS 2018 without Mortgage REITs|1
+41|GICSCustom-CN2b|GICS Variant for China Version2b(GICS2018)|1
+42|GICSCustom-GB4|GICS 2018 variant for GB4|1
+61|GICSCustom-AU2|GICS Variant for Australia Version2|1
+99|CommoditiesEmpty|Empty classification for Commodities model|1            
+130|GICSCustom-JP2|GICS Variant for Japan2|1

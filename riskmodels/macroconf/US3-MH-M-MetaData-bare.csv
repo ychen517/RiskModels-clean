@@ -1,0 +1,64 @@
+axid,name,shortname,active,use_level,use_shock,source,type,freq,has_trend,needs_sa,deflator,notes,min_dt,is_tr,is_yield,is_spread,is_price,is_ex_ret
+M001000110,TRADE-WEIGHTED VALUE OF US DOLLAR AGAINST MAJOR CURRENCIES,broad_fx,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000038,CAPACITY UTILIZATION RATE - ALL INDUSTRY,caputil,1,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000048,CONSUMER CONFIDENCE INDEX,cci,1,1,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000043,CHICAGO PURCHASING MANAGER BUSINESS BAROMETER (SA),chicago_pmbb,1,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000108,TOTAL CIVILIAN EMPLOYMENT,civ_empl,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000052,CPI - ALL URBAN: ALL ITEMS,cpi,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000050,CPI - ALL ITEMS LESS FOOD and ENERGY (CORE),cpi_core,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000054,DISPOSABLE PERSONAL INCOME (AR),disp_pers_inc,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000057,EMPLOYED - NONFARM INDUSTRIES TOTAL (PAYROLL SURVEY),emp_nonfarm,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000022,AVG WKLY HOURS - TOTAL PRIVATE NONFARM,hours_nonfarm,1,0,1,macroecon,lin,M,1,0,,,1/1/1985,0,0,0,0,0
+M001000075,INDUSTRIAL PRODUCTION - TOTAL INDEX,ind_prod_total_idx,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000074,INDUSTRIAL PRODUCTION - MANUFACTURING (NAICS),indprod_mfg,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000073,INDUSTRIAL PRODUCTION (%YOY),indprod_yoy,1,0,1,macroecon,yoy,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000078,ISM PURCHASING MANAGERS INDEX (MFG SURVEY),ism_pmi,1,1,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000106,THE CONFERENCE BOARD LEADING ECONOMIC INDICATORS INDEX,leading_econ_idx,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000076,INTERBANK RATE - 3 MONTH (LONDON) (MONTH AVG),libor_3m_M,1,0,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000084,NATIONAL ASSOCIATION OF HOME BUILDERS HOUSING MARKET INDEX,nahb_housing_mkt_idx,1,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000093,PERSONAL CONSUMPTION EXPENDITURES (AR),pce,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000094,PERSONAL INCOME (MONTHLY SERIES) (AR),pers_inc,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000095,PERSONAL SAVING AS % OF DISPOSABLE PERSONAL INCOME,pers_sav_pct,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000096,"PHILADELPHIA FED OUTLOOK SURVEY - DIFFUSION INDEX, MANUFACTURING",phil_outlook_svy,1,1,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000097,POPULATION (ESTIMATES USED IN NATIONAL ACCOUNTS),population,1,0,0,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000098,PPI - FINISHED GOODS,ppi,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000099,PPI - FINISHED GOODS LESS FOODS and ENERGY (CORE),ppi_core,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000112,TREASURY YIELD ADJUSTED TO CONSTANT MATURITY - 20 YEAR,treas_yield_20y_monthly,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,0,1,0,0,0
+M001000111,TREASURY BILL RATE - 3 MONTH (EP),treas_yield_3m_monthly,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,1,0,0,0,0
+M001000114,UNEMPLOYMENT RATE,unrate,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000113,UNEMPLOYED (16 YRS and OVER),unrate_16_plus,1,0,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000021,AVG HRLY EARN PROD WRKRS-MANUFACTURING,wages_mfg,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000020,AVG HRLY EARN - TOTAL PRIVATE NONFARM,wages_nonfarm,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M000100022,Crude Oil-West Texas Intermediate Spot Cushing United States Dollar Per Barrel,crude_oil_wti,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100090,SandP GSCI Energy Spot,gsci_energy_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100093,SandP GSCI Gold Spot,gsci_gold_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100102,SandP GSCI Industrial Metals Spot,gsci_ind_metals_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100108,SandP GSCI Light Ene. Spot,gsci_light_energy_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100123,SandP GSCI Non Prec. Total Return,gsci_non_prec_tr,1,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100117,SandP GSCI Non-Energy Spot,gsci_nonenergy_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100134,SandP GSCI Precious Metal Spot,gsci_prec_metal_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100135,SandP GSCI Precious Metal Tot. Ret.,gsci_prec_metal_tr,1,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100140,SandP GSCI Silver Spot,gsci_silver_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100150,SandP GSCI Ultra-Light Energy Spot,gsci_ultralight_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000010256,MoodysCorpYield - AAA,moodys_aaa,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010000,10-YR TREAS CONSTANT MAT,treasury_cmt_10y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010004,1-YR TREAS CONSTANT MAT,treasury_cmt_1y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010006,2-YR TREAS CONSTANT MAT,treasury_cmt_2y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010008,3-MO TREAS CONSTANT MAT,treasury_cmt_3m,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010009,5-YR TREAS CONSTANT MAT,treasury_cmt_5y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010010,6-MO TREAS CONSTANT MAT,treasury_cmt_6m,1,1,1,macroidx,geom,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010001,10-YR TREASURY YIELD INDEX,treasury_yield_10y,1,1,1,macroidx,percent,D,0,0,,factor 10 off,1/2/1985,0,1,0,0,0
+M000010002,13-WK TREASURY YIELD INDEX,treasury_yield_13w,1,1,1,macroidx,percent,D,0,0,,factor 10 off,1/2/1985,0,1,0,0,0
+M000010005,20-YR TREAS CONSTANT MAT,treasury_cmt_20y,1,1,1,macroidx,percent,D,0,0,,,1/31/1985,0,1,0,0,0
+M000010257,MoodysCorpYield - BAA,moodys_baa,1,1,1,macroidx,percent,D,0,0,,,1/2/1986,0,1,0,0,0
+M000010210,VOLATILITY INDEX - NEW CALC (SPX),vix_new,1,1,0,macroidx,percent,D,0,0,,,1/2/1990,0,0,0,0,0
+M001000101,"RETAIL SALES and FOOD SERVICES, TOTAL",retail_sales_total,1,0,1,macroecon,geom,M,0,0,,back to 1994 only,1/1/1992,0,0,0,0,0
+M000100200,SandP GSCI Energy and Metals Spot,gsci_energy_metals_spot,1,0,1,macrods,geom,D,0,0,,,1/6/1995,0,0,0,1,0
+M000100234,SandP GSCI Four Energy Excess Return,gsci_four_energy_er,1,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100242,SandP GSCI Softs Spot,gsci_softs_spot,1,0,1,macrods,geom,D,0,0,,,1/17/1995,0,0,0,1,0
+M000010007,30-YR TREASURY YIELD INDEX,treasury_yield_30y,1,1,1,macroidx,percent,D,0,0,,factor 10 off,6/1/1999,0,1,0,0,0
+M000010260,US Credit Spread - A,ax_us_corp_spread_a,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010259,US Credit Spread - AA,ax_us_corp_spread_aa,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010258,US Credit Spread - AAA,ax_us_corp_spread_aaa,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010261,US Credit Spread - BBB,ax_us_corp_spread_bbb,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010262,US Credit Spread - SUB-IG,ax_us_corp_spread_sub_ig,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0

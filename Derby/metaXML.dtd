@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT axiomaMetaInfo (currencies, regions, models, fxmodels, compositefamilies, indexfamilies,
+                          classifications,  currencyconvergences, cashassetids)>
+<!ATTLIST axiomaMetaInfo createdate CDATA #REQUIRED>
+
+<!ELEMENT currencies (currency+)>
+<!ELEMENT currency EMPTY>
+<!ATTLIST currency isocode ID #REQUIRED>
+<!ATTLIST currency description CDATA #REQUIRED>
+<!ATTLIST currency symbol CDATA #REQUIRED>
+<!ATTLIST currency fromdate CDATA #REQUIRED>
+<!ATTLIST currency thrudate CDATA #REQUIRED>
+
+<!ELEMENT regions (region+)>
+<!ELEMENT region (countries)>
+<!ATTLIST region name CDATA #REQUIRED>
+<!ATTLIST region description CDATA #REQUIRED>
+
+<!ELEMENT countries (country+)>
+<!ELEMENT country (countrycurrencies)>
+<!ATTLIST country name CDATA #REQUIRED>
+<!ATTLIST country id ID #REQUIRED>
+<!ATTLIST country isocode CDATA #REQUIRED>
+
+<!ELEMENT countrycurrencies (countrycurrency+)>
+<!ELEMENT countrycurrency EMPTY>
+<!ATTLIST countrycurrency isocode IDREF #REQUIRED>
+<!ATTLIST countrycurrency fromdate CDATA #REQUIRED>
+<!ATTLIST countrycurrency thrudate CDATA #REQUIRED>
+
+<!ELEMENT models (model+)>
+<!ELEMENT fxmodels (model+)>
+<!ELEMENT model (countrylist)>
+<!ATTLIST model name ID #REQUIRED>
+<!ATTLIST model description CDATA #REQUIRED>
+<!ATTLIST model mnemonic CDATA #REQUIRED>
+<!ATTLIST model region CDATA #IMPLIED>
+<!ATTLIST model numeraire CDATA #REQUIRED>
+<!ATTLIST model fromdate CDATA #REQUIRED>
+<!ATTLIST model thrudate CDATA #REQUIRED>
+<!ATTLIST model modeltype CDATA #REQUIRED>
+
+<!ELEMENT countrylist (countryref+)>
+<!ELEMENT countryref EMPTY>
+<!ATTLIST countryref country IDREF #REQUIRED>
+<!ATTLIST countryref fromdate CDATA #REQUIRED>
+<!ATTLIST countryref thrudate CDATA #REQUIRED>
+<!ATTLIST countryref fadedate CDATA #REQUIRED>
+
+<!ELEMENT compositefamilies (compositefamily+)>
+<!ELEMENT compositefamily EMPTY>
+<!ATTLIST compositefamily name ID #REQUIRED>
+<!ATTLIST compositefamily description CDATA #REQUIRED>
+<!ATTLIST compositefamily models IDREFS #REQUIRED>
+
+<!ELEMENT indexfamilies (indexfamily+)>
+<!ELEMENT indexfamily (index+)>
+<!ATTLIST indexfamily name CDATA #REQUIRED>
+<!ATTLIST indexfamily description CDATA #REQUIRED>
+
+<!ELEMENT index (indexname+) >
+<!ATTLIST index id CDATA #REQUIRED>
+<!ATTLIST index name CDATA #REQUIRED>
+<!ATTLIST index description CDATA #REQUIRED>
+<!ATTLIST index shortname CDATA #REQUIRED>
+<!ATTLIST index fromdate CDATA #REQUIRED>
+<!ATTLIST index thrudate CDATA #REQUIRED>
+
+<!ELEMENT indexname EMPTY>
+<!ATTLIST indexname officialname CDATA #REQUIRED>
+<!ATTLIST indexname fromdate CDATA #REQUIRED>
+<!ATTLIST indexname thrudate CDATA #REQUIRED>
+
+<!ELEMENT classifications (classification+)>
+<!ELEMENT classification EMPTY>
+<!ATTLIST classification name CDATA #REQUIRED>
+<!ATTLIST classification description CDATA #REQUIRED>
+<!ATTLIST classification fromdate CDATA #REQUIRED>
+<!ATTLIST classification thrudate CDATA #REQUIRED>
+
+<!ELEMENT currencyconvergences (currencyconvergence+)>
+<!ELEMENT currencyconvergence EMPTY>
+<!ATTLIST currencyconvergence oldcode IDREF #REQUIRED>
+<!ATTLIST currencyconvergence newcode IDREF #REQUIRED>
+<!ATTLIST currencyconvergence ratio CDATA #REQUIRED>
+<!ATTLIST currencyconvergence effdate CDATA #REQUIRED>
+
+<!ELEMENT cashassetids (cashassetid+)>
+<!ELEMENT cashassetid EMPTY>
+<!ATTLIST cashassetid modelid CDATA #REQUIRED>
+<!ATTLIST cashassetid sequence CDATA #REQUIRED>

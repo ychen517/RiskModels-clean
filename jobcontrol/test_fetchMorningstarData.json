@@ -1,0 +1,9 @@
+{
+    "commands": [
+        "~~~subprocess.call(['python.exe','/home/ops-rm/global3/scripts/MorningStarDailyProcess.py','-n','--env', 'DEVTEST','--no_history','--force_fetch','--fund_identifier_file', './test_fetchMorningstarData.assets', '--legacy_authentication', '2020-02-10', '-l','/home/ops-rm/global3/scripts/log.config'])",
+        "~~~subprocess.call(['python.exe','/home/ops-rm/global3/scripts/MorningStarDailyPrice.py','-n','--env', 'DEVTEST','--performance_id','0P0000KUY3'])",
+        "~~~subprocess.call(['python.exe','/home/ops-rm/global3/scripts/MorningStarDailyPrice.py','-n','--env', 'DEVTEST','--performance_id','0P0000RRJ7'])",
+        "~~~subprocess.call(['python.exe','/home/ops-rm/global3/scripts/MorningStarDailyPrice.py','-n','--env', 'DEVTEST','--performance_id','0P0000RS2K'])"
+    ],
+    "env": "devtest"
+}

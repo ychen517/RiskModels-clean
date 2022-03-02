@@ -1,0 +1,27 @@
+jdbc:derby:@@databases@@/DbComposite-@@composite@@;@@CREATE_OPTIONS@@;
+CALL SYSCS_UTIL.SYSCS_SET_DATABASE_PROPERTY( 
+    'derby.storage.pageReservedSpace',
+    '0');
+
+CREATE TABLE ASSET 
+(		
+axioma_id 		VARCHAR(9) NOT NULL,
+adv_5d			DOUBLE PRECISION,
+adv_20d			DOUBLE PRECISION,
+market_cap		DOUBLE PRECISION,
+price_ucp		DOUBLE PRECISION,
+return_1d		DOUBLE PRECISION,
+return_5d		DOUBLE PRECISION,
+return_20d		DOUBLE PRECISION,
+return_60d		DOUBLE PRECISION,
+cumulative_return	DOUBLE PRECISION,
+roll_over_flag		SMALLINT,
+CONSTRAINT ASSET_PK PRIMARY KEY (axioma_id)
+);
+
+CREATE TABLE COMPOSITE_CONSTITUENTS (
+composite_axioma_id   VARCHAR(9) NOT NULL,
+constituent_axioma_id VARCHAR(9) NOT NULL,
+value                 DOUBLE PRECISION NOT NULL,
+CONSTRAINT AXIOMAID_INDEXID_PK PRIMARY KEY (composite_axioma_id, constituent_axioma_id)
+);

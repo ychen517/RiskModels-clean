@@ -1,0 +1,2631 @@
+# Style Factors
+0|Value|Value|0
+1|Leverage|Leverage|0
+2|Growth|Growth|0
+3|Size|Size|0
+4|Market Sensitivity|Market Sensitivity|0
+5|Liquidity|Liquidity|0
+6|Short-Term Momentum|Short-Term Momentum|0
+7|Medium-Term Momentum|Medium-Term Momentum|0
+8|Volatility|Volatility|0
+79|CDI|CDI|0
+80|OTC Market|OTC Market|0
+81|Domestic China|Domestic China|5
+82|B-Share Market|B-Share Market|0
+83|Value (2_1)|Value (2_1)|0
+84|Leverage (Legacy)|Leverage (Legacy)|0
+85|Growth (2_1)|Growth (2_1)|0
+86|Earnings Yield|Earnings Yield|0
+87|Dividend Yield|Dividend Yield|0
+88|Exchange Rate Sensitivity|Exchange Rate Sensitivity|0
+89|Interest Rate Sensitivity|Interest Rate Sensitivity|0
+90|Midcap Indicator|Midcap Indicator|0
+91|Mid Market|Mid Market|0
+94|Investment Trusts|Investment Trusts|0
+95|North American Market|North American Market|4
+96|European Market|European Market|4
+97|Asian Market|Asian Market|4
+98|Emerging Market|Emerging Market|4
+99|Global Market|Global Market|4
+# New style factors
+6000|Random Factor|Random Factor|0
+6001|EM Sensitivity|EM Sensitivity|0
+# Liquidity
+2000|Liquidity Beta|Liquidity Beta|0
+2001|Amihud Liquidity|Amihud Liquidity|0
+2002|Dollar Volume|Dollar Volume|0
+2003|Liquidity (Median)|Liquidity (Median)|0
+2004|Dollar Volume (Median)|Dollar Volume (Median)|0
+2005|Liquidity (Composite)|Liquidity (Composite)|0
+2006|Liquidity 60|Liquidity 60|0
+2007|Value Legacy EstETP|Value Legacy EstETP|0
+2008|Liquidity SH|Liquidity SH|0
+2009|MidCap|MidCap|0
+2010|Liquidity (2_1)|Liquidity (2_1)|0
+2011|Liquidity (Legacy US)|Liquidity (Legacy US)|0
+# Growth
+2012|Earnings Growth|Earnings Growth|0
+2013|Growth 5Y Earnings 5YSales FY1EstEPS|Growth 5Y Earnings 5YSales FY1EstEPS|0
+2014|Growth 5Y Earnings 5YSales Q1EstEPS|Growth 5Y Earnings 5YSales Q1EstEPS|0
+2015|Sales Growth|Sales Growth|0
+2016|Growth 5Y Earnings 5YSales|Growth 5Y Earnings 5YSales|0
+# Value/Quality
+2017|Dividend Payout|Dividend Payout|0
+2018|Proxied Dividend Payout|Proxied Dividend Payout|0
+2019|Return-on-Equity|Return-on-Equity|0
+2020|Return-on-Assets|Return-on-Assets|0
+2021|Book-to-Price|Book-to-Price|0
+2022|Earnings-to-Price|Earnings-to-Price|0
+2023|Sustainable Growth Rate|Sustainable Growth Rate|0
+2024|DivYield ShareBuyback|DivYield ShareBuyback|0
+# Leverage
+2025|Debt-to-Assets|Debt-to-Assets|0
+2026|Debt-to-MarketCap|Debt-to-MarketCap|0
+# Momentum
+2027|Medium-Term Momentum (6 Months)|Medium-Term Momentum (6 Months)|0
+2028|Short-Term Momentum Tm2|Short-Term Momentum Tm2|0
+2029|Yearly Momentum|Yearly Momentum|0
+# Spare
+2030|Sales-to-Price|Sales-to-Price|0
+2031|Volatility (Orthog)|Volatility (Orthog)|0
+2032|Debt-to-Equity|Debt-to-Equity|0
+2033|Short-Term Momentum (Clipped)|Short-Term Momentum (Clipped)|0
+2034|Medium-Term Momentum (Clipped)|Medium-Term Momentum (Clipped)|0
+2035|Profitability|Profitability|0
+# Forecast
+2036|Est EBITDA|Est EBITDA|0
+2037|Est Enterprise Value|Est Enterprise Value|0
+2038|Est Cash-Flow-per-Share|Est Cash-Flow-per-Share|0
+2039|Est Earnings-to-Price|Est Earnings-to-Price|0
+2040|Est Revenue|Est Revenue|0
+2041|Est Return-on-Equity|Est Return-on-Equity|0
+2042|Est Return-on-Assets|Est Return-on-Assets|0
+2043|Quality ROE-EPSStd-Lev|Quality ROE-EPSStd-Lev|0
+2044|Quality ROA-EPSStd-Lev|Quality ROA-EPSStd-Lev|0
+2045|Est Value|Est Value|0
+2046|Growth_nq|Growth_nq|0
+2047|Safety|Safety|0
+2048|Payout|Payout|0
+2049|Blank 11|Blank 11|0
+2050|Est Sales Growth|Est Sales Growth|0
+2051|Est Earnings Growth|Est Earnings Growth|0
+2052|Est Growth|Est Growth|0
+2053|Est Avg Return-on-Equity|Est Avg Return-on-Equity|0
+2054|Est Avg Return-on-Assets|Est Avg Return-on-Assets|0
+2055|Est Avg ROAxROE|Est Avg ROAxROE|0
+2056|Est ROAxROE|Est ROAxROE|0
+# Volatility
+2057|VolaSensity|VolaSensity|0
+2058|Residual Volatility|Residual Volatility|0
+2059|Historical Residual Volatility|Historical Residual Volatility|0
+2060|Historical Volatility|Historical Volatility|0
+2061|Volatility 250 Day|Volatility 250 Day|0
+2062|Historical Residual Volatility ex Size|Historical Residual Volatility ex Size|0
+2063|Volatility 60 Day|Volatility 60 Day|0
+2064|Volatility SH|Volatility SH|0
+2065|Ln Historical Residual Volatility|Ln Historical Residual Volatility|0
+2066|Historical Residual Std SizeAdj|Historical Residual Std SizeAdj|0
+2067|Volatility 125 Day|Volatility 125 Day|0
+2068|Hist Resid Vol (PartOg)|Hist Resid Vol (PartOg)|0
+# Sensitivity
+2069|Exchange Rate Sensitivity (GBP)|Exchange Rate Sensitivity (GBP)|0
+2070|Exchange Rate Sensitivity (EUR)|Exchange Rate Sensitivity (EUR)|0
+2071|Exchange Rate Sensitivity (JPY)|Exchange Rate Sensitivity (JPY)|0
+2072|Exchange Rate Sensitivity (USD)|Exchange Rate Sensitivity (USD)|0
+2073|Market Sensitivity (PartOg)|Market Sensitivity (PartOg)|0
+2074|Market Sensitivity SH|Market Sensitivity SH|0
+2075|Market Beta|Market Beta|0
+# Misc
+2076|Returns Skewness|Returns Skewness|0
+2077|SmallCap 1|SmallCap 1|0
+2078|SmallCap 2|SmallCap 2|0
+2079|SmallCap 3|SmallCap 3|0
+2080|Market Intercept|Market Intercept|4
+2081|Size Non-linear|Size Non-linear|0
+2082|Short Interest|Short Interest|0
+2083|Share Buyback|Share Buyback|0
+# Misc New
+2084|Market Sensitivity SH (PartOg)|Market Sensitivity SH (PartOg)|0
+2085|Volatility 250 Day (PartOg)|Volatility 250 Day (PartOg)|0
+2086|Market Sensitivity CN|Market Sensitivity CN|0
+2087|Market Sensitivity EM|Market Sensitivity EM|0
+2088|Residual Oil Sensitivity|Residual Oil Sensitivity|0
+2092|Residual Gold Sensitivity|Residual Gold Sensitivity|0
+2089|Term Spread Sensitivity|Term Spread Sensitivity|0
+2090|Credit Spread Sensitivity|Credit Spread Sensitivity|0
+2091|Emerging Market Sensitivity|Emerging Market Sensitivity|0
+2093|Developed Market|Developed Market|4
+
+# WW4 Factor Library
+2105|Amihud Liquidity 60 Day|Amihud Liquidity 60 Day|0
+2106|Amihud Liquidity 125 Day|Amihud Liquidity 125 Day|0
+2107|Book to Price Annual|Book to Price Annual|0
+2108|Cash Flow to Assets Annual|Cash Flow to Assets Annual|0
+2109|Cash Flow to Income Annual|Cash Flow to Income Annual|0
+2110|Debt to Assets Annual|Debt to Assets Annual|0
+2111|Debt to Equity Annual|Debt to Equity Annual|0
+2112|Dividend Yield Annual|Dividend Yield Annual|0
+2113|Earnings to Price Annual|Earnings to Price Annual|0
+2114|Est Earnings to Price Annual|Est Earnings to Price Annual|0
+2115|Earnings Growth Annual|Earnings Growth Annual|0
+2116|Gross Margin Annual|Gross Margin Annual|0
+2117|Returns to Trading Days|Returns to Trading Days|0
+2118|Log of Issuer Cap|Log of Issuer Cap|0
+2119|Log of 20-Day ADV to Issuer Cap|Log of 20-Day ADV to Issuer Cap|0
+2120|Log of 60-Day ADV to Issuer Cap|Log of 60-Day ADV to Issuer Cap|0
+2121|Annual Return Excl Prev Month|Annual Return Excl Prev Month|0
+2122|Monthly Return|Monthly Return|0
+2123|Regional Market Sensitivity 250 Day|Regional Market Sensitivity 250 Day|0
+2124|Regional Market Sensitivity 500 Day|Regional Market Sensitivity 500 Day|0
+2125|Return on Assets Annual|Return on Assets Annual|0
+2126|Return on Equity Annual|Return on Equity Annual|0
+2127|Sales to Assets Annual|Sales to Assets Annual|0
+2128|Sales Growth Annual|Sales Growth Annual|0
+2129|Exchange Rate Sensitivity 52 Week XDR|Exchange Rate Sensitivity 52 Week XDR|0
+2130|Exchange Rate Sensitivity 104 Week XDR|Exchange Rate Sensitivity 104 Week XDR|0
+# US4 Factor Library
+2131|Book to Price Quarterly|Book to Price Quarterly|0
+2132|Earnings to Price Quarterly|Earnings to Price Quarterly|0
+2133|Est Earnings to Price Quarterly|Est Earnings to Price Quarterly|0
+2135|Debt to Assets Quarterly|Debt to Assets Quarterly|0
+2136|Debt to Equity Quarterly|Debt to Equity Quarterly|0
+2137|Earnings Growth Quarterly|Earnings Growth Quarterly|0
+2138|Sales Growth Quarterly|Sales Growth Quarterly|0
+2139|Dividend Yield Quarterly|Dividend Yield Quarterly|0
+2140|Market Sensitivity 125 Day|Market Sensitivity 125 Day|0
+2141|Market Sensitivity 250 Day|Market Sensitivity 250 Day|0
+2142|Return on Equity Quarterly|Return on Equity Quarterly|0
+2143|Return on Assets Quarterly|Return on Assets Quarterly|0
+2144|Sales to Assets Quarterly|Sales to Assets Quarterly|0
+2145|Gross Margin Quarterly|Gross Margin Quarterly|0
+# EU4 Factor Library
+2146|Europe Regional Market Sensitivity 250 Day|Europe Regional Market Sensitivity 250 Day|0
+2147|Europe Regional Market Sensitivity 500 Day|Europe Regional Market Sensitivity 500 Day|0
+# CA4 Factor Library
+2165|Residual Gold Sensitivity 104 Week|Residual Gold Sensitivity 104 Week|0
+2166|Residual Oil Sensitivity 104 Week|Residual Oil Sensitivity 104 Week|0
+2167|Residual Gold Sensitivity 52 Week|Residual Gold Sensitivity 52 Week|0
+2168|Residual Oil Sensitivity 52 Week|Residual Oil Sensitivity 52 Week|0
+# NA4 Factor Library
+2169|NA Regional Market Sensitivity 500 Day|NA Regional Market Sensitivity 500 Day|0
+2170|NA Regional Market Sensitivity 250 Day|NA Regional Market Sensitivity 250 Day|0
+2171|NA Volatility 125 Day|NA Volatility 125 Day|0
+2172|NA Volatility 60 Day|NA Volatility 60 Day|0
+# DMxUS Factor Library
+2173|DMxUS Regional Market Sensitivity 500 Day|DMxUS Regional Market Sensitivity 500 Day|0
+2174|DMxUS Regional Market Sensitivity 250 Day|DMxUS Regional Market Sensitivity 250 Day|0
+# WW Extended Factor Library
+2500|US 10Y Interest Rate Sensitivity 104W (net of market)|US 10Y Interest Rate Sensitivity 104W (net of market)|0
+2501|US 10Y Interest Rate Sensitivity 104W|US 10Y Interest Rate Sensitivity 104W|0
+2502|US 6M Interest Rate Sensitivity 104W (net of market)|US 6M Interest Rate Sensitivity 104W (net of market)|0
+2503|US 6M Interest Rate Sensitivity 104W|US 6M Interest Rate Sensitivity 104W|0
+2504|US Term Spread Sensitivity 104W (net of market)|US Term Spread Sensitivity 104W (net of market)|0
+2505|US Term Spread Sensitivity 104W|US Term Spread Sensitivity 104W|0
+2506|US Credit Spread Sensitivity 104W (net of market)|US Credit Spread Sensitivity 104W (net of market)|0
+2507|US Credit Spread Sensitivity 104W|US Credit Spread Sensitivity 104W|0
+2508|Oil Sensitivity 104W (net of market)|Oil Sensitivity 104W (net of market)|0
+2509|Oil Sensitivity 104W|Oil Sensitivity 104W|0
+2510|Gold Sensitivity 104W (net of market)|Gold Sensitivity 104W (net of market)|0
+2511|Gold Sensitivity 104W|Gold Sensitivity 104W|0
+2512|Commodity Sensitivity 104W (net of market)|Commodity Sensitivity 104W (net of market)|0
+2513|Commodity Sensitivity 104W|Commodity Sensitivity 104W|0
+2514|US BEI Sensitivity 104W (net of market)|US BEI Sensitivity 104W (net of market)|0
+2515|US BEI Sensitivity 104W|US BEI Sensitivity 104W|0
+2516|GB 10Y Interest Rate Sensitivity 104W (net of market)|GB 10Y Interest Rate Sensitivity 104W (net of market)|0
+2517|GB 10Y Interest Rate Sensitivity 104W|GB 10Y Interest Rate Sensitivity 104W|0
+2518|JP 10Y Interest Rate Sensitivity 104W (net of market)|JP 10Y Interest Rate Sensitivity 104W (net of market)|0
+2519|JP 10Y Interest Rate Sensitivity 104W|JP 10Y Interest Rate Sensitivity 104W|0
+2520|EU 10Y Interest Rate Sensitivity 104W (net of market)|EU 10Y Interest Rate Sensitivity 104W (net of market)|0
+2521|EU 10Y Interest Rate Sensitivity 104W|EU 10Y Interest Rate Sensitivity 104W|0
+2522|GB 6M Interest Rate Sensitivity 104W (net of market)|GB 6M Interest Rate Sensitivity 104W (net of market)|0
+2523|GB 6M Interest Rate Sensitivity 104W|GB 6M Interest Rate Sensitivity 104W|0
+2524|JP 6M Interest Rate Sensitivity 104W (net of market)|JP 6M Interest Rate Sensitivity 104W (net of market)|0
+2525|JP 6M Interest Rate Sensitivity 104W|JP 6M Interest Rate Sensitivity 104W|0
+2526|EU 6M Interest Rate Sensitivity 104W (net of market)|EU 6M Interest Rate Sensitivity 104W (net of market)|0
+2527|EU 6M Interest Rate Sensitivity 104W|EU 6M Interest Rate Sensitivity 104W|0
+2528|GB Term Spread Sensitivity 104W (net of market)|GB Term Spread Sensitivity 104W (net of market)|0
+2529|GB Term Spread Sensitivity 104W|GB Term Spread Sensitivity 104W|0
+2530|JP Term Spread Sensitivity 104W (net of market)|JP Term Spread Sensitivity 104W (net of market)|0
+2531|JP Term Spread Sensitivity 104W|JP Term Spread Sensitivity 104W|0
+2532|EU Term Spread Sensitivity 104W (net of market)|EU Term Spread Sensitivity 104W (net of market)|0
+2533|EU Term Spread Sensitivity 104W|EU Term Spread Sensitivity 104W|0
+2534|GB Credit Spread Sensitivity 104W (net of market)|GB Credit Spread Sensitivity 104W (net of market)|0
+2535|GB Credit Spread Sensitivity 104W |GB Credit Spread Sensitivity 104W |0
+2536|JP Credit Spread Sensitivity 104W (net of market)|JP Credit Spread Sensitivity 104W (net of market)|0
+2537|JP Credit Spread Sensitivity 104W|JP Credit Spread Sensitivity 104W|0
+2538|EU Credit Spread Sensitivity 104W (net of market)|EU Credit Spread Sensitivity 104W (net of market)|0
+2539|EU Credit Spread Sensitivity 104W|EU Credit Spread Sensitivity 104W|0
+2540|US Credit Spread Sensitivity 36M (net of market)|US Credit Spread Sensitivity 36M (net of market)|0
+2541|US Credit Spread Sensitivity 36M|US Credit Spread Sensitivity 36M|0
+2542|GB Credit Spread Sensitivity 36M (net of market)|GB Credit Spread Sensitivity 36M (net of market)|0
+2543|GB Credit Spread Sensitivity 36M|GB Credit Spread Sensitivity 36M|0
+2544|JP Credit Spread Sensitivity 36M (net of market)|JP Credit Spread Sensitivity 36M (net of market)|0
+2545|JP Credit Spread Sensitivity 36M|JP Credit Spread Sensitivity 36M|0
+2546|EU Credit Spread Sensitivity 36M (net of market)|EU Credit Spread Sensitivity 36M (net of market)|0
+2547|EU Credit Spread Sensitivity 36M|EU Credit Spread Sensitivity 36M|0
+# GICS Industries (April 2006 revision)
+9|Energy Equipment & Services|Energy Equipment & Services|1
+10|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+11|Chemicals|Chemicals|1
+12|Construction Materials|Construction Materials|1
+13|Containers & Packaging|Containers & Packaging|1
+14|Metals & Mining|Metals & Mining|1
+15|Paper & Forest Products|Paper & Forest Products|1
+16|Aerospace & Defense|Aerospace & Defense|1
+17|Building Products|Building Products|1
+18|Construction & Engineering|Construction & Engineering|1
+19|Electrical Equipment|Electrical Equipment|1
+20|Industrial Conglomerates|Industrial Conglomerates|1
+21|Machinery|Machinery|1
+22|Trading Companies & Distributors|Trading Companies & Distributors|1
+23|Commercial Services & Supplies|Commercial Services & Supplies|1
+24|Air Freight & Logistics|Air Freight & Logistics|1
+25|Airlines|Airlines|1
+26|Marine|Marine|1
+27|Road & Rail|Road & Rail|1
+28|Transportation Infrastructure|Transportation Infrastructure|1
+29|Auto Components|Auto Components|1
+30|Automobiles|Automobiles|1
+31|Household Durables|Household Durables|1
+32|Leisure Equipment & Products|Leisure Equipment & Products|1
+33|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+34|Hotels Restaurants & Leisure|Hotels Restaurants & Leisure|1
+35|Media|Media|1
+36|Distributors|Distributors|1
+37|Internet & Catalog Retail|Internet & Catalog Retail|1
+38|Multiline Retail|Multiline Retail|1
+39|Specialty Retail|Specialty Retail|1
+40|Food & Staples Retailing|Food & Staples Retailing|1
+41|Beverages|Beverages|1
+42|Food Products|Food Products|1
+43|Tobacco|Tobacco|1
+44|Household Products|Household Products|1
+45|Personal Products|Personal Products|1
+46|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+47|Health Care Providers & Services|Health Care Providers & Services|1
+48|Biotechnology|Biotechnology|1
+49|Pharmaceuticals|Pharmaceuticals|1
+50|Commercial Banks|Commercial Banks|1
+51|Diversified Financial Services|Diversified Financial Services|1
+52|Insurance|Insurance|1
+54|Internet Software & Services|Internet Software & Services|1
+55|IT Services|IT Services|1
+56|Software|Software|1
+57|Communications Equipment|Communications Equipment|1
+58|Computers & Peripherals|Computers & Peripherals|1
+59|Electronic Equipment & Instruments|Electronic Equipment & Instruments|1
+60|Office Electronics|Office Electronics|1
+61|Diversified Telecommunication Services|Diversified Telecommunication Services|1
+62|Wireless Telecommunication Services|Wireless Telecommunication Services|1
+63|Electric Utilities|Electric Utilities|1
+64|Gas Utilities|Gas Utilities|1
+65|Multi-Utilities|Multi-Utilities|1
+66|Water Utilities|Water Utilities|1
+67|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+68|Consumer Finance|Consumer Finance|1
+69|Capital Markets|Capital Markets|1
+70|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+71|Diversified Consumer Services|Diversified Consumer Services|1
+72|Independent Power Producers & Energy Traders|Independent Power Producers & Energy Traders|1
+73|Real Estate Management & Development|Real Estate Management & Development|1
+74|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+75|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+76|Health Care Technology|Health Care Technology|1
+
+# Statistical Factors
+101|Statistical Factor 1|Statistical Factor 1|6
+102|Statistical Factor 2|Statistical Factor 2|6
+103|Statistical Factor 3|Statistical Factor 3|6
+104|Statistical Factor 4|Statistical Factor 4|6
+105|Statistical Factor 5|Statistical Factor 5|6
+106|Statistical Factor 6|Statistical Factor 6|6
+107|Statistical Factor 7|Statistical Factor 7|6
+108|Statistical Factor 8|Statistical Factor 8|6
+109|Statistical Factor 9|Statistical Factor 9|6
+110|Statistical Factor 10|Statistical Factor 10|6
+111|Statistical Factor 11|Statistical Factor 11|6
+112|Statistical Factor 12|Statistical Factor 12|6
+113|Statistical Factor 13|Statistical Factor 13|6
+114|Statistical Factor 14|Statistical Factor 14|6
+115|Statistical Factor 15|Statistical Factor 15|6
+116|Statistical Factor 16|Statistical Factor 16|6
+117|Statistical Factor 17|Statistical Factor 17|6
+118|Statistical Factor 18|Statistical Factor 18|6
+119|Statistical Factor 19|Statistical Factor 19|6
+120|Statistical Factor 20|Statistical Factor 20|6
+191|Statistical Factor 21|Statistical Factor 21|6
+192|Statistical Factor 22|Statistical Factor 22|6
+193|Statistical Factor 23|Statistical Factor 23|6
+194|Statistical Factor 24|Statistical Factor 24|6
+195|Statistical Factor 25|Statistical Factor 25|6
+196|Statistical Factor 26|Statistical Factor 26|6
+197|Statistical Factor 27|Statistical Factor 27|6
+198|Statistical Factor 28|Statistical Factor 28|6
+199|Statistical Factor 29|Statistical Factor 29|6
+200|Statistical Factor 30|Statistical Factor 30|6
+7001|Statistical Factor 31|Statistical Factor 31|6
+7002|Statistical Factor 32|Statistical Factor 32|6
+7003|Statistical Factor 33|Statistical Factor 33|6
+7004|Statistical Factor 34|Statistical Factor 34|6
+7005|Statistical Factor 35|Statistical Factor 35|6
+7006|Statistical Factor 36|Statistical Factor 36|6
+7007|Statistical Factor 37|Statistical Factor 37|6
+7008|Statistical Factor 38|Statistical Factor 38|6
+7009|Statistical Factor 39|Statistical Factor 39|6
+7010|Statistical Factor 40|Statistical Factor 40|6
+7011|Statistical Factor 41|Statistical Factor 41|6
+7012|Statistical Factor 42|Statistical Factor 42|6
+7013|Statistical Factor 43|Statistical Factor 43|6
+7014|Statistical Factor 44|Statistical Factor 44|6
+7015|Statistical Factor 45|Statistical Factor 45|6
+7016|Statistical Factor 46|Statistical Factor 46|6
+7017|Statistical Factor 47|Statistical Factor 47|6
+7018|Statistical Factor 48|Statistical Factor 48|6
+7019|Statistical Factor 49|Statistical Factor 49|6
+7020|Statistical Factor 50|Statistical Factor 50|6
+7021|Statistical Factor 51|Statistical Factor 51|6
+7022|Statistical Factor 52|Statistical Factor 52|6
+7023|Statistical Factor 53|Statistical Factor 53|6
+7024|Statistical Factor 54|Statistical Factor 54|6
+7025|Statistical Factor 55|Statistical Factor 55|6
+7026|Statistical Factor 56|Statistical Factor 56|6
+7027|Statistical Factor 57|Statistical Factor 57|6
+7028|Statistical Factor 58|Statistical Factor 58|6
+7029|Statistical Factor 59|Statistical Factor 59|6
+7030|Statistical Factor 60|Statistical Factor 60|6
+7031|Statistical Factor 61|Statistical Factor 61|6
+7032|Statistical Factor 62|Statistical Factor 62|6
+7033|Statistical Factor 63|Statistical Factor 63|6
+7034|Statistical Factor 64|Statistical Factor 64|6
+7035|Statistical Factor 65|Statistical Factor 65|6
+7036|Statistical Factor 66|Statistical Factor 66|6
+7037|Statistical Factor 67|Statistical Factor 67|6
+7038|Statistical Factor 68|Statistical Factor 68|6
+7039|Statistical Factor 69|Statistical Factor 69|6
+7040|Statistical Factor 70|Statistical Factor 70|6
+7041|Statistical Factor 71|Statistical Factor 71|6
+7042|Statistical Factor 72|Statistical Factor 72|6
+7043|Statistical Factor 73|Statistical Factor 73|6
+7044|Statistical Factor 74|Statistical Factor 74|6
+7045|Statistical Factor 75|Statistical Factor 75|6
+
+# GICS Japan
+121|Energy|Energy|1
+122|Chemicals|Chemicals|1
+123|Construction Materials|Construction Materials|1
+124|Containers & Packaging|Containers & Packaging|1
+125|Metals & Mining|Metals & Mining|1
+126|Paper & Forest Products|Paper & Forest Products|1
+128|Building Products|Building Products|1
+129|Construction & Engineering|Construction & Engineering|1
+130|Electrical Equipment|Electrical Equipment|1
+131|Industrial Conglomerates|Industrial Conglomerates|1
+132|Machinery|Machinery|1
+133|Trading Companies & Distributors|Trading Companies & Distributors|1
+134|Commercial Services & Supplies|Commercial Services & Supplies|1
+135|Air Freight & Logistics|Air Freight & Logistics|1
+136|Airlines|Airlines|1
+137|Marine|Marine|1
+138|Road & Rail|Road & Rail|1
+139|Transportation Infrastructure|Transportation Infrastructure|1
+140|Automobiles & Components|Automobiles & Components|1
+141|Household Durables|Household Durables|1
+142|Leisure Equipment & Products|Leisure Equipment & Products|1
+143|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+144|Hotels Restaurants & Leisure|Hotels Restaurants & Leisure|1
+145|Diversified Consumer Services|Diversified Consumer Services|1
+146|Media|Media|1
+147|Distributors|Distributors|1
+148|Internet & Catalog Retail|Internet & Catalog Retail|1
+149|Multiline Retail|Multiline Retail|1
+150|Specialty Retail|Specialty Retail|1
+151|Food & Staples Retailing|Food & Staples Retailing|1
+152|Food Products|Food Products|1
+153|Beverages & Tobacco|Beverages & Tobacco|1
+154|Household & Personal Products|Household & Personal Products|1
+155|Health Care Providers & Services|Health Care Providers & Services|1
+156|Health Care Equipment & Technology|Health Care Equipment & Technology|1
+157|Pharmaceuticals|Pharmaceuticals|1
+158|Biotechnology & Life Sciences|Biotechnology & Life Sciences|1
+159|Banks|Banks|1
+160|Diversified Financial Services|Diversified Financial Services|1
+161|Consumer Finance|Consumer Finance|1
+162|Capital Markets|Capital Markets|1
+163|Insurance|Insurance|1
+164|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+165|Real Estate Management & Development|Real Estate Management & Development|1
+166|Internet Software & Services|Internet Software & Services|1
+167|IT Services|IT Services|1
+168|Software|Software|1
+169|Communications Equipment|Communications Equipment|1
+170|Computers & Peripherals|Computers & Peripherals|1
+171|Electronic Equipment & Instruments|Electronic Equipment & Instruments|1
+172|Office Electronics|Office Electronics|1
+173|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+174|Telecommunication Services|Telecommunication Services|1
+175|Utilities|Utilities|1
+
+# Countries (IDs 201-299)
+201|Argentina|Argentina|2
+202|Australia|Australia|2
+203|Austria|Austria|2
+204|Belgium|Belgium|2
+205|Brazil|Brazil|2
+206|Canada|Canada|2
+207|Chile|Chile|2
+208|China|China|2
+209|Colombia|Colombia|2
+210|Czech Republic|Czech Republic|2
+211|Denmark|Denmark|2
+212|Egypt|Egypt|2
+213|Finland|Finland|2
+214|France|France|2
+215|Germany|Germany|2
+216|Greece|Greece|2
+217|Hong Kong|Hong Kong|2
+218|Hungary|Hungary|2
+219|India|India|2
+220|Indonesia|Indonesia|2
+221|Ireland|Ireland|2
+222|Israel|Israel|2
+223|Italy|Italy|2
+224|Japan|Japan|2
+225|Korea, Republic of|Korea, Republic of|2
+226|Luxembourg|Luxembourg|2
+227|Malaysia|Malaysia|2
+228|Mexico|Mexico|2
+229|Morocco|Morocco|2
+230|Netherlands|Netherlands|2
+231|New Zealand|New Zealand|2
+232|Norway|Norway|2
+233|Pakistan|Pakistan|2
+234|Peru|Peru|2
+235|Philippines|Philippines|2
+236|Poland|Poland|2
+237|Portugal|Portugal|2
+238|Russian Federation|Russian Federation|2
+239|Singapore|Singapore|2
+240|South Africa|South Africa|2
+241|Spain|Spain|2
+242|Sweden|Sweden|2
+243|Switzerland|Switzerland|2
+244|Taiwan|Taiwan|2
+245|Thailand|Thailand|2
+246|Turkey|Turkey|2
+247|United Kingdom|United Kingdom|2
+248|United States|United States|2
+249|Bahrain|Bahrain|2
+250|Botswana|Botswana|2
+251|Bulgaria|Bulgaria|2
+252|Croatia|Croatia|2
+253|Cyprus|Cyprus|2
+254|Estonia|Estonia|2
+255|Iceland|Iceland|2
+256|Jordan|Jordan|2
+257|Kuwait|Kuwait|2
+258|Latvia|Latvia|2
+259|Lithuania|Lithuania|2
+260|Mauritius|Mauritius|2
+261|Oman|Oman|2
+262|Romania|Romania|2
+263|Slovakia|Slovakia|2
+264|Slovenia|Slovenia|2
+265|Sri Lanka|Sri Lanka|2
+266|United Arab Emirates|United Arab Emirates|2
+267|Venezuela|Venezuela|2
+268|Qatar|Qatar|2
+269|Saudi Arabia|Saudi Arabia|2
+270|Vietnam|Vietnam|2
+271|Bangladesh|Bangladesh|2
+272|Nigeria|Nigeria|2
+273|Kenya|Kenya|2
+274|Ukraine|Ukraine|2
+275|Tunisia|Tunisia|2
+276|Jamaica|Jamaica|2
+277|Kazakhstan|Kazakhstan|2
+278|Ghana|Ghana|2
+279|Serbia|Serbia|2
+280|Trinidad and Tobago|Trinidad and Tobago|2
+281|Zambia|Zambia|2
+282|Ecuador|Ecuador|2
+283|Malta|Malta|2
+284|Lebanon|Lebanon|2
+285|Namibia|Namibia|2
+286|Macedonia, Republic of|Macedonia, Republic of|2
+287|Ivory Coast|Ivory Coast|2
+288|Bosnia and Herzegovina|Bosnia and Herzegovina|2
+289|Montenegro|Montenegro|2
+290|Malawi|Malawi|2
+291|Palestine, State of|Palestine, State of|2
+292|Tanzania|Tanzania|2
+293|Zimbabwe|Zimbabwe|2
+294|Uganda|Uganda|2
+
+# Currencies (ID 301-399)
+301|ARS|Argentine Peso|3
+302|AUD|Australian Dollar|3
+303|BRL|Brazilian Real|3
+304|CAD|Canadian Dollar|3
+305|CHF|Swiss Franc|3
+306|CLP|Chilean Peso|3
+307|CNY|Chinese Yuan Renminbi|3
+308|COP|Colombian Peso|3
+309|CZK|Czech Republic Koruna|3
+310|DKK|Danish Krone|3
+311|EGP|Egyptian Pound|3
+312|EUR|Euro|3
+313|GBP|Pounds Sterling|3
+314|HKD|Hong Kong Dollar|3
+315|HUF|Hungarian Forint|3
+316|IDR|Indonesian Rupiah|3
+317|ILS|Israeli Shekel|3
+318|INR|Indian Rupee|3
+319|JPY|Japanese Yen|3
+320|KRW|South Korean Won|3
+321|MAD|Moroccan Dirham|3
+322|MXN|Mexican Nuevo Peso|3
+323|MYR|Malaysian Ringgit|3
+324|NOK|Norwegian Krone|3
+325|NZD|New Zealand Dollar|3
+326|PEN|Peruvian Nuevo Sol|3
+327|PHP|Philippine Peso|3
+328|PKR|Pakistani Rupee|3
+329|PLN|Polish New Zloty|3
+330|RUB|Russian Ruble|3
+331|SEK|Swedish Krona|3
+332|SGD|Singapore Dollar|3
+333|THB|Thailand Baht|3
+334|TRY|Turkish Lira (NEW)|3
+335|TWD|New Taiwan Dollar|3
+336|USD|U.S. Dollar|3
+337|ZAR|South African Rand|3
+338|TRL|Turkish Lira|3
+339|AED|United Arab Dirham|3
+341|BGN|Bulgarian Lev|3
+342|BHD|Bahraini Dinar|3
+343|BWP|Botswana Pula|3
+344|CYP|Cyprus Pound|3
+345|EEK|Estonian Kroon|3
+346|HRK|Croatian Kuna|3
+347|ISK|Icelandic Krona|3
+348|JOD|Jordanian Dinar|3
+349|KWD|Kuwaiti Dinar|3
+350|LKR|Sri Lankan Rupee|3
+351|LTL|Lithuanian Litas|3
+352|LVL|Latvian Lats|3
+353|MUR|Mauritius Rupee|3
+354|OMR|Oman Rial|3
+356|ROL|Romanian Leu|3
+357|RON|Romanian Leu (NEW)|3
+358|SIT|Slovenian Tolar|3
+359|SKK|Slovak Koruna|3
+360|VEB|Venezuelan bolívar|3
+361|VEF|Venezuelan bolívar fuerte|3
+362|GRD|Greek Drachma|3
+363|RUR|Russian Rouble (OLD)|3
+364|BEF|Belgian Franc|3
+365|ATS|Austrian Schilling|3
+366|FIM|Finnish Markka|3
+367|FRF|French Franc|3
+368|DEM|German Deutsche Mark|3
+369|IEP|Irish Pound|3
+370|ITL|Italian Lira|3
+371|LUF|Luxembourg Franc|3
+372|NLG|Netherlands Guilder|3
+373|PTE|Portuguese Escudo|3
+374|ESP|Spanish Peseta|3
+375|QAR|Qatari Rial|3
+376|BGL|Bulgarian Lev (Old)|3
+377|XEU|EUROPEAN COMPOSITE UNIT|3
+378|SAR|Saudi Riyal|3
+379|VND|Vietnam Dong|3
+380|BDT|Bangladesh Taka|3
+381|NGN|Nigerian Naira|3
+382|KES|Kenyan Shilling|3
+383|UAH|Ukraine Hryvnia|3
+384|TND|Tunisian Dinar|3
+385|JMD|Jamaican Dollar|3
+386|KZT|Kazakhstan Tenge|3
+387|GHC|Ghanian Cedi|3
+388|RSD|Serbian Dinar|3
+389|TTD|Trinidad & Tobago Dollar|3
+390|ZMK|Zambian Kwacha|3
+391|ECS|Ecuador Sucre|3
+392|MTL|Maltese Lira|3
+393|LBP|Lebanese Pound|3
+394|NAD|Namibia Dollar|3
+395|GHS|New Ghanaian Cedi|3
+396|UAK|Ukraine Karbovanet|3
+397|ZMW|Zambian Kwacha (Rebased)|3
+398|VES|Venezuelan bolívar soberano|3
+# Currencies for 2017 additions
+3000|BAM|Bosnian Mark|3
+3001|XOF|West African CFA Franc|3
+3002|MKD|Macedonian Denar|3
+3003|MWK|Malawian Kwacha|3
+3004|TZS|Tanzanian Shilling|3
+3005|UGX|Ugandan Shilling|3
+3006|ZWL|Zimbabwean Dollar|3
+
+# GICS Industry Groups (ID 401-479)
+401|Energy|Energy|1
+402|Materials|Materials|1
+403|Capital Goods|Capital Goods|1
+404|Commercial Services & Supplies|Commercial Services & Supplies|1
+405|Transportation|Transportation|1
+406|Automobiles & Components|Automobiles & Components|1
+407|Consumer Durables & Apparel|Consumer Durables & Apparel|1
+408|Consumer Services|Consumer Services|1
+409|Media|Media|1
+410|Retailing|Retailing|1
+411|Food & Staples Retailing|Food & Staples Retailing|1
+412|Food Beverage & Tobacco|Food Beverage & Tobacco|1
+413|Household & Personal Products|Household & Personal Products|1
+414|Health Care Equipment & Services|Health Care Equipment & Services|1
+415|Pharmaceuticals, Biotechnology & Life Sciences|Pharmaceuticals, Biotechnology & Life Sciences|1
+416|Banks|Banks|1
+417|Diversified Financials|Diversified Financials|1
+418|Insurance|Insurance|1
+419|Real Estate|Real Estate|1
+420|Software & Services|Software & Services|1
+421|Technology Hardware & Equipment|Technology Hardware & Equipment|1
+422|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+423|Telecommunication Services|Telecommunication Services|1
+424|Utilities|Utilities|1
+
+# GICS Sectors (ID 480-499)
+480|Energy|Energy|1
+481|Telecommunication Services|Telecommunication Services|1
+482|Financials|Financials|1
+483|Information Technology|Information Technology|1
+484|Utilities|Utilities|1
+485|Consumer Staples|Consumer Staples|1
+486|Industrials|Industrials|1
+487|Materials|Materials|1
+488|Consumer Discretionary|Consumer Discretionary|1
+489|Health Care|Health Care|1
+
+# GICS AU (ID 531-555)
+531|Energy|Energy|1
+532|Steel|Steel|1
+533|Materials ex Metals & Mining|Materials ex Metals & Mining|1
+534|Metals & Mining ex Gold & Steel|Metals & Mining ex Gold & Steel|1
+535|Gold|Gold|1
+536|Capital Goods|Capital Goods|1
+537|Commercial & Professional Services|Commercial & Professional Services|1
+538|Transportation|Transportation|1
+539|Media|Media|1
+540|Consumer Discretionary ex Media|Consumer Discretionary ex Media|1
+541|Food & Staples Retailing|Food & Staples Retailing|1
+542|Food & Staples Products|Food & Staples Products|1
+543|Health Care|Health Care|1
+544|Banks|Banks|1
+545|Insurance|Insurance|1
+546|Diversified Financials|Diversified Financials|1
+547|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+548|Information Technology|Information Technology|1
+549|Telecommunication Services|Telecommunication Services|1
+550|Utilities|Utilities|1
+551|Consumer Staples|Consumer Staples|1
+552|Real Estate|Real Estate|1
+553|Real Estate Management & Development|Real Estate Management & Development|1
+554|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+
+# GICS CA (ID 621-641)
+621|Energy|Energy|1
+622|Materials ex Metals, Mining & Forestry|Materials ex Metals, Mining & Forestry|1
+623|Metals & Mining ex Gold|Metals & Mining ex Gold|1
+624|Gold|Gold|1
+625|Paper & Forest Products|Paper & Forest Products|1
+626|Capital Goods|Capital Goods|1
+627|Commercial & Professional Services|Commercial & Professional Services|1
+628|Transportation|Transportation|1
+629|Media|Media|1
+630|Consumer Discretionary ex Media|Consumer Discretionary ex Media|1
+631|Food & Staples Retailing|Food & Staples Retailing|1
+632|Food & Staples Products|Food & Staples Products|1
+633|Health Care|Health Care|1
+634|Banks|Banks|1
+635|Diversified Financials|Diversified Financials|1
+636|Insurance|Insurance|1
+637|Real Estate|Real Estate|1
+638|Software & Services|Software & Services|1
+639|Technology Hardware|Technology Hardware|1
+640|Telecommunication Services|Telecommunication Services|1
+641|Utilities|Utilities|1
+
+
+# GICS GB (ID 701-741)
+701|Energy|Energy|1
+702|Chemicals|Chemicals|1
+703|Forestry, Containers & Packaging|Forestry, Containers & Packaging|1
+704|Metals & Mining|Metals & Mining|1
+705|Aerospace & Defense|Aerospace & Defense|1
+706|Industrial Conglomerates|Industrial Conglomerates|1
+707|Trading Companies & Distributors|Trading Companies & Distributors|1
+708|Electrical Equipment & Machinery|Electrical Equipment & Machinery|1
+709|Construction & Engineering|Construction & Engineering|1
+710|Commercial Services & Supplies|Commercial Services & Supplies|1
+711|Professional Services|Professional Services|1
+712|Airlines|Airlines|1
+713|Transportation ex Airlines|Transportation ex Airlines|1
+714|Automobiles & Components|Automobiles & Components|1
+715|Household Durables|Household Durables|1
+716|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+717|Consumer Services|Consumer Services|1
+718|Media|Media|1
+719|Specialty Retail|Specialty Retail|1
+720|General Retail|General Retail|1
+721|Food & Staples Retailing|Food & Staples Retailing|1
+722|Beverages|Beverages|1
+723|Food Products|Food Products|1
+724|Tobacco|Tobacco|1
+725|Household & Personal Products|Household & Personal Products|1
+726|Health Care Equipment & Services|Health Care Equipment & Services|1
+727|Pharmaceuticals|Pharmaceuticals|1
+728|Biotechnology & Life Sciences|Biotechnology & Life Sciences|1
+729|Banks|Banks|1
+730|Capital Markets|Capital Markets|1
+731|Diversified Financial Services|Diversified Financial Services|1
+732|Insurance|Insurance|1
+733|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+734|Real Estate Management & Development|Real Estate Management & Development|1
+735|Software|Software|1
+736|Internet & IT Services|Internet & IT Services|1
+737|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+738|Technology Hardware|Technology Hardware|1
+739|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+740|Telecommunication Services|Telecommunication Services|1
+741|Utilities|Utilities|1
+
+# GICS Industries (August 2008 revision)
+801|Energy Equipment & Services|Energy Equipment & Services|1
+802|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+803|Chemicals|Chemicals|1
+804|Construction Materials|Construction Materials|1
+805|Containers & Packaging|Containers & Packaging|1
+806|Metals & Mining|Metals & Mining|1
+807|Paper & Forest Products|Paper & Forest Products|1
+808|Aerospace & Defense|Aerospace & Defense|1
+809|Building Products|Building Products|1
+810|Construction & Engineering|Construction & Engineering|1
+811|Electrical Equipment|Electrical Equipment|1
+812|Industrial Conglomerates|Industrial Conglomerates|1
+813|Machinery|Machinery|1
+814|Trading Companies & Distributors|Trading Companies & Distributors|1
+815|Commercial Services & Supplies|Commercial Services & Supplies|1
+816|Professional Services|Professional Services|1
+817|Air Freight & Logistics|Air Freight & Logistics|1
+818|Airlines|Airlines|1
+819|Marine|Marine|1
+820|Road & Rail|Road & Rail|1
+821|Transportation Infrastructure|Transportation Infrastructure|1
+822|Auto Components|Auto Components|1
+823|Automobiles|Automobiles|1
+824|Household Durables|Household Durables|1
+825|Leisure Equipment & Products|Leisure Equipment & Products|1
+826|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+827|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+828|Diversified Consumer Services|Diversified Consumer Services|1
+829|Media|Media|1
+830|Distributors|Distributors|1
+831|Internet & Catalog Retail|Internet & Catalog Retail|1
+832|Multiline Retail|Multiline Retail|1
+833|Specialty Retail|Specialty Retail|1
+834|Food & Staples Retailing|Food & Staples Retailing|1
+835|Beverages|Beverages|1
+836|Food Products|Food Products|1
+837|Tobacco|Tobacco|1
+838|Household Products|Household Products|1
+839|Personal Products|Personal Products|1
+840|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+841|Health Care Providers & Services|Health Care Providers & Services|1
+842|Health Care Technology|Health Care Technology|1
+843|Biotechnology|Biotechnology|1
+844|Pharmaceuticals|Pharmaceuticals|1
+845|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+846|Commercial Banks|Commercial Banks|1
+847|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+848|Diversified Financial Services|Diversified Financial Services|1
+849|Consumer Finance|Consumer Finance|1
+850|Capital Markets|Capital Markets|1
+851|Insurance|Insurance|1
+852|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+853|Real Estate Management & Development|Real Estate Management & Development|1
+854|Internet Software & Services|Internet Software & Services|1
+855|IT Services|IT Services|1
+856|Software|Software|1
+857|Communications Equipment|Communications Equipment|1
+858|Computers & Peripherals|Computers & Peripherals|1
+859|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+860|Office Electronics|Office Electronics|1
+861|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+862|Diversified Telecommunication Services|Diversified Telecommunication Services|1
+863|Wireless Telecommunication Services|Wireless Telecommunication Services|1
+864|Electric Utilities|Electric Utilities|1
+865|Gas Utilities|Gas Utilities|1
+866|Multi-Utilities|Multi-Utilities|1
+867|Water Utilities|Water Utilities|1
+868|Independent Power Producers & Energy Traders|Independent Power Producers & Energy Traders|1
+
+# GICS JP, based on 2008 GICS (ID 901-957)
+901|Energy|Energy|1
+902|Chemicals|Chemicals|1
+903|Construction Materials|Construction Materials|1
+904|Containers & Packaging|Containers & Packaging|1
+905|Metals & Mining|Metals & Mining|1
+906|Paper & Forest Products|Paper & Forest Products|1
+907|Electric Utilities|Electric Utilities|1
+908|Building Products|Building Products|1
+909|Construction & Engineering|Construction & Engineering|1
+910|Electrical Equipment|Electrical Equipment|1
+911|Industrial Conglomerates|Industrial Conglomerates|1
+912|Trading Companies & Distributors|Trading Companies & Distributors|1
+913|Machinery|Machinery|1
+914|Commercial Services & Supplies|Commercial Services & Supplies|1
+915|Professional Services|Professional Services|1
+916|Air Freight & Logistics|Air Freight & Logistics|1
+917|Airlines|Airlines|1
+918|Marine|Marine|1
+919|Road & Rail|Road & Rail|1
+920|Transportation Infrastructure|Transportation Infrastructure|1
+921|Auto Components|Auto Components|1
+922|Automobiles|Automobiles|1
+923|Household Durables|Household Durables|1
+924|Leisure Equipment & Products|Leisure Equipment & Products|1
+925|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+926|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+927|Diversified Consumer Services|Diversified Consumer Services|1
+928|Media|Media|1
+929|Distributors|Distributors|1
+930|Internet & Catalog Retail|Internet & Catalog Retail|1
+931|Multiline Retail|Multiline Retail|1
+932|Specialty Retail|Specialty Retail|1
+933|Food & Staples Retailing|Food & Staples Retailing|1
+934|Food Products|Food Products|1
+935|Beverages & Tobacco|Beverages & Tobacco|1
+936|Household & Personal Products|Household & Personal Products|1
+937|Health Care Providers & Services|Health Care Providers & Services|1
+938|Health Care Equipment & Technology|Health Care Equipment & Technology|1
+939|Pharmaceuticals|Pharmaceuticals|1
+940|Biotechnology & Life Sciences|Biotechnology & Life Sciences|1
+941|Banks|Banks|1
+942|Diversified Financial Services|Diversified Financial Services|1
+943|Consumer Finance|Consumer Finance|1
+944|Capital Markets|Capital Markets|1
+945|Insurance|Insurance|1
+946|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+947|Real Estate Management & Development|Real Estate Management & Development|1
+948|Internet Software & Services|Internet Software & Services|1
+949|IT Services|IT Services|1
+950|Software|Software|1
+951|Communications Equipment|Communications Equipment|1
+952|Computers & Peripherals|Computers & Peripherals|1
+953|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+954|Office Electronics|Office Electronics|1
+955|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+956|Telecommunication Services|Telecommunication Services|1
+957|Gas Utilities|Gas Utilities|1
+
+# GICS JP, based on 2016 GICS (ID 1701-1754)
+1701|Energy|Energy|1
+1702|Chemicals|Chemicals|1
+1703|Construction Materials|Construction Materials|1
+1704|Containers & Packaging|Containers & Packaging|1
+1705|Metals & Mining|Metals & Mining|1
+1706|Paper & Forest Products|Paper & Forest Products|1
+1707|Building Products|Building Products|1
+1708|Construction & Engineering|Construction & Engineering|1
+1709|Electrical Equipment|Electrical Equipment|1
+1710|Industrial Conglomerates|Industrial Conglomerates|1
+1711|Machinery|Machinery|1
+1712|Trading Companies & Distributors|Trading Companies & Distributors|1
+1713|Commercial Services & Supplies|Commercial Services & Supplies|1
+1714|Professional Services|Professional Services|1
+1715|Air Freight & Airlines|Air Freight & Airlines|1
+1716|Marine|Marine|1
+1717|Road & Rail|Road & Rail|1
+1718|Transportation Infrastructure|Transportation Infrastructure|1
+1719|Auto Components|Auto Components|1
+1720|Automobiles|Automobiles|1
+1721|Household Durables|Household Durables|1
+1722|Leisure Products|Leisure Products|1
+1723|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1724|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+1725|Diversified Consumer Services|Diversified Consumer Services|1
+1726|Media|Media|1
+1727|Distributors|Distributors|1
+1728|Internet & Direct Marketing Retail|Internet & Direct Marketing Retail|1
+1729|Multiline Retail|Multiline Retail|1
+1730|Specialty Retail|Specialty Retail|1
+1731|Food & Staples Retailing|Food & Staples Retailing|1
+1732|Food Beverage & Tobacco|Food Beverage & Tobacco|1
+1733|Household & Personal Products|Household & Personal Products|1
+1734|Health Care Equipment & Technology|Health Care Equipment & Technology|1
+1735|Health Care Providers & Services|Health Care Providers & Services|1
+1736|Biotechnology|Biotechnology|1
+1737|Pharmaceuticals|Pharmaceuticals|1
+1738|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+1739|Banks|Banks|1
+1740|Diversified Financial Services & Mortgage REITs|Diversified Financial Services & Mortgage REITs|1
+1741|Consumer Finance|Consumer Finance|1
+1742|Capital Markets|Capital Markets|1
+1743|Insurance|Insurance|1
+1744|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+1745|Real Estate Management & Development|Real Estate Management & Development|1
+1746|Internet Software & Services|Internet Software & Services|1
+1747|IT Services|IT Services|1
+1748|Software|Software|1
+1749|Communications Equipment|Communications Equipment|1
+1750|Technology Hardware, Storage & Peripherals|Technology Hardware, Storage & Peripherals|1
+1751|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+1752|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1753|Telecommunication Services|Telecommunication Services|1
+1754|Utilities|Utilities|1
+
+# GICS Industry Groups (August 2008 revision)
+1001|Energy|Energy|1
+1002|Materials|Materials|1
+1003|Capital Goods|Capital Goods|1
+1004|Commercial & Professional Services|Commercial & Professional Services|1
+1005|Transportation|Transportation|1
+1006|Automobiles & Components|Automobiles & Components|1
+1007|Consumer Durables & Apparel|Consumer Durables & Apparel|1
+1008|Consumer Services|Consumer Services|1
+1009|Media|Media|1
+1010|Retailing|Retailing|1
+1011|Food & Staples Retailing|Food & Staples Retailing|1
+1012|Food, Beverage & Tobacco|Food, Beverage & Tobacco|1
+1013|Household & Personal Products|Household & Personal Products|1
+1014|Health Care Equipment & Services|Health Care Equipment & Services|1
+1015|Pharmaceuticals, Biotechnology & Life Sciences|Pharmaceuticals, Biotechnology & Life Sciences|1
+1016|Banks|Banks|1
+1017|Diversified Financials|Diversified Financials|1
+1018|Insurance|Insurance|1
+1019|Real Estate|Real Estate|1
+1020|Software & Services|Software & Services|1
+1021|Technology Hardware & Equipment|Technology Hardware & Equipment|1
+1022|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1023|Telecommunication Services|Telecommunication Services|1
+1024|Utilities|Utilities|1
+# Addition for 2018 revision
+1025|Media & Entertainment|Media & Entertainment|1
+
+# GICS CN (ID 1100-1132)
+1101|Coal & Consumable Fuels|Coal & Consumable Fuels|1
+1102|Energy ex Coal|Energy ex Coal|1
+1103|Steel|Steel|1
+1104|Chemicals|Chemicals|1
+1105|Construction Materials|Construction Materials|1
+1106|Metals & Mining ex Steel|Metals & Mining ex Steel|1
+1107|Paper & Forest Products|Paper & Forest Products|1
+1108|Commercial & Professional Services|Commercial & Professional Services|1
+1109|Electrical Equipment|Electrical Equipment|1
+1110|Construction & Engineering|Construction & Engineering|1
+1111|Transportation Non-Infrastructure|Transportation Non-Infrastructure|1
+1112|Machinery|Machinery|1
+1113|Trading Companies, Distributors & Conglomerates|Trading Companies, Distributors & Conglomerates|1
+1114|Transportation Infrastructure|Transportation Infrastructure|1
+1115|Media|Media|1
+1116|Retailing|Retailing|1
+1117|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1118|Automobiles|Automobiles|1
+1119|Household Durables|Household Durables|1
+1120|Auto Components|Auto Components|1
+1121|Consumer Services|Consumer Services|1
+1122|Food Products|Food Products|1
+1123|Beverages & Tobacco|Beverages & Tobacco|1
+1124|Health Care|Health Care|1
+1125|Real Estate|Real Estate|1
+1126|Financials|Financials|1
+1127|Software & Services|Software & Services|1
+1128|Computers & Peripherals|Computers & Peripherals|1
+1129|Communications Equipment|Communications Equipment|1
+1130|Semiconductors & Electronics|Semiconductors & Electronics|1
+1131|Telecommunication Services|Telecommunication Services|1
+1132|Utilities|Utilities|1
+
+# GICS NA (ID 1301-1338)
+1301|Energy Equipment & Services|Energy Equipment & Services|1
+1302|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+1303|Materials ex Metals & Mining|Materials ex Metals & Mining|1
+1304|Metals & Mining ex Gold|Metals & Mining ex Gold|1
+1305|Gold|Gold|1
+1306|Aerospace & Defense|Aerospace & Defense|1
+1307|Electrical Equipment|Electrical Equipment|1
+1308|Industrial & Machinery|Industrial & Machinery|1
+1309|Commercial & Professional Services|Commercial & Professional Services|1
+1310|Transportation|Transportation|1
+1311|Automobiles & Components|Automobiles & Components|1
+1312|Household Durables|Household Durables|1
+1313|Leisure & Apparel|Leisure & Apparel|1
+1314|Consumer Services|Consumer Services|1
+1315|Media|Media|1
+1316|Retailing|Retailing|1
+1317|Food & Staples Retailing|Food & Staples Retailing|1
+1318|Food, Beverage & Tobacco|Food, Beverage & Tobacco|1
+1319|Household & Personal Products|Household & Personal Products|1
+1320|Health Care Providers & Services|Health Care Providers & Services|1
+1321|Health Care Equipment & Technology|Health Care Equipment & Technology|1
+1322|Pharmaceuticals|Pharmaceuticals|1
+1323|Biotechnology & Life Sciences|Biotechnology & Life Sciences|1
+1324|Commercial Banks|Commercial Banks|1
+1325|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+1327|Diversified Financials|Diversified Financials|1
+1328|Insurance|Insurance|1
+1329|Real Estate|Real Estate|1
+1330|Internet Software & Services|Internet Software & Services|1
+1331|IT Services|IT Services|1
+1332|Software|Software|1
+1333|Communications Equipment|Communications Equipment|1
+1334|Computers & Peripherals|Computers & Peripherals|1
+1335|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+1336|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1337|Telecommunication Services|Telecommunication Services|1
+1338|Utilities|Utilities|1
+
+# GICS TW (ID 1350-1375)
+1351|Energy|Energy|1
+1352|Chemicals|Chemicals|1
+1353|Materials ex Chemicals|Materials ex Chemicals|1
+1354|Commercial & Professional Services|Commercial & Professional Services|1
+1355|Transportation|Transportation|1
+1356|Capital Goods ex Electrical Equipment|Capital Goods ex Electrical Equipment|1
+1357|Electrical Equipment|Electrical Equipment|1
+1358|Consumer Durables & Apparel|Consumer Durables & Apparel|1
+1359|Consumer Services|Consumer Services|1
+1360|Consumer Discretionary ex Durables & Services|Consumer Discretionary ex Durables & Services|1
+1361|Consumer Staples|Consumer Staples|1
+1362|Health Care|Health Care|1
+1363|Banks|Banks|1
+1364|Diversified Financials|Diversified Financials|1
+1365|Real Estate|Real Estate|1
+1366|Insurance|Insurance|1
+1367|Software & Services|Software & Services|1
+1368|Communications Equipment|Communications Equipment|1
+1369|Semiconductors|Semiconductors|1
+1370|Computer Storage & Peripherals|Computer Storage & Peripherals|1
+1371|Computer Hardware|Computer Hardware|1
+1372|Electronics|Electronics|1
+1373|Semiconductor Equipment|Semiconductor Equipment|1
+1374|Telecommunication Services|Telecommunication Services|1
+1375|Utilities|Utilities|1
+
+#GICS US (ID 1401-1455)
+1401|Energy Equipment & Services|Energy Equipment & Services|1
+1402|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+1403|Chemicals & Construction Materials|Chemicals & Construction Materials|1
+1404|Containers & Packaging|Containers & Packaging|1
+1405|Metals & Mining|Metals & Mining|1
+1406|Paper & Forest Products|Paper & Forest Products|1
+1407|Aerospace & Defense|Aerospace & Defense|1
+1408|Building Products|Building Products|1
+1409|Construction & Engineering|Construction & Engineering|1
+1410|Electrical Equipment|Electrical Equipment|1
+1411|Industrial Conglomerates & Machinery|Industrial Conglomerates & Machinery|1
+1412|Trading Companies & Distributors|Trading Companies & Distributors|1
+1413|Commercial Services & Supplies|Commercial Services & Supplies|1
+1414|Professional Services|Professional Services|1
+1415|Airline, Air Freight & Transportation Infrastructure|Airline, Air Freight & Transportation Infrastructure|1
+1416|Marine|Marine|1
+1417|Road & Rail|Road & Rail|1
+1418|Automobiles & Components|Automobiles & Components|1
+1419|Household Durables|Household Durables|1
+1420|Leisure Equipment & Products|Leisure Equipment & Products|1
+1421|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1422|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+1423|Diversified Consumer Services|Diversified Consumer Services|1
+1424|Media|Media|1
+1425|Distributors & Multiline Retail|Distributors & Multiline Retail|1
+1426|Internet & Catalog Retail|Internet & Catalog Retail|1
+1427|Specialty Retail|Specialty Retail|1
+1428|Food & Staples Retailing|Food & Staples Retailing|1
+1429|Beverages & Tobacco|Beverages & Tobacco|1
+1430|Food Products|Food Products|1
+1431|Household & Personal Products|Household & Personal Products|1
+1432|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+1433|Health Care Providers & Services|Health Care Providers & Services|1
+1434|Health Care Technology|Health Care Technology|1
+1435|Biotechnology|Biotechnology|1
+1436|Pharmaceuticals|Pharmaceuticals|1
+1437|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+1438|Commercial Banks|Commercial Banks|1
+1439|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+1440|Diversified Financial Services|Diversified Financial Services|1
+1441|Consumer Finance|Consumer Finance|1
+1442|Capital Markets|Capital Markets|1
+1443|Insurance|Insurance|1
+1444|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+1445|Real Estate Management & Development|Real Estate Management & Development|1
+1446|Internet Software & Services|Internet Software & Services|1
+1447|IT Services|IT Services|1
+1448|Software|Software|1
+1449|Communications Equipment|Communications Equipment|1
+1450|Computers & Peripherals|Computers & Peripherals|1
+1451|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+1452|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1453|Telecommunication Services|Telecommunication Services|1
+1454|Electric Utilities|Electric Utilities|1
+1455|Gas Utilities|Gas Utilities|1
+1456|Multi-Utilities|Multi-Utilities|1
+1457|Water Utilities|Water Utilities|1
+1458|Independent Power Producers & Energy Traders|Independent Power Producers & Energy Traders|1
+
+# GICS no Office Electronics
+1501|Energy Equipment & Services|Energy Equipment & Services|1
+1502|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+1503|Chemicals|Chemicals|1
+1504|Construction Materials|Construction Materials|1
+1505|Containers & Packaging|Containers & Packaging|1
+1506|Metals & Mining|Metals & Mining|1
+1507|Paper & Forest Products|Paper & Forest Products|1
+1508|Aerospace & Defense|Aerospace & Defense|1
+1509|Building Products|Building Products|1
+1510|Construction & Engineering|Construction & Engineering|1
+1511|Electrical Equipment|Electrical Equipment|1
+1512|Industrial Conglomerates|Industrial Conglomerates|1
+1513|Machinery|Machinery|1
+1514|Trading Companies & Distributors|Trading Companies & Distributors|1
+1515|Commercial Services & Supplies|Commercial Services & Supplies|1
+1516|Professional Services|Professional Services|1
+1517|Air Freight & Logistics|Air Freight & Logistics|1
+1518|Airlines|Airlines|1
+1519|Marine|Marine|1
+1520|Road & Rail|Road & Rail|1
+1521|Transportation Infrastructure|Transportation Infrastructure|1
+1522|Auto Components|Auto Components|1
+1523|Automobiles|Automobiles|1
+1524|Household Durables|Household Durables|1
+1525|Leisure Equipment & Products|Leisure Equipment & Products|1
+1526|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1527|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+1528|Diversified Consumer Services|Diversified Consumer Services|1
+1529|Media|Media|1
+1530|Distributors|Distributors|1
+1531|Internet & Catalog Retail|Internet & Catalog Retail|1
+1532|Multiline Retail|Multiline Retail|1
+1533|Specialty Retail|Specialty Retail|1
+1534|Food & Staples Retailing|Food & Staples Retailing|1
+1535|Beverages|Beverages|1
+1536|Food Products|Food Products|1
+1537|Tobacco|Tobacco|1
+1538|Household Products|Household Products|1
+1539|Personal Products|Personal Products|1
+1540|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+1541|Health Care Providers & Services|Health Care Providers & Services|1
+1542|Health Care Technology|Health Care Technology|1
+1543|Biotechnology|Biotechnology|1
+1544|Pharmaceuticals|Pharmaceuticals|1
+1545|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+1546|Commercial Banks|Commercial Banks|1
+1547|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+1548|Diversified Financial Services|Diversified Financial Services|1
+1549|Consumer Finance|Consumer Finance|1
+1550|Capital Markets|Capital Markets|1
+1551|Insurance|Insurance|1
+1552|Real Estate Investment Trusts (REITs)|Real Estate Investment Trusts (REITs)|1
+1553|Real Estate Management & Development|Real Estate Management & Development|1
+1554|Internet Software & Services|Internet Software & Services|1
+1555|IT Services|IT Services|1
+1556|Software|Software|1
+1557|Communications Equipment|Communications Equipment|1
+1558|Computers & Peripherals|Computers & Peripherals|1
+1559|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+1560|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1561|Diversified Telecommunication Services|Diversified Telecommunication Services|1
+1562|Wireless Telecommunication Services|Wireless Telecommunication Services|1
+1563|Electric Utilities|Electric Utilities|1
+1564|Gas Utilities|Gas Utilities|1
+1565|Multi-Utilities|Multi-Utilities|1
+1566|Water Utilities|Water Utilities|1
+1567|Independent Power Producers & Energy Traders|Independent Power Producers & Energy Traders|1
+
+# GICS 2016 revision
+1601|Energy Equipment & Services|Energy Equipment & Services|1
+1602|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+1603|Chemicals|Chemicals|1
+1604|Construction Materials|Construction Materials|1
+1605|Containers & Packaging|Containers & Packaging|1
+1606|Metals & Mining|Metals & Mining|1
+1607|Paper & Forest Products|Paper & Forest Products|1
+1608|Aerospace & Defense|Aerospace & Defense|1
+1609|Building Products|Building Products|1
+1610|Construction & Engineering|Construction & Engineering|1
+1611|Electrical Equipment|Electrical Equipment|1
+1612|Industrial Conglomerates|Industrial Conglomerates|1
+1613|Machinery|Machinery|1
+1614|Trading Companies & Distributors|Trading Companies & Distributors|1
+1615|Commercial Services & Supplies|Commercial Services & Supplies|1
+1616|Professional Services|Professional Services|1
+1617|Air Freight & Logistics|Air Freight & Logistics|1
+1618|Airlines|Airlines|1
+1619|Marine|Marine|1
+1620|Road & Rail|Road & Rail|1
+1621|Transportation Infrastructure|Transportation Infrastructure|1
+1622|Auto Components|Auto Components|1
+1623|Automobiles|Automobiles|1
+1624|Household Durables|Household Durables|1
+1625|Leisure Products|Leisure Products|1
+1626|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1627|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+1628|Diversified Consumer Services|Diversified Consumer Services|1
+1629|Media|Media|1
+1630|Distributors|Distributors|1
+1631|Internet & Direct Marketing Retail|Internet & Direct Marketing Retail|1
+1632|Multiline Retail|Multiline Retail|1
+1633|Specialty Retail|Specialty Retail|1
+1634|Food & Staples Retailing|Food & Staples Retailing|1
+1635|Beverages|Beverages|1
+1636|Food Products|Food Products|1
+1637|Tobacco|Tobacco|1
+1638|Household Products|Household Products|1
+1639|Personal Products|Personal Products|1
+1640|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+1641|Health Care Providers & Services|Health Care Providers & Services|1
+1642|Health Care Technology|Health Care Technology|1
+1643|Biotechnology|Biotechnology|1
+1644|Pharmaceuticals|Pharmaceuticals|1
+1645|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+1646|Banks|Banks|1
+1647|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+1648|Diversified Financial Services|Diversified Financial Services|1
+1649|Consumer Finance|Consumer Finance|1
+1650|Capital Markets|Capital Markets|1
+1651|Insurance|Insurance|1
+1652|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+1653|Real Estate Management & Development|Real Estate Management & Development|1
+1654|Mortgage Real Estate Investment Trusts (REITs)|Mortgage Real Estate Investment Trusts (REITs)|1
+1655|Internet Software & Services|Internet Software & Services|1
+1656|IT Services|IT Services|1
+1657|Software|Software|1
+1658|Communications Equipment|Communications Equipment|1
+1659|Technology Hardware, Storage & Peripherals|Technology Hardware, Storage & Peripherals|1
+1660|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+1661|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1662|Diversified Telecommunication Services|Diversified Telecommunication Services|1
+1663|Wireless Telecommunication Services|Wireless Telecommunication Services|1
+1664|Electric Utilities|Electric Utilities|1
+1665|Gas Utilities|Gas Utilities|1
+1666|Multi-Utilities|Multi-Utilities|1
+1667|Water Utilities|Water Utilities|1
+1668|Independent Power and Renewable Electricity Producers|Independent Power and Renewable Electricity Producers|1
+# Custom factor for GICSCustomNoMortgageREITs
+1669|Diversified Financial Services & Mortgage REITs|Diversified Financial Services & Mortgage REITs|1
+# Custom factors for GICSCustom-EU
+1670|Commercial & Professional Services|Commercial & Professional Services|1
+1671|Consumer Services|Consumer Services|1
+1672|Multiline & Specialty Retail|Multiline & Specialty Retail|1
+1673|Beverages & Tobacco|Beverages & Tobacco|1
+1674|Household & Personal Products|Household & Personal Products|1
+1675|Banks|Banks|1
+1676|Diversified Financial Services|Diversified Financial Services|1
+1677|Gas, Water & Multi-Utilities|Gas, Water & Multi-Utilities|1
+# Custom factors for GICSCustom-EM
+1678|Health Care Equipment, Supplies & Technology|Health Care Equipment, Supplies & Technology|1
+1679|Biotechnology, Life Sciences Tools & Services|Biotechnology, Life Sciences Tools & Services|1
+1680|Banks, Thrifts & Mortgage Finance|Banks, Thrifts & Mortgage Finance|1
+1681|Multi-Utilities|Multi-Utilities|1
+
+# GICS 2018 revision
+1801|Energy Equipment & Services|Energy Equipment & Services|1
+1802|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+1803|Chemicals|Chemicals|1
+1804|Construction Materials|Construction Materials|1
+1805|Containers & Packaging|Containers & Packaging|1
+1806|Metals & Mining|Metals & Mining|1
+1807|Paper & Forest Products|Paper & Forest Products|1
+1808|Aerospace & Defense|Aerospace & Defense|1
+1809|Building Products|Building Products|1
+1810|Construction & Engineering|Construction & Engineering|1
+1811|Electrical Equipment|Electrical Equipment|1
+1812|Industrial Conglomerates|Industrial Conglomerates|1
+1813|Machinery|Machinery|1
+1814|Trading Companies & Distributors|Trading Companies & Distributors|1
+1815|Commercial Services & Supplies|Commercial Services & Supplies|1
+1816|Professional Services|Professional Services|1
+1817|Air Freight & Logistics|Air Freight & Logistics|1
+1818|Airlines|Airlines|1
+1819|Marine|Marine|1
+1820|Road & Rail|Road & Rail|1
+1821|Transportation Infrastructure|Transportation Infrastructure|1
+1822|Auto Components|Auto Components|1
+1823|Automobiles|Automobiles|1
+1824|Household Durables|Household Durables|1
+1825|Leisure Products|Leisure Products|1
+1826|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1827|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+1828|Diversified Consumer Services|Diversified Consumer Services|1
+1829|Distributors|Distributors|1
+1830|Internet & Direct Marketing Retail|Internet & Direct Marketing Retail|1
+1831|Multiline Retail|Multiline Retail|1
+1832|Specialty Retail|Specialty Retail|1
+1833|Food & Staples Retailing|Food & Staples Retailing|1
+1834|Beverages|Beverages|1
+1835|Food Products|Food Products|1
+1836|Tobacco|Tobacco|1
+1837|Household Products|Household Products|1
+1838|Personal Products|Personal Products|1
+1839|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+1840|Health Care Providers & Services|Health Care Providers & Services|1
+1841|Health Care Technology|Health Care Technology|1
+1842|Biotechnology|Biotechnology|1
+1843|Pharmaceuticals|Pharmaceuticals|1
+1844|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+1845|Banks|Banks|1
+1846|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+1847|Diversified Financial Services|Diversified Financial Services|1
+1848|Consumer Finance|Consumer Finance|1
+1849|Capital Markets|Capital Markets|1
+1850|Mortgage Real Estate Investment Trusts (REITs)|Mortgage Real Estate Investment Trusts (REITs)|1
+1851|Insurance|Insurance|1
+1852|IT Services|IT Services|1
+1853|Software|Software|1
+1854|Communications Equipment|Communications Equipment|1
+1855|Technology Hardware, Storage & Peripherals|Technology Hardware, Storage & Peripherals|1
+1856|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+1857|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+1858|Diversified Telecommunication Services|Diversified Telecommunication Services|1
+1859|Wireless Telecommunication Services|Wireless Telecommunication Services|1
+1860|Media|Media|1
+1861|Entertainment|Entertainment|1
+1862|Interactive Media & Services|Interactive Media & Services|1
+1863|Electric Utilities|Electric Utilities|1
+1864|Gas Utilities|Gas Utilities|1
+1865|Multi-Utilities|Multi-Utilities|1
+1866|Water Utilities|Water Utilities|1
+1867|Independent Power and Renewable Electricity Producers|Independent Power and Renewable Electricity Producers|1
+1868|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+1869|Real Estate Management & Development|Real Estate Management & Development|1
+# Custom factors for GICSCustom-EM
+1870|Diversified Financial Services & Mortgage REITs|Diversified Financial Services & Mortgage REITs|1
+1871|Commercial & Professional Services|Commercial & Professional Services|1
+1872|Health Care Equipment, Supplies & Technology|Health Care Equipment, Supplies & Technology|1
+1873|Biotechnology, Life Sciences Tools & Services|Biotechnology, Life Sciences Tools & Services|1
+1874|Banks, Thrifts & Mortgage Finance|Banks, Thrifts & Mortgage Finance|1
+1875|Multi-Utilities & Independent Power Producers & Traders|Multi-Utilities & Independent Power Producers & Traders|1
+# Custom factor for GICSCustomNoMortgageREITs2018
+1876|Diversified Financial Services & Mortgage REITs|Diversified Financial Services & Mortgage REITs|1
+
+# Custom factors for GICSCustomCA4 (ID 674 - 696)
+674|Energy Equipment & Services|Energy Equipment & Services|1
+675|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+676|Metals & Mining ex Gold|Metals & Mining ex Gold|1
+677|Materials ex Metals, Mining & Forestry|Materials ex Metals, Mining & Forestry|1
+678|Gold|Gold|1
+679|Paper & Forest Products|Paper & Forest Products|1
+680|Capital Goods|Capital Goods|1
+681|Commercial & Professional Services|Commercial & Professional Services|1
+682|Transportation|Transportation|1
+683|Consumer Discretionary|Consumer Discretionary|1
+684|Food & Staples Retailing|Food & Staples Retailing|1
+685|Food & Staples Products|Food & Staples Products|1
+686|Health Care|Health Care|1
+687|Banks|Banks|1
+688|Diversified Financials|Diversified Financials|1
+689|Insurance|Insurance|1
+690|Software & Services|Software & Services|1
+691|Technology Hardware|Technology Hardware|1
+692|Telecommunication Services|Telecommunication Services|1
+693|Media & Entertainment|Media & Entertainment|1
+694|Utilities|Utilities|1
+695|Real Estate Management & Development|Real Estate Management & Development|1
+696|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+
+# Custom factors for GICSCustomGB4
+2200|Energy|Energy|1
+2201|Chemicals|Chemicals|1
+2202|Construction Materials|Construction Materials|1
+2203|Metals & Mining|Metals & Mining|1
+2204|Other Materials and Packaging|Other Materials and Packaging|1
+2205|Aerospace & Defense|Aerospace & Defense|1
+2206|Building Products|Building Products|1
+2207|Construction & Engineering|Construction & Engineering|1
+2208|Electrical Equipment|Electrical Equipment|1
+2209|Other Industrials|Other Industrials|1
+2210|Trading Companies & Distributors|Trading Companies & Distributors|1
+2211|Commercial Services & Supplies|Commercial Services & Supplies|1
+2212|Professional Services|Professional Services|1
+2213|Transportation|Transportation|1
+2214|Automobiles & Components|Automobiles & Components|1
+2215|Consumer Durables & Apparel|Consumer Durables & Apparel|1
+2216|Consumer Services|Consumer Services|1
+2217|Non-Internet Retail|Non-Internet Retail|1
+2218|Internet & Direct Marketing Retail|Internet & Direct Marketing Retail|1
+2219|Food & Staples Retailing|Food & Staples Retailing|1
+2220|Beverages & Tobacco|Beverages & Tobacco|1
+2221|Food Products|Food Products|1
+2222|Household & Personal Products|Household & Personal Products|1
+2223|Health Care Equipment & Services|Health Care Equipment & Services|1
+2224|Biotechnology & Life Sciences|Biotechnology & Life Sciences|1
+2225|Pharmaceuticals|Pharmaceuticals|1
+2226|Banks|Banks|1
+2227|Diversified Financial Services|Diversified Financial Services|1
+2228|Consumer Finance|Consumer Finance|1
+2229|Capital Markets|Capital Markets|1
+2230|Insurance|Insurance|1
+2231|IT Services|IT Services|1
+2232|Software|Software|1
+2233|Technology Hardware|Technology Hardware|1
+2234|Telecommunication Services|Telecommunication Services|1
+2235|Media & Entertainment|Media & Entertainment|1
+2236|Utilities|Utilities|1
+2237|Independent Power and Renewable Electricity Producers|Independent Power and Renewable Electricity Producers|1
+2238|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+2239|Real Estate Management & Development|Real Estate Management & Development|1
+
+# Custom factors for GICSCustomNA4
+2300|Energy Equipment & Services|Energy Equipment & Services|1
+2301|Oil, Gas & Consumable Fuels|Oil, Gas & Consumable Fuels|1
+2302|Chemicals|Chemicals|1
+2303|Construction Materials|Construction Materials|1
+2304|Containers & Packaging|Containers & Packaging|1
+2305|Metals & Mining ex Gold|Metals & Mining ex Gold|1
+2306|Gold|Gold|1
+2307|Paper & Forest Products|Paper & Forest Products|1
+2308|Aerospace & Defense|Aerospace & Defense|1
+2309|Building Products|Building Products|1
+2310|Construction & Engineering|Construction & Engineering|1
+2311|Electrical Equipment|Electrical Equipment|1
+2312|Industrial Conglomerates|Industrial Conglomerates|1
+2313|Machinery|Machinery|1
+2314|Trading Companies & Distributors|Trading Companies & Distributors|1
+2315|Commercial Services & Supplies|Commercial Services & Supplies|1
+2316|Professional Services|Professional Services|1
+2317|Air Freight & Logistics|Air Freight & Logistics|1
+2318|Airlines|Airlines|1
+2319|Marine|Marine|1
+2320|Road & Rail|Road & Rail|1
+2321|Transportation Infrastructure|Transportation Infrastructure|1
+2322|Auto Components|Auto Components|1
+2323|Automobiles|Automobiles|1
+2324|Household Durables|Household Durables|1
+2325|Leisure Products|Leisure Products|1
+2326|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+2327|Hotels, Restaurants & Leisure|Hotels, Restaurants & Leisure|1
+2328|Diversified Consumer Services|Diversified Consumer Services|1
+2329|Distributors|Distributors|1
+2330|Internet & Direct Marketing Retail|Internet & Direct Marketing Retail|1
+2331|Multiline Retail|Multiline Retail|1
+2332|Specialty Retail|Specialty Retail|1
+2333|Food & Staples Retailing|Food & Staples Retailing|1
+2334|Beverages|Beverages|1
+2335|Food Products|Food Products|1
+2336|Tobacco|Tobacco|1
+2337|Household Products|Household Products|1
+2338|Personal Products|Personal Products|1
+2339|Health Care Equipment & Supplies|Health Care Equipment & Supplies|1
+2340|Health Care Providers & Services|Health Care Providers & Services|1
+2341|Health Care Technology|Health Care Technology|1
+2342|Biotechnology|Biotechnology|1
+2343|Pharmaceuticals|Pharmaceuticals|1
+2344|Life Sciences Tools & Services|Life Sciences Tools & Services|1
+2345|Banks|Banks|1
+2346|Thrifts & Mortgage Finance|Thrifts & Mortgage Finance|1
+2347|Diversified Financial Services|Diversified Financial Services|1
+2348|Consumer Finance|Consumer Finance|1
+2349|Capital Markets|Capital Markets|1
+2350|Mortgage Real Estate Investment Trusts (REITs)|Mortgage Real Estate Investment Trusts (REITs)|1
+2351|Insurance|Insurance|1
+2352|IT Services|IT Services|1
+2353|Software|Software|1
+2354|Communications Equipment|Communications Equipment|1
+2355|Technology Hardware, Storage & Peripherals|Technology Hardware, Storage & Peripherals|1
+2356|Electronic Equipment, Instruments & Components|Electronic Equipment, Instruments & Components|1
+2357|Semiconductors & Semiconductor Equipment|Semiconductors & Semiconductor Equipment|1
+2358|Diversified Telecommunication Services|Diversified Telecommunication Services|1
+2359|Wireless Telecommunication Services|Wireless Telecommunication Services|1
+2360|Media|Media|1
+2361|Entertainment|Entertainment|1
+2362|Interactive Media & Services|Interactive Media & Services|1
+2363|Electric Utilities|Electric Utilities|1
+2364|Gas Utilities|Gas Utilities|1
+2365|Multi-Utilities|Multi-Utilities|1
+2366|Water Utilities|Water Utilities|1
+2367|Independent Power and Renewable Electricity Producers|Independent Power and Renewable Electricity Producers|1
+2368|Equity Real Estate Investment Trusts (REITs)|Equity Real Estate Investment Trusts (REITs)|1
+2369|Real Estate Management & Development|Real Estate Management & Development|1
+
+# Custom factors for GICSCustom-CN2
+1778|Banks|Banks|1
+1779|Chemicals|Chemicals|1
+1780|Coal & Consumable Fuels|Coal & Consumable Fuels|1
+1781|Energy ex Coal|Energy ex Coal|1
+1782|Steel|Steel|1
+1783|Metals & Mining ex Steel|Metals & Mining ex Steel|1
+1784|Electrical Equipment|Electrical Equipment|1
+1785|Trading Companies, Distributors & Conglomerates|Trading Companies, Distributors & Conglomerates|1
+1786|Commercial & Professional Services|Commercial & Professional Services|1
+1787|Transportation Non-Infrastructure|Transportation Non-Infrastructure|1
+1788|Transportation Infrastructure|Transportation Infrastructure|1
+1789|Textiles, Apparel & Luxury Goods|Textiles, Apparel & Luxury Goods|1
+1790|Consumer Services|Consumer Services|1
+1791|Retailing|Retailing|1
+1792|Beverages & Tobacco|Beverages & Tobacco|1
+1793|Household & Personal Products|Household & Personal Products|1
+1794|Health Care Equipment & Services|Health Care Equipment & Services|1
+1795|Pharmaceuticals Biotechnology & Life Sciences|Pharmaceuticals Biotechnology & Life Sciences|1
+1796|Financials ex Banks|Financials ex Banks|1
+1797|Telecommunication Services|Telecommunication Services|1
+1798|Utilities ex Renewable|Utilities ex Renewable|1
+1799|Real Estate|Real Estate|1
+1800|OffShore China|OffShore China|5
+1877|Media & Entertainment|Media & Entertainment|1
+1801|Energy Equipment & Services|Energy Equipment & Services|1
+1878|Media|Media|1
+1879|Entertainment|Entertainment|1
+
+# Custom factors for Regional Models
+2148|EM Volatility 60 Day|EM Volatility 60 Day|0
+2149|EM Volatility 125 Day|EM Volatility 125 Day|0
+2150|EM Regional Market Sensitivity 250 Day|EM Regional Market Sensitivity 250 Day|0
+2151|EM Regional Market Sensitivity 500 Day|EM Regional Market Sensitivity 500 Day|0
+2152|APAC Volatility 60 Day|APAC Volatility 60 Day|0
+2153|APAC Volatility 125 Day|APAC Volatility 125 Day|0
+2154|APAC Regional Market Sensitivity 250 Day|APAC Regional Market Sensitivity 250 Day|0
+2155|APAC Regional Market Sensitivity 500 Day|APAC Regional Market Sensitivity 500 Day|0
+2156|Domestic China Volatility 60 Day|Domestic China Volatility 60 Day|0
+2157|Domestic China Volatility 125 Day|Domestic China Volatility 125 Day|0
+2158|Domestic China Market Sensitivity 52 Week|Domestic China Market Sensitivity 52 Week|0
+2159|Domestic China Market Sensitivity 104 Week|Domestic China Market Sensitivity 104 Week|0
+2160|APxJP Volatility 60 Day|APxJP Volatility 60 Day|0
+2161|APxJP Volatility 125 Day|APxJP Volatility 125 Day|0
+2162|APxJP Regional Market Sensitivity 250 Day|APxJP Regional Market Sensitivity 250 Day|0
+2163|APxJP Regional Market Sensitivity 500 Day|APxJP Regional Market Sensitivity 500 Day|0
+2164|Market Sensitivity 500 Day|Market Sensitivity 500 Day|0
+
+# Commodity Models
+5000|Canola Shift|Commodity Futures, Canola Shift|8
+5001|Canola Tilt|Commodity Futures, Canola Tilt|8
+5002|Cattle Feeder Shift|Commodity Futures, Cattle Feeder Shift|8
+5003|Cattle Feeder Tilt|Commodity Futures, Cattle Feeder Tilt|8
+5004|Cattle Live Shift|Commodity Futures, Cattle Live Shift|8
+5005|Cattle Live Tilt|Commodity Futures, Cattle Live Tilt|8
+5006|Cocoa Shift|Commodity Futures, Cocoa Shift|8
+5007|Cocoa Tilt|Commodity Futures, Cocoa Tilt|8
+5008|Coffee Shift|Commodity Futures, Coffee Shift|8
+5009|Coffee Tilt|Commodity Futures, Coffee Tilt|8
+5010|Copper Shift|Commodity Futures, Copper Shift|8
+5011|Copper Basis Shift|Commodity Futures, Copper Basis Shift|8
+5012|Corn Shift|Commodity Futures, Corn Shift|8
+5013|Corn Tilt|Commodity Futures, Corn Tilt|8
+5014|Cotton Shift|Commodity Futures, Cotton Shift|8
+5015|Cotton Tilt|Commodity Futures, Cotton Tilt|8
+5016|Ecxeau Shift|Commodity Futures, Ecxeau Shift|8
+5017|Gas Shift|Commodity Futures, Gas Shift|8
+5018|Gas Tilt|Commodity Futures, Gas Tilt|8
+5019|Gas Curve|Commodity Futures, Gas Curve|8
+5020|Gold Shift|Commodity Futures, Gold Shift|8
+5021|Gold Tilt|Commodity Futures, Gold Tilt|8
+5022|Lean Hogs Shift|Commodity Futures, Lean Hogs Shift|8
+5023|Lean Hogs Tilt|Commodity Futures, Lean Hogs Tilt|8
+5024|Oil Shift|Commodity Futures, Oil Shift|8
+5025|Oil Tilt|Commodity Futures, Oil Tilt|8
+5026|Oil Basis Shift|Commodity Futures, Oil Basis Shift|8
+5027|Oil Basis Tilt|Commodity Futures, Oil Basis Tilt|8
+5028|Oil Curve|Commodity Futures, Oil Curve|8
+5029|Orange Juice Shift|Commodity Futures, Orange Juice Shift|8
+5030|Orange Juice Tilt|Commodity Futures, Orange Juice Tilt|8
+5031|Palladium Shift|Commodity Futures, Palladium Shift|8
+5032|Platinum Shift|Commodity Futures, Platinum Shift|8
+5033|Silver Shift|Commodity Futures, Silver Shift|8
+5034|Soybean Oil Shift|Commodity Futures, Soybean Oil Shift|8
+5035|Soybean Oil Tilt|Commodity Futures, Soybean Oil Tilt|8
+5036|Soybeans Shift|Commodity Futures, Soybeans Shift|8
+5037|Soybeans Tilt|Commodity Futures, Soybeans Tilt|8
+5038|Sugar Shift|Commodity Futures, Sugar Shift|8
+5039|Sugar Tilt|Commodity Futures, Sugar Tilt|8
+5040|Wheat Shift|Commodity Futures, Wheat Shift|8
+5041|Wheat Tilt|Commodity Futures, Wheat Tilt|8
+5042|Gasoil Basis Shift|Commodity Futures, Gasoil Basis Shift|8
+5043|Gasoil Basis Tilt|Commodity Futures, Gasoil Basis Tilt|8
+5044|Heating Oil Basis Shift|Commodity Futures, Heating Oil Basis Shift|8
+5045|Heating Oil Basis Tilt|Commodity Futures, Heating Oil Basis Tilt|8
+5046|RBOB Basis Shift|Commodity Futures, RBOB Basis Shift|8
+5047|RBOB Basis Tilt|Commodity Futures, RBOB Basis Tilt|8
+5048|Aluminium Shift|Commodity Futures, Aluminium Shift|8
+5049|Aluminium Tilt|Commodity Futures, Aluminium Tilt|8
+5050|Kansas Wheat Shift|Commodity Futures, Kansas Wheat Shift|8
+5051|Kansas Wheat Tilt|Commodity Futures, Kansas Wheat Tilt|8
+5052|Lead Shift|Commodity Futures, Lead Shift|8
+5053|Nickel Shift|Commodity Futures, Nickel Shift|8
+5054|Zinc Shift|Commodity Futures, Zinc Shift|8
+5055|Oats Shift|Commodity Futures, Oats Shift|8
+5056|Oats Tilt|Commodity Futures, Oats Tilt|8
+5057|Rice Shift|Commodity Futures, Rice Shift|8
+5058|Rice Tilt|Commodity Futures, Rice Tilt|8
+5059|Soymeal Shift|Commodity Futures, Soymeal Shift|8
+5060|Soymeal Tilt|Commodity Futures, Soymeal Tilt|8
+
+#Core Macro
+4000|Economic Growth|Economic Growth|9
+4001|Inflation|Inflation|9
+4002|Confidence|Confidence|9
+4003|Unemployment|Unemployment|9
+
+#Market-Traded Macro
+4100|Oil|Oil|10
+4101|Gold|Gold|10
+4102|Commodity|Commodity|10
+4103|Credit Spread|Credit Spread|10
+4104|Term Spread|Term Spread|10
+4105|FX Basket|FX Basket|10
+
+# add for projection model
+4106|USD BBB Corp Spread|USD BBB Corp Spread|7
+4107|EUR BBB Corp Spread|EUR BBB Corp Spread|7
+4108|GBP BBB Corp Spread|GBP BBB Corp Spread|7
+4109|JPY BBB Corp Spread|JPY BBB Corp Spread|7
+4110|US Term Spread: 10Y6M|US Term Spread: 10Y6M|7
+4111|GB Term Spread: 10Y6M|GB Term Spread: 10Y6M|7
+4112|EU Term Spread: 10Y6M|EU Term Spread: 10Y6M|7
+4113|JP Term Spread: 10Y6M|JP Term Spread: 10Y6M|7
+4114|US Inflation|US Inflation|7
+4115|JP Inflation|JP Inflation|7
+4116|GB Inflation|GB Inflation|7
+4117|EU Inflation|EU Inflation|7
+4118|Oil|Oil|7
+4119|Gold|Gold|7
+4120|Commodity|Commodity|7
+
+#Equity Macro
+4200|Equity Market|Equity Market|11
+4201|Equity Size|Equity Size|11
+4202|Equity Value|Equity Value|11
+4203|Equity Liquidity|Equity Liquidity|11
+
+# GICS Sectors for Macro model
+4300|Energy|Energy|12
+4301|Telecommunication Services|Telecommunication Services|12
+4302|Financials|Financials|12
+4303|Information Technology|Information Technology|12
+4304|Utilities|Utilities|12
+4305|Consumer Staples|Consumer Staples|12
+4306|Industrials|Industrials|12
+4307|Materials|Materials|12
+4308|Consumer Discretionary|Consumer Discretionary|12
+4309|Health Care|Health Care|12
+
+# Linked model factors
+#################################################################### US4 factors
+8000|US4 Value|US4 Value|0
+8001|US4 Leverage|US4 Leverage|0
+8002|US4 Growth|US4 Growth|0
+8003|US4 Size|US4 Size|0
+8004|US4 Market Sensitivity|US4 Market Sensitivity|0
+8005|US4 Liquidity|US4 Liquidity|0
+8006|US4 Short-Term Momentum|US4 Short-Term Momentum|0
+8007|US4 Medium-Term Momentum|US4 Medium-Term Momentum|0
+8008|US4 Volatility|US4 Volatility|0
+8009|US4 Earnings Yield|US4 Earnings Yield|0
+8010|US4 Dividend Yield|US4 Dividend Yield|0
+8011|US4 Exchange Rate Sensitivity|US4 Exchange Rate Sensitivity|0
+8012|US4 Profitability|US4 Profitability|0
+8013|US4 MidCap|US4 MidCap|0
+8014|US4 Market Intercept|US4 Market Intercept|28
+8015|US4 Energy Equipment & Services|US4 Energy Equipment & Services|1
+8016|US4 Oil, Gas & Consumable Fuels|US4 Oil, Gas & Consumable Fuels|1
+8017|US4 Chemicals|US4 Chemicals|1
+8018|US4 Construction Materials|US4 Construction Materials|1
+8019|US4 Containers & Packaging|US4 Containers & Packaging|1
+8020|US4 Metals & Mining|US4 Metals & Mining|1
+8021|US4 Paper & Forest Products|US4 Paper & Forest Products|1
+8022|US4 Aerospace & Defense|US4 Aerospace & Defense|1
+8023|US4 Building Products|US4 Building Products|1
+8024|US4 Construction & Engineering|US4 Construction & Engineering|1
+8025|US4 Electrical Equipment|US4 Electrical Equipment|1
+8026|US4 Industrial Conglomerates|US4 Industrial Conglomerates|1
+8027|US4 Machinery|US4 Machinery|1
+8028|US4 Trading Companies & Distributors|US4 Trading Companies & Distributors|1
+8029|US4 Commercial Services & Supplies|US4 Commercial Services & Supplies|1
+8030|US4 Professional Services|US4 Professional Services|1
+8031|US4 Air Freight & Logistics|US4 Air Freight & Logistics|1
+8032|US4 Airlines|US4 Airlines|1
+8033|US4 Marine|US4 Marine|1
+8034|US4 Road & Rail|US4 Road & Rail|1
+8035|US4 Transportation Infrastructure|US4 Transportation Infrastructure|1
+8036|US4 Auto Components|US4 Auto Components|1
+8037|US4 Automobiles|US4 Automobiles|1
+8038|US4 Household Durables|US4 Household Durables|1
+8039|US4 Leisure Products|US4 Leisure Products|1
+8040|US4 Textiles, Apparel & Luxury Goods|US4 Textiles, Apparel & Luxury Goods|1
+8041|US4 Hotels, Restaurants & Leisure|US4 Hotels, Restaurants & Leisure|1
+8042|US4 Diversified Consumer Services|US4 Diversified Consumer Services|1
+8043|US4 Media|US4 Media|1
+8044|US4 Distributors|US4 Distributors|1
+8045|US4 Internet & Direct Marketing Retail|US4 Internet & Direct Marketing Retail|1
+8046|US4 Multiline Retail|US4 Multiline Retail|1
+8047|US4 Specialty Retail|US4 Specialty Retail|1
+8048|US4 Food & Staples Retailing|US4 Food & Staples Retailing|1
+8049|US4 Beverages|US4 Beverages|1
+8050|US4 Food Products|US4 Food Products|1
+8051|US4 Tobacco|US4 Tobacco|1
+8052|US4 Household Products|US4 Household Products|1
+8053|US4 Personal Products|US4 Personal Products|1
+8054|US4 Health Care Equipment & Supplies|US4 Health Care Equipment & Supplies|1
+8055|US4 Health Care Providers & Services|US4 Health Care Providers & Services|1
+8056|US4 Health Care Technology|US4 Health Care Technology|1
+8057|US4 Biotechnology|US4 Biotechnology|1
+8058|US4 Pharmaceuticals|US4 Pharmaceuticals|1
+8059|US4 Life Sciences Tools & Services|US4 Life Sciences Tools & Services|1
+8060|US4 Banks|US4 Banks|1
+8061|US4 Thrifts & Mortgage Finance|US4 Thrifts & Mortgage Finance|1
+8062|US4 Diversified Financial Services|US4 Diversified Financial Services|1
+8063|US4 Consumer Finance|US4 Consumer Finance|1
+8064|US4 Capital Markets|US4 Capital Markets|1
+8065|US4 Insurance|US4 Insurance|1
+8066|US4 Equity Real Estate Investment Trusts (REITs)|US4 Equity Real Estate Investment Trusts (REITs)|1
+8067|US4 Real Estate Management & Development|US4 Real Estate Management & Development|1
+8068|US4 Mortgage Real Estate Investment Trusts (REITs)|US4 Mortgage Real Estate Investment Trusts (REITs)|1
+8069|US4 Internet Software & Services|US4 Internet Software & Services|1
+8070|US4 IT Services|US4 IT Services|1
+8071|US4 Software|US4 Software|1
+8072|US4 Communications Equipment|US4 Communications Equipment|1
+8073|US4 Technology Hardware, Storage & Peripherals|US4 Technology Hardware, Storage & Peripherals|1
+8074|US4 Electronic Equipment, Instruments & Components|US4 Electronic Equipment, Instruments & Components|1
+8075|US4 Semiconductors & Semiconductor Equipment|US4 Semiconductors & Semiconductor Equipment|1
+8076|US4 Diversified Telecommunication Services|US4 Diversified Telecommunication Services|1
+8077|US4 Wireless Telecommunication Services|US4 Wireless Telecommunication Services|1
+8078|US4 Electric Utilities|US4 Electric Utilities|1
+8079|US4 Gas Utilities|US4 Gas Utilities|1
+8080|US4 Multi-Utilities|US4 Multi-Utilities|1
+8081|US4 Water Utilities|US4 Water Utilities|1
+8082|US4 Independent Power and Renewable Electricity Producers|US4 Independent Power and Renewable Electricity Producers|1
+#################################################################### DM4 Model industry factors
+8101|DM4 Value|DM4 Value|0
+8102|DM4 Leverage|DM4 Leverage|0
+8103|DM4 Growth|DM4 Growth|0
+8104|DM4 Size|DM4 Size|0
+8105|DM4 Market Sensitivity|DM4 Market Sensitivity|0
+8106|DM4 Liquidity|DM4 Liquidity|0
+8107|DM4 Short-Term Momentum|DM4 Short-Term Momentum|0
+8108|DM4 Medium-Term Momentum|DM4 Medium-Term Momentum|0
+8109|DM4 Volatility|DM4 Volatility|0
+8110|DM4 Earnings Yield|DM4 Earnings Yield|0
+8111|DM4 Dividend Yield|DM4 Dividend Yield|0
+8112|DM4 Exchange Rate Sensitivity|DM4 Exchange Rate Sensitivity|0
+8113|DM4 Profitability|DM4 Profitability|0
+8114|DM4 Developed Market|DM4 Developed Market|5
+8115|DM4 Energy Equipment & Services|DM4 Energy Equipment & Services|1
+8116|DM4 Oil, Gas & Consumable Fuels|DM4 Oil, Gas & Consumable Fuels|1
+8117|DM4 Chemicals|DM4 Chemicals|1
+8118|DM4 Construction Materials|DM4 Construction Materials|1
+8119|DM4 Containers & Packaging|DM4 Containers & Packaging|1
+8120|DM4 Metals & Mining|DM4 Metals & Mining|1
+8121|DM4 Paper & Forest Products|DM4 Paper & Forest Products|1
+8122|DM4 Aerospace & Defense|DM4 Aerospace & Defense|1
+8123|DM4 Building Products|DM4 Building Products|1
+8124|DM4 Construction & Engineering|DM4 Construction & Engineering|1
+8125|DM4 Electrical Equipment|DM4 Electrical Equipment|1
+8126|DM4 Industrial Conglomerates|DM4 Industrial Conglomerates|1
+8127|DM4 Machinery|DM4 Machinery|1
+8128|DM4 Trading Companies & Distributors|DM4 Trading Companies & Distributors|1
+8129|DM4 Commercial Services & Supplies|DM4 Commercial Services & Supplies|1
+8130|DM4 Professional Services|DM4 Professional Services|1
+8131|DM4 Air Freight & Logistics|DM4 Air Freight & Logistics|1
+8132|DM4 Airlines|DM4 Airlines|1
+8133|DM4 Marine|DM4 Marine|1
+8134|DM4 Road & Rail|DM4 Road & Rail|1
+8135|DM4 Transportation Infrastructure|DM4 Transportation Infrastructure|1
+8136|DM4 Auto Components|DM4 Auto Components|1
+8137|DM4 Automobiles|DM4 Automobiles|1
+8138|DM4 Household Durables|DM4 Household Durables|1
+8139|DM4 Leisure Products|DM4 Leisure Products|1
+8140|DM4 Textiles, Apparel & Luxury Goods|DM4 Textiles, Apparel & Luxury Goods|1
+8141|DM4 Hotels, Restaurants & Leisure|DM4 Hotels, Restaurants & Leisure|1
+8142|DM4 Diversified Consumer Services|DM4 Diversified Consumer Services|1
+8143|DM4 Distributors|DM4 Distributors|1
+8144|DM4 Internet & Direct Marketing Retail|DM4 Internet & Direct Marketing Retail|1
+8145|DM4 Multiline Retail|DM4 Multiline Retail|1
+8146|DM4 Specialty Retail|DM4 Specialty Retail|1
+8147|DM4 Food & Staples Retailing|DM4 Food & Staples Retailing|1
+8148|DM4 Beverages|DM4 Beverages|1
+8149|DM4 Food Products|DM4 Food Products|1
+8150|DM4 Tobacco|DM4 Tobacco|1
+8151|DM4 Household Products|DM4 Household Products|1
+8152|DM4 Personal Products|DM4 Personal Products|1
+8153|DM4 Health Care Equipment & Supplies|DM4 Health Care Equipment & Supplies|1
+8154|DM4 Health Care Providers & Services|DM4 Health Care Providers & Services|1
+8155|DM4 Health Care Technology|DM4 Health Care Technology|1
+8156|DM4 Biotechnology|DM4 Biotechnology|1
+8157|DM4 Pharmaceuticals|DM4 Pharmaceuticals|1
+8158|DM4 Life Sciences Tools & Services|DM4 Life Sciences Tools & Services|1
+8159|DM4 Banks|DM4 Banks|1
+8160|DM4 Thrifts & Mortgage Finance|DM4 Thrifts & Mortgage Finance|1
+8161|DM4 Consumer Finance|DM4 Consumer Finance|1
+8162|DM4 Capital Markets|DM4 Capital Markets|1
+8163|DM4 Insurance|DM4 Insurance|1
+8164|DM4 IT Services|DM4 IT Services|1
+8165|DM4 Software|DM4 Software|1
+8166|DM4 Communications Equipment|DM4 Communications Equipment|1
+8167|DM4 Technology Hardware, Storage & Peripherals|DM4 Technology Hardware, Storage & Peripherals|1
+8168|DM4 Electronic Equipment, Instruments & Components|DM4 Electronic Equipment, Instruments & Components|1
+8169|DM4 Semiconductors & Semiconductor Equipment|DM4 Semiconductors & Semiconductor Equipment|1
+8170|DM4 Diversified Telecommunication Services|DM4 Diversified Telecommunication Services|1
+8171|DM4 Wireless Telecommunication Services|DM4 Wireless Telecommunication Services|1
+8172|DM4 Media|DM4 Media|1
+8173|DM4 Entertainment|DM4 Entertainment|1
+8174|DM4 Interactive Media & Services|DM4 Interactive Media & Services|1
+8175|DM4 Electric Utilities|DM4 Electric Utilities|1
+8176|DM4 Gas Utilities|DM4 Gas Utilities|1
+8177|DM4 Multi-Utilities|DM4 Multi-Utilities|1
+8178|DM4 Water Utilities|DM4 Water Utilities|1
+8179|DM4 Independent Power and Renewable Electricity Producers|DM4 Independent Power and Renewable Electricity Producers|1
+8180|DM4 Equity Real Estate Investment Trusts (REITs)|DM4 Equity Real Estate Investment Trusts (REITs)|1
+8181|DM4 Real Estate Management & Development|DM4 Real Estate Management & Development|1
+8182|DM4 Diversified Financial Services & Mortgage REITs|DM4 Diversified Financial Services & Mortgage REITs|1
+#################################################################### EM4 Model industry factors
+8201|EM4 Value|EM4 Value|0
+8202|EM4 Leverage|EM4 Leverage|0
+8203|EM4 Growth|EM4 Growth|0
+8204|EM4 Size|EM4 Size|0
+8205|EM4 Market Sensitivity|EM4 Market Sensitivity|0
+8206|EM4 Liquidity|EM4 Liquidity|0
+8207|EM4 Short-Term Momentum|EM4 Short-Term Momentum|0
+8208|EM4 Medium-Term Momentum|EM4 Medium-Term Momentum|0
+8209|EM4 Volatility|EM4 Volatility|0
+8210|EM4 Earnings Yield|EM4 Earnings Yield|0
+8211|EM4 Dividend Yield|EM4 Dividend Yield|0
+8212|EM4 Exchange Rate Sensitivity|EM4 Exchange Rate Sensitivity|0
+8213|EM4 Profitability|EM4 Profitability|0
+8214|EM4 Emerging Market|EM4 Emerging Market|5
+8215|EM4 Energy Equipment & Services|EM4 Energy Equipment & Services|1
+8216|EM4 Oil, Gas & Consumable Fuels|EM4 Oil, Gas & Consumable Fuels|1
+8217|EM4 Chemicals|EM4 Chemicals|1
+8218|EM4 Construction Materials|EM4 Construction Materials|1
+8219|EM4 Containers & Packaging|EM4 Containers & Packaging|1
+8220|EM4 Metals & Mining|EM4 Metals & Mining|1
+8221|EM4 Paper & Forest Products|EM4 Paper & Forest Products|1
+8222|EM4 Aerospace & Defense|EM4 Aerospace & Defense|1
+8223|EM4 Building Products|EM4 Building Products|1
+8224|EM4 Construction & Engineering|EM4 Construction & Engineering|1
+8225|EM4 Electrical Equipment|EM4 Electrical Equipment|1
+8226|EM4 Industrial Conglomerates|EM4 Industrial Conglomerates|1
+8227|EM4 Machinery|EM4 Machinery|1
+8228|EM4 Trading Companies & Distributors|EM4 Trading Companies & Distributors|1
+8229|EM4 Air Freight & Logistics|EM4 Air Freight & Logistics|1
+8230|EM4 Airlines|EM4 Airlines|1
+8231|EM4 Marine|EM4 Marine|1
+8232|EM4 Road & Rail|EM4 Road & Rail|1
+8233|EM4 Transportation Infrastructure|EM4 Transportation Infrastructure|1
+8234|EM4 Auto Components|EM4 Auto Components|1
+8235|EM4 Automobiles|EM4 Automobiles|1
+8236|EM4 Household Durables|EM4 Household Durables|1
+8237|EM4 Leisure Products|EM4 Leisure Products|1
+8238|EM4 Textiles, Apparel & Luxury Goods|EM4 Textiles, Apparel & Luxury Goods|1
+8239|EM4 Hotels, Restaurants & Leisure|EM4 Hotels, Restaurants & Leisure|1
+8240|EM4 Diversified Consumer Services|EM4 Diversified Consumer Services|1
+8241|EM4 Distributors|EM4 Distributors|1
+8242|EM4 Internet & Direct Marketing Retail|EM4 Internet & Direct Marketing Retail|1
+8243|EM4 Multiline Retail|EM4 Multiline Retail|1
+8244|EM4 Specialty Retail|EM4 Specialty Retail|1
+8245|EM4 Food & Staples Retailing|EM4 Food & Staples Retailing|1
+8246|EM4 Beverages|EM4 Beverages|1
+8247|EM4 Food Products|EM4 Food Products|1
+8248|EM4 Tobacco|EM4 Tobacco|1
+8249|EM4 Household Products|EM4 Household Products|1
+8250|EM4 Personal Products|EM4 Personal Products|1
+8251|EM4 Health Care Providers & Services|EM4 Health Care Providers & Services|1
+8252|EM4 Pharmaceuticals|EM4 Pharmaceuticals|1
+8253|EM4 Consumer Finance|EM4 Consumer Finance|1
+8254|EM4 Capital Markets|EM4 Capital Markets|1
+8255|EM4 Insurance|EM4 Insurance|1
+8256|EM4 IT Services|EM4 IT Services|1
+8257|EM4 Software|EM4 Software|1
+8258|EM4 Communications Equipment|EM4 Communications Equipment|1
+8259|EM4 Technology Hardware, Storage & Peripherals|EM4 Technology Hardware, Storage & Peripherals|1
+8260|EM4 Electronic Equipment, Instruments & Components|EM4 Electronic Equipment, Instruments & Components|1
+8261|EM4 Semiconductors & Semiconductor Equipment|EM4 Semiconductors & Semiconductor Equipment|1
+8262|EM4 Diversified Telecommunication Services|EM4 Diversified Telecommunication Services|1
+8263|EM4 Wireless Telecommunication Services|EM4 Wireless Telecommunication Services|1
+8264|EM4 Media|EM4 Media|1
+8265|EM4 Entertainment|EM4 Entertainment|1
+8266|EM4 Interactive Media & Services|EM4 Interactive Media & Services|1
+8267|EM4 Electric Utilities|EM4 Electric Utilities|1
+8268|EM4 Gas Utilities|EM4 Gas Utilities|1
+8269|EM4 Water Utilities|EM4 Water Utilities|1
+8270|EM4 Equity Real Estate Investment Trusts (REITs)|EM4 Equity Real Estate Investment Trusts (REITs)|1
+8271|EM4 Real Estate Management & Development|EM4 Real Estate Management & Development|1
+8272|EM4 Diversified Financial Services & Mortgage REITs|EM4 Diversified Financial Services & Mortgage REITs|1
+8273|EM4 Commercial & Professional Services|EM4 Commercial & Professional Services|1
+8274|EM4 Health Care Equipment, Supplies & Technology|EM4 Health Care Equipment, Supplies & Technology|1
+8275|EM4 Biotechnology, Life Sciences Tools & Services|EM4 Biotechnology, Life Sciences Tools & Services|1
+8276|EM4 Banks, Thrifts & Mortgage Finance|EM4 Banks, Thrifts & Mortgage Finance|1
+8277|EM4 Multi-Utilities & Independent Power Producers & Traders|EM4 Multi-Utilities & Independent Power Producers & Traders|1
+#################################################################### CA4 Model industry factors
+8278|CA4 Value|CA4 Value|0
+8279|CA4 Leverage|CA4 Leverage|0
+8280|CA4 Growth|CA4 Growth|0
+8281|CA4 Size|CA4 Size|0
+8282|CA4 Market Sensitivity|CA4 Market Sensitivity|0
+8283|CA4 Liquidity|CA4 Liquidity|0
+8284|CA4 Short-Term Momentum|CA4 Short-Term Momentum|0
+8285|CA4 Medium-Term Momentum|CA4 Medium-Term Momentum|0
+8286|CA4 Volatility|CA4 Volatility|0
+8287|CA4 Earnings Yield|CA4 Earnings Yield|0
+8288|CA4 Dividend Yield|CA4 Dividend Yield|0
+8289|CA4 Exchange Rate Sensitivity|CA4 Exchange Rate Sensitivity|0
+8290|CA4 Residual Gold Sensitivity|CA4 Residual Gold Sensitivity|0
+8291|CA4 Residual Oil Sensitivity|CA4 Residual Oil Sensitivity|0
+8292|CA4 Profitability|CA4 Profitability|0
+8293|CA4 Energy Equipment & Services|CA4 Energy Equipment & Services|1
+8294|CA4 Oil, Gas & Consumable Fuels|CA4 Oil, Gas & Consumable Fuels|1
+8295|CA4 Metals & Mining ex Gold|CA4 Metals & Mining ex Gold|1
+8296|CA4 Materials ex Metals, Mining & Forestry|CA4 Materials ex Metals, Mining & Forestry|1
+8297|CA4 Gold|CA4 Gold|1
+8298|CA4 Paper & Forest Products|CA4 Paper & Forest Products|1
+8299|CA4 Capital Goods|CA4 Capital Goods|1
+8300|CA4 Commercial & Professional Services|CA4 Commercial & Professional Services|1
+8301|CA4 Transportation|CA4 Transportation|1
+8302|CA4 Consumer Discretionary|CA4 Consumer Discretionary|1
+8303|CA4 Food & Staples Retailing|CA4 Food & Staples Retailing|1
+8304|CA4 Food & Staples Products|CA4 Food & Staples Products|1
+8305|CA4 Health Care|CA4 Health Care|1
+8306|CA4 Banks|CA4 Banks|1
+8307|CA4 Diversified Financials|CA4 Diversified Financials|1
+8308|CA4 Insurance|CA4 Insurance|1
+8309|CA4 Software & Services|CA4 Software & Services|1
+8310|CA4 Technology Hardware|CA4 Technology Hardware|1
+8311|CA4 Telecommunication Services|CA4 Telecommunication Services|1
+8312|CA4 Media & Entertainment|CA4 Media & Entertainment|1
+8313|CA4 Utilities|CA4 Utilities|1
+8314|CA4 Real Estate Management & Development|CA4 Real Estate Management & Development|1
+8315|CA4 Equity Real Estate Investment Trusts (REITs)|CA4 Equity Real Estate Investment Trusts (REITs)|1
+8316|CA4 Market Intercept|CA4 Market Intercept|28
+
+# Fixed-income factors for AXUN
+10001|GB.GBP.GVT.ZC : 5Y|GB.GBP.GVT.ZC : 5Y|14
+10002|GB.GBP.GVT.ZC : 6M|GB.GBP.GVT.ZC : 6M|14
+10003|GB.GBP.SWP.ZCS : 1Y|GB.GBP.SWP.ZCS : 1Y|15
+10004|GBP.(A).SPRSWP : 5Y|GBP.(A).SPRSWP : 5Y|16
+10005|CN.CNY.GVT.ZC : 30Y|CN.CNY.GVT.ZC : 30Y|14
+10006|CZ.CZK.GVT.ZC : 10Y|CZ.CZK.GVT.ZC : 10Y|14
+10007|CZ.CZK.SWP.ZCS : 5Y|CZ.CZK.SWP.ZCS : 5Y|15
+10008|DE.EUR.CVBND.(A).RTGSPR : 2Y|DE.EUR.CVBND.(A).RTGSPR : 2Y|27
+10009|DE.EUR.CVBND.(AAA).RTGSPR : 1Y|DE.EUR.CVBND.(AAA).RTGSPR : 1Y|27
+10010|DE.EUR.CVBND.(AAA).RTGSPR : 5Y|DE.EUR.CVBND.(AAA).RTGSPR : 5Y|27
+10011|DE.EUR.CVBND.(BBB).RTGSPR : 2Y|DE.EUR.CVBND.(BBB).RTGSPR : 2Y|27
+10012|DE.EUR.CVBND.(BBB).RTGSPR : 5Y|DE.EUR.CVBND.(BBB).RTGSPR : 5Y|27
+10013|DE.EUR.CVBND.(IG).RTGSPR : 2Y|DE.EUR.CVBND.(IG).RTGSPR : 2Y|27
+10014|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 1Y|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 1Y|27
+10015|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 2Y|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 2Y|27
+10016|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 2Y|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 2Y|27
+10017|DK.DKK.GVT.ZC : 30Y|DK.DKK.GVT.ZC : 30Y|14
+10018|DK.DKK.SWP.ZCS : 1Y|DK.DKK.SWP.ZCS : 1Y|15
+10019|DK.EUR.CVBND.(A).RTGSPR : 2Y|DK.EUR.CVBND.(A).RTGSPR : 2Y|27
+10020|DK.EUR.CVBND.(IG).RTGSPR : 1Y|DK.EUR.CVBND.(IG).RTGSPR : 1Y|27
+10021|ES.EUR.CVBND.(AA).RTGSPR : 10Y|ES.EUR.CVBND.(AA).RTGSPR : 10Y|27
+10022|ES.EUR.CVBND.(BBB).RTGSPR : 1Y|ES.EUR.CVBND.(BBB).RTGSPR : 1Y|27
+10023|ES.EUR.CVBND.(BBB).RTGSPR : 2Y|ES.EUR.CVBND.(BBB).RTGSPR : 2Y|27
+10024|ES.EUR.CVBND.(IG).RTGSPR : 30Y|ES.EUR.CVBND.(IG).RTGSPR : 30Y|27
+10025|EU.EUR.SWP.ZCS : 1Y|EU.EUR.SWP.ZCS : 1Y|15
+10026|EU.EUR.SWP.ZCS : 5Y|EU.EUR.SWP.ZCS : 5Y|15
+10027|FR.EUR.CVBND.(IG).RTGSPR : 2Y|FR.EUR.CVBND.(IG).RTGSPR : 2Y|27
+10028|GBP.ATM : 2Y.2Y|GBP.ATM : 2Y.2Y|22
+10029|HUF.ATM : 2Y.2Y|HUF.ATM : 2Y.2Y|22
+10030|NOK.ATM : 2Y.2Y|NOK.ATM : 2Y.2Y|22
+10031|Vol:NIKKEI 225 : 50.182D|Vol:NIKKEI 225 : 50.182D|23
+10032|VN.VND.GVT.ZC : 30Y|VN.VND.GVT.ZC : 30Y|14
+10033|SE.SEK.CVBND.(AAA).RTGSPR : 5Y|SE.SEK.CVBND.(AAA).RTGSPR : 5Y|27
+10034|SE.SEK.CVBND.(IG).RTGSPR : 1Y|SE.SEK.CVBND.(IG).RTGSPR : 1Y|27
+10035|SE.SEK.SWP.ZCS : 6M|SE.SEK.SWP.ZCS : 6M|15
+10036|SG.SGD.GVT.ZC : 1Y|SG.SGD.GVT.ZC : 1Y|14
+10037|SG.SGD.SWP.ZCS : 30Y|SG.SGD.SWP.ZCS : 30Y|15
+10038|US.USD.BEI.ZC : 10Y|US.USD.BEI.ZC : 10Y|21
+10039|US.USD.MANU(IG).ABS : 5Y|US.USD.MANU(IG).ABS : 5Y|17
+10040|USD.(BBB).SPRSWP : 5Y|USD.(BBB).SPRSWP : 5Y|16
+10041|SK.EUR.GVT.ZC : 10Y|SK.EUR.GVT.ZC : 10Y|14
+10042|SK.EUR.GVT.ZC : 5Y|SK.EUR.GVT.ZC : 5Y|14
+10043|TR.TRY.GVT.ZC : 10Y|TR.TRY.GVT.ZC : 10Y|14
+10044|TW.TWD.SWP.ZCS : 2Y|TW.TWD.SWP.ZCS : 2Y|15
+10045|UA.UAH.GVT.ZC : 10Y|UA.UAH.GVT.ZC : 10Y|14
+10046|US.USD.AGNCY.FHLB.SPRSOV : 5Y|US.USD.AGNCY.FHLB.SPRSOV : 5Y|26
+10047|HK.HKD.GVT.ZC : 30Y|HK.HKD.GVT.ZC : 30Y|14
+10048|HK.HKD.GVT.ZC : 6M|HK.HKD.GVT.ZC : 6M|14
+10049|HK.HKD.SWP.ZCS : 2Y|HK.HKD.SWP.ZCS : 2Y|15
+10050|HK.HKD.SWP.ZCS : 5Y|HK.HKD.SWP.ZCS : 5Y|15
+10051|HR.HRK.GVT.ZC : 30Y|HR.HRK.GVT.ZC : 30Y|14
+10052|ID.IDR.GVT.ZC : 5Y|ID.IDR.GVT.ZC : 5Y|14
+10053|ID.IDR.SWP.ZCS : 10Y|ID.IDR.SWP.ZCS : 10Y|15
+10054|IL.ILS.GVT.ZC : 1Y|IL.ILS.GVT.ZC : 1Y|14
+10055|IL.ILS.GVT.ZC : 30Y|IL.ILS.GVT.ZC : 30Y|14
+10056|IS.ISK.GVT.ZC : 1Y|IS.ISK.GVT.ZC : 1Y|14
+10057|IT.EUR.SOVSPR : 5Y|IT.EUR.SOVSPR : 5Y|18
+10058|JP.JPY.GVT.ZC : 30Y|JP.JPY.GVT.ZC : 30Y|14
+10059|JP.JPY.GVT.ZC : 5Y|JP.JPY.GVT.ZC : 5Y|14
+10060|JPY.(AA).SPRSWP : 5Y|JPY.(AA).SPRSWP : 5Y|16
+10061|JPY.(SUB-IG).SPRSWP : 5Y|JPY.(SUB-IG).SPRSWP : 5Y|16
+10062|KR.KRW.GVT.ZC : 10Y|KR.KRW.GVT.ZC : 10Y|14
+10063|KR.KRW.SWP.ZCS : 10Y|KR.KRW.SWP.ZCS : 10Y|15
+10064|MX.MXN.GVT.ZC : 1Y|MX.MXN.GVT.ZC : 1Y|14
+10065|MX.MXN.GVT.ZC : 2Y|MX.MXN.GVT.ZC : 2Y|14
+10066|MX.MXN.GVT.ZC : 30Y|MX.MXN.GVT.ZC : 30Y|14
+10067|MY.MYR.GVT.ZC : 10Y|MY.MYR.GVT.ZC : 10Y|14
+10068|NG.NGN.GVT.ZC : 10Y|NG.NGN.GVT.ZC : 10Y|14
+10069|NG.NGN.GVT.ZC : 6M|NG.NGN.GVT.ZC : 6M|14
+10070|NO.NOK.GVT.ZC : 1Y|NO.NOK.GVT.ZC : 1Y|14
+10071|NO.NOK.GVT.ZC : 30Y|NO.NOK.GVT.ZC : 30Y|14
+10072|NZ.NZD.GVT.ZC : 2Y|NZ.NZD.GVT.ZC : 2Y|14
+10073|PE.PEN.GVT.ZC : 1Y|PE.PEN.GVT.ZC : 1Y|14
+10074|PH.PHP.GVT.ZC : 5Y|PH.PHP.GVT.ZC : 5Y|14
+10075|PH.PHP.SWP.ZCS : 1Y|PH.PHP.SWP.ZCS : 1Y|15
+10076|PL.PLN.SWP.ZCS : 10Y|PL.PLN.SWP.ZCS : 10Y|15
+10077|PL.PLN.SWP.ZCS : 2Y|PL.PLN.SWP.ZCS : 2Y|15
+10078|RU.RUB.GVT.ZC : 30Y|RU.RUB.GVT.ZC : 30Y|14
+10079|RU.RUB.GVT.ZC : 6M|RU.RUB.GVT.ZC : 6M|14
+10080|SE.SEK.BEI.ZC : 5Y|SE.SEK.BEI.ZC : 5Y|21
+10081|CHF.(AA).SPRSWP : 5Y|CHF.(AA).SPRSWP : 5Y|16
+10082|CH.CHF.GVT.ZC : 6M|CH.CHF.GVT.ZC : 6M|14
+10083|BG.BGN.GVT.ZC : 30Y|BG.BGN.GVT.ZC : 30Y|14
+10084|BG.BGN.GVT.ZC : 5Y|BG.BGN.GVT.ZC : 5Y|14
+10085|BG.BGN.SWP.ZCS : 5Y|BG.BGN.SWP.ZCS : 5Y|15
+10086|BG.BGN.SWP.ZCS : 6M|BG.BGN.SWP.ZCS : 6M|15
+10087|CA.CAD.GVT.ZC : 2Y|CA.CAD.GVT.ZC : 2Y|14
+10088|CA.CAD.PROV.ALB.SPRSOV : 5Y|CA.CAD.PROV.ALB.SPRSOV : 5Y|24
+10089|CA.CAD.PROV.ONT.SPRSOV : 5Y|CA.CAD.PROV.ONT.SPRSOV : 5Y|24
+10090|CH.CHF.GVT.ZC : 10Y|CH.CHF.GVT.ZC : 10Y|14
+10091|CH.CHF.GVT.ZC : 2Y|CH.CHF.GVT.ZC : 2Y|14
+10092|GB.GBP.GVT.ZC : 10Y|GB.GBP.GVT.ZC : 10Y|14
+10093|GB.GBP.SWP.ZCS : 30Y|GB.GBP.SWP.ZCS : 30Y|15
+10094|GB.GBP.SWP.ZCS : 5Y|GB.GBP.SWP.ZCS : 5Y|15
+10095|GBP.(BBB).SPRSWP : 5Y|GBP.(BBB).SPRSWP : 5Y|16
+10096|CO.COP.GVT.ZC : 5Y|CO.COP.GVT.ZC : 5Y|14
+10097|CO.COP.GVT.ZC : 6M|CO.COP.GVT.ZC : 6M|14
+10098|CZ.CZK.GVT.ZC : 5Y|CZ.CZK.GVT.ZC : 5Y|14
+10099|DE.EUR.BEI.ZC : 10Y|DE.EUR.BEI.ZC : 10Y|21
+10100|DE.EUR.CVBND.(BBB).RTGSPR : 10Y|DE.EUR.CVBND.(BBB).RTGSPR : 10Y|27
+10101|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 30Y|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 30Y|27
+10102|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 5Y|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 5Y|27
+10103|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 10Y|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 10Y|27
+10104|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 2Y|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 2Y|27
+10105|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 10Y|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 10Y|27
+10106|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 30Y|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 30Y|27
+10107|DK.DKK.SWP.ZCS : 2Y|DK.DKK.SWP.ZCS : 2Y|15
+10108|DK.DKK.SWP.ZCS : 6M|DK.DKK.SWP.ZCS : 6M|15
+10109|DK.EUR.CVBND.(A).RTGSPR : 5Y|DK.EUR.CVBND.(A).RTGSPR : 5Y|27
+10110|EP.EUR.GVT.ZC : 2Y|EP.EUR.GVT.ZC : 2Y|14
+10111|ES.EUR.CVBND.(A).RTGSPR : 10Y|ES.EUR.CVBND.(A).RTGSPR : 10Y|27
+10112|ES.EUR.CVBND.(AA).RTGSPR : 1Y|ES.EUR.CVBND.(AA).RTGSPR : 1Y|27
+10113|EUR.SUPN.(IG) : 5Y|EUR.SUPN.(IG) : 5Y|25
+10114|FR.EUR.BEI.ZC : 10Y|FR.EUR.BEI.ZC : 10Y|21
+10115|FR.EUR.CVBND.(AA).RTGSPR : 10Y|FR.EUR.CVBND.(AA).RTGSPR : 10Y|27
+10116|FR.EUR.CVBND.(AA).RTGSPR : 2Y|FR.EUR.CVBND.(AA).RTGSPR : 2Y|27
+10117|FR.EUR.CVBND.(AA).RTGSPR : 30Y|FR.EUR.CVBND.(AA).RTGSPR : 30Y|27
+10118|FR.EUR.CVBND.(AAA).RTGSPR : 1Y|FR.EUR.CVBND.(AAA).RTGSPR : 1Y|27
+10119|FR.EUR.CVBND.(IG).RTGSPR : 30Y|FR.EUR.CVBND.(IG).RTGSPR : 30Y|27
+10120|ZA.ZAR.GVT.ZC : 2Y|ZA.ZAR.GVT.ZC : 2Y|14
+10121|ZA.ZAR.GVT.ZC : 30Y|ZA.ZAR.GVT.ZC : 30Y|14
+10122|ZA.ZAR.SWP.ZCS : 1Y|ZA.ZAR.SWP.ZCS : 1Y|15
+10123|DKK.ATM : 2Y.2Y|DKK.ATM : 2Y.2Y|22
+10124|PLN.ATM : 2Y.2Y|PLN.ATM : 2Y.2Y|22
+10125|USD.SUPN.(IG) : 5Y|USD.SUPN.(IG) : 5Y|25
+10126|SE.SEK.CVBND.(AAA).RTGSPR : 1Y|SE.SEK.CVBND.(AAA).RTGSPR : 1Y|27
+10127|SG.SGD.GVT.ZC : 10Y|SG.SGD.GVT.ZC : 10Y|14
+10128|SG.SGD.SWP.ZCS : 6M|SG.SGD.SWP.ZCS : 6M|15
+10129|US.USD.AIRL(IG).ABS : 5Y|US.USD.AIRL(IG).ABS : 5Y|17
+10130|US.USD.AUTO(IG).ABS : 5Y|US.USD.AUTO(IG).ABS : 5Y|17
+10131|US.USD.GVT.ZC : 2Y|US.USD.GVT.ZC : 2Y|14
+10132|US.USD.GVT.ZC : 30Y|US.USD.GVT.ZC : 30Y|14
+10133|US.USD.GVT.ZC : 6M|US.USD.GVT.ZC : 6M|14
+10134|US.USD.SWP.ZCS : 10Y|US.USD.SWP.ZCS : 10Y|15
+10135|US.USD.SWP.ZCS : 5Y|US.USD.SWP.ZCS : 5Y|15
+10136|USD.(AA).SPRSWP : 5Y|USD.(AA).SPRSWP : 5Y|16
+10137|TW.TWD.SWP.ZCS : 1Y|TW.TWD.SWP.ZCS : 1Y|15
+10138|UA.UAH.GVT.ZC : 1Y|UA.UAH.GVT.ZC : 1Y|14
+10139|HR.HRK.GVT.ZC : 6M|HR.HRK.GVT.ZC : 6M|14
+10140|HU.HUF.GVT.ZC : 1Y|HU.HUF.GVT.ZC : 1Y|14
+10141|HU.HUF.GVT.ZC : 30Y|HU.HUF.GVT.ZC : 30Y|14
+10142|IL.ILS.GVT.ZC : 10Y|IL.ILS.GVT.ZC : 10Y|14
+10143|IN.INR.GVT.ZC : 10Y|IN.INR.GVT.ZC : 10Y|14
+10144|IN.INR.GVT.ZC : 6M|IN.INR.GVT.ZC : 6M|14
+10145|IS.ISK.GVT.ZC : 30Y|IS.ISK.GVT.ZC : 30Y|14
+10146|IS.ISK.GVT.ZC : 6M|IS.ISK.GVT.ZC : 6M|14
+10147|JP.JPY.GVT.ZC : 6M|JP.JPY.GVT.ZC : 6M|14
+10148|JP.JPY.SWP.ZCS : 30Y|JP.JPY.SWP.ZCS : 30Y|15
+10149|JP.JPY.SWP.ZCS : 5Y|JP.JPY.SWP.ZCS : 5Y|15
+10150|KR.KRW.GVT.ZC : 6M|KR.KRW.GVT.ZC : 6M|14
+10151|MX.MXN.GVT.ZC : 10Y|MX.MXN.GVT.ZC : 10Y|14
+10152|MX.MXN.SWP.ZCS : 2Y|MX.MXN.SWP.ZCS : 2Y|15
+10153|MX.MXN.SWP.ZCS : 6M|MX.MXN.SWP.ZCS : 6M|15
+10154|MY.MYR.GVT.ZC : 2Y|MY.MYR.GVT.ZC : 2Y|14
+10155|MY.MYR.SWP.ZCS : 10Y|MY.MYR.SWP.ZCS : 10Y|15
+10156|MY.MYR.SWP.ZCS : 1Y|MY.MYR.SWP.ZCS : 1Y|15
+10157|MY.MYR.SWP.ZCS : 2Y|MY.MYR.SWP.ZCS : 2Y|15
+10158|KR.KRW.SWP.ZCS : 30Y|KR.KRW.SWP.ZCS : 30Y|15
+10159|MY.MYR.SWP.ZCS : 30Y|MY.MYR.SWP.ZCS : 30Y|15
+10160|NO.NOK.GVT.ZC : 5Y|NO.NOK.GVT.ZC : 5Y|14
+10161|NO.NOK.SWP.ZCS : 30Y|NO.NOK.SWP.ZCS : 30Y|15
+10162|NZ.NZD.GVT.ZC : 5Y|NZ.NZD.GVT.ZC : 5Y|14
+10163|NZ.NZD.SWP.ZCS : 10Y|NZ.NZD.SWP.ZCS : 10Y|15
+10164|NZ.NZD.SWP.ZCS : 5Y|NZ.NZD.SWP.ZCS : 5Y|15
+10165|PE.PEN.GVT.ZC : 2Y|PE.PEN.GVT.ZC : 2Y|14
+10166|PH.PHP.SWP.ZCS : 10Y|PH.PHP.SWP.ZCS : 10Y|15
+10167|PK.PKR.GVT.ZC : 5Y|PK.PKR.GVT.ZC : 5Y|14
+10168|PL.PLN.GVT.ZC : 5Y|PL.PLN.GVT.ZC : 5Y|14
+10169|PL.PLN.GVT.ZC : 6M|PL.PLN.GVT.ZC : 6M|14
+10170|RO.RON.GVT.ZC : 1Y|RO.RON.GVT.ZC : 1Y|14
+10171|SE.EUR.CVBND.(AA).RTGSPR : 10Y|SE.EUR.CVBND.(AA).RTGSPR : 10Y|27
+10172|SE.EUR.CVBND.(IG).RTGSPR : 2Y|SE.EUR.CVBND.(IG).RTGSPR : 2Y|27
+10173|SE.SEK.CVBND.(AA).RTGSPR : 10Y|SE.SEK.CVBND.(AA).RTGSPR : 10Y|27
+10174|AU.AUD.SWP.ZCS : 6M|AU.AUD.SWP.ZCS : 6M|15
+10175|BG.BGN.SWP.ZCS : 10Y|BG.BGN.SWP.ZCS : 10Y|15
+10176|BG.BGN.SWP.ZCS : 1Y|BG.BGN.SWP.ZCS : 1Y|15
+10177|BR.BRL.GVT.ZC : 10Y|BR.BRL.GVT.ZC : 10Y|14
+10178|BR.BRL.GVT.ZC : 1Y|BR.BRL.GVT.ZC : 1Y|14
+10179|BR.BRL.GVT.ZC : 6M|BR.BRL.GVT.ZC : 6M|14
+10180|CA.CAD.BEI.ZC : 30Y|CA.CAD.BEI.ZC : 30Y|21
+10181|CA.CAD.PROV.BC.SPRSOV : 5Y|CA.CAD.PROV.BC.SPRSOV : 5Y|24
+10182|CA.CAD.PROV.NBW.SPRSOV : 5Y|CA.CAD.PROV.NBW.SPRSOV : 5Y|24
+10183|CA.CAD.PROV.NFLD.SPRSOV : 5Y|CA.CAD.PROV.NFLD.SPRSOV : 5Y|24
+10184|CA.CAD.SWP.ZCS : 10Y|CA.CAD.SWP.ZCS : 10Y|15
+10185|GB.GBP.BEI.ZC : 10Y|GB.GBP.BEI.ZC : 10Y|21
+10186|GB.GBP.SWP.ZCS : 6M|GB.GBP.SWP.ZCS : 6M|15
+10187|CL.CLP.GVT.ZC : 2Y|CL.CLP.GVT.ZC : 2Y|14
+10188|CN.CNY.GVT.ZC : 1Y|CN.CNY.GVT.ZC : 1Y|14
+10189|CO.COP.GVT.ZC : 10Y|CO.COP.GVT.ZC : 10Y|14
+10190|CY.EUR.SOVSPR : 5Y|CY.EUR.SOVSPR : 5Y|18
+10191|CZ.CZK.GVT.ZC : 6M|CZ.CZK.GVT.ZC : 6M|14
+10192|CZ.CZK.SWP.ZCS : 6M|CZ.CZK.SWP.ZCS : 6M|15
+10193|DE.EUR.BEI.ZC : 2Y|DE.EUR.BEI.ZC : 2Y|21
+10194|DE.EUR.CVBND.(A).RTGSPR : 30Y|DE.EUR.CVBND.(A).RTGSPR : 30Y|27
+10195|DE.EUR.CVBND.(IG).RTGSPR : 10Y|DE.EUR.CVBND.(IG).RTGSPR : 10Y|27
+10196|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 2Y|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 2Y|27
+10197|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 1Y|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 1Y|27
+10198|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 10Y|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 10Y|27
+10199|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 1Y|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 1Y|27
+10200|DK.DKK.GVT.ZC : 10Y|DK.DKK.GVT.ZC : 10Y|14
+10201|EP.EUR.GVT.ZC : 30Y|EP.EUR.GVT.ZC : 30Y|14
+10202|ES.EUR.CVBND.(IG).RTGSPR : 2Y|ES.EUR.CVBND.(IG).RTGSPR : 2Y|27
+10203|EU.EUR.SWP.ZCS : 10Y|EU.EUR.SWP.ZCS : 10Y|15
+10204|EU.EUR.SWP.ZCS : 30Y|EU.EUR.SWP.ZCS : 30Y|15
+10205|EU.EUR.SWP.ZCS : 6M|EU.EUR.SWP.ZCS : 6M|15
+10206|EUR.SUPN.(AAA) : 5Y|EUR.SUPN.(AAA) : 5Y|25
+10207|VN.VND.SWP.ZCS : 6M|VN.VND.SWP.ZCS : 6M|15
+10208|ZA.ZAR.SWP.ZCS : 30Y|ZA.ZAR.SWP.ZCS : 30Y|15
+10209|Vol:FTSE 100 : 50.182D|Vol:FTSE 100 : 50.182D|23
+10210|VN.VND.GVT.ZC : 2Y|VN.VND.GVT.ZC : 2Y|14
+10211|VN.VND.SWP.ZCS : 1Y|VN.VND.SWP.ZCS : 1Y|15
+10212|SE.SEK.GVT.ZC : 30Y|SE.SEK.GVT.ZC : 30Y|14
+10213|SE.SEK.SWP.ZCS : 10Y|SE.SEK.SWP.ZCS : 10Y|15
+10214|SG.SGD.GVT.ZC : 30Y|SG.SGD.GVT.ZC : 30Y|14
+10215|SG.SGD.GVT.ZC : 5Y|SG.SGD.GVT.ZC : 5Y|14
+10216|US.USD.BEI.ZC : 5Y|US.USD.BEI.ZC : 5Y|21
+10217|US.USD.GVT.ZC : 5Y|US.USD.GVT.ZC : 5Y|14
+10218|US.USD.RMBS(IG).ABS : 5Y|US.USD.RMBS(IG).ABS : 5Y|17
+10219|US.USD.SWP.ZCS : 6M|US.USD.SWP.ZCS : 6M|15
+10220|TH.THB.GVT.ZC : 5Y|TH.THB.GVT.ZC : 5Y|14
+10221|TH.THB.SWP.ZCS : 30Y|TH.THB.SWP.ZCS : 30Y|15
+10222|TW.TWD.SWP.ZCS : 10Y|TW.TWD.SWP.ZCS : 10Y|15
+10223|UA.UAH.GVT.ZC : 6M|UA.UAH.GVT.ZC : 6M|14
+10224|GR.EUR.SOVSPR : 5Y|GR.EUR.SOVSPR : 5Y|18
+10225|HK.HKD.GVT.ZC : 2Y|HK.HKD.GVT.ZC : 2Y|14
+10226|HR.HRK.GVT.ZC : 5Y|HR.HRK.GVT.ZC : 5Y|14
+10227|ID.IDR.SWP.ZCS : 1Y|ID.IDR.SWP.ZCS : 1Y|15
+10228|ID.IDR.SWP.ZCS : 5Y|ID.IDR.SWP.ZCS : 5Y|15
+10229|IL.ILS.GVT.ZC : 5Y|IL.ILS.GVT.ZC : 5Y|14
+10230|JP.JPY.SWP.ZCS : 10Y|JP.JPY.SWP.ZCS : 10Y|15
+10231|JP.JPY.SWP.ZCS : 1Y|JP.JPY.SWP.ZCS : 1Y|15
+10232|JPY.(A).SPRSWP : 5Y|JPY.(A).SPRSWP : 5Y|16
+10233|KR.KRW.GVT.ZC : 2Y|KR.KRW.GVT.ZC : 2Y|14
+10234|KR.KRW.GVT.ZC : 5Y|KR.KRW.GVT.ZC : 5Y|14
+10235|LT.LTL.GVT.ZC : 1Y|LT.LTL.GVT.ZC : 1Y|14
+10236|MT.EUR.SOVSPR : 5Y|MT.EUR.SOVSPR : 5Y|18
+10237|NO.NOK.SWP.ZCS : 2Y|NO.NOK.SWP.ZCS : 2Y|15
+10238|NZ.NZD.SWP.ZCS : 30Y|NZ.NZD.SWP.ZCS : 30Y|15
+10239|NZ.NZD.SWP.ZCS : 6M|NZ.NZD.SWP.ZCS : 6M|15
+10240|PE.PEN.GVT.ZC : 30Y|PE.PEN.GVT.ZC : 30Y|14
+10241|PE.PEN.GVT.ZC : 5Y|PE.PEN.GVT.ZC : 5Y|14
+10242|PH.PHP.GVT.ZC : 10Y|PH.PHP.GVT.ZC : 10Y|14
+10243|PL.PLN.GVT.ZC : 1Y|PL.PLN.GVT.ZC : 1Y|14
+10244|PL.PLN.SWP.ZCS : 30Y|PL.PLN.SWP.ZCS : 30Y|15
+10245|PL.PLN.SWP.ZCS : 5Y|PL.PLN.SWP.ZCS : 5Y|15
+10246|PT.EUR.SOVSPR : 5Y|PT.EUR.SOVSPR : 5Y|18
+10247|RO.RON.GVT.ZC : 30Y|RO.RON.GVT.ZC : 30Y|14
+10248|RU.RUB.GVT.ZC : 10Y|RU.RUB.GVT.ZC : 10Y|14
+10249|RU.RUB.GVT.ZC : 1Y|RU.RUB.GVT.ZC : 1Y|14
+10250|AU.AUD.GVT.ZC : 1Y|AU.AUD.GVT.ZC : 1Y|14
+10251|AU.AUD.GVT.ZC : 6M|AU.AUD.GVT.ZC : 6M|14
+10252|CA.CAD.GVT.ZC : 10Y|CA.CAD.GVT.ZC : 10Y|14
+10253|CA.CAD.GVT.ZC : 5Y|CA.CAD.GVT.ZC : 5Y|14
+10254|CA.CAD.GVT.ZC : 6M|CA.CAD.GVT.ZC : 6M|14
+10255|CA.CAD.SWP.ZCS : 2Y|CA.CAD.SWP.ZCS : 2Y|15
+10256|GB.GBP.BEI.ZC : 5Y|GB.GBP.BEI.ZC : 5Y|21
+10257|GB.GBP.SWP.ZCS : 10Y|GB.GBP.SWP.ZCS : 10Y|15
+10258|GB.GBP.SWP.ZCS : 2Y|GB.GBP.SWP.ZCS : 2Y|15
+10259|GBP.(SUB-IG).SPRSWP : 5Y|GBP.(SUB-IG).SPRSWP : 5Y|16
+10260|CL.CLP.GVT.ZC : 10Y|CL.CLP.GVT.ZC : 10Y|14
+10261|CO.COP.GVT.ZC : 1Y|CO.COP.GVT.ZC : 1Y|14
+10262|CZ.CZK.GVT.ZC : 1Y|CZ.CZK.GVT.ZC : 1Y|14
+10263|CZ.CZK.GVT.ZC : 2Y|CZ.CZK.GVT.ZC : 2Y|14
+10264|CZ.CZK.GVT.ZC : 30Y|CZ.CZK.GVT.ZC : 30Y|14
+10265|CZ.CZK.SWP.ZCS : 1Y|CZ.CZK.SWP.ZCS : 1Y|15
+10266|DE.EUR.BEI.ZC : 5Y|DE.EUR.BEI.ZC : 5Y|21
+10267|DE.EUR.CVBND.(A).RTGSPR : 1Y|DE.EUR.CVBND.(A).RTGSPR : 1Y|27
+10268|DE.EUR.CVBND.(AA).RTGSPR : 1Y|DE.EUR.CVBND.(AA).RTGSPR : 1Y|27
+10269|DE.EUR.CVBND.(AA).RTGSPR : 30Y|DE.EUR.CVBND.(AA).RTGSPR : 30Y|27
+10270|DE.EUR.CVBND.(AAA).RTGSPR : 2Y|DE.EUR.CVBND.(AAA).RTGSPR : 2Y|27
+10271|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 5Y|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 5Y|27
+10272|DK.EUR.CVBND.(AAA).RTGSPR : 1Y|DK.EUR.CVBND.(AAA).RTGSPR : 1Y|27
+10273|DK.EUR.CVBND.(AAA).RTGSPR : 5Y|DK.EUR.CVBND.(AAA).RTGSPR : 5Y|27
+10274|EP.EUR.GVT.ZC : 10Y|EP.EUR.GVT.ZC : 10Y|14
+10275|ES.EUR.CVBND.(A).RTGSPR : 1Y|ES.EUR.CVBND.(A).RTGSPR : 1Y|27
+10276|ES.EUR.CVBND.(AA).RTGSPR : 30Y|ES.EUR.CVBND.(AA).RTGSPR : 30Y|27
+10277|EUR.(AA).SPRSWP : 5Y|EUR.(AA).SPRSWP : 5Y|16
+10278|FI.EUR.SOVSPR : 5Y|FI.EUR.SOVSPR : 5Y|18
+10279|FR.EUR.CVBND.(A).RTGSPR : 10Y|FR.EUR.CVBND.(A).RTGSPR : 10Y|27
+10280|VN.VND.SWP.ZCS : 5Y|VN.VND.SWP.ZCS : 5Y|15
+10281|ZA.ZAR.GVT.ZC : 10Y|ZA.ZAR.GVT.ZC : 10Y|14
+10282|ZA.ZAR.GVT.ZC : 1Y|ZA.ZAR.GVT.ZC : 1Y|14
+10283|SEK.ATM : 2Y.2Y|SEK.ATM : 2Y.2Y|22
+10284|USD.ATM : 2Y.2Y|USD.ATM : 2Y.2Y|22
+10285|VN.VND.SWP.ZCS : 2Y|VN.VND.SWP.ZCS : 2Y|15
+10286|SE.SEK.CVBND.(AA).RTGSPR : 5Y|SE.SEK.CVBND.(AA).RTGSPR : 5Y|27
+10287|SE.SEK.CVBND.(BBB).RTGSPR : 5Y|SE.SEK.CVBND.(BBB).RTGSPR : 5Y|27
+10288|SE.SEK.CVBND.(IG).RTGSPR : 10Y|SE.SEK.CVBND.(IG).RTGSPR : 10Y|27
+10289|SE.SEK.CVBND.(IG).RTGSPR : 2Y|SE.SEK.CVBND.(IG).RTGSPR : 2Y|27
+10290|SE.SEK.GVT.ZC : 5Y|SE.SEK.GVT.ZC : 5Y|14
+10291|SE.SEK.SWP.ZCS : 5Y|SE.SEK.SWP.ZCS : 5Y|15
+10292|US.USD.CMBS(IG).ABS : 5Y|US.USD.CMBS(IG).ABS : 5Y|17
+10293|US.USD.GVT.ZC : 1Y|US.USD.GVT.ZC : 1Y|14
+10294|US.USD.HOME(IG).ABS : 5Y|US.USD.HOME(IG).ABS : 5Y|17
+10295|US.USD.SWP.ZCS : 30Y|US.USD.SWP.ZCS : 30Y|15
+10296|SK.EUR.GVT.ZC : 30Y|SK.EUR.GVT.ZC : 30Y|14
+10297|TH.THB.GVT.ZC : 2Y|TH.THB.GVT.ZC : 2Y|14
+10298|TH.THB.SWP.ZCS : 10Y|TH.THB.SWP.ZCS : 10Y|15
+10299|TH.THB.SWP.ZCS : 1Y|TH.THB.SWP.ZCS : 1Y|15
+10300|TH.THB.SWP.ZCS : 2Y|TH.THB.SWP.ZCS : 2Y|15
+10301|TH.THB.SWP.ZCS : 5Y|TH.THB.SWP.ZCS : 5Y|15
+10302|TR.TRY.GVT.ZC : 2Y|TR.TRY.GVT.ZC : 2Y|14
+10303|TW.TWD.SWP.ZCS : 6M|TW.TWD.SWP.ZCS : 6M|15
+10304|HK.HKD.GVT.ZC : 1Y|HK.HKD.GVT.ZC : 1Y|14
+10305|HK.HKD.SWP.ZCS : 6M|HK.HKD.SWP.ZCS : 6M|15
+10306|ID.IDR.GVT.ZC : 2Y|ID.IDR.GVT.ZC : 2Y|14
+10307|IE.EUR.SOVSPR : 5Y|IE.EUR.SOVSPR : 5Y|18
+10308|IL.ILS.GVT.ZC : 6M|IL.ILS.GVT.ZC : 6M|14
+10309|IN.INR.GVT.ZC : 30Y|IN.INR.GVT.ZC : 30Y|14
+10310|JP.JPY.GVT.ZC : 2Y|JP.JPY.GVT.ZC : 2Y|14
+10311|JP.JPY.SWP.ZCS : 6M|JP.JPY.SWP.ZCS : 6M|15
+10312|KR.KRW.GVT.ZC : 1Y|KR.KRW.GVT.ZC : 1Y|14
+10313|KR.KRW.SWP.ZCS : 1Y|KR.KRW.SWP.ZCS : 1Y|15
+10314|KR.KRW.SWP.ZCS : 6M|KR.KRW.SWP.ZCS : 6M|15
+10315|LT.LTL.GVT.ZC : 10Y|LT.LTL.GVT.ZC : 10Y|14
+10316|MX.MXN.SWP.ZCS : 30Y|MX.MXN.SWP.ZCS : 30Y|15
+10317|KR.KRW.SWP.ZCS : 5Y|KR.KRW.SWP.ZCS : 5Y|15
+10318|NG.NGN.GVT.ZC : 2Y|NG.NGN.GVT.ZC : 2Y|14
+10319|NG.NGN.GVT.ZC : 30Y|NG.NGN.GVT.ZC : 30Y|14
+10320|NO.NOK.SWP.ZCS : 6M|NO.NOK.SWP.ZCS : 6M|15
+10321|NZ.NZD.SWP.ZCS : 1Y|NZ.NZD.SWP.ZCS : 1Y|15
+10322|SE.EUR.CVBND.(AA).RTGSPR : 30Y|SE.EUR.CVBND.(AA).RTGSPR : 30Y|27
+10323|SE.EUR.CVBND.(AAA).RTGSPR : 2Y|SE.EUR.CVBND.(AAA).RTGSPR : 2Y|27
+10324|CHF.(BBB).SPRSWP : 5Y|CHF.(BBB).SPRSWP : 5Y|16
+10325|AU.AUD.GVT.ZC : 10Y|AU.AUD.GVT.ZC : 10Y|14
+10326|AUD.(BBB).SPRSWP : 5Y|AUD.(BBB).SPRSWP : 5Y|16
+10327|BG.BGN.GVT.ZC : 10Y|BG.BGN.GVT.ZC : 10Y|14
+10328|CA.CAD.GVT.ZC : 1Y|CA.CAD.GVT.ZC : 1Y|14
+10329|CA.CAD.PROV.MAN.SPRSOV : 5Y|CA.CAD.PROV.MAN.SPRSOV : 5Y|24
+10330|CA.CAD.SWP.ZCS : 5Y|CA.CAD.SWP.ZCS : 5Y|15
+10331|FR.EUR.CVBND.(IG).RTGSPR : 5Y|FR.EUR.CVBND.(IG).RTGSPR : 5Y|27
+10332|FR.EUR.SOVSPR : 5Y|FR.EUR.SOVSPR : 5Y|18
+10333|GB.GBP.GVT.ZC : 30Y|GB.GBP.GVT.ZC : 30Y|14
+10334|GBP.(AAA).SPRSWP : 5Y|GBP.(AAA).SPRSWP : 5Y|16
+10335|CN.CNY.GVT.ZC : 6M|CN.CNY.GVT.ZC : 6M|14
+10336|CZ.CZK.SWP.ZCS : 30Y|CZ.CZK.SWP.ZCS : 30Y|15
+10337|DE.EUR.CVBND.(AA).RTGSPR : 10Y|DE.EUR.CVBND.(AA).RTGSPR : 10Y|27
+10338|DE.EUR.CVBND.(AAA).RTGSPR : 30Y|DE.EUR.CVBND.(AAA).RTGSPR : 30Y|27
+10339|DE.EUR.CVBND.(IG).RTGSPR : 1Y|DE.EUR.CVBND.(IG).RTGSPR : 1Y|27
+10340|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 10Y|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 10Y|27
+10341|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 5Y|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 5Y|27
+10342|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 2Y|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 2Y|27
+10343|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 5Y|DE.EUR.CVBND.JUMBO.(IG).RTGSPR : 5Y|27
+10344|DK.DKK.GVT.ZC : 1Y|DK.DKK.GVT.ZC : 1Y|14
+10345|DK.DKK.GVT.ZC : 6M|DK.DKK.GVT.ZC : 6M|14
+10346|DK.DKK.SWP.ZCS : 30Y|DK.DKK.SWP.ZCS : 30Y|15
+10347|DK.EUR.CVBND.(A).RTGSPR : 10Y|DK.EUR.CVBND.(A).RTGSPR : 10Y|27
+10348|DK.EUR.CVBND.(AAA).RTGSPR : 30Y|DK.EUR.CVBND.(AAA).RTGSPR : 30Y|27
+10349|DK.EUR.CVBND.(IG).RTGSPR : 2Y|DK.EUR.CVBND.(IG).RTGSPR : 2Y|27
+10350|EUR.(AAA).SPRSWP : 5Y|EUR.(AAA).SPRSWP : 5Y|16
+10351|FR.EUR.BEI.ZC : 30Y|FR.EUR.BEI.ZC : 30Y|21
+10352|FR.EUR.CVBND.(AA).RTGSPR : 1Y|FR.EUR.CVBND.(AA).RTGSPR : 1Y|27
+10353|FR.EUR.CVBND.(AAA).RTGSPR : 10Y|FR.EUR.CVBND.(AAA).RTGSPR : 10Y|27
+10354|FR.EUR.CVBND.(AAA).RTGSPR : 30Y|FR.EUR.CVBND.(AAA).RTGSPR : 30Y|27
+10355|FR.EUR.CVBND.(IG).RTGSPR : 10Y|FR.EUR.CVBND.(IG).RTGSPR : 10Y|27
+10356|EUR.ATM : 2Y.2Y|EUR.ATM : 2Y.2Y|22
+10357|ILS.ATM : 2Y.2Y|ILS.ATM : 2Y.2Y|22
+10358|Vol:DJ EURO STOXX50 : 50.182D|Vol:DJ EURO STOXX50 : 50.182D|23
+10359|VN.VND.GVT.ZC : 10Y|VN.VND.GVT.ZC : 10Y|14
+10360|VN.VND.GVT.ZC : 1Y|VN.VND.GVT.ZC : 1Y|14
+10361|VN.VND.SWP.ZCS : 30Y|VN.VND.SWP.ZCS : 30Y|15
+10362|SE.SEK.CVBND.(AAA).RTGSPR : 10Y|SE.SEK.CVBND.(AAA).RTGSPR : 10Y|27
+10363|SE.SEK.CVBND.(AAA).RTGSPR : 2Y|SE.SEK.CVBND.(AAA).RTGSPR : 2Y|27
+10364|SE.SEK.CVBND.(BBB).RTGSPR : 2Y|SE.SEK.CVBND.(BBB).RTGSPR : 2Y|27
+10365|SE.SEK.SWP.ZCS : 30Y|SE.SEK.SWP.ZCS : 30Y|15
+10366|SG.SGD.GVT.ZC : 6M|SG.SGD.GVT.ZC : 6M|14
+10367|US.USD.CARD(IG).ABS : 5Y|US.USD.CARD(IG).ABS : 5Y|17
+10368|TR.TRY.GVT.ZC : 6M|TR.TRY.GVT.ZC : 6M|14
+10369|TW.TWD.GVT.ZC : 6M|TW.TWD.GVT.ZC : 6M|14
+10370|UA.UAH.GVT.ZC : 2Y|UA.UAH.GVT.ZC : 2Y|14
+10371|UA.UAH.GVT.ZC : 5Y|UA.UAH.GVT.ZC : 5Y|14
+10372|US.USD.AGNCY.FHLMC.SPRSOV : 5Y|US.USD.AGNCY.FHLMC.SPRSOV : 5Y|26
+10373|HR.HRK.GVT.ZC : 10Y|HR.HRK.GVT.ZC : 10Y|14
+10374|HR.HRK.GVT.ZC : 1Y|HR.HRK.GVT.ZC : 1Y|14
+10375|HU.HUF.GVT.ZC : 6M|HU.HUF.GVT.ZC : 6M|14
+10376|ID.IDR.SWP.ZCS : 6M|ID.IDR.SWP.ZCS : 6M|15
+10377|JP.JPY.GVT.ZC : 1Y|JP.JPY.GVT.ZC : 1Y|14
+10378|KR.KRW.GVT.ZC : 30Y|KR.KRW.GVT.ZC : 30Y|14
+10379|LT.LTL.GVT.ZC : 5Y|LT.LTL.GVT.ZC : 5Y|14
+10380|LT.LTL.GVT.ZC : 6M|LT.LTL.GVT.ZC : 6M|14
+10381|MX.MXN.GVT.ZC : 5Y|MX.MXN.GVT.ZC : 5Y|14
+10382|NO.NOK.GVT.ZC : 10Y|NO.NOK.GVT.ZC : 10Y|14
+10383|NO.NOK.SWP.ZCS : 10Y|NO.NOK.SWP.ZCS : 10Y|15
+10384|NO.NOK.SWP.ZCS : 5Y|NO.NOK.SWP.ZCS : 5Y|15
+10385|NZ.NZD.GVT.ZC : 6M|NZ.NZD.GVT.ZC : 6M|14
+10386|NZ.NZD.SWP.ZCS : 2Y|NZ.NZD.SWP.ZCS : 2Y|15
+10387|PH.PHP.GVT.ZC : 2Y|PH.PHP.GVT.ZC : 2Y|14
+10388|PK.PKR.GVT.ZC : 6M|PK.PKR.GVT.ZC : 6M|14
+10389|PL.PLN.GVT.ZC : 10Y|PL.PLN.GVT.ZC : 10Y|14
+10390|PL.PLN.GVT.ZC : 2Y|PL.PLN.GVT.ZC : 2Y|14
+10391|PL.PLN.GVT.ZC : 30Y|PL.PLN.GVT.ZC : 30Y|14
+10392|PL.PLN.SWP.ZCS : 1Y|PL.PLN.SWP.ZCS : 1Y|15
+10393|RO.RON.GVT.ZC : 2Y|RO.RON.GVT.ZC : 2Y|14
+10394|RU.RUB.GVT.ZC : 5Y|RU.RUB.GVT.ZC : 5Y|14
+10395|SE.EUR.CVBND.(AAA).RTGSPR : 5Y|SE.EUR.CVBND.(AAA).RTGSPR : 5Y|27
+10396|CH.CHF.SWP.ZCS : 10Y|CH.CHF.SWP.ZCS : 10Y|15
+10397|CHF.(A).SPRSWP : 5Y|CHF.(A).SPRSWP : 5Y|16
+10398|AU.AUD.GVT.ZC : 2Y|AU.AUD.GVT.ZC : 2Y|14
+10399|AUD.(SUB-IG).SPRSWP : 5Y|AUD.(SUB-IG).SPRSWP : 5Y|16
+10400|BE.EUR.SOVSPR : 5Y|BE.EUR.SOVSPR : 5Y|18
+10401|BG.BGN.GVT.ZC : 1Y|BG.BGN.GVT.ZC : 1Y|14
+10402|BG.BGN.GVT.ZC : 2Y|BG.BGN.GVT.ZC : 2Y|14
+10403|BR.BRL.GVT.ZC : 2Y|BR.BRL.GVT.ZC : 2Y|14
+10404|BR.BRL.GVT.ZC : 5Y|BR.BRL.GVT.ZC : 5Y|14
+10405|CA.CAD.PROV.PEI.SPRSOV : 5Y|CA.CAD.PROV.PEI.SPRSOV : 5Y|24
+10406|CAD.(AA).SPRSWP : 5Y|CAD.(AA).SPRSWP : 5Y|16
+10407|CAD.(AAA).SPRSWP : 5Y|CAD.(AAA).SPRSWP : 5Y|16
+10408|CAD.(BBB).SPRSWP : 5Y|CAD.(BBB).SPRSWP : 5Y|16
+10409|CAD.(SUB-IG).SPRSWP : 5Y|CAD.(SUB-IG).SPRSWP : 5Y|16
+10410|CL.CLP.GVT.ZC : 1Y|CL.CLP.GVT.ZC : 1Y|14
+10411|CL.CLP.GVT.ZC : 5Y|CL.CLP.GVT.ZC : 5Y|14
+10412|CN.CNY.GVT.ZC : 10Y|CN.CNY.GVT.ZC : 10Y|14
+10413|CZ.CZK.SWP.ZCS : 2Y|CZ.CZK.SWP.ZCS : 2Y|15
+10414|DE.EUR.CVBND.(A).RTGSPR : 5Y|DE.EUR.CVBND.(A).RTGSPR : 5Y|27
+10415|DE.EUR.CVBND.(BBB).RTGSPR : 30Y|DE.EUR.CVBND.(BBB).RTGSPR : 30Y|27
+10416|DE.EUR.CVBND.(IG).RTGSPR : 5Y|DE.EUR.CVBND.(IG).RTGSPR : 5Y|27
+10417|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 5Y|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 5Y|27
+10418|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 30Y|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 30Y|27
+10419|DE.EUR.SOVSPR : 5Y|DE.EUR.SOVSPR : 5Y|18
+10420|DK.DKK.GVT.ZC : 5Y|DK.DKK.GVT.ZC : 5Y|14
+10421|DK.EUR.CVBND.(AAA).RTGSPR : 10Y|DK.EUR.CVBND.(AAA).RTGSPR : 10Y|27
+10422|DK.EUR.CVBND.(IG).RTGSPR : 30Y|DK.EUR.CVBND.(IG).RTGSPR : 30Y|27
+10423|EP.EUR.GVT.ZC : 1Y|EP.EUR.GVT.ZC : 1Y|14
+10424|ES.EUR.CVBND.(A).RTGSPR : 30Y|ES.EUR.CVBND.(A).RTGSPR : 30Y|27
+10425|ES.EUR.CVBND.(BBB).RTGSPR : 5Y|ES.EUR.CVBND.(BBB).RTGSPR : 5Y|27
+10426|EU.EUR.SWP.ZCS : 2Y|EU.EUR.SWP.ZCS : 2Y|15
+10427|EUR.(BBB).SPRSWP : 5Y|EUR.(BBB).SPRSWP : 5Y|16
+10428|FR.EUR.CVBND.(A).RTGSPR : 2Y|FR.EUR.CVBND.(A).RTGSPR : 2Y|27
+10429|FR.EUR.CVBND.(AAA).RTGSPR : 2Y|FR.EUR.CVBND.(AAA).RTGSPR : 2Y|27
+10430|ZA.ZAR.SWP.ZCS : 2Y|ZA.ZAR.SWP.ZCS : 2Y|15
+10431|ZA.ZAR.SWP.ZCS : 5Y|ZA.ZAR.SWP.ZCS : 5Y|15
+10432|ZA.ZAR.SWP.ZCS : 6M|ZA.ZAR.SWP.ZCS : 6M|15
+10433|ZAR.ATM : 2Y.2Y|ZAR.ATM : 2Y.2Y|22
+10434|USD.SUPN.(AAA) : 5Y|USD.SUPN.(AAA) : 5Y|25
+10435|VN.VND.GVT.ZC : 5Y|VN.VND.GVT.ZC : 5Y|14
+10436|VN.VND.GVT.ZC : 6M|VN.VND.GVT.ZC : 6M|14
+10437|SE.SEK.CVBND.(BBB).RTGSPR : 30Y|SE.SEK.CVBND.(BBB).RTGSPR : 30Y|27
+10438|SE.SEK.CVBND.(IG).RTGSPR : 30Y|SE.SEK.CVBND.(IG).RTGSPR : 30Y|27
+10439|SE.SEK.GVT.ZC : 6M|SE.SEK.GVT.ZC : 6M|14
+10440|SG.SGD.SWP.ZCS : 1Y|SG.SGD.SWP.ZCS : 1Y|15
+10441|USD.(AAA).SPRSWP : 5Y|USD.(AAA).SPRSWP : 5Y|16
+10442|USD.(SUB-IG).SPRSWP : 5Y|USD.(SUB-IG).SPRSWP : 5Y|16
+10443|SK.EUR.GVT.ZC : 1Y|SK.EUR.GVT.ZC : 1Y|14
+10444|SK.EUR.GVT.ZC : 6M|SK.EUR.GVT.ZC : 6M|14
+10445|TH.THB.GVT.ZC : 1Y|TH.THB.GVT.ZC : 1Y|14
+10446|TH.THB.GVT.ZC : 6M|TH.THB.GVT.ZC : 6M|14
+10447|TR.TRY.GVT.ZC : 30Y|TR.TRY.GVT.ZC : 30Y|14
+10448|TR.TRY.GVT.ZC : 5Y|TR.TRY.GVT.ZC : 5Y|14
+10449|TW.TWD.GVT.ZC : 2Y|TW.TWD.GVT.ZC : 2Y|14
+10450|TW.TWD.GVT.ZC : 30Y|TW.TWD.GVT.ZC : 30Y|14
+10451|US.USD.AGNCY.FNMA.SPRSOV : 5Y|US.USD.AGNCY.FNMA.SPRSOV : 5Y|26
+10452|HK.HKD.GVT.ZC : 10Y|HK.HKD.GVT.ZC : 10Y|14
+10453|HK.HKD.GVT.ZC : 5Y|HK.HKD.GVT.ZC : 5Y|14
+10454|HK.HKD.SWP.ZCS : 10Y|HK.HKD.SWP.ZCS : 10Y|15
+10455|HU.HUF.GVT.ZC : 10Y|HU.HUF.GVT.ZC : 10Y|14
+10456|HU.HUF.GVT.ZC : 2Y|HU.HUF.GVT.ZC : 2Y|14
+10457|ID.IDR.GVT.ZC : 30Y|ID.IDR.GVT.ZC : 30Y|14
+10458|IN.INR.GVT.ZC : 5Y|IN.INR.GVT.ZC : 5Y|14
+10459|JP.JPY.SWP.ZCS : 2Y|JP.JPY.SWP.ZCS : 2Y|15
+10460|JPY.(AAA).SPRSWP : 5Y|JPY.(AAA).SPRSWP : 5Y|16
+10461|JPY.(BBB).SPRSWP : 5Y|JPY.(BBB).SPRSWP : 5Y|16
+10462|KR.KRW.SWP.ZCS : 2Y|KR.KRW.SWP.ZCS : 2Y|15
+10463|LT.LTL.GVT.ZC : 2Y|LT.LTL.GVT.ZC : 2Y|14
+10464|MY.MYR.GVT.ZC : 5Y|MY.MYR.GVT.ZC : 5Y|14
+10465|NG.NGN.GVT.ZC : 5Y|NG.NGN.GVT.ZC : 5Y|14
+10466|NZ.NZD.GVT.ZC : 1Y|NZ.NZD.GVT.ZC : 1Y|14
+10467|PE.PEN.GVT.ZC : 10Y|PE.PEN.GVT.ZC : 10Y|14
+10468|PH.PHP.SWP.ZCS : 2Y|PH.PHP.SWP.ZCS : 2Y|15
+10469|PH.PHP.SWP.ZCS : 5Y|PH.PHP.SWP.ZCS : 5Y|15
+10470|PK.PKR.GVT.ZC : 2Y|PK.PKR.GVT.ZC : 2Y|14
+10471|PK.PKR.GVT.ZC : 30Y|PK.PKR.GVT.ZC : 30Y|14
+10472|RU.RUB.GVT.ZC : 2Y|RU.RUB.GVT.ZC : 2Y|14
+10473|SE.EUR.CVBND.(AA).RTGSPR : 2Y|SE.EUR.CVBND.(AA).RTGSPR : 2Y|27
+10474|CH.CHF.SWP.ZCS : 1Y|CH.CHF.SWP.ZCS : 1Y|15
+10475|CH.CHF.SWP.ZCS : 30Y|CH.CHF.SWP.ZCS : 30Y|15
+10476|AU.AUD.GVT.ZC : 30Y|AU.AUD.GVT.ZC : 30Y|14
+10477|AU.AUD.SWP.ZCS : 1Y|AU.AUD.SWP.ZCS : 1Y|15
+10478|AUD.(AAA).SPRSWP : 5Y|AUD.(AAA).SPRSWP : 5Y|16
+10479|AT.EUR.SOVSPR : 5Y|AT.EUR.SOVSPR : 5Y|18
+10480|BG.BGN.GVT.ZC : 6M|BG.BGN.GVT.ZC : 6M|14
+10481|BG.BGN.SWP.ZCS : 2Y|BG.BGN.SWP.ZCS : 2Y|15
+10482|BG.BGN.SWP.ZCS : 30Y|BG.BGN.SWP.ZCS : 30Y|15
+10483|CA.CAD.PROV.SASK.SPRSOV : 5Y|CA.CAD.PROV.SASK.SPRSOV : 5Y|24
+10484|CA.CAD.SWP.ZCS : 6M|CA.CAD.SWP.ZCS : 6M|15
+10485|CA.CAD.SWP.ZCS : 30Y|CA.CAD.SWP.ZCS : 30Y|15
+10486|GB.GBP.GVT.ZC : 1Y|GB.GBP.GVT.ZC : 1Y|14
+10487|GB.GBP.GVT.ZC : 2Y|GB.GBP.GVT.ZC : 2Y|14
+10488|GBP.(AA).SPRSWP : 5Y|GBP.(AA).SPRSWP : 5Y|16
+10489|CL.CLP.GVT.ZC : 6M|CL.CLP.GVT.ZC : 6M|14
+10490|CN.CNY.GVT.ZC : 2Y|CN.CNY.GVT.ZC : 2Y|14
+10491|CN.CNY.GVT.ZC : 5Y|CN.CNY.GVT.ZC : 5Y|14
+10492|CO.COP.GVT.ZC : 30Y|CO.COP.GVT.ZC : 30Y|14
+10493|DE.EUR.CVBND.(AA).RTGSPR : 2Y|DE.EUR.CVBND.(AA).RTGSPR : 2Y|27
+10494|DE.EUR.CVBND.(AA).RTGSPR : 5Y|DE.EUR.CVBND.(AA).RTGSPR : 5Y|27
+10495|DE.EUR.CVBND.(BBB).RTGSPR : 1Y|DE.EUR.CVBND.(BBB).RTGSPR : 1Y|27
+10496|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 1Y|DE.EUR.CVBND.JUMBO.(A).RTGSPR : 1Y|27
+10497|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 10Y|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 10Y|27
+10498|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 30Y|DE.EUR.CVBND.JUMBO.(BBB).RTGSPR : 30Y|27
+10499|DK.DKK.SWP.ZCS : 10Y|DK.DKK.SWP.ZCS : 10Y|15
+10500|DK.EUR.CVBND.(A).RTGSPR : 1Y|DK.EUR.CVBND.(A).RTGSPR : 1Y|27
+10501|DK.EUR.CVBND.(IG).RTGSPR : 10Y|DK.EUR.CVBND.(IG).RTGSPR : 10Y|27
+10502|ES.EUR.CVBND.(A).RTGSPR : 5Y|ES.EUR.CVBND.(A).RTGSPR : 5Y|27
+10503|ES.EUR.CVBND.(AA).RTGSPR : 5Y|ES.EUR.CVBND.(AA).RTGSPR : 5Y|27
+10504|ES.EUR.CVBND.(BBB).RTGSPR : 30Y|ES.EUR.CVBND.(BBB).RTGSPR : 30Y|27
+10505|ES.EUR.CVBND.(IG).RTGSPR : 1Y|ES.EUR.CVBND.(IG).RTGSPR : 1Y|27
+10506|ES.EUR.CVBND.(IG).RTGSPR : 5Y|ES.EUR.CVBND.(IG).RTGSPR : 5Y|27
+10507|ES.EUR.SOVSPR : 5Y|ES.EUR.SOVSPR : 5Y|18
+10508|EUR.(A).SPRSWP : 5Y|EUR.(A).SPRSWP : 5Y|16
+10509|EUR.(SUB-IG).SPRSWP : 5Y|EUR.(SUB-IG).SPRSWP : 5Y|16
+10510|FR.EUR.BEI.ZC : 2Y|FR.EUR.BEI.ZC : 2Y|21
+10511|FR.EUR.BEI.ZC : 5Y|FR.EUR.BEI.ZC : 5Y|21
+10512|FR.EUR.CVBND.(A).RTGSPR : 1Y|FR.EUR.CVBND.(A).RTGSPR : 1Y|27
+10513|FR.EUR.CVBND.(A).RTGSPR : 30Y|FR.EUR.CVBND.(A).RTGSPR : 30Y|27
+10514|FR.EUR.CVBND.(AAA).RTGSPR : 5Y|FR.EUR.CVBND.(AAA).RTGSPR : 5Y|27
+10515|SAR.ATM : 2Y.2Y|SAR.ATM : 2Y.2Y|22
+10516|Vol:TSX 60 : 50.182D|Vol:TSX 60 : 50.182D|23
+10517|SE.SEK.CVBND.(BBB).RTGSPR : 1Y|SE.SEK.CVBND.(BBB).RTGSPR : 1Y|27
+10518|SE.SEK.GVT.ZC : 2Y|SE.SEK.GVT.ZC : 2Y|14
+10519|SE.SEK.SWP.ZCS : 2Y|SE.SEK.SWP.ZCS : 2Y|15
+10520|SG.SGD.GVT.ZC : 2Y|SG.SGD.GVT.ZC : 2Y|14
+10521|SG.SGD.SWP.ZCS : 10Y|SG.SGD.SWP.ZCS : 10Y|15
+10522|SG.SGD.SWP.ZCS : 2Y|SG.SGD.SWP.ZCS : 2Y|15
+10523|US.USD.BEI.ZC : 30Y|US.USD.BEI.ZC : 30Y|21
+10524|US.USD.GVT.ZC : 10Y|US.USD.GVT.ZC : 10Y|14
+10525|US.USD.SWP.ZCS : 1Y|US.USD.SWP.ZCS : 1Y|15
+10526|SK.EUR.SOVSPR : 5Y|SK.EUR.SOVSPR : 5Y|18
+10527|TR.TRY.GVT.ZC : 1Y|TR.TRY.GVT.ZC : 1Y|14
+10528|TW.TWD.GVT.ZC : 10Y|TW.TWD.GVT.ZC : 10Y|14
+10529|TW.TWD.GVT.ZC : 1Y|TW.TWD.GVT.ZC : 1Y|14
+10530|TW.TWD.GVT.ZC : 5Y|TW.TWD.GVT.ZC : 5Y|14
+10531|TW.TWD.SWP.ZCS : 30Y|TW.TWD.SWP.ZCS : 30Y|15
+10532|HK.HKD.SWP.ZCS : 1Y|HK.HKD.SWP.ZCS : 1Y|15
+10533|HU.HUF.GVT.ZC : 5Y|HU.HUF.GVT.ZC : 5Y|14
+10534|ID.IDR.GVT.ZC : 1Y|ID.IDR.GVT.ZC : 1Y|14
+10535|ID.IDR.SWP.ZCS : 30Y|ID.IDR.SWP.ZCS : 30Y|15
+10536|IN.INR.GVT.ZC : 1Y|IN.INR.GVT.ZC : 1Y|14
+10537|IS.ISK.GVT.ZC : 10Y|IS.ISK.GVT.ZC : 10Y|14
+10538|IS.ISK.GVT.ZC : 5Y|IS.ISK.GVT.ZC : 5Y|14
+10539|JP.JPY.GVT.ZC : 10Y|JP.JPY.GVT.ZC : 10Y|14
+10540|LT.LTL.GVT.ZC : 30Y|LT.LTL.GVT.ZC : 30Y|14
+10541|MX.MXN.SWP.ZCS : 10Y|MX.MXN.SWP.ZCS : 10Y|15
+10542|MX.MXN.SWP.ZCS : 1Y|MX.MXN.SWP.ZCS : 1Y|15
+10543|MX.MXN.SWP.ZCS : 5Y|MX.MXN.SWP.ZCS : 5Y|15
+10544|MY.MYR.GVT.ZC : 30Y|MY.MYR.GVT.ZC : 30Y|14
+10545|MY.MYR.SWP.ZCS : 5Y|MY.MYR.SWP.ZCS : 5Y|15
+10546|NG.NGN.GVT.ZC : 1Y|NG.NGN.GVT.ZC : 1Y|14
+10547|NL.EUR.SOVSPR : 5Y|NL.EUR.SOVSPR : 5Y|18
+10548|NO.NOK.GVT.ZC : 6M|NO.NOK.GVT.ZC : 6M|14
+10549|NZ.NZD.GVT.ZC : 10Y|NZ.NZD.GVT.ZC : 10Y|14
+10550|PH.PHP.GVT.ZC : 30Y|PH.PHP.GVT.ZC : 30Y|14
+10551|PH.PHP.GVT.ZC : 6M|PH.PHP.GVT.ZC : 6M|14
+10552|PL.PLN.SWP.ZCS : 6M|PL.PLN.SWP.ZCS : 6M|15
+10553|RO.RON.GVT.ZC : 10Y|RO.RON.GVT.ZC : 10Y|14
+10554|RO.RON.GVT.ZC : 5Y|RO.RON.GVT.ZC : 5Y|14
+10555|RO.RON.GVT.ZC : 6M|RO.RON.GVT.ZC : 6M|14
+10556|SE.EUR.CVBND.(AA).RTGSPR : 1Y|SE.EUR.CVBND.(AA).RTGSPR : 1Y|27
+10557|SE.EUR.CVBND.(AA).RTGSPR : 5Y|SE.EUR.CVBND.(AA).RTGSPR : 5Y|27
+10558|SE.EUR.CVBND.(AAA).RTGSPR : 10Y|SE.EUR.CVBND.(AAA).RTGSPR : 10Y|27
+10559|SE.EUR.CVBND.(AAA).RTGSPR : 1Y|SE.EUR.CVBND.(AAA).RTGSPR : 1Y|27
+10560|SE.EUR.CVBND.(IG).RTGSPR : 1Y|SE.EUR.CVBND.(IG).RTGSPR : 1Y|27
+10561|SE.EUR.CVBND.(IG).RTGSPR : 5Y|SE.EUR.CVBND.(IG).RTGSPR : 5Y|27
+10562|CH.CHF.SWP.ZCS : 5Y|CH.CHF.SWP.ZCS : 5Y|15
+10563|AU.AUD.SWP.ZCS : 10Y|AU.AUD.SWP.ZCS : 10Y|15
+10564|AU.AUD.SWP.ZCS : 2Y|AU.AUD.SWP.ZCS : 2Y|15
+10565|AU.AUD.SWP.ZCS : 30Y|AU.AUD.SWP.ZCS : 30Y|15
+10566|AUD.(A).SPRSWP : 5Y|AUD.(A).SPRSWP : 5Y|16
+10567|AUD.(AA).SPRSWP : 5Y|AUD.(AA).SPRSWP : 5Y|16
+10568|CA.CAD.SWP.ZCS : 1Y|CA.CAD.SWP.ZCS : 1Y|15
+10569|CH.CHF.GVT.ZC : 30Y|CH.CHF.GVT.ZC : 30Y|14
+10570|CL.CLP.GVT.ZC : 30Y|CL.CLP.GVT.ZC : 30Y|14
+10571|CO.COP.GVT.ZC : 2Y|CO.COP.GVT.ZC : 2Y|14
+10572|CZ.CZK.SWP.ZCS : 10Y|CZ.CZK.SWP.ZCS : 10Y|15
+10573|DE.EUR.CVBND.(A).RTGSPR : 10Y|DE.EUR.CVBND.(A).RTGSPR : 10Y|27
+10574|DE.EUR.CVBND.(AAA).RTGSPR : 10Y|DE.EUR.CVBND.(AAA).RTGSPR : 10Y|27
+10575|DE.EUR.CVBND.(IG).RTGSPR : 30Y|DE.EUR.CVBND.(IG).RTGSPR : 30Y|27
+10576|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 30Y|DE.EUR.CVBND.JUMBO.(AA).RTGSPR : 30Y|27
+10577|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 1Y|DE.EUR.CVBND.JUMBO.(AAA).RTGSPR : 1Y|27
+10578|DK.DKK.GVT.ZC : 2Y|DK.DKK.GVT.ZC : 2Y|14
+10579|DK.DKK.SWP.ZCS : 5Y|DK.DKK.SWP.ZCS : 5Y|15
+10580|DK.EUR.CVBND.(A).RTGSPR : 30Y|DK.EUR.CVBND.(A).RTGSPR : 30Y|27
+10581|DK.EUR.CVBND.(AAA).RTGSPR : 2Y|DK.EUR.CVBND.(AAA).RTGSPR : 2Y|27
+10582|DK.EUR.CVBND.(IG).RTGSPR : 5Y|DK.EUR.CVBND.(IG).RTGSPR : 5Y|27
+10583|EP.EUR.GVT.ZC : 5Y|EP.EUR.GVT.ZC : 5Y|14
+10584|EP.EUR.GVT.ZC : 6M|EP.EUR.GVT.ZC : 6M|14
+10585|ES.EUR.CVBND.(A).RTGSPR : 2Y|ES.EUR.CVBND.(A).RTGSPR : 2Y|27
+10586|ES.EUR.CVBND.(AA).RTGSPR : 2Y|ES.EUR.CVBND.(AA).RTGSPR : 2Y|27
+10587|ES.EUR.CVBND.(BBB).RTGSPR : 10Y|ES.EUR.CVBND.(BBB).RTGSPR : 10Y|27
+10588|ES.EUR.CVBND.(IG).RTGSPR : 10Y|ES.EUR.CVBND.(IG).RTGSPR : 10Y|27
+10589|FR.EUR.CVBND.(A).RTGSPR : 5Y|FR.EUR.CVBND.(A).RTGSPR : 5Y|27
+10590|FR.EUR.CVBND.(AA).RTGSPR : 5Y|FR.EUR.CVBND.(AA).RTGSPR : 5Y|27
+10591|FR.EUR.CVBND.(IG).RTGSPR : 1Y|FR.EUR.CVBND.(IG).RTGSPR : 1Y|27
+10592|ZA.ZAR.GVT.ZC : 5Y|ZA.ZAR.GVT.ZC : 5Y|14
+10593|ZA.ZAR.GVT.ZC : 6M|ZA.ZAR.GVT.ZC : 6M|14
+10594|ZA.ZAR.SWP.ZCS : 10Y|ZA.ZAR.SWP.ZCS : 10Y|15
+10595|AUD.ATM : 2Y.2Y|AUD.ATM : 2Y.2Y|22
+10596|HKD.ATM : 2Y.2Y|HKD.ATM : 2Y.2Y|22
+10597|JPY.ATM : 2Y.2Y|JPY.ATM : 2Y.2Y|22
+10598|Vol:SPX : 50.182D|Vol:SPX : 50.182D|23
+10599|VN.VND.SWP.ZCS : 10Y|VN.VND.SWP.ZCS : 10Y|15
+10600|SE.SEK.CVBND.(AA).RTGSPR : 30Y|SE.SEK.CVBND.(AA).RTGSPR : 30Y|27
+10601|SE.SEK.CVBND.(AAA).RTGSPR : 30Y|SE.SEK.CVBND.(AAA).RTGSPR : 30Y|27
+10602|SE.SEK.CVBND.(BBB).RTGSPR : 10Y|SE.SEK.CVBND.(BBB).RTGSPR : 10Y|27
+10603|SE.SEK.CVBND.(IG).RTGSPR : 5Y|SE.SEK.CVBND.(IG).RTGSPR : 5Y|27
+10604|SE.SEK.GVT.ZC : 10Y|SE.SEK.GVT.ZC : 10Y|14
+10605|SE.SEK.GVT.ZC : 1Y|SE.SEK.GVT.ZC : 1Y|14
+10606|SE.SEK.SWP.ZCS : 1Y|SE.SEK.SWP.ZCS : 1Y|15
+10607|SG.SGD.SWP.ZCS : 5Y|SG.SGD.SWP.ZCS : 5Y|15
+10608|US.USD.CMO(IG).ABS : 5Y|US.USD.CMO(IG).ABS : 5Y|17
+10609|US.USD.EQIP(IG).ABS : 5Y|US.USD.EQIP(IG).ABS : 5Y|17
+10610|US.USD.SWP.ZCS : 2Y|US.USD.SWP.ZCS : 2Y|15
+10611|USD.(A).SPRSWP : 5Y|USD.(A).SPRSWP : 5Y|16
+10612|SK.EUR.GVT.ZC : 2Y|SK.EUR.GVT.ZC : 2Y|14
+10613|TH.THB.GVT.ZC : 10Y|TH.THB.GVT.ZC : 10Y|14
+10614|TH.THB.GVT.ZC : 30Y|TH.THB.GVT.ZC : 30Y|14
+10615|TH.THB.SWP.ZCS : 6M|TH.THB.SWP.ZCS : 6M|15
+10616|TW.TWD.SWP.ZCS : 5Y|TW.TWD.SWP.ZCS : 5Y|15
+10617|UA.UAH.GVT.ZC : 30Y|UA.UAH.GVT.ZC : 30Y|14
+10618|HK.HKD.SWP.ZCS : 30Y|HK.HKD.SWP.ZCS : 30Y|15
+10619|HR.HRK.GVT.ZC : 2Y|HR.HRK.GVT.ZC : 2Y|14
+10620|ID.IDR.GVT.ZC : 10Y|ID.IDR.GVT.ZC : 10Y|14
+10621|ID.IDR.GVT.ZC : 6M|ID.IDR.GVT.ZC : 6M|14
+10622|ID.IDR.SWP.ZCS : 2Y|ID.IDR.SWP.ZCS : 2Y|15
+10623|IL.ILS.GVT.ZC : 2Y|IL.ILS.GVT.ZC : 2Y|14
+10624|IN.INR.GVT.ZC : 2Y|IN.INR.GVT.ZC : 2Y|14
+10625|IS.ISK.GVT.ZC : 2Y|IS.ISK.GVT.ZC : 2Y|14
+10626|MX.MXN.GVT.ZC : 6M|MX.MXN.GVT.ZC : 6M|14
+10627|MY.MYR.GVT.ZC : 1Y|MY.MYR.GVT.ZC : 1Y|14
+10628|MY.MYR.GVT.ZC : 6M|MY.MYR.GVT.ZC : 6M|14
+10629|MY.MYR.SWP.ZCS : 6M|MY.MYR.SWP.ZCS : 6M|15
+10630|NO.NOK.GVT.ZC : 2Y|NO.NOK.GVT.ZC : 2Y|14
+10631|NO.NOK.SWP.ZCS : 1Y|NO.NOK.SWP.ZCS : 1Y|15
+10632|NZ.NZD.GVT.ZC : 30Y|NZ.NZD.GVT.ZC : 30Y|14
+10633|PE.PEN.GVT.ZC : 6M|PE.PEN.GVT.ZC : 6M|14
+10634|PH.PHP.GVT.ZC : 1Y|PH.PHP.GVT.ZC : 1Y|14
+10635|PH.PHP.SWP.ZCS : 30Y|PH.PHP.SWP.ZCS : 30Y|15
+10636|PH.PHP.SWP.ZCS : 6M|PH.PHP.SWP.ZCS : 6M|15
+10637|PK.PKR.GVT.ZC : 10Y|PK.PKR.GVT.ZC : 10Y|14
+10638|PK.PKR.GVT.ZC : 1Y|PK.PKR.GVT.ZC : 1Y|14
+10639|SE.EUR.CVBND.(AAA).RTGSPR : 30Y|SE.EUR.CVBND.(AAA).RTGSPR : 30Y|27
+10640|SE.EUR.CVBND.(IG).RTGSPR : 10Y|SE.EUR.CVBND.(IG).RTGSPR : 10Y|27
+10641|SE.EUR.CVBND.(IG).RTGSPR : 30Y|SE.EUR.CVBND.(IG).RTGSPR : 30Y|27
+10642|SE.SEK.CVBND.(AA).RTGSPR : 1Y|SE.SEK.CVBND.(AA).RTGSPR : 1Y|27
+10643|SE.SEK.CVBND.(AA).RTGSPR : 2Y|SE.SEK.CVBND.(AA).RTGSPR : 2Y|27
+10644|CH.CHF.SWP.ZCS : 2Y|CH.CHF.SWP.ZCS : 2Y|15
+10645|CH.CHF.SWP.ZCS : 6M|CH.CHF.SWP.ZCS : 6M|15
+10646|CHF.(AAA).SPRSWP : 5Y|CHF.(AAA).SPRSWP : 5Y|16
+10647|CHF.(SUB-IG).SPRSWP : 5Y|CHF.(SUB-IG).SPRSWP : 5Y|16
+10648|CH.CHF.GVT.ZC : 5Y|CH.CHF.GVT.ZC : 5Y|14
+10649|AU.AUD.GVT.ZC : 5Y|AU.AUD.GVT.ZC : 5Y|14
+10650|AU.AUD.SWP.ZCS : 5Y|AU.AUD.SWP.ZCS : 5Y|15
+10651|BR.BRL.GVT.ZC : 30Y|BR.BRL.GVT.ZC : 30Y|14
+10652|CA.CAD.GVT.ZC : 30Y|CA.CAD.GVT.ZC : 30Y|14
+10653|CA.CAD.PROV.NS.SPRSOV : 5Y|CA.CAD.PROV.NS.SPRSOV : 5Y|24
+10654|CA.CAD.PROV.QUE.SPRSOV : 5Y|CA.CAD.PROV.QUE.SPRSOV : 5Y|24
+10655|CAD.(A).SPRSWP : 5Y|CAD.(A).SPRSWP : 5Y|16
+10656|CH.CHF.GVT.ZC : 1Y|CH.CHF.GVT.ZC : 1Y|14

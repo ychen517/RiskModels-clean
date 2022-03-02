@@ -1,0 +1,27 @@
+[DEFAULT]
+email-receipients=content-proddev@axioma.com
+#email-receipients=vsmani@axioma.com
+#email-receipients=nnatraj@axioma.com
+
+[ModelDB]
+user=modeldb_global
+passwd=modeldb_global
+sid=glprod
+ms-query=select a.modeldb_id old_model_id, a.marketdb_id, b.from_dt, b.thru_dt, a.action, b.modeldb_id new_model_id from modeldb_global.issue_map_log a, modeldb_global.issue_map b where a.modeldb_id!=b.modeldb_id and a.marketdb_id=b.marketdb_id and not exists (select * from modeldb_global.issue_map c where a.modeldb_id=c.modeldb_id) and a.action='DELETE' and a.ACTION_DT >= (sysdate - 10)
+delete-query=select a.modeldb_id, a.marketdb_id, a.from_dt, a.thru_dt, a.action from modeldb_global.issue_map_log a where not exists (select * from modeldb_global.issue_map b where a.modeldb_id=b.modeldb_id) and not exists (select * from modeldb_global.issue_map b where a.marketdb_id=b.marketdb_id) and a.action='DELETE'
+model-delete-query=select a.issue_id, b.from_dt, b.thru_dt, b.mnemonic from modeldb_global.rms_issue_log a, modeldb_global.rms_id_description b where action='DELETE' and a.rms_id=b.rms_id and b.distribute=1 and not exists (select * from modeldb_global.rms_issue c where a.issue_id=c.issue_id and a.rms_id=b.rms_id) and not exists (select * from modeldb_global.issue_map_log d where a.issue_id=d.modeldb_id and action='DELETE') and a.ACTION_DT >= (sysdate - 10)
+new-adds-query=select modeldb_id, a.from_dt, a.add_dt, 'EQUITY' from marketdb_global.asset_ref a, modeldb_global.issue_map b, modeldb_global.sub_issue c where a.add_dt >= sysdate-30 and a.add_dt <= sysdate and a.axioma_id=b.marketdb_id and b.from_dt <= sysdate and b.thru_dt > sysdate and  c.from_dt <= sysdate and c.thru_dt > sysdate and b.modeldb_id=c.issue_id and exists (select * from modeldb_global.rmi_universe e where c.sub_id=e.sub_issue_id and e.dt >= sysdate-30 and e.dt <= sysdate) union all select modeldb_id, a.from_dt, a.add_dt, 'COMPOSITE' from marketdb_global.asset_ref a, modeldb_global.issue_map b, modeldb_global.sub_issue c where a.add_dt >= sysdate-30 and a.add_dt <= sysdate and a.axioma_id=b.marketdb_id and b.from_dt <= sysdate and b.thru_dt > sysdate and  c.from_dt <= sysdate and c.thru_dt > sysdate and b.modeldb_id=c.issue_id and exists (select * from marketdb_global.composite_member ca, marketdb_global.composite_member_family_map cb where a.axioma_id=ca.axioma_id and ca.id=cb.member_id and cb.dist_from_dt <= sysdate and cb.dist_thru_dt > sysdate)
+
+[AppDB]
+user=axioma
+passwd=axioma
+host=amberboch
+database=dont_touch_ever_masterdb_2016r2
+port=5432
+
+[AppDB-sqlserver]
+user=content
+passwd=content
+host=172.19.1.33
+database=dont_touch_ever_masterdb_75_sqlserver
+port=1437

@@ -1,0 +1,294 @@
+axid,name,shortname,active,use_level,use_shock,source,type,freq,has_trend,needs_sa,deflator,notes,min_dt,is_tr,is_yield,is_spread,is_price,is_ex_ret
+M001000044,"COML BANK ASSETS - COMMERCIAL and INDL LOANS (BREAK ADJ, SAAR)",com_assets_break_adj,0,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000045,COMMERCIAL BANK ASSETS - COMMERCIAL and INDUSTRIAL LOANS,com_assets_com_ind,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000046,COMMERCIAL BANK ASSETS - LOANS and LEASES IN BANK CREDIT,com_assets_loans_lease,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000047,CONSTRUCTION EXPENDITURES - TOTAL (AR),constr_exp,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000051,CPI - ALL URBAN SAMPLE: ALL ITEMS,cpi_urban_sample,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000060,EXPORTS F.A.S.,exports_fas,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000062,FEDERAL FUNDS RATE (MONTHLY AVERAGE),fed_funds_rate,0,0,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000068,GOODS AND SERVICES BALANCE ON A BALANCE OF PAYMENTS BASIS,goods_srvs_balance,0,0,1,macroecon,geom_diff,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000058,EXISTING HOME SALES: SINGLE-FAMILY and CONDO (AR),home_sales_single,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000090,NEW PRIVATE HOUSING UNITS AUTHORIZED BY BUILDING PERMIT (AR),hous_permit,0,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000104,SALES OF NEW ONE FAMILY HOUSES (AR),house_sales_single,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000091,NEW PRIVATE HOUSING UNITS STARTED (AR),houst_private,0,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000071,IMPORTS F.A.S.,imports_fas,0,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000081,MONEY SUPPLY M1,m1,0,0,0,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000082,MONEY SUPPLY M2,m2,0,0,0,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000083,MONEY SUPPLY M2 (BCI 106),m2_alt,0,0,0,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M000010151,SandP/TSX COMPOSITE INDEX,sp_tsx_composite,0,0,1,macroidx,geom,D,0,0,,,1/1/1985,0,0,0,0,0
+M001000105,TERMS OF TRADE REBASED TO 1975=100,terms_of_trade,0,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000117,VISIBLE TRADE BALANCE F.A.S.-F.A.S.,visible_trade_balance,0,0,0,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000100,PRIME RATE CHARGED BY BANKS (MONTH AVG),prime_rate,0,0,0,macroecon,percent,M,0,0,,cat 3,1/1/1985,0,0,0,0,0
+M000100068,SandP GSCI Agriculture Excess Return,gsci_agri_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100065,SandP GSCI Agri+Livstk Excess Return,gsci_agri_livstk_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100066,SandP GSCI Agri+Livstk Index Spot,gsci_agri_livstk_spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100067,SandP GSCI Agri+Livstk Total Return,gsci_agri_livstk_tr,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100163,Standard and Poors Goldman Sachs Commodity Index(GSCI) Agriculturl Spot,gsci_agri_spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100164,Standard and Poors Goldman Sachs Commodity Index(GSCI) Agriculturl Total Return,gsci_agri_tr,0,1,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100165,Standard and Poors Goldman Sachs Commodity Index Commodity Spot,gsci_cmdy_spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100089,SandP GSCI Energy Excess Return,gsci_energy_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100091,SandP GSCI Energy Total Return,gsci_energy_tr,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100092,SandP GSCI Gold Excess Return,gsci_gold_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100094,SandP GSCI Gold Total Return,gsci_gold_tr,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100122,SandP GSCI Non Prec. Excess Return,gsci_non_prec_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100116,SandP GSCI Non-Energy Excess Return,gsci_nonenergy_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100118,SandP GSCI Non-Energy Total Return,gsci_nonenergy_tr,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100133,SandP GSCI Precious Metal Exc. Ret.,gsci_prec_metal_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000100139,SandP GSCI Silver Excess Return,gsci_silver_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100141,SandP GSCI Silver Total Return,gsci_silver_tr,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100149,SandP GSCI Ultra-Light Energy Ex.Return,gsci_ultralight_er,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000100151,SandP GSCI Ultra-Light Energy Total Ret,gsci_ultralight_tr,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100049,London Platinum Free Market $/Troy oz,London Platinum Free Market $/Troy oz,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010083,NASDAQ COMPOSITE INDEX,nas_composite,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010086,NYSE COMPOSITE INDEX,nyse_composite,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010087,NYSE TOTAL VOLUME,nyse_total_vol,0,1,0,macroidx,lin,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010102,RUSSELL 2000 INDEX,RUSSELL 2000 INDEX,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000010103,RUSSELL 2000 INDEX INCL DIVIDENDS,RUSSELL 2000 INDEX INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000010116,RUSSELL 3000 INDEX,RUSSELL 3000 INDEX,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000010096,RUSSELL 1000 INDEX,russell_1000,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000010097,RUSSELL 1000 INDEX INCL DIVIDENDS,russell_1000_div,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100072,SandP GSCI Cocoa Excess Return,SandP GSCI Cocoa Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100073,SandP GSCI Cocoa Index Spot,SandP GSCI Cocoa Index Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100074,SandP GSCI Cocoa Index Total Return,SandP GSCI Cocoa Index Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100075,SandP GSCI Coffee Excess Return,SandP GSCI Coffee Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100076,SandP GSCI Coffee Spot,SandP GSCI Coffee Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100077,SandP GSCI Coffee Total Return,SandP GSCI Coffee Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100078,SandP GSCI Commodity Excess Return,SandP GSCI Commodity Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100079,SandP GSCI Commodity Total Return,SandP GSCI Commodity Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100080,SandP GSCI Copper Excess Return,SandP GSCI Copper Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100081,SandP GSCI Copper Spot,SandP GSCI Copper Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100082,SandP GSCI Copper Total Return,SandP GSCI Copper Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100083,SandP GSCI Corn Excess Return,SandP GSCI Corn Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100084,SandP GSCI Corn Spot,SandP GSCI Corn Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100085,SandP GSCI Corn Total Return,SandP GSCI Corn Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100086,SandP GSCI Cotton Excess Return,SandP GSCI Cotton Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100087,SandP GSCI Cotton Spot,SandP GSCI Cotton Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100088,SandP GSCI Cotton Total Return,SandP GSCI Cotton Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100095,SandP GSCI Grains Indx Excess Return,SandP GSCI Grains Indx Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100096,SandP GSCI Grains Indx Spot,SandP GSCI Grains Indx Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100097,SandP GSCI Grains Indx Total Return,SandP GSCI Grains Indx Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100098,SandP GSCI Heating Oil Excess Return,SandP GSCI Heating Oil Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100099,SandP GSCI Heating Oil Spot,SandP GSCI Heating Oil Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100100,SandP GSCI Heating Oil Total Return,SandP GSCI Heating Oil Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100101,SandP GSCI Industrial Metals Exc. Ret.,SandP GSCI Industrial Metals Exc. Ret.,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000100103,SandP GSCI Industrial Metals Tot. Ret.,SandP GSCI Industrial Metals Tot. Ret.,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100104,SandP GSCI Lean Hogs Excess Return,SandP GSCI Lean Hogs Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100105,SandP GSCI Lean Hogs Index Spot,SandP GSCI Lean Hogs Index Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100106,SandP GSCI Lean Hogs Total Return,SandP GSCI Lean Hogs Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100107,SandP GSCI Light Ene. Excess Return,SandP GSCI Light Ene. Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100109,SandP GSCI Light Ene. Total Return,SandP GSCI Light Ene. Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100110,SandP GSCI Live Cattle Excess Return,SandP GSCI Live Cattle Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100111,SandP GSCI Live Cattle Spot,SandP GSCI Live Cattle Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100112,SandP GSCI Live Cattle Total Return,SandP GSCI Live Cattle Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100113,SandP GSCI Livestock Excess Return,SandP GSCI Livestock Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100114,SandP GSCI Livestock Spot,SandP GSCI Livestock Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100115,SandP GSCI Livestock Total Return,SandP GSCI Livestock Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100119,SandP GSCI Non-Natural Gas Excess,SandP GSCI Non-Natural Gas Excess,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100120,SandP GSCI Non-Natural Gas Spot,SandP GSCI Non-Natural Gas Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100121,SandP GSCI Non-Natural Gas Total Return,SandP GSCI Non-Natural Gas Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100124,SandP GSCI Petroleum Excess Return,SandP GSCI Petroleum Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100125,SandP GSCI Petroleum ex-GasOil Excess,SandP GSCI Petroleum ex-GasOil Excess,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100126,SandP GSCI Petroleum ex-GasOil Spot,SandP GSCI Petroleum ex-GasOil Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100127,SandP GSCI Petroleum ex-GasOil Total,SandP GSCI Petroleum ex-GasOil Total,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100128,SandP GSCI Petroleum Spot,SandP GSCI Petroleum Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100129,SandP GSCI Petroleum Total Return,SandP GSCI Petroleum Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100130,SandP GSCI Platinum Excess Return,SandP GSCI Platinum Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100131,SandP GSCI Platinum Spot,SandP GSCI Platinum Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100132,SandP GSCI Platinum Total Return,SandP GSCI Platinum Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100136,SandP GSCI Red. Energy Excess Return,SandP GSCI Red. Energy Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100137,SandP GSCI Red. Energy Spot,SandP GSCI Red. Energy Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100138,SandP GSCI Red. Energy Total Return,SandP GSCI Red. Energy Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100142,SandP GSCI Soybeans Excess Return,SandP GSCI Soybeans Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100143,SandP GSCI Soybeans Spot,SandP GSCI Soybeans Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100144,SandP GSCI Soybeans Total Return,SandP GSCI Soybeans Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100145,SandP GSCI Sugar Excess Return,SandP GSCI Sugar Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100146,SandP GSCI Sugar Spot,SandP GSCI Sugar Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100147,SandP GSCI Sugar Total Return,SandP GSCI Sugar Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100152,SandP GSCI Wheat(CBOT) Excess Return,SandP GSCI Wheat(CBOT) Excess Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,1
+M000100153,SandP GSCI Wheat(CBOT) Spot,SandP GSCI Wheat(CBOT) Spot,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100154,SandP GSCI Wheat(CBOT) Total Return,SandP GSCI Wheat(CBOT) Total Return,0,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100158,Silver Fix London Bullion Market Cash Cents / Troy Ounce,Silver Fix London Bullion Market Cash Cents / Troy Ounce,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000100159,Silver LBM Cash Pence/Troy ounce,Silver LBM Cash Pence/Troy ounce,0,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010158,SandP 100 INDEX,sp_100,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010171,SandP 500 INDEX,sp_500_tr,0,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000100157,Silver (Zurich) SW.Francs/kg,Silver (Zurich) SW.Francs/kg,0,0,1,macrods,geom,D,0,0,,,1/3/1985,0,0,0,0,0
+M000010094,RUSSELL 1000 GROWTH,RUSSELL 1000 GROWTH,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,0,0,0,1,0
+M000010095,RUSSELL 1000 GROWTH INCL DIVIDENDS,RUSSELL 1000 GROWTH INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010098,RUSSELL 1000 VALUE,RUSSELL 1000 VALUE,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,0,0,0,1,0
+M000010099,RUSSELL 1000 VALUE INCL DIVIDENDS,RUSSELL 1000 VALUE INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010100,RUSSELL 2000 GROWTH,RUSSELL 2000 GROWTH,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,0,0,0,1,0
+M000010101,RUSSELL 2000 GROWTH INCL DIVIDENDS,RUSSELL 2000 GROWTH INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010104,RUSSELL 2000 VALUE,RUSSELL 2000 VALUE,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,0,0,0,1,0
+M000010105,RUSSELL 2000 VALUE INCL DIVIDENDS,RUSSELL 2000 VALUE INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010108,RUSSELL 2500 INDEX,RUSSELL 2500 INDEX,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,0,0,0,1,0
+M000010109,RUSSELL 2500 INDEX INCL DIVIDENDS,RUSSELL 2500 INDEX INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010115,RUSSELL 3000 GROWTH INCL DIVIDENDS,RUSSELL 3000 GROWTH INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010125,RUSSELL MID CAP INDEX INCL DIVIDENDS,RUSSELL MID CAP INDEX INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010124,RUSSELL MIDCAP INDEX ,RUSSELL MIDCAP INDEX ,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,0,0,0,1,0
+M000010137,RUSSELL TOP 200 INDEX - INCL DIVIDENDS,RUSSELL TOP 200 INDEX - INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M001000059,EXPORT PRICE INDEX - ALL COMMODITIES (END USE),exp_price_idx_com,0,0,1,macroecon,geom,M,0,0,,,3/1/1985,0,0,0,0,0
+M001000070,IMPORT PRICE INDEX - ALL COMMODITIES (END USE),imp_price_idx_com,0,0,1,macroecon,geom,M,0,0,,,3/1/1985,0,0,0,0,0
+M000010107,RUSSELL 2500 GROWTH - INCL DIVIDENDS,RUSSELL 2500 GROWTH - INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,1,0,0,0,0
+M000010111,RUSSELL 2500 VALUE - INCL DIVIDENDS,RUSSELL 2500 VALUE - INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,1,0,0,0,0
+M000010123,RUSSELL MID CAP GROWTH  INCL DIVIDENDS,RUSSELL MID CAP GROWTH  INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,1,0,0,0,0
+M000010127,RUSSELL MID CAP VALUE INCL DIVIDENDS,RUSSELL MID CAP VALUE INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,1,0,0,0,0
+M000010135,RUSSELL TOP 200 GROWTH - INCL DIVIDENDS,RUSSELL TOP 200 GROWTH - INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,1,0,0,0,0
+M000010136,RUSSELL TOP 200 INDEX,RUSSELL TOP 200 INDEX,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,0,0,0,1,0
+M000010139,RUSSELL TOP 200 VALUE - INCL DIVIDENDS,RUSSELL TOP 200 VALUE - INCL DIVIDENDS,0,0,1,macroidx,geom,D,0,0,,,12/31/1985,1,0,0,0,0
+M000010080,NASDAQ 100 INDEX,nas_100,0,0,1,macroidx,geom,D,0,0,,,6/19/1986,0,0,0,0,0
+M000100197,SandP GSCI Crude Oil Excess Return,SandP GSCI Crude Oil Excess Return,0,0,1,macrods,geom,D,0,0,,,12/31/1986,0,0,0,0,1
+M000100231,SandP GSCI All Crude Excess Return,gsci_all_crude_er,0,0,1,macrods,geom,D,0,0,,,1/7/1987,0,0,0,0,1
+M000100232,SandP GSCI All Crude Spot,gsci_all_crude_spot,0,0,1,macrods,geom,D,0,0,,,1/7/1987,0,0,0,1,0
+M000100233,SandP GSCI All Crude Total Return,gsci_all_crude_tr,0,0,1,macrods,geom,D,0,0,,,1/7/1987,1,0,0,0,0
+M000100198,SandP GSCI Crude Oil Total Return,SandP GSCI Crude Oil Total Return,0,0,1,macrods,geom,D,0,0,,,1/7/1987,1,0,0,0,0
+M000100205,SandP GSCI Unleaded Gaso. Exc. Ret.,SandP GSCI Unleaded Gaso. Exc. Ret.,0,0,1,macrods,geom,D,0,0,,,12/31/1987,0,0,0,0,0
+M000100206,SandP GSCI Unleaded Gasoline Spot,SandP GSCI Unleaded Gasoline Spot,0,0,1,macrods,geom,D,0,0,,,12/31/1987,0,0,0,1,0
+M000100207,SandP GSCI Unleaded Gaso. Tot. Ret.,SandP GSCI Unleaded Gaso. Tot. Ret.,0,0,1,macrods,geom,D,0,0,,,1/7/1988,1,0,0,0,0
+M000010185,SandP HEALTHCARE INDEX,sp_healthcare,0,0,1,macroidx,geom,D,0,0,,,9/11/1989,0,0,0,0,0
+M000100208,SandP GSCI Aluminum Excess Return,SandP GSCI Aluminum Excess Return,0,0,1,macrods,geom,D,0,0,,,1/7/1991,0,0,0,0,1
+M000100209,SandP GSCI Aluminum Spot,SandP GSCI Aluminum Spot,0,0,1,macrods,geom,D,0,0,,,1/7/1991,0,0,0,1,0
+M000100210,SandP GSCI Aluminum Total Return,SandP GSCI Aluminum Total Return,0,0,1,macrods,geom,D,0,0,,,1/7/1991,1,0,0,0,0
+M000100218,SandP GSCI Zinc Spot,SandP GSCI Zinc Spot,0,0,1,macrods,geom,D,0,0,,,1/7/1991,0,0,0,1,0
+M000100219,SandP GSCI Zinc Total Return,SandP GSCI Zinc Total Return,0,0,1,macrods,geom,D,0,0,,,1/7/1991,1,0,0,0,0
+M000100217,SandP GSCI Zinc Excess Return,SandP GSCI Zinc Excess Return,0,0,1,macrods,geom,D,0,0,,,1/8/1991,0,0,0,0,1
+M000010165,SandP 400 INDEX - MIDCAP,sp_400_mc_tr,0,0,1,macroidx,geom,D,0,0,,,6/19/1991,0,0,0,0,0
+M000010166,SandP 400 MIDCAP TOTAL RETURN,sp_400_mc_tr,0,0,1,macroidx,geom,D,0,0,,,7/1/1991,1,0,0,0,0
+M000010088,PHLX BANK INDEX,PHLX BANK INDEX,0,0,1,macroidx,geom,D,0,0,,,9/23/1992,0,0,0,0,0
+M000100211,SandP GSCI Nickel Excess Return,SandP GSCI Nickel Excess Return,0,0,1,macrods,geom,D,0,0,,,12/31/1992,0,0,0,0,1
+M000100212,SandP GSCI Nickel Spot,SandP GSCI Nickel Spot,0,0,1,macrods,geom,D,0,0,,,12/31/1992,0,0,0,1,0
+M000100213,SandP GSCI Nickel Total Return,SandP GSCI Nickel Total Return,0,0,1,macrods,geom,D,0,0,,,1/8/1993,1,0,0,0,0
+M000100223,SandP GSCI Natural Gas Excess Return,SandP GSCI Natural Gas Excess Return,0,0,1,macrods,geom,D,0,0,,,12/31/1993,0,0,0,0,1
+M000100224,SandP GSCI Natural Gas Spot,SandP GSCI Natural Gas Spot,0,0,1,macrods,geom,D,0,0,,,12/31/1993,0,0,0,1,0
+M000100225,SandP GSCI Natural Gas Total Return,SandP GSCI Natural Gas Total Return,0,0,1,macrods,geom,D,0,0,,,1/7/1994,1,0,0,0,0
+M000010091,PHLX SEMICONDUCTOR INDEX,PHLX SEMICONDUCTOR INDEX,0,0,1,macroidx,geom,D,0,0,,,8/30/1994,0,0,0,0,0
+M000100214,SandP GSCI Lead Excess Return,SandP GSCI Lead Excess Return,0,0,1,macrods,geom,D,0,0,,,11/17/1994,0,0,0,0,1
+M000100215,SandP GSCI Lead Spot,SandP GSCI Lead Spot,0,0,1,macrods,geom,D,0,0,,,11/17/1994,0,0,0,1,0
+M000100216,SandP GSCI Lead Total Return,SandP GSCI Lead Total Return,0,0,1,macrods,geom,D,0,0,,,12/30/1994,1,0,0,0,0
+M000010156,SandP 1000 INDEX,sp_1000,0,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,0,0
+M000010157,SandP 1000 INDEX - TOTL RET,sp_1000_tr,0,0,1,macroidx,geom,D,0,0,,,12/30/1994,1,0,0,0,0
+M000010170,SandP 500 CONSUMER DISCRETNRY SECTOR INDEX,sp_500_sector_cons_disc,0,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,0,0
+M000100199,SandP GSCI Energy and Metals Exc. Ret.,SandP GSCI Energy and Metals Exc. Ret.,0,0,1,macrods,geom,D,0,0,,,1/6/1995,0,0,0,0,0
+M000100201,SandP GSCI Energy and Metals Tot. Ret.,SandP GSCI Energy and Metals Tot. Ret.,0,0,1,macrods,geom,D,0,0,,,1/6/1995,1,0,0,0,0
+M000100180,SandP GSCI 1 Month Forward,gsci_1m_forward,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,0
+M000100181,SandP GSCI 1 Month Forward Total,gsci_1m_forward_tot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100183,SandP GSCI 2 Month Forward,gsci_2m_forward,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,0
+M000100182,SandP GSCI 2 Month Forward Excess,gsci_2m_forward_ex,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100184,SandP GSCI 2 Month Forward Total,gsci_2m_forward_tot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100186,SandP GSCI 3 Month Forward,gsci_3m_forward,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,0
+M000100185,SandP GSCI 3 Month Forward Excess,gsci_3m_forward_ex,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100187,SandP GSCI 3 Month Forward Total,gsci_3m_forward_tot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100189,SandP GSCI 4 Month Forward,gsci_4m_forward,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,0
+M000100188,SandP GSCI 4 Month Forward Excess,gsci_4m_forward_ex,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100190,SandP GSCI 4 Month Forward Total,gsci_4m_forward_tot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100192,SandP GSCI 5 Month Forward,gsci_5m_forward,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,0
+M000100191,SandP GSCI 5 Month Forward Excess,gsci_5m_forward_ex,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100193,SandP GSCI 5 Month Forward Total,gsci_5m_forward_tot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100235,SandP GSCI Four Energy Commodities Spot,gsci_four_energy_spot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,1,0
+M000100236,SandP GSCI Four Energy Total Return,gsci_four_energy_tr,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100228,SandP GSCI Biofuel Excess Return,SandP GSCI Biofuel Excess Return,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100229,SandP GSCI Biofuel Spot,SandP GSCI Biofuel Spot,0,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,1,0
+M000100230,SandP GSCI Biofuel Total Return,SandP GSCI Biofuel Total Return,0,0,1,macrods,geom,D,0,0,,,1/16/1995,1,0,0,0,0
+M000100241,SandP GSCI Softs Excess Return,gsci_softs_er,0,0,1,macrods,geom,D,0,0,,,1/17/1995,0,0,0,0,1
+M000100243,SandP GSCI Softs Total Return,gsci_softs_tr,0,0,1,macrods,geom,D,0,0,,,1/17/1995,1,0,0,0,0
+M000010106,RUSSELL 2500 GROWTH,RUSSELL 2500 GROWTH,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010110,RUSSELL 2500 VALUE,RUSSELL 2500 VALUE,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010114,RUSSELL 3000 GROWTH,RUSSELL 3000 GROWTH,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010118,RUSSELL 3000 VALUE,RUSSELL 3000 VALUE,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010126,RUSSELL MID CAP VALUE,RUSSELL MID CAP VALUE,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010122,RUSSELL MIDCAP GROWTH,RUSSELL MIDCAP GROWTH,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010134,RUSSELL TOP 200 GROWTH,RUSSELL TOP 200 GROWTH,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010138,RUSSELL TOP 200 VALUE,RUSSELL TOP 200 VALUE,0,0,1,macroidx,geom,D,0,0,,,5/31/1995,0,0,0,1,0
+M000010173,SandP 600 INDEX - SMALL CAP,sp_600_sc,0,0,1,macroidx,geom,D,0,0,,,8/16/1995,0,0,0,0,0
+M001000110,TRADE-WEIGHTED VALUE OF US DOLLAR AGAINST MAJOR CURRENCIES,broad_fx,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000038,CAPACITY UTILIZATION RATE - ALL INDUSTRY,caputil,1,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000048,CONSUMER CONFIDENCE INDEX,cci,1,1,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000043,CHICAGO PURCHASING MANAGER BUSINESS BAROMETER (SA),chicago_pmbb,1,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000108,TOTAL CIVILIAN EMPLOYMENT,civ_empl,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000052,CPI - ALL URBAN: ALL ITEMS,cpi,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000050,CPI - ALL ITEMS LESS FOOD and ENERGY (CORE),cpi_core,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000054,DISPOSABLE PERSONAL INCOME (AR),disp_pers_inc,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000057,EMPLOYED - NONFARM INDUSTRIES TOTAL (PAYROLL SURVEY),emp_nonfarm,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000022,AVG WKLY HOURS - TOTAL PRIVATE NONFARM,hours_nonfarm,1,0,1,macroecon,lin,M,1,0,,,1/1/1985,0,0,0,0,0
+M001000075,INDUSTRIAL PRODUCTION - TOTAL INDEX,ind_prod_total_idx,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000074,INDUSTRIAL PRODUCTION - MANUFACTURING (NAICS),indprod_mfg,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000073,INDUSTRIAL PRODUCTION (%YOY),indprod_yoy,1,0,1,macroecon,yoy,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000078,ISM PURCHASING MANAGERS INDEX (MFG SURVEY),ism_pmi,1,1,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000106,THE CONFERENCE BOARD LEADING ECONOMIC INDICATORS INDEX,leading_econ_idx,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000076,INTERBANK RATE - 3 MONTH (LONDON) (MONTH AVG),libor_3m_M,1,0,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000084,NATIONAL ASSOCIATION OF HOME BUILDERS HOUSING MARKET INDEX,nahb_housing_mkt_idx,1,0,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000093,PERSONAL CONSUMPTION EXPENDITURES (AR),pce,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000040,CHAIN-TYPE PRICE INDEX FOR PERSONAL CONSUMPTION EXPENDITURE,pce_chain,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000039,CHAIN-TYPE PRICE INDEX FOR PCE LESS FOOD and ENERGY,pce_core,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000094,PERSONAL INCOME (MONTHLY SERIES) (AR),pers_inc,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000095,PERSONAL SAVING AS % OF DISPOSABLE PERSONAL INCOME,pers_sav_pct,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000096,"PHILADELPHIA FED OUTLOOK SURVEY - DIFFUSION INDEX, MANUFACTURING",phil_outlook_svy,1,1,1,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000097,POPULATION (ESTIMATES USED IN NATIONAL ACCOUNTS),population,1,0,0,macroecon,lin,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000098,PPI - FINISHED GOODS,ppi,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000099,PPI - FINISHED GOODS LESS FOODS and ENERGY (CORE),ppi_core,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000112,TREASURY YIELD ADJUSTED TO CONSTANT MATURITY - 20 YEAR,treas_yield_20y_monthly,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,0,1,0,0,0
+M001000111,TREASURY BILL RATE - 3 MONTH (EP),treas_yield_3m_monthly,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,1,0,0,0,0
+M001000114,UNEMPLOYMENT RATE,unrate,1,1,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000113,UNEMPLOYED (16 YRS and OVER),unrate_16_plus,1,0,1,macroecon,percent,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000021,AVG HRLY EARN PROD WRKRS-MANUFACTURING,wages_mfg,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M001000020,AVG HRLY EARN - TOTAL PRIVATE NONFARM,wages_nonfarm,1,0,1,macroecon,geom,M,0,0,,,1/1/1985,0,0,0,0,0
+M000100022,Crude Oil-West Texas Intermediate Spot Cushing United States Dollar Per Barrel,crude_oil_wti,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100090,SandP GSCI Energy Spot,gsci_energy_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100093,SandP GSCI Gold Spot,gsci_gold_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100102,SandP GSCI Industrial Metals Spot,gsci_ind_metals_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100108,SandP GSCI Light Ene. Spot,gsci_light_energy_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100123,SandP GSCI Non Prec. Total Return,gsci_non_prec_tr,1,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100117,SandP GSCI Non-Energy Spot,gsci_nonenergy_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100134,SandP GSCI Precious Metal Spot,gsci_prec_metal_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100135,SandP GSCI Precious Metal Tot. Ret.,gsci_prec_metal_tr,1,0,1,macrods,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000100140,SandP GSCI Silver Spot,gsci_silver_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000100150,SandP GSCI Ultra-Light Energy Spot,gsci_ultralight_spot,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000010256,MoodysCorpYield - AAA,moodys_aaa,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000100056,OPEC Oil Basket Price U$/Bbl,opec_oil_basket_price,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000100063,Reuters Commodities Index,reuters_cmdy_idx,1,0,1,macrods,geom,D,0,0,,,1/2/1985,0,0,0,0,0
+M000010117,RUSSELL 3000 INDEX INCL DIVIDENDS,russell_3000_div,1,0,1,macroidx,geom,D,0,0,,,1/2/1985,1,0,0,0,0
+M000010186,SandP INDUSTRIAL AVG,sp_industrial_avg,1,0,1,macroidx,geom,D,0,0,,,1/2/1985,0,0,0,1,0
+M000010000,10-YR TREAS CONSTANT MAT,treasury_cmt_10y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010004,1-YR TREAS CONSTANT MAT,treasury_cmt_1y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010006,2-YR TREAS CONSTANT MAT,treasury_cmt_2y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010008,3-MO TREAS CONSTANT MAT,treasury_cmt_3m,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010009,5-YR TREAS CONSTANT MAT,treasury_cmt_5y,1,1,1,macroidx,percent,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010010,6-MO TREAS CONSTANT MAT,treasury_cmt_6m,1,1,1,macroidx,geom,D,0,0,,,1/2/1985,0,1,0,0,0
+M000010001,10-YR TREASURY YIELD INDEX,treasury_yield_10y,1,1,1,macroidx,percent,D,0,0,,factor 10 off,1/2/1985,0,1,0,0,0
+M000010002,13-WK TREASURY YIELD INDEX,treasury_yield_13w,1,1,1,macroidx,percent,D,0,0,,factor 10 off,1/2/1985,0,1,0,0,0
+M000010119,RUSSELL 3000 VALUE INCL DIVIDENDS,russell_3000_value_div,1,0,1,macroidx,geom,D,0,0,,,1/31/1985,1,0,0,0,0
+M000010005,20-YR TREAS CONSTANT MAT,treasury_cmt_20y,1,1,1,macroidx,percent,D,0,0,,,1/31/1985,0,1,0,0,0
+M000010257,MoodysCorpYield - BAA,moodys_baa,1,1,1,macroidx,percent,D,0,0,,,1/2/1986,0,1,0,0,0
+M000010159,SandP 100 TOTAL RETURN INDEX,sp_100_tr,1,0,1,macroidx,geom,D,0,0,,,1/4/1988,1,0,0,0,0
+M000010172,SandP 500 TOTAL RETURN INDEX,sp_500_tr,1,0,1,macroidx,geom,D,0,0,,,1/4/1988,1,0,0,0,0
+M000010177,SandP BANKING INDEX,sp_banking,1,0,1,macroidx,geom,D,0,0,,,11/9/1988,0,0,0,1,0
+M000010178,SandP CHEMICAL INDEX,sp_chemical,1,0,1,macroidx,geom,D,0,0,,,9/11/1989,0,0,0,1,0
+M000010184,SandP GLOBAL 1200 TOTAL RETURN INDEX,sp_global_1200_tr,1,0,1,macroidx,geom,D,0,0,,,9/11/1989,1,0,0,0,0
+M000010189,SandP INSURANCE INDEX,sp_insurance,1,0,1,macroidx,geom,D,0,0,,,9/11/1989,0,0,0,1,0
+M000010195,SandP RETAIL INDEX,sp_retail,1,0,1,macroidx,geom,D,0,0,,,9/11/1989,0,0,0,1,0
+M000010182,SandP EQUAL WEIGHT INDEX,sp_ew_index,1,0,1,macroidx,geom,D,0,0,,,1/2/1990,0,0,0,1,0
+M000010210,VOLATILITY INDEX - NEW CALC (SPX),vix_new,1,1,0,macroidx,percent,D,0,0,,,1/2/1990,0,0,0,0,0
+M001000101,"RETAIL SALES and FOOD SERVICES, TOTAL",retail_sales_total,1,0,1,macroecon,geom,M,0,0,,back to 1994 only,1/1/1992,0,0,0,0,0
+M000010071,MORGAN STANLEY CONSUMER INDEX,ms_consumer_idx,1,0,1,macroidx,geom,D,0,0,,,10/4/1993,0,0,0,0,0
+M000010072,MORGAN STANLEY CYCLICAL INDEX,ms_cyclical_idx,1,0,1,macroidx,geom,D,0,0,,,10/4/1993,0,0,0,0,0
+M000010194,SandP MIDCAP 400 SECTOR INDEX - FINANCIALS SEC,sp_400_mc_sec_financials,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,0,0
+M000010174,SandP 600 TOTAL RETURN INDEX,sp_600_tr,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,1,0,0,0,0
+M000010179,SandP CONSUMER STAPLES SECTOR INDEX,sp_sector_cons_staples,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010181,SandP ENERGY SECTOR INDEX,sp_sector_energy,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010183,SandP FINANCIAL SECTOR INDEX,sp_sector_financial,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010187,SandP INDUSTRIALS SECTOR INDEX,sp_sector_industrials,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010188,SandP INFORMATION TECH SECTOR INDEX,sp_sector_it,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010191,SandP MATERIALS SECTOR INDEX,sp_sector_materials,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010198,SandP TELECOM SERVICES SECTOR INDEX,sp_sector_telecom,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010199,SandP UTILITIES SECTOR INDEX,sp_sector_utilities,1,0,1,macroidx,geom,D,0,0,,,12/30/1994,0,0,0,1,0
+M000010085,NASDAQ VOLATILITY INDEX - CBOE,nas_vix,1,1,0,macroidx,percent,D,0,0,,,1/3/1995,0,0,0,0,0
+M000100200,SandP GSCI Energy and Metals Spot,gsci_energy_metals_spot,1,0,1,macrods,geom,D,0,0,,,1/6/1995,0,0,0,1,0
+M000100234,SandP GSCI Four Energy Excess Return,gsci_four_energy_er,1,0,1,macrods,geom,D,0,0,,,1/16/1995,0,0,0,0,1
+M000100242,SandP GSCI Softs Spot,gsci_softs_spot,1,0,1,macrods,geom,D,0,0,,,1/17/1995,0,0,0,1,0
+M000010007,30-YR TREASURY YIELD INDEX,treasury_yield_30y,1,1,1,macroidx,percent,D,0,0,,factor 10 off,6/1/1999,0,1,0,0,0
+M000010255,ML HI YLD MASTER2 CONSTRAINEHUC0 ,baml_hy_master2_tr,0,1,1,macroidx,geom,D,0,0,,,1/1/2008,1,0,0,0,0
+M000010229,ML US CORPORATE             TR MASTER,baml_corp_master_tr,1,1,1,macroidx,geom,D,0,0,,,1/1/2008,1,0,0,0,0
+M000010260,US Credit Spread - A,ax_us_corp_spread_a,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010259,US Credit Spread - AA,ax_us_corp_spread_aa,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010258,US Credit Spread - AAA,ax_us_corp_spread_aaa,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010261,US Credit Spread - BBB,ax_us_corp_spread_bbb,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0
+M000010262,US Credit Spread - SUB-IG,ax_us_corp_spread_sub_ig,1,1,1,macroidx,percent,D,0,0,,,1/1/2008,0,0,1,0,0

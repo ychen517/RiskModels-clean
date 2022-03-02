@@ -1,0 +1,19 @@
+jdbc:derby:@@databases@@/DbFundamental-@@region@@;@@CREATE_OPTIONS@@;
+CALL SYSCS_UTIL.SYSCS_SET_DATABASE_PROPERTY( 
+    'derby.storage.pageReservedSpace',
+    '0');
+
+CREATE TABLE FUNDAMENTAL 
+(		
+axioma_id 		VARCHAR(9) NOT NULL,
+corp_action_flag	SMALLINT,
+debt2equity		DOUBLE PRECISION,
+div_yield		DOUBLE PRECISION,
+ebitda			DOUBLE PRECISION,
+growth_earn_1yr		DOUBLE PRECISION,
+growth_income_1yr	DOUBLE PRECISION,
+p2earn			DOUBLE PRECISION,
+p2book			DOUBLE PRECISION,
+p2sales			DOUBLE PRECISION,
+CONSTRAINT ASSET_PK PRIMARY KEY (axioma_id)
+);

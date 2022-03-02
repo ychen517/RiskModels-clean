@@ -1,0 +1,550 @@
+
+import datetime
+import pandas
+import itertools
+import os
+import numpy.ma as ma
+import numpy as np
+import logging
+
+from marketdb.ConfigManager import findConfig
+from riskmodels import Utilities
+from riskmodels import RiskCalculator_V4
+from riskmodels import FactorReturns
+from riskmodels.Matrices import ExposureMatrix
+from riskmodels import EquityModel
+
+def defaultModelSettingsUS4(rm, scm=True, statModel=False):
+    """Default model parameters all in one place for simplicity
+    These are the US4 parameters
+    """
+    rm.legacyMCapDates = True
+    rm.regionalDescriptorStructure = False
+    rm.twoRegressionStructure = False
+    rm.hasInternalSpecRets = False
+    rm.gicsDate = datetime.date(2014,3,1)
+    rm.firstReturnDate = datetime.date(1980,1,1)
+    rm.multiCountry = (scm==False)
+    rm.simpleProxyRetTol = 0.95
+    rm.downWeightMissingReturns = False
+    if statModel:
+        rm.useBucketedMAD = True
+        rm.allowETFs = True
+    # new added flags to replace multiCountry:
+    rm.coverageMultiCountry = rm.multiCountry
+    rm.hasCountryFactor = rm.multiCountry
+    rm.hasCurrencyFactor = rm.multiCountry
+    rm.applyRT2US = rm.multiCountry
+    # new flags:
+    rm.useFreeFloatRegWeight = False
+    rm.useReturnsTimingV3 = False
+    rm.maskMissingSpecificReturns = False
+    return
+
+def defaultModelSettingsSCM(rm, scm=True, statModel=False):
+    """Default model parameters all in one place for simplicity
+    These are the AU4 and JP4 parameters
+    """
+    rm.legacyMCapDates = False
+    rm.regionalDescriptorStructure = False
+    rm.twoRegressionStructure = True
+    rm.hasInternalSpecRets = False
+    rm.multiCountry = (scm==False)
+    rm.simpleProxyRetTol = 0.95
+    rm.downWeightMissingReturns = False
+    if statModel:
+        # This should be False for newer models
+        rm.useBucketedMAD = True
+        rm.allowETFs = True
+    # new added flags to replace multiCountry:
+    rm.coverageMultiCountry = rm.multiCountry
+    rm.hasCountryFactor = rm.multiCountry
+    rm.hasCurrencyFactor = rm.multiCountry
+    rm.applyRT2US = rm.multiCountry
+    # new flags:
+    rm.useFreeFloatRegWeight = False
+    rm.useReturnsTimingV3 = False
+    rm.maskMissingSpecificReturns = False
+    return
+
+def defaultModelSettings(rm, scm=True, statModel=False, nu_sh_model=False, nu_sh_stat_model=False):
+    """Default model parameters all in one place for simplicity
+    These are the parameters for WW4 onwards
+    """
+    rm.legacyMCapDates = False
+    rm.regionalDescriptorStructure = True
+    rm.twoRegressionStructure = True
+    rm.hasInternalSpecRets = True
+    rm.multiCountry = (scm==False)
+    rm.returnsTimingId = 1
+    rm.simpleProxyRetTol = 0.8
+    rm.downWeightMissingReturns = False
+    # new added flags to replace multiCountry:
+    rm.coverageMultiCountry = rm.multiCountry
+    rm.hasCountryFactor = rm.multiCountry
+    rm.hasCurrencyFactor = rm.multiCountry
+    rm.applyRT2US = rm.multiCountry
+    # new flags:
+    rm.useFreeFloatRegWeight = False
+    rm.useReturnsTimingV3 = False
+    rm.legacySAWeight = False
+    rm.nu_sh_model = nu_sh_model
+
+    if statModel:
+        rm.useBucketedMAD = False
+        rm.allowETFs = True
+        rm.maskMissingSpecificReturns = True
+        rm.statModel21Settings = False
+        rm.statModelEstuTol = 0.75
+        rm.nu_sh_stat_model = nu_sh_stat_model
+    return
+
+def defaultRegionalModelEstuParameters(rm):
+    estu_parameters = {'minNonMissing': [0.9, 0.05, 0.05],
+                       'ChinaATol': 0.9,
+                       'CapByNumber_Flag': False,
+                       'CapByNumber_hiCapQuota': np.nan,
+                       'CapByNumber_lowCapQuota': np.nan,
+                       'market_lower_pctile': 2.0,
+                       'country_lower_pctile': 2.0,
+                       'industry_lower_pctile': 2.0,
+                       'dummyThreshold': 6,
+                       'inflation_cutoff': 0.05,
+                      }
+    elig_parameters = {'assetTypes': None,
+                       'excludeTypes': rm.etfAssetTypes + rm.otherAssetTypes,
+                       'use_isin_country_Flag': False,
+                       'remove_China_AB':True,
+                       'addBack_H_DR':True}
+                       
+    return estu_parameters, elig_parameters
+
+def defaultExposureParameters(rm, styleList, overrider=False, configFile=None, descriptorNumeraire=None):
+    rm.totalStyles = []
+    styleParameters = dict()
+    if descriptorNumeraire is not None:
+        rm.descriptorNumeraire = descriptorNumeraire
+    else:
+        rm.descriptorNumeraire = None
+
+    # Set up important exposure parameters from config file
+    if configFile is not None:
+        rm.shrinkList = dict()
+        rm.fillMissingList = []
+        rm.wideCloneList = []
+        rm.fillWithZeroList = []
+        rm.regionalStndList = []
+        rm.noStndDescriptor = []
+        rm.noCloneDescriptor = []
+        rm.zeroExposureAssetTypes = []
+        rm.zeroExposureFactorNames = []
+        rm.dummyStyleList = []
+
+        #currentPATH = os.path.abspath(os.path.dirname(__file__))
+        expConfigDF = pandas.read_csv(findConfig(configFile+'.config', 'riskmodels/exp-config'), index_col=0, skipinitialspace=True)
+        expConfigDF = expConfigDF.fillna(0)
+        for styleName in styleList:
+            dummy = False
+            if ('dummy' in expConfigDF.columns.values) and expConfigDF.loc[styleName, 'dummy']:
+                rm.dummyStyleList.append(styleName)
+                dummy = True
+            if expConfigDF.loc[styleName, 'fillMissing'] and not dummy:
+                rm.fillMissingList.append(styleName)
+            if expConfigDF.loc[styleName, 'fillWithZero'] and not dummy:
+                rm.fillWithZeroList.append(styleName)
+            if expConfigDF.loc[styleName, 'wideClone']:
+                rm.wideCloneList.append(styleName)
+            if (expConfigDF.loc[styleName, 'shrink'] > 0) and not dummy:
+                rm.shrinkList[styleName] = expConfigDF.loc[styleName, 'shrink']
+            if expConfigDF.loc[styleName, 'standardise'].lower() == 'reg':
+                rm.regionalStndList.append(styleName)
+            if expConfigDF.loc[styleName, 'dontStandardiseDescriptor']:
+                rm.noStndDescriptor.extend(rm.DescriptorMap[styleName])
+            if expConfigDF.loc[styleName, 'dontCloneDescriptor']:
+                rm.noCloneDescriptor.extend(rm.DescriptorMap[styleName])
+            if ('zeroExpType' in expConfigDF.columns.values) and (expConfigDF.loc[styleName, 'zeroExpType'] != 0):
+                rm.zeroExposureAssetTypes.append(expConfigDF.loc[styleName, 'zeroExpType'])
+                rm.zeroExposureFactorNames.append(styleName)
+        rm.regionalStndDesc = list(itertools.chain.from_iterable(\
+                                [rm.DescriptorMap[st] for st in rm.regionalStndList]))
+
+    # Set up exposure: characteristic mappings
+    for styleName in styleList:
+        params = Utilities.Struct()
+        if hasattr(rm, 'DescriptorWeights') and (styleName in rm.DescriptorWeights):
+            params.descriptorWeights = rm.DescriptorWeights[styleName]
+        if hasattr(rm, 'smallCapMap') and (styleName in rm.smallCapMap):
+            params.bounds = rm.smallCapMap[styleName]
+        if hasattr(rm, 'noProxyList') and (styleName in rm.noProxyList):
+            params.dontProxy = True
+        if hasattr(rm, 'fillMissingList') and (styleName in rm.fillMissingList):
+            params.fillMissing = True
+        if hasattr(rm, 'fillWithZeroList') and (styleName in rm.fillWithZeroList):
+            params.fillWithZero = True
+        if hasattr(rm, 'shrinkList') and (styleName in rm.shrinkList):
+            params.shrinkValue = True
+            params.daysBack = rm.shrinkList[styleName]
+        if hasattr(rm, 'orthogList') and (styleName in rm.orthogList):
+            params.orthog = rm.orthogList[styleName][0]
+            params.sqrtWt = rm.orthogList[styleName][1]
+            params.orthogCoef = rm.orthogList[styleName][2]
+        rm.totalStyles.append(EquityModel.ModelFactor(styleName, styleName))
+        styleParameters[styleName] = params
+
+    # Set global parameters
+    rm.styleParameters = styleParameters
+    rm.styles = [s for s in rm.totalStyles if s.name in styleList]
+    return
+
+def defaultExposureProxyParameters(
+            rm, modelDB,
+            dummyType='market',
+            dummyThreshold=6.0,
+            useRealMCaps=True,
+            regWeight='rootCap',
+            kappa=5.0,
+            thinWeightMultiplier='simple',
+            overrider=False,
+            ):
+    regParameters = dict()
+    # Initialise
+    rp = Utilities.Struct()
+    rp.name = 'main'
+    # Thin factor corrections (redundant here)
+    rp.fixThinFactors = True
+    rp.dummyType = dummyType
+    rp.dummyThreshold = dummyThreshold
+    rp.thinWeightMultiplier = thinWeightMultiplier
+    # Info on factors and constraints
+    rp.regressionList = []
+    rp.constraintTypes = []
+    rp.excludeFactors = []
+    rp.useRealMCapsForConstraints = useRealMCaps
+    # Regression weighting and estu
+    rp.regWeight = regWeight
+    rp.clipWeights = True
+    rp.estuName = 'main'
+    # Other regression parameter
+    rp.kappa = kappa
+    rp.whiteStdErrors = False
+    rp.computeVIF = False
+    # Add to regression list
+    regParameters[0] = rp
+    return FactorReturns.RobustRegression2017(regParameters)
+
+def defaultRegressionParameters(
+            rm, modelDB, 
+            marketRegression=False,
+            dummyType='sector',
+            dummyThreshold=6.0,
+            useRealMCaps=True,
+            regWeight='rootCap',
+            dcWeight='rootCap',
+            kappa=5.0,
+            thinWeightMultiplier='simple',
+            scndRegList=[],
+            scndRegEstus=[],
+            overrider=False,
+            ):
+
+    # Initialise 
+    regParameters = dict()
+    iReg = 0
+    excludeList = []
+    fixThinFactors = True
+    for rl in scndRegList:
+        excludeList.extend(rl)
+    if dummyType is None:
+        fixThinFactors = False
+
+    # Set up market regression parameters
+    if marketRegression:
+        rp0 = Utilities.Struct()
+        # Regression identifiers
+        rp0.name = 'market'
+        # Thin factor corrections (redundant here)
+        rp0.fixThinFactors = False
+        rp0.dummyType = 'market'
+        rp0.dummyThreshold = dummyThreshold
+        rp0.thinWeightMultiplier = thinWeightMultiplier
+        # Info on factors and constraints
+        rp0.regressionList = [ExposureMatrix.InterceptFactor]
+        rp0.excludeFactors = []
+        rp0.constraintTypes = []
+        rp0.useRealMCapsForConstraints = useRealMCaps
+        # Regression weighting and estu
+        rp0.regWeight = regWeight
+        rp0.clipWeights = True
+        rp0.estuName = 'main'
+        # Other regression parameter
+        rp0.kappa = kappa
+        rp0.whiteStdErrors = False
+        rp0.computeVIF = False
+        # Add to regression list
+        regParameters[iReg] = rp0
+        iReg += 1
+        excludeList.append(ExposureMatrix.InterceptFactor)
+
+    # Set up main regression parameters
+    rp1 = Utilities.Struct()
+    # Regression identifiers
+    rp1.name = 'main'
+    # Thin factor corrections (redundant here)
+    rp1.fixThinFactors = fixThinFactors
+    rp1.dummyType = dummyType
+    rp1.dummyThreshold = dummyThreshold
+    rp1.thinWeightMultiplier = thinWeightMultiplier
+    # Info on factors and constraints
+    if rm.intercept is not None:
+        regressionList = [ExposureMatrix.InterceptFactor,
+                          ExposureMatrix.StyleFactor,
+                          ExposureMatrix.IndustryFactor]
+        rp1.constraintTypes = [ExposureMatrix.IndustryFactor]
+    else:
+        regressionList = [ExposureMatrix.StyleFactor,
+                          ExposureMatrix.IndustryFactor]
+        rp1.constraintTypes = []
+    if rm.hasCountryFactor:
+        regressionList.append(ExposureMatrix.CountryFactor)
+        regressionList.append(ExposureMatrix.LocalFactor)
+        rp1.constraintTypes.append(ExposureMatrix.CountryFactor)
+    rp1.excludeFactors = []
+    rp1.useRealMCapsForConstraints = useRealMCaps
+    rp1.regressionList = [r for r in regressionList if r not in excludeList]
+    # Regression weighting and estu
+    rp1.regWeight = regWeight
+    rp1.clipWeights = True
+    rp1.estuName = 'main'
+    # Other regression parameter
+    rp1.kappa = kappa
+    rp1.whiteStdErrors = False
+    rp1.computeVIF = False
+    # Add to regression list
+    regParameters[iReg] = rp1
+    iReg += 1
+
+    # Subsiduary regressions if any
+    for (rl, re) in zip(scndRegList, scndRegEstus):
+        srp = Utilities.Struct()
+        # Regression identifiers
+        srp.name = re
+        # Thin factor corrections (redundant here)
+        srp.fixThinFactors = False
+        srp.dummyType = 'market'
+        srp.dummyThreshold = dummyThreshold
+        srp.thinWeightMultiplier = thinWeightMultiplier
+        # Info on factors and constraints
+        srp.regressionList = rl
+        srp.constraintTypes = []
+        srp.excludeFactors = []
+        srp.useRealMCapsForConstraints = useRealMCaps
+        # Regression weighting and estu
+        srp.regWeight = dcWeight
+        srp.clipWeights = True
+        srp.estuName = re
+        # Other regression parameter
+        srp.kappa = kappa
+        srp.whiteStdErrors = False
+        srp.computeVIF = False
+        regParameters[iReg] = srp
+        iReg += 1
+
+    if overrider:
+        overrider.overrideRegressionParams(regParameters)
+    return FactorReturns.RobustRegression2017(regParameters)
+    
+def simpleRegressionParameters(
+            rm, modelDB,
+            marketRegression=False,
+            dummyType=None,
+            dummyThreshold=6.0,
+            useRealMCaps=True,
+            regWeight='rootCap',
+            kappa=25.0,
+            thinWeightMultiplier='simple',
+            scndRegList=[],
+            scndRegEstus=[],
+            overrider=False,
+            ):
+
+    # Initialise
+    regParameters = dict()
+    iReg = 0
+    excludeList = []
+    fixThinFactors = False
+
+    # Set up main regression parameters
+    rp1 = Utilities.Struct()
+    # Regression identifiers
+    rp1.name = 'main'
+    # Thin factor corrections (redundant here)
+    rp1.fixThinFactors = fixThinFactors
+    rp1.dummyType = dummyType
+    rp1.dummyThreshold = dummyThreshold
+    rp1.thinWeightMultiplier = thinWeightMultiplier
+    # Info on factors and constraints
+    regressionList = [ExposureMatrix.StyleFactor,
+                      ExposureMatrix.StatisticalFactor]
+    rp1.regressionList = [r for r in regressionList if r not in excludeList]
+    rp1.constraintTypes = []
+    rp1.excludeFactors = []
+    rp1.useRealMCapsForConstraints = useRealMCaps
+    # Regression weighting and estu
+    rp1.regWeight = regWeight
+    rp1.clipWeights = True
+    rp1.estuName = 'main'
+    # Other regression parameter
+    rp1.kappa = kappa
+    rp1.whiteStdErrors = False
+    rp1.computeVIF = False
+    # Add to regression list
+    regParameters[iReg] = rp1
+    iReg += 1
+
+    if overrider:
+        overrider.overrideRegressionParams(regParameters)
+    return FactorReturns.RobustRegression2017(regParameters)
+
+def defaultSpecificVarianceParameters(rm, horizon='medium', nwLag=1,
+                useBlend=True, computeISC=True, minVar=0.0025, maxVar=4.0,
+                dateOverLap=None, overrider=False, maxHistoryOverride=None,
+                deMeanAllFactors=False, dva_downweightEnds=True, shrink=None):
+    rm.srParameters = Utilities.Struct()
+
+    # History and halflife parameters
+    if horizon == 'short':
+        rm.srParameters.halfLife = 60
+    elif horizon == 'medium':
+        rm.srParameters.halfLife = 125
+    else:
+        logging.error('Unknown specific variance horizon: %s', horizon)
+        rm.srParameters.halfLife = None
+    rm.srParameters.minObs = rm.srParameters.halfLife
+    if maxHistoryOverride is None:
+        rm.srParameters.maxObs = 500
+    else:
+        rm.srParameters.maxObs = maxHistoryOverride
+
+    # DVA parameters
+    rm.srParameters.DVAType = None
+    rm.srParameters.DVAWindow = None
+    rm.srParameters.DVAUpperBound = 0.05
+    rm.srParameters.DVALowerBound = -0.10
+    if hasattr(rm, 'nu_sh_model') and rm.nu_sh_model:
+        rm.srParameters.DVAUpperBound = 0.15
+        rm.srParameters.DVALowerBound = -0.20
+    rm.srParameters.downweightEnds = dva_downweightEnds
+
+    # Other parameters
+    rm.srParameters.NWLag = nwLag
+    rm.srParameters.deMeanFlag = deMeanAllFactors
+    rm.srParameters.equalWeightFlag = False
+    if horizon == 'short':
+        rm.srParameters.clipBounds = [15.0, 15.0]
+    else:
+        rm.srParameters.clipBounds = [8.0, 8.0]
+    rm.srParameters.useBlendedRisk = useBlend
+    rm.srParameters.computeISC = computeISC
+    rm.srParameters.minVar = minVar
+    rm.srParameters.maxVar = maxVar
+    rm.srParameters.dateOverLap = dateOverLap
+    rm.srParameters.shrink = shrink
+    rm.srParameters.blendTol = 0.75
+
+    if overrider:
+        overrider.overrideSpecificRiskParams(rm.srParameters.__dict__)
+        overrider.overrideDVA(rm.srParameters.__dict__)
+    
+    # Specific risk engine
+    rm.specificRiskCalculator = RiskCalculator_V4.ComputeSpecificRisk2020(rm.srParameters)
+
+def defaultFactorVarianceParameters(rm, horizon='medium', nwLag=1, selectDemean=True,
+                dateOverLap=None, overrider=False, maxHistoryOverride=None,
+                deMeanAllFactors=False, dva_downweightEnds=True, shrink=None, dvaType='spline'):
+    rm.fvParameters = Utilities.Struct()
+
+    # History and halflife parameters
+    if horizon == 'short':
+        rm.fvParameters.halfLife = 60
+    elif horizon == 'medium':
+        rm.fvParameters.halfLife = 125
+    else:
+        logging.error('Unknown specific variance horizon: %s', horizon)
+        rm.fvParameters.halfLife = None
+    rm.fvParameters.minObs = rm.fvParameters.halfLife
+    if maxHistoryOverride is None:
+        rm.fvParameters.maxObs = 500
+    else:
+        rm.fvParameters.maxObs = maxHistoryOverride
+
+    # DVA parameters
+    rm.fvParameters.DVAType = dvaType
+    rm.fvParameters.DVAWindow = rm.fvParameters.halfLife
+    rm.fvParameters.DVAUpperBound = 0.05
+    rm.fvParameters.DVALowerBound = -0.10
+    if hasattr(rm, 'nu_sh_model') and rm.nu_sh_model:
+        rm.fvParameters.DVAUpperBound = 0.15
+        rm.fvParameters.DVALowerBound = -0.20
+    rm.fvParameters.downweightEnds = dva_downweightEnds
+
+    # Demeaning parameters
+    rm.fvParameters.selectiveDeMean = selectDemean
+    rm.fvParameters.deMeanFactorTypes = [\
+            ExposureMatrix.StyleFactor, ExposureMatrix.MacroCoreFactor,
+            ExposureMatrix.MacroMarketTradedFactor, ExposureMatrix.MacroEquityFactor,
+            ExposureMatrix.MacroSectorFactor,ExposureMatrix.MacroFactor]
+    rm.fvParameters.deMeanHalfLife = 1000
+    rm.fvParameters.deMeanMinHistoryLength = 1000
+    rm.fvParameters.deMeanMaxHistoryLength = 2000
+
+    # Other parameters
+    rm.fvParameters.NWLag = nwLag
+    rm.fvParameters.deMeanFlag = deMeanAllFactors
+    rm.fvParameters.equalWeightFlag = False
+    rm.fvParameters.dateOverLap = dateOverLap
+    rm.fvParameters.shrink = shrink
+    
+    if overrider:
+        overrider.overrideFactorVarParams(rm.fvParameters.__dict__)
+        overrider.overrideDVA(rm.fvParameters.__dict__)
+    
+def defaultFactorCorrelationParameters(rm, horizon='medium', nwLag=1, dateOverLap=None,
+                overrider=False, maxHistoryOverride=None,
+                deMeanAllFactors=False, dva_downweightEnds=True, shrink=None,
+                dvaType='spline'):
+    rm.fcParameters = Utilities.Struct()
+
+    # History and halflife parameters
+    if horizon == 'short':
+        rm.fcParameters.halfLife = 125
+    elif horizon == 'medium':
+        rm.fcParameters.halfLife = 250
+    else:
+        logging.error('Unknown specific variance horizon: %s', horizon)
+        rm.fcParameters.halfLife = None
+    rm.fcParameters.minObs = rm.fcParameters.halfLife
+    if maxHistoryOverride is None:
+        rm.fcParameters.maxObs = 1000
+    else:
+        rm.fcParameters.maxObs = maxHistoryOverride
+
+    # DVA parameters
+    rm.fcParameters.DVAType = dvaType
+    rm.fcParameters.DVAWindow = rm.fvParameters.halfLife
+    rm.fcParameters.DVAUpperBound = 0.05
+    rm.fcParameters.DVALowerBound = -0.10
+    if hasattr(rm, 'nu_sh_model') and rm.nu_sh_model:
+        rm.fcParameters.DVAUpperBound = 0.15
+        rm.fcParameters.DVALowerBound = -0.20
+    rm.fcParameters.downweightEnds = dva_downweightEnds
+
+    # Other parameters
+    rm.fcParameters.NWLag = nwLag
+    rm.fcParameters.deMeanFlag = deMeanAllFactors
+    rm.fcParameters.equalWeightFlag = False
+    rm.fcParameters.dateOverLap = dateOverLap
+    rm.fcParameters.shrink = shrink
+    
+    if overrider:
+        overrider.overrideCorrParams(rm.fcParameters.__dict__)
+        overrider.overrideDVA(rm.fcParameters.__dict__)

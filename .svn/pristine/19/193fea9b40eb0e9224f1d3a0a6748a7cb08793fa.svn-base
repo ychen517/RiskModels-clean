@@ -1,0 +1,9 @@
+{
+    "modelIdTransferCommands": [
+        "~~~doModelDbTransferByAxiomaIdList(['OVGML7M9C1'], '2019-01-12','2019-01-17', '2018-01-12:2019-01-17',sectionList=['SubIssueData', 'SubIssueReturn', 'SubIssueDivYield'])~~~"
+    ],
+    "marketIdTransferCommands": [
+        "~~~marketDbTransfer.doTransfer('glprod','OVGML7M9C1', '2019-01-12:2019-01-17', commit=False, partOfTransaction=True, sectionList=['IDCFundsCUSIP', 'IDCFundsSEDOL', 'IDCFundsISIN', 'IDCFundsTradingCurrency', 'IDCFundsTicker', 'IDCFundsName', 'IDCFundsExchange', 'IDCFundsAxiomaSecType', 'IDCFundsAdjustmentFactors', 'IDCFundsDividends', 'IDCFundsPrice', 'IDCFundsReturn', 'Usage'], assetType='mutualfunds')~~~"
+    ],
+    "sid": "glsdg"
+}

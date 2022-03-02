@@ -1,0 +1,2 @@
+CALL SYSCS_UTIL.SYSCS_IMPORT_DATA(null,'ASSET', null, null, '@@dump@@/Asset-@@region@@_Asset', '|', null, null, 1);
+jdbc:derby:;shutdown=true;

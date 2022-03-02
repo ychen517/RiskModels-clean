@@ -1,0 +1,997 @@
+[DEFAULT]
+#dates=2007-01-01:2009-02-24
+#issue-ids=D9K7FJATJ3,DV7T58MWX6
+#sub-issue-ids=D9K7FJATJ311,DV7T58MWX611
+#sections=IndustryGICS-2008,IndustryGICS-2006,IndustryGroupGICS,SubIssueData,SubIssueReturn
+#sections=SubIssueData,SubIssueReturn,SubIssueCumulativeReturn
+databases=Databases
+date-chunk=30
+id-chunk=4000
+commit-each-chunk=true
+gics-sources=TransferSources.Classification:%(sourceBase)s:2018-09-29:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2006-04-29:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2005-04-30:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2004-05-01:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2003-05-01:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2002-03-29:%(targetCls)s
+	,TransferSources.Classification:%(sourceBase)s:2000-01-01:%(targetCls)s
+	,TransferSources.AxiomaDBClassification:%(sourceBase)s:2018-09-29:%(targetCls)s
+	,TransferSources.AxiomaDBClassification:%(sourceBase)s:2016-09-01:%(targetCls)s 
+	,TransferSources.AxiomaDBClassification:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,TransferSources.AxiomaDBClassification:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,TransferSources.AxiomaDBClassification:%(sourceBase)s:2006-04-29:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2018-09-29:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2006-04-29:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2005-04-30:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2004-05-01:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2003-05-01:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2002-05-01:%(targetCls)s
+	,TransferSources.PastClassification:%(sourceBase)s:2000-01-01:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2000-01-01:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2002-03-29:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2003-05-01:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2004-05-01:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2005-04-30:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2006-04-29:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,TransferSources.FutureClassification:%(sourceBase)s:2018-09-29:%(targetCls)s
+	,TransferSources.AxiomaDBPastClassification:%(sourceBase)s:2018-09-29:%(targetCls)s
+	,TransferSources.AxiomaDBPastClassification:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,TransferSources.AxiomaDBPastClassification:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,TransferSources.AxiomaDBPastClassification:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,TransferSources.AxiomaDBPastClassification:%(sourceBase)s:2006-04-29:%(targetCls)s
+	,TransferSources.AxiomaDBFutureClassification:%(sourceBase)s:2006-04-29:%(targetCls)s
+	,TransferSources.AxiomaDBFutureClassification:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,TransferSources.AxiomaDBFutureClassification:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,TransferSources.AxiomaDBFutureClassification:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,TransferSources.AxiomaDBFutureClassification:%(sourceBase)s:2018-09-29:%(targetCls)s
+
+[SubIssueData]
+target=ModelDB.SubIssueDataProcessor
+transfer=transferSubIssueData
+trading-days-only=true
+logic=ProcessPriorityList
+sources=TransferSources.SubIssueData
+    ,TransferSources.FutureSubIssueData
+
+[SubIssueReturn]
+target=ModelDB.SubIssueReturnProcessor
+transfer=transferSubIssueData
+trading-days-only=true
+logic=ProcessPriorityList
+sources=TransferSources.AxiomaDBReturn
+    ,TransferSources.ModelDBReturn
+    ,TransferSources.FutureModelDBReturn
+
+[CashSubIssueData]
+target=ModelDB.SubIssueDataProcessor
+transfer=transferSubIssueData
+trading-days-only=false
+logic=ProcessPriorityList
+sources=TransferSources.CashSubIssueData
+
+[CashReturn]
+target=ModelDB.SubIssueReturnProcessor
+transfer=transferSubIssueData
+trading-days-only=false
+logic=ProcessPriorityList
+sub-issue-ids=cash
+sources=TransferSources.CashReturn
+
+[SubIssueCumulativeReturn]
+target=ModelDB.SubIssueCumulativeReturnProcessor
+transfer=transferSubIssueData
+logic=ProcessPriorityList
+sources=TransferSources.CumulativeReturn
+
+[CumulativeRiskFreeRates]
+target=ModelDB.CumulativeRiskFreeRateProcessor
+transfer=transferCurrencies
+logic=ProcessRFRates
+sources=TransferSources.CumulativeRiskFreeRate
+currencies=all
+
+[RiskFreeRates]
+target=ModelDB.RiskFreeRateProcessor
+transfer=transferCurrencies
+logic=ProcessRFRates
+sources=TransferSources.MetaInterestRates
+currencies=all
+
+[HistoricBeta]
+target=ModelDB.HistoricBetaProcessorV3
+transfer=transferRMGData
+logic=ProcessPriorityList
+date-chunk=1
+sources=TransferSources.RMGHistoricBetaV3
+
+[HistoricBetaV3]
+target=ModelDB.HistoricBetaProcessorV3
+transfer=transferRMGData
+logic=ProcessPriorityList
+date-chunk=1
+commit-each-chunk=true
+sources=TransferSources.RMGHistoricBetaV3
+
+[CurrencyBeta]
+target=ModelDB.CurrencyBetaProcessor
+transfer=transferRMGData
+logic=ProcessPriorityList
+date-chunk=1
+commit-each-chunk=true
+sources=TransferSources.RMGCurrencyBeta
+
+[MarketPortfolio]
+target=ModelDB.MarketPortfolioProcessor
+transfer=transferRMGData
+logic=ProcessPriorityList
+sources=TransferSources.RMGMarketPortfolio
+
+[MarketReturn]
+target=ModelDB.MarketReturnProcessor
+transfer=transferRMGData
+logic=ProcessPriorityList
+sources=TransferSources.RMGMarketReturn
+trading-days-only=true
+
+[MarketReturnV3]
+target=ModelDB.MarketReturnProcessor:True
+transfer=transferRMGData
+logic=ProcessPriorityList
+sources=TransferSources.RMGMarketReturn:True
+trading-days-only=true
+
+[RegionReturn]
+target=ModelDB.RegionReturnProcessor:True
+transfer=transferRegionData
+logic=ProcessPriorityList
+sources=TransferSources.RegionReturn:True
+trading-days-only=true
+
+[AMPIndustryReturn]
+target=ModelDB.AMPIndustryReturnProcessor
+transfer=transferAMPIndustryReturnData
+logic=ProcessPriorityList
+classification=GICSCustomCA4:2018-09-29
+sources=TransferSources.AMPIndustryReturn
+trading-days-only=true
+
+[ReturnsTiming]
+target=ModelDB.ReturnsTimingProcessorLegacy:1
+transfer=transferRMGData
+logic=ProcessPriorityList
+sources=TransferSources.ReturnsTimingAdjustmentsLegacy:1
+
+[ReturnsTimingV3]
+target=ModelDB.ReturnsTimingProcessor:1
+transfer=transferRMGData
+logic=ProcessPriorityList
+sources=TransferSources.ReturnsTimingAdjustments:1
+
+[MarketVolatility]
+target=ModelDB.MarketVolatilityProcessor
+transfer=transferRMGData
+logic=ProcessPriorityList
+sources=TransferSources.RMGMarketVolatility
+trading-days-only=true
+
+[IndustryGICS-2006]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustries:2006-04-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+	|Life Sciences Tools & Services:2006-04-29
+	|Diversified Consumer Services:2005-04-30
+	|Independent Power Producers & Energy Traders:2005-04-30
+	|Thrifts & Mortgage Finance:2003-05-01
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=%(gics-sources)s
+
+[IndustryGICS-2008]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustries:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+	|Life Sciences Tools & Services:2006-04-29
+	|Diversified Consumer Services:2005-04-30
+	|Independent Power Producers & Energy Traders:2005-04-30
+	|Thrifts & Mortgage Finance:2003-05-01
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,%(gics-sources)s
+
+[IndustryGICS-2014]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustries:2014-03-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+	|Life Sciences Tools & Services:2006-04-29
+	|Diversified Consumer Services:2005-04-30
+	|Independent Power Producers & Energy Traders:2005-04-30
+	|Thrifts & Mortgage Finance:2003-05-01
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2014-09-01:%(targetCls)s
+	,%(gics-sources)s
+
+[IndustryGICS-2016]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustries:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Mortgage Real Estate Investment Trusts (REITs):2006-04-29
+	|Health Care Technology:2006-04-29
+	|Life Sciences Tools & Services:2006-04-29
+	|Diversified Consumer Services:2005-04-30
+	|Independent Power and Renewable Electricity Producers:2005-04-30
+	|Thrifts & Mortgage Finance:2003-05-01
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,%(gics-sources)s
+
+[IndustryGICS-2018]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustries:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Mortgage Real Estate Investment Trusts (REITs):2006-04-29
+        |Health Care Technology:2006-04-29
+        |Life Sciences Tools & Services:2006-04-29
+        |Diversified Consumer Services:2005-04-30
+        |Independent Power and Renewable Electricity Producers:2005-04-30
+        |Thrifts & Mortgage Finance:2003-05-01
+        |Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+        |Media:2018-09-29
+        |Entertainment:2018-09-29
+        |Interactive Media & Services:2018-09-29
+        |Diversified Telecommunication Services:2018-09-29:Internet Software & Services-B
+        |IT Services:2018-09-29:Internet Software & Services-B
+        |Software:2018-09-29:Internet Software & Services-B
+        |Internet & Direct Marketing Retail:2018-09-29:Internet Software & Services-B
+	|Trading Companies & Distributors:2018-09-29:Internet Software & Services-B
+	|Wireless Telecommunication Services:2018-09-29:Internet Software & Services-B
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2018-09-29:%(targetCls)s
+    ,%(gics-sources)s
+
+[IndustryGroupGICS]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustryGroups:2006-04-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[IndustryGroupGICS-2008]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustryGroups:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[IndustryGroupGICS-2016]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustryGroups:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[IndustryGroupGICS-2018]
+date-chunk=120
+targetCls=INDUSTRIES:GICSIndustryGroups:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[GICSCustomTW]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-TW:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[GICSCustomCA]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-CA:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[GICSCustomCA4]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-CA4:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[GICSCustomAU]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-AU:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[GICSCustomAU2]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-AU2:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+sources=%(gics-sources)s
+
+[GICSCustomGB]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-GB:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Capital Markets:2003-05-01
+sources=%(gics-sources)s
+
+[GICSCustomCN]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-CN:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Coal & Consumable Fuels:2005-04-30
+sources=%(gics-sources)s
+
+[GICSCustomJP]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-JP:2006-04-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Diversified Consumer Services:2005-04-30
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=%(gics-sources)s
+
+[GICSCustomJP-2008]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-JP:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Diversified Consumer Services:2005-04-30
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,%(gics-sources)s
+
+[GICSCustomJP-2014]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-JP:2014-03-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Diversified Consumer Services:2005-04-30
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2014-03-01:%(targetCls)s
+	,%(gics-sources)s
+
+[GICSCustomJP-2016]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-JP:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Diversified Consumer Services:2005-04-30
+	|Consumer Finance:2003-05-01
+	|Capital Markets:2003-05-01
+	|Life Sciences Tools & Services:2006-04-29
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,%(gics-sources)s
+
+[GICSCustomNA]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-NA:2008-08-30
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Thrifts & Mortgage Finance:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2008-08-30:%(targetCls)s
+	,%(gics-sources)s
+
+[GICSCustomNA4]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-NA4:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+        |Mortgage Real Estate Investment Trusts (REITs):2006-04-29
+        |Life Sciences Tools & Services:2006-04-29
+        |Diversified Consumer Services:2005-04-30
+        |Independent Power and Renewable Electricity Producers:2005-04-30
+        |Thrifts & Mortgage Finance:2003-05-01
+        |Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+        |Media:2018-09-29
+        |Entertainment:2018-09-29
+        |Interactive Media & Services:2018-09-29
+        |Diversified Telecommunication Services:2018-09-29:Internet Software & Services-B
+        |IT Services:2018-09-29:Internet Software & Services-B
+        |Software:2018-09-29:Internet Software & Services-B
+        |Internet & Direct Marketing Retail:2018-09-29:Internet Software & Services-B
+        |Trading Companies & Distributors:2018-09-29:Internet Software & Services-B
+        |Wireless Telecommunication Services:2018-09-29:Internet Software & Services-B
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2018-09-29:%(targetCls)s,%(gics-sources)s
+
+[GICSCustomEU]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-EU:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+        |Life Sciences Tools & Services:2006-04-29
+        |Independent Power and Renewable Electricity Producers:2005-04-30
+        |Capital Markets:2003-05-01
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2016-09-01:%(targetCls)s
+	,%(gics-sources)s
+
+[GICSCustomEM]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-EM:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Diversified Consumer Services:2005-04-30
+        |Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+sources=%(gics-sources)s
+
+[GICSCustomEM2]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-EM2:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+        |Diversified Consumer Services:2005-04-30
+        |Media:2018-09-29
+        |Entertainment:2018-09-29
+        |Interactive Media & Services:2018-09-29
+        |Diversified Telecommunication Services:2018-09-29:Internet Software & Services-B
+        |IT Services:2018-09-29:Internet Software & Services-B
+        |Software:2018-09-29:Internet Software & Services-B
+        |Internet & Direct Marketing Retail:2018-09-29:Internet Software & Services-B
+        |Trading Companies & Distributors:2018-09-29:Internet Software & Services-B
+        |Wireless Telecommunication Services:2018-09-29:Internet Software & Services-B
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2018-09-29:%(targetCls)s
+        ,%(gics-sources)s
+
+[GICSCustomNoMortgageREITs]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-NoMortgageREITs:2016-09-01
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+        |Life Sciences Tools & Services:2006-04-29
+        |Diversified Consumer Services:2005-04-30
+        |Independent Power and Renewable Electricity Producers:2005-04-30
+        |Thrifts & Mortgage Finance:2003-05-01
+        |Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+sources=%(gics-sources)s
+
+[GICSCustomNoMortgageREITs2018]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-NoMortgageREITs2018:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Health Care Technology:2006-04-29
+        |Life Sciences Tools & Services:2006-04-29
+        |Diversified Consumer Services:2005-04-30
+        |Independent Power and Renewable Electricity Producers:2005-04-30
+        |Thrifts & Mortgage Finance:2003-05-01
+        |Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+        |Media:2018-09-29
+        |Entertainment:2018-09-29
+        |Interactive Media & Services:2018-09-29
+        |Diversified Telecommunication Services:2018-09-29:Internet Software & Services-B
+        |IT Services:2018-09-29:Internet Software & Services-B
+        |Software:2018-09-29:Internet Software & Services-B
+        |Internet & Direct Marketing Retail:2018-09-29:Internet Software & Services-B
+        |Trading Companies & Distributors:2018-09-29:Internet Software & Services-B
+        |Wireless Telecommunication Services:2018-09-29:Internet Software & Services-B
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2018-09-29:%(targetCls)s
+    ,%(gics-sources)s
+
+[GICSCustomGB4]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-GB4:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=IT Services:2018-09-29:Internet Software & Services-B
+        |Software:2018-09-29:Internet Software & Services-B
+        |Internet & Direct Marketing Retail:2018-09-29:Internet Software & Services-B
+        |Trading Companies & Distributors:2018-09-29:Internet Software & Services-B
+        |Consumer Finance:2003-05-01
+        |Capital Markets:2003-05-01
+        |Independent Power and Renewable Electricity Producers:2005-04-30
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2018-09-29:%(targetCls)s
+    ,%(gics-sources)s
+
+[GICSCustom-CN2b]
+date-chunk=120
+targetCls=INDUSTRIES:GICSCustom-CN2b:2018-09-29
+sourceBase=INDUSTRIES:GICS
+target=ModelDB.ClassificationProcessor:%(targetCls)s
+transfer=transferIssueData
+logic=ProcessClassification
+preferIndustry=Coal & Consumable Fuels:2005-04-30
+               |Aerospace & Defense:2005-04-30
+               |Food & Staples Retailing:2005-04-30
+               |Household & Personal Products:2005-04-30
+               |Banks:2005-04-30
+               |Transportation Infrastructure:2005-04-30
+               |IT Services:2005-04-30
+               |Semiconductors & Semiconductor Equipment:2005-04-30
+               |Software:2005-04-30
+               |Telecommunication Services:2005-04-30
+               |Independent Power and Renewable Electricity Producers:2005-04-30
+               |Media:2018-09-29
+               |Entertainment:2018-09-29
+               |IT Services:2018-09-29:Internet Software & Services-B
+               |Software:2018-09-29:Internet Software & Services-B
+               |Semiconductors & Semiconductor Equipment:2018-09-29:Internet Software & Services-B
+               |Communications Equipment:2018-09-29:Internet Software & Services-B
+               |Technology Hardware, Storage & Peripherals:2018-09-29:Internet Software & Services-B
+               |Electronic Equipment, Instruments & Components:2018-09-29:Internet Software & Services-B
+               |Retailing:2018-09-29:Internet Software & Services-B
+               |Consumer Services:2018-09-29:Internet Software & Services-B
+               |Trading Companies, Distributors & Conglomerates:2018-09-29:Internet Software & Services-B
+               |Telecommunication Services:2018-09-29:Internet Software & Services-B
+sources=TransferSources.AxiomaDBClassificationOverride:%(sourceBase)s:2018-09-29:%(targetCls)s
+    ,%(gics-sources)s
+
+### deprecate this section in favor of the next one.  
+### Leave it here for now to allow backward compatibilty during a transition period
+[EstimateCurrencyData]
+# All items
+items=cps_mean_ann, cps_median_ann, cps_std_ann, cps_numest_ann,
+     ebitda_mean_ann, ebitda_median_ann, ebitda_std_ann, ebitda_numest_ann,  
+     ent_mean_ann, ent_median_ann, ent_std_ann, ent_numest_ann,
+     eps_mean_ann, eps_median_ann, eps_std_ann, eps_numest_ann,
+     net_mean_ann, net_median_ann, net_std_ann, net_numest_ann, 
+     rev_mean_ann, rev_median_ann, rev_std_ann, rev_numest_ann, 
+     roa_mean_ann, roa_median_ann, roa_std_ann, roa_numest_ann, 
+     roe_mean_ann, roe_median_ann, roe_std_ann, roe_numest_ann    
+target=ModelDB.EstimateCurrencyProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.EstimateCurrencyItem
+transfer=transferEstimateData
+
+[AssetEstimateData]
+items=cps_mean_ann, cps_median_ann, cps_std_ann, cps_numest_ann,
+     ebitda_mean_ann, ebitda_median_ann, ebitda_std_ann, ebitda_numest_ann,  
+     ent_mean_ann, ent_median_ann, ent_std_ann, ent_numest_ann,
+     eps_mean_ann, eps_median_ann, eps_std_ann, eps_numest_ann,
+     net_mean_ann, net_median_ann, net_std_ann, net_numest_ann, 
+     rev_mean_ann, rev_median_ann, rev_std_ann, rev_numest_ann, 
+     roa_mean_ann, roa_median_ann, roa_std_ann, roa_numest_ann, 
+     roe_mean_ann, roe_median_ann, roe_std_ann, roe_numest_ann,
+     eps_mean_ltg, eps_median_ltg, eps_std_ltg, eps_numest_ltg,
+     eps_numup_ann, eps_numdown_ann, eps_period_ann
+target=ModelDB.EstimateDataProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.EstimateDataItem
+transfer=transferEstimateData
+date-chunk=120
+
+[EstimateCurrencyDataModelDB]
+# All items
+items=cps_mean_ann, cps_median_ann, cps_std_ann, cps_numest_ann,
+     ebitda_mean_ann, ebitda_median_ann, ebitda_std_ann, ebitda_numest_ann,
+     ent_mean_ann, ent_median_ann, ent_std_ann, ent_numest_ann,
+     eps_mean_ann, eps_median_ann, eps_std_ann, eps_numest_ann,
+     net_mean_ann, net_median_ann, net_std_ann, net_numest_ann,
+     rev_mean_ann, rev_median_ann, rev_std_ann, rev_numest_ann,
+     roa_mean_ann, roa_median_ann, roa_std_ann, roa_numest_ann,
+     roe_mean_ann, roe_median_ann, roe_std_ann, roe_numest_ann
+target=ModelDB.EstimateCurrencyProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.EstimateCurrencyItem
+transfer=transferEstimateData
+
+
+[SandP.Xpressfeed.FundamentalData]
+items=ACT_ANN, AT_ANN, CAPX_ANN, CE_ANN, CHE_ANN, COGS_ANN, DICL_ANN, DP_ANN,
+     EBIT_ANN, EBITDA_ANN, GDWL_ANN, IBEI_ANN, IBMII_ANN, INTAN_ANN, INTPN_ANN,
+     LCT_ANN, LT_ANN, LTD_ANN, MIB_ANN, NIM_ANN, NIIT_ANN, OANCF_ANN, OIADP_ANN,
+     PI_ANN, PSTK_ANN, RE_ANN, REVT_ANN, SEQ_ANN, TEQ_ANN, TXT_ANN, ACT_QTR,
+     AT_QTR, CE_QTR, CHE_QTR, COGS_QTR, DICL_QTR, DP_QTR, GDWL_QTR, IBEI_QTR,
+     IBMII_QTR, INTAN_QTR, LCT_QTR, LT_QTR, LTD_QTR, MIB_QTR, NIIT_QTR, NIM_QTR,
+     OIADP_QTR, PI_QTR, PSTK_QTR, RE_QTR, REVT_QTR, SEQ_QTR, TEQ_QTR, TXT_QTR,
+     CAPX_YTD, OANCF_YTD, DVP_ANN, DVP_QTR, INVT_ANN, INVT_QTR, MIBT_ANN, MIBT_QTR,
+     NI_ANN, NI_QTR, NOPI_ANN, NOPI_QTR, RECT_ANN, RECT_QTR, TXP_ANN, TXP_QTR, XI_ANN,
+     XI_QTR, XIDO_ANN, XIDO_QTR, XINT_ANN, XINT_QTR, XSGA_ANN, XSGA_QTR
+target=ModelDB.FundamentalDataProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.FundamentalDataItem
+transfer=transferFundamentalData
+
+
+[Expresso.FundamentalData]
+items=ACT_ANN, AT_ANN, CAPX_ANN, CE_ANN, CHE_ANN, COGS_ANN, DICL_ANN, DP_ANN,
+     EBIT_ANN, EBITDA_ANN, GDWL_ANN, IBEI_ANN, IBMII_ANN, INTAN_ANN, INTPN_ANN,
+     LCT_ANN, LT_ANN, LTD_ANN, MIB_ANN, NIM_ANN, NIIT_ANN, OANCF_ANN, OIADP_ANN,
+     PI_ANN, PSTK_ANN, RE_ANN, REVT_ANN, SEQ_ANN, TEQ_ANN, TXT_ANN, ACT_QTR,
+     AT_QTR, CE_QTR, CHE_QTR, COGS_QTR, DICL_QTR, DP_QTR, GDWL_QTR, IBEI_QTR,
+     IBMII_QTR, INTAN_QTR, LCT_QTR, LT_QTR, LTD_QTR, MIB_QTR, NIIT_QTR, NIM_QTR, 
+     OIADP_QTR, PI_QTR, PSTK_QTR, RE_QTR, REVT_QTR, SEQ_QTR, TEQ_QTR, TXT_QTR,
+     CAPX_YTD, OANCF_YTD
+target=ModelDB.ExpressoDataProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.ExpressoDataItem
+transfer=transferFundamentalData
+
+[FundamentalData]
+items=CAPX_YTD, CAPX_ANN, CHE_ANN, CHE_QTR, OANCF_YTD, OIADP_ANN, OIADP_QTR,
+      PI_ANN, PI_QTR, REVT_ANN, REVT_QTR, SEQ_ANN, SEQ_QTR, TXT_ANN, TXT_QTR,
+      AT_ANN, AT_QTR, CE_ANN, COGS_ANN, COGS_QTR, DICL_ANN, DICL_QTR, LTD_ANN,
+      LTD_QTR, OANCF_ANN
+target=ModelDB.FundamentalDataProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.FundamentalDataItem
+transfer=transferFundamentalData
+
+[FundamentalCurrencyData]
+# Items needed by the US fundamental model
+#items=ce_qtr,dicl_qtr,ltd_qtr,ibei_qtr,dps_qtr,epsxei_qtr
+# All items
+items=ce_ann,ce_qtr,bkvlps_ann,dicl_ann,dicl_qtr,dps_ann,dps_qtr
+	,ebitda_ann,epsx12_qtr,epsxei_ann,epsxei_qtr,epsfx_ann,epsfx_qtr
+	,xidoc_qtr,ibei_ann,ibei_qtr,ltd_ann,ltd_qtr
+	,ni_ann,ni_qtr,oancf_ann,oancf_qtr,sale_ann,sale_qtr
+	,at_ann,at_qtr,act_qtr,act_ann,lct_qtr,lct_ann,cogs_qtr,cogs_ann
+target=ModelDB.FundamentalCurrencyProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.FundamentalCurrencyItem
+	,TransferSources.MdlFundamentalCurrencyItem
+transfer=transferFundamentalData
+
+[FundamentalNumberData]
+items=csho_qtr
+target=ModelDB.FundamentalNumberProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.FundamentalNumberItem
+transfer=transferFundamentalData
+
+[USDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.DescriptorClass
+gics-date=2014-03-01
+numeraire=USD
+rmg-list=US
+items=Momentum_250x20D,Momentum_20D,
+      XRate_104W_XDR,XRate_52W_XDR,
+      Volatility_125D,Volatility_60D,Volatility_250D,
+      Market_Sensitivity_250D,Market_Sensitivity_125D,
+      LnIssuerCap,LnTrading_Activity_60D,LnTrading_Activity_20D,
+      Book_to_Price_Quarterly,Earnings_to_Price_Quarterly,Est_Earnings_to_Price_12MFL_Quarterly,
+      Dividend_Yield_Quarterly,
+      Earnings_Growth_RPF_AFQ,Sales_Growth_RPF_AFQ,
+      Debt_to_Assets_Quarterly,Debt_to_Equity_Quarterly,
+      Return_on_Equity_Quarterly,Return_on_Assets_Quarterly,
+      Sales_to_Assets_Quarterly,Gross_Margin_Quarterly,
+      CashFlow_to_Assets_Annual,CashFlow_to_Income_Annual,
+      ISC_Score_Legacy,ISC_Ret_Score,ISC_Zero_Score,ISC_ADV_Score,
+      Market_Sensitivity_USSC_250D,Market_Sensitivity_USSC_125D,
+      Volatility_USSC_125D,Volatility_USSC_60D,
+      Amihud_Liquidity_125D,Amihud_Liquidity_60D
+
+[NumeraireDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.NumeraireDescriptorClass
+numeraire=USD
+items=LnIssuerCap,LnTrading_Activity_60D,LnTrading_Activity_20D,
+      Book_to_Price_Annual,Earnings_to_Price_Annual,Est_Earnings_to_Price_12MFL_Annual,
+      Dividend_Yield_Annual,
+      Earnings_Growth_RPF_Annual,Sales_Growth_RPF_Annual,
+      Debt_to_Assets_Annual,Debt_to_Equity_Annual,
+      Return_on_Equity_Annual,Return_on_Assets_Annual,
+      Sales_to_Assets_Annual,Gross_Margin_Annual,
+      CashFlow_to_Assets_Annual,CashFlow_to_Income_Annual,
+      ISC_ADV_Score,ISC_IPO_Score,ISC_Ret_Score,ISC_Zero_Score
+
+[NumeraireQuarterlyDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.NumeraireDescriptorClass
+numeraire=USD
+rmg-list=US,CA
+fixed-freq=qtr
+items=Book_to_Price_Quarterly,Earnings_to_Price_Quarterly,
+      Est_Earnings_to_Price_12MFL_Quarterly,
+      Dividend_Yield_Quarterly,
+      Earnings_Growth_RPF_AFQ,Sales_Growth_RPF_AFQ,
+      Debt_to_Assets_Quarterly,Debt_to_Equity_Quarterly,
+      Return_on_Equity_Quarterly,Return_on_Assets_Quarterly,
+      Sales_to_Assets_Quarterly,Gross_Margin_Quarterly
+
+[LocalDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=Momentum_250x20D,Momentum_20D,
+      Momentum_260x21D_Regional,Momentum_21D,
+      XRate_104W_XDR,XRate_52W_XDR,
+      Market_Sensitivity_104W,Market_Sensitivity_52W,
+      Amihud_Liquidity_125D,Amihud_Liquidity_60D,
+      Regional_Market_Sensitivity_500D,Regional_Market_Sensitivity_250D,
+      Volatility_125D,Volatility_60D,Volatility_250D,
+      EM_Regional_Market_Sensitivity_500D,EM_Regional_Market_Sensitivity_250D,
+      EM_Volatility_125D,EM_Volatility_60D,
+      Europe_Regional_Market_Sensitivity_500D,Europe_Regional_Market_Sensitivity_250D,
+      Europe_Volatility_125D,Europe_Volatility_60D,
+      APAC_Regional_Market_Sensitivity_500D,APAC_Regional_Market_Sensitivity_250D,
+      APAC_Volatility_125D,APAC_Volatility_60D,
+      UK_Volatility_125D,UK_Volatility_60D,
+      DMxUS_Regional_Market_Sensitivity_500D,DMxUS_Regional_Market_Sensitivity_250D,
+      DMxUS_Volatility_125D,DMxUS_Volatility_60D
+
+[TSLibraryDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=USLTRate_Sensitivity_104W,USLTRate_Sensitivity_NoMkt_104W,
+      USSTRate_Sensitivity_104W,USSTRate_Sensitivity_NoMkt_104W,
+      USTermSpread_Sensitivity_104W,USTermSpread_Sensitivity_NoMkt_104W,
+      USCreditSpread_Sensitivity_104W,USCreditSpread_Sensitivity_NoMkt_104W,
+      Oil_Sensitivity_104W,Oil_Sensitivity_NoMkt_104W,
+      Gold_Sensitivity_104W,Gold_Sensitivity_NoMkt_104W,
+      Commodity_Sensitivity_104W,Commodity_Sensitivity_NoMkt_104W,
+      USBEI_Sensitivity_104W,USBEI_Sensitivity_NoMkt_104W,
+      GBLTRate_Sensitivity_104W,GBLTRate_Sensitivity_NoMkt_104W,
+      JPLTRate_Sensitivity_104W,JPLTRate_Sensitivity_NoMkt_104W,
+      EULTRate_Sensitivity_104W,EULTRate_Sensitivity_NoMkt_104W,
+      GBSTRate_Sensitivity_104W,GBSTRate_Sensitivity_NoMkt_104W,
+      JPSTRate_Sensitivity_104W,JPSTRate_Sensitivity_NoMkt_104W,
+      EUSTRate_Sensitivity_104W,EUSTRate_Sensitivity_NoMkt_104W,
+      GBTermSpread_Sensitivity_104W,GBTermSpread_Sensitivity_NoMkt_104W,
+      JPTermSpread_Sensitivity_104W,JPTermSpread_Sensitivity_NoMkt_104W,
+      EUTermSpread_Sensitivity_104W,EUTermSpread_Sensitivity_NoMkt_104W,
+      GBCreditSpread_Sensitivity_104W,GBCreditSpread_Sensitivity_NoMkt_104W,
+      JPCreditSpread_Sensitivity_104W,JPCreditSpread_Sensitivity_NoMkt_104W,
+      EUCreditSpread_Sensitivity_104W,EUCreditSpread_Sensitivity_NoMkt_104W
+
+[JPDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.DescriptorClass
+numeraire=JPY
+rmg-list=JP
+# For JP model, quarterly items are changed to the annual values:
+items=Momentum_250x20D,Momentum_20D,
+      XRate_104W_XDR,XRate_52W_XDR,
+      Volatility_125D,Volatility_60D,
+      Market_Sensitivity_250D,Market_Sensitivity_125D,
+      LnIssuerCap,LnTrading_Activity_60D,LnTrading_Activity_20D,
+      Book_to_Price_Annual,Earnings_to_Price_Annual,Est_Earnings_to_Price_Annual,Est_Earnings_to_Price_12MFL_Annual,
+      Dividend_Yield_Annual,
+      Earnings_Growth_RPF_Annual,Sales_Growth_RPF_Annual,
+      Debt_to_Assets_Annual,Debt_to_Equity_Annual,
+      Return_on_Equity_Annual,Return_on_Assets_Annual,
+      Sales_to_Assets_Annual,Gross_Margin_Annual,
+      CashFlow_to_Assets_Annual,CashFlow_to_Income_Annual,
+      XRate_104W_USD, XRate_52W_USD,
+      ISC_Score_Legacy,ISC_Ret_Score,ISC_Zero_Score,ISC_ADV_Score
+
+[AUDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.DescriptorClass
+numeraire=AUD
+rmg-list=AU
+items =  Earnings_to_Price_Annual,Est_Earnings_to_Price_Annual,
+         Book_to_Price_Annual,
+         Debt_to_Assets_Annual,Debt_to_Equity_Annual,
+         Earnings_Growth_RPF_Annual,Sales_Growth_RPF_Annual,
+         Dividend_Yield_Annual,
+         LnIssuerCap,
+         LnTrading_Activity_60D,LnTrading_Activity_20D,
+         Market_Sensitivity_250D,Market_Sensitivity_125D,
+         Volatility_125D,Volatility_60D,
+         Momentum_250x20D,Momentum_20D,
+         XRate_104W_XDR,XRate_52W_XDR,
+         Sales_to_Assets_Annual,Return_on_Equity_Annual,
+         Return_on_Assets_Annual,CashFlow_to_Assets_Annual,
+         Gross_Margin_Annual,CashFlow_to_Income_Annual,
+         Market_Sensitivity_EM_104W,Market_Sensitivity_CN_104W,Market_Sensitivity_EM_52W,Market_Sensitivity_CN_52W,
+         ISC_Score_Legacy,ISC_Ret_Score,ISC_Zero_Score,ISC_ADV_Score
+
+[FundamentalData.XPRESSFEED]
+items=ebit_ann,csho_ann
+target=ModelDB.XpressfeedDataProcessor
+logic=ProcessPriorityListFund
+sources=TransferSources.XpressfeedFundamentalDataItem
+transfer=transferXpressfeedFundamentalData
+
+[Databases]
+ORACLE=MarketDB, ModelDB, VendorDB, AxiomaDB, TejDB
+MSSQL=SOLAClient, QADirect, QAAudit, EJV, CompuStatDB, XpressFeedDB
+MySQL=PhoenixMSSql
+
+[QADirect]
+user=tqa_user
+password=tqa_user
+host=tqaprod.axiomainc.com
+database=qai
+
+[QAAudit]
+user=audit_user
+password=audit_user
+host=tqaprod.axiomainc.com
+database=qai_audit
+
+[ModelDB]
+user=modeldb_global
+password=modeldb_global
+sid=glprod
+
+[MarketDB]
+user=marketdb_global
+password=marketdb_global
+sid=glprod
+
+[AxiomaDB]
+user=axiomadb
+password=axiomadb
+sid=glprod
+
+[MarketData]
+user=MarketDataLoader
+password=mdl1234
+host=prod-mac-mkt-db
+database=MarketData
+alias=prod-mac-mkt-db
+
+[MongoDB]
+host=unhygienix
+dbname=TS_Database
+
+[CompuStatDB]
+user=cstatdb
+password=cstatdb
+sid=glprod
+
+[XpressFeedDB]
+user=xpressfeed_v5
+password=xpressfeed
+sid=glprod
+
+[SubIssueDivYield]
+target=ModelDB.SubIssueDivYieldProcessor
+transfer=transferSubIssueData
+trading-days-only=true
+logic=ProcessPriorityList
+sources=TransferSources.SubIssueDivYield
+
+[USDescriptorDataNew]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+transfer=transferDescriptorData
+sources=DescriptorSources.DescriptorClass
+gics-date=2014-03-01
+items=None
+
+[CNDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+rmg-list=CN
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=Market_Sensitivity_XC_104W,Market_Sensitivity_XC_52W,
+      Volatility_CN_125D,Volatility_CN_60D,
+      Amihud_Liquidity_Adj_125D,Amihud_Liquidity_Adj_60D
+
+[CN4DescriptorDataNew]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+rmg-list=CN
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=Market_Sensitivity_XC_104W,Market_Sensitivity_XC_52W,
+      Volatility_CN_125D,Volatility_CN_60D,
+      Amihud_Liquidity_Adj_125D,Amihud_Liquidity_Adj_60D
+
+[CADescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+rmg-list=CA
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=CA_Volatility_125D,CA_Volatility_60D,
+      CAGold_Sensitivity_NetOfSecBeta_104W,CAGold_Sensitivity_NetOfSecBeta_52W,
+      CAOil_Sensitivity_NetOfSecBeta_52W,CAOil_Sensitivity_NetOfSecBeta_104W
+
+[CALocalDescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+rmg-list=CA
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=CA_Volatility_125D,CA_Volatility_60D,
+      CAGold_Sensitivity_NetOfSecBeta_104W,CAGold_Sensitivity_NetOfSecBeta_52W,
+      CAOil_Sensitivity_NetOfSecBeta_52W,CAOil_Sensitivity_NetOfSecBeta_104W
+
+[NADescriptorData]
+target=ModelDB.DescriptorDataProcessor
+logic=ProcessPriorityList
+rmg-list=US,CA
+transfer=transferDescriptorData
+sources=DescriptorSources.LocalDescriptorClass
+items=NA_Volatility_125D,NA_Volatility_60D,NA_Regional_Market_Sensitivity_500D,NA_Regional_Market_Sensitivity_250D

@@ -1,0 +1,242 @@
+1|Book-to-Price|Book-to-Price|1
+2|Earnings-to-Price|Earnings-to-Price|1
+3|Debt-to-Assets|Debt-to-Assets|1
+4|Plowback times ROE|Plowback times ROE|1
+5|Sales Growth|Sales Growth|1
+6|Earnings Growth|Earnings Growth|1
+7|Dividend Yield|Dividend Yield|1
+8|Debt-to-MarketCap|Debt-to-MarketCap|1
+9|Sales-to-Price|Sales-to-Price|1
+100|Momentum_20D|20-day momentum|0|1
+101|Momentum_250x20D_Legacy|250-day momentum less the most recent month|0|1
+102|XRate_52W_XDR|52-week exchange-rate sensitivity to SDR|0|1
+103|Volatility_125D_Legacy|125-day PACE volatility|0|1
+104|Market_Sensitivity_250D_Legacy|250-day local market sensitivity|0|1
+105|Volatility_60D|60-day PACE volatility|0|1
+106|Market_Sensitivity_125D|125-day local market sensitivity|0|1
+107|LnIssuerCap|Ln of Market Cap|0
+108|LnTrading_Activity_60D|60-day ln of trading activity to market cap|0
+109|LnTrading_Activity_20D|20-day ln of trading activity to market cap|0
+110|Debt_to_Assets_Quarterly|Debt to assets (1 year)|0
+111|Sales_Growth_RPF|Growth in realized plus forecast sales|0
+112|Earnings_Growth_RPF|Growth in realized plus forecast earnings|0
+113|Book_to_Price_Quarterly|Book to price (1 year)|0
+114|Est_Earnings_to_Price_Quarterly|Forecast earnings to price, based on last qtr filing date|0
+115|Return_on_Equity_Quarterly|Return on equity (1 year)|0
+116|Dividend_Yield_Quarterly|Dividend yield (1 year)|0
+117|Earnings_to_Price_Quarterly|Earnings to price (1 year)|0
+118|Dividend_Payout_Quarterly|Dividend Payout (1 year)|0
+119|Proxied_Dividend_Payout_Quarterly|Proxied Dividend Payout (1 year)|0
+120|EMxWW_Market_Sensitivity_250D|EM Market Sensitivity descriptor for regional models|0|1
+121|Debt_to_MarketCap_Quarterly|Debt to average market cap (1 year)|0
+122|ISC_Score_Legacy|Linked asset score (legacy)|0|0
+123|Dollar_Volume_60D|60-day dollar volume traded|0
+124|Dollar_Volume_20D|20-day dollar volume traded|0
+125|Amihud_Liquidity_60D|60-day Amihud liquidity|0|1
+126|XRate_52W_USD|52-week exchange-rate sensitivity to USD|0|1
+127|XRate_52W_EUR|52-week exchange-rate sensitivity to EUR|0|1
+128|XRate_52W_GBP|52-week exchange-rate sensitivity to GBP|0|1
+129|XRate_52W_JPY|52-week exchange-rate sensitivity to JPY|0|1
+130|Volatility_250D|250-day PACE volatility|0|1
+131|Volatility_20D|20-day PACE volatility|0|1
+132|Historical_Volatility_125D|125-day returns historical volatility|0|1
+133|Historical_Volatility_250D|250-day returns historical volatility|0|1
+134|Historical_Residual_Volatility_125D|125-day residual returns historical volatility|0|1
+135|Historical_Residual_Volatility_250D|250-day residual returns historical volatility|0|1
+136|Sales_Growth|Growth in realized 5 year sales|0
+137|Earnings_Growth|Growth in realized 5 year earnings|0
+138|Return_on_Assets_Quarterly|Return on assets (1 year)|0
+139|Asset_Turnover|Asset turnover|0
+140|Operating_Cash_Flow_To_Price|Ratio of cash flow to market cap|0
+141|Return_Score|% of returns non-missing over a period|0|1
+142|Operating_Cash_Flow_To_Assets|Ratio of cash flow to asset|0
+143|Current_Ratio|Current ratio|0
+144|Gross_Margin_Quarterly|Gross Margin|0
+145|Return_Score_Legacy|% of returns non-missing over a period (legacy)|0|1
+146|EMxWW_Market_Sensitivity_500D|EM Market Sensitivity descriptor for regional models|0|1
+147|Debt_to_Equity_Quarterly|Debt to common equity|0
+148|Historical_Alpha_250D|250-day market regression intercept|0|1
+149|XRate_104W_XDR_Legacy|104-week exchange-rate sensitivity to SDR|0|1
+150|XRate_104W_USD|104-week exchange-rate sensitivity to USD|0|1
+151|XRate_104W_EUR|104-week exchange-rate sensitivity to EUR|0|1
+152|XRate_104W_GBP|104-week exchange-rate sensitivity to GBP|0|1
+153|XRate_104W_JPY|104-week exchange-rate sensitivity to JPY|0|1
+154|XRate_104W_JPY|104-week exchange-rate sensitivity to JPY|0|1
+155|Market_Sensitivity_500D|500-day local market sensitivity|0|1
+156|LnTrading_Activity_125D|125-day ln of trading activity to market cap|0
+157|LnTrading_Activity_250D|250-day ln of trading activity to market cap|0
+158|Amihud_Liquidity_125D|125-day Amihud liquidity|0|1
+159|Amihud_Liquidity_250D|250-day Amihud liquidity|0|1
+160|Sales_to_Assets_Quarterly|Ratio of annual sales to assets|0
+161|Market_Sensitivity_104W|104-week market sensitivity|0|1
+162|CashFlow_to_Assets_Quarterly|Ratio of annual cash flow to assets|0
+163|Est_Earnings_to_PriceV2|Forecast earnings to price|0
+164|Sales_Growth_RPF_Annual|Sales_Growth_RPF_Annual|0
+165|Sales_Growth_RPF_Quarterly|Sales_Growth_RPF_Quarterly|0
+166|Sales_Growth_RPF_SD|Sales_Growth_RPF_SD|0
+167|Earnings_Growth_RPF_Annual|Earnings_Growth_RPF_Annual|0
+168|Earnings_Growth_RPF_Quarterly|Earnings_Growth_RPF_Quarterly|0
+169|Earnings_Growth_RPF_SD|Earnings_Growth_RPF_SD|0
+170|Long_Term_Growth|Long_Term_Growth|0
+171|Earnings_Variability_Quarterly|Variability in quarterly earnings|0
+172|Earnings_Variability_Annual|Variability in annual earnings|0
+173|Long_Term_Growth_Trimmed|Long_Term_Growth_Trimmed|0
+174|Earnings_Growth_RPF_AFQ|Earnings_Growth_RPF_AFQ|0
+175|Sales_Growth_RPF_AFQ|Sales_Growth_RPF_AFQ|0
+176|Debt_to_Assets_incDeposits|Debt (inc. Total Bank Deposits) to total assets|0
+177|XRate_52W_IR|52-week interest-rate sensitivity|0|1
+178|CashFlow_to_Income_Quarterly|Ratio of annual cashflow to income|0
+179|ISC_ADV_Score|ADV component for ISC score|0|0
+180|ISC_Ret_Score|% traded returns for ISC score|0|0
+181|ISC_IPO_Score|IPO date component for ISC score|0|0
+182|Market_Sensitivity_250D|250-day robust local market sensitivity|0|1
+183|Volatility_125D|125 day robust PACE volatility|0|1
+184|Momentum_250x20D|250-day robust momentum less the most recent month|0|1
+185|XRate_104W_XDR|104-week exchange-rate sensitivity to SDR|0|1
+186|Variability_of_ROE|EVOL descriptor from QMJ|0
+187|XRate_104W_IR|104-week interest-rate sensitivity|0|1
+188|Return_on_Equity_Delta|Growth descriptor from QMJ|0
+189|Gross_Margin_Delta|Growth descriptor from QMJ|0
+190|Return_on_Assets_Delta|Growth descriptor from QMJ|0
+191|Sales_to_Assets_Delta|Growth descriptor from QMJ|0
+192|CashFlow_to_Assets_Delta|Growth descriptor from QMJ|0
+193|CashFlow_to_Income_Delta|Growth descriptor from QMJ|0
+194|Net_Equity_Issuance|Payout descriptor from QMJ|0
+195|Net_Debt_Issuance|Payout descriptor from QMJ|0
+196|Net_Payout_Over_Profits|Payout descriptor from QMJ|0
+197|Altman_Z_Score|Z-score descriptor from QMJ|0
+198|Regional_Market_Sensitivity_250D|Market Sensitivity descriptor for regional models|0|1
+199|Regional_Market_Sensitivity_500D|Market Sensitivity descriptor for regional models|0|1
+200|ISC_Zero_Score|% non-zero returns for ISC score|0|0
+201|Momentum_21D|21-day momentum|0|1
+202|Momentum_260x21D_Regional|260-day momentum less the first month|0|1
+203|Momentum_1D|1-day momentum|0|1
+204|Percent_Returns_20_Days|Percent of returns traded over 20 days|0
+205|Percent_Returns_60_Days|Percent of returns traded over 60 days|0
+206|Percent_Returns_125_Days|Percent of returns traded over 125 days|0
+207|Percent_Returns_250_Days|Percent of returns traded over 250 days|0
+208|Percent_Returns_500_Days|Percent of returns traded over 500 days|0
+209|Europe_Regional_Market_Sensitivity_250D|EU Market Sensitivity descriptor for regional models|0|1
+210|Europe_Regional_Market_Sensitivity_500D|EU Market Sensitivity descriptor for regional models|0|1
+211|Sales_to_Assets_Annual|Sales_to_Assets_Annual|0
+212|Return_on_Equity_Annual|Return_on_Equity_Annual|0
+213|Return_on_Assets_Annual|Return_on_Assets_Annual|0
+214|CashFlow_to_Assets_Annual|CashFlow_to_Assets_Annual|0
+215|Gross_Margin_Annual|Gross_Margin_Annual|0
+216|Earnings_to_Price_Annual|Earnings_to_Price_Annual|0
+217|Book_to_Price_Annual|Book_to_Price_Annual|0
+218|Debt_to_Assets_Annual|Debt_to_Assets_Annual|0
+219|Debt_to_Equity_Annual|Debt_to_Equity_Annual|0
+220|Dividend_Yield_Annual|Dividend_Yield_Annual|0
+221|CashFlow_to_Income_Annual|CashFlow_to_Income_Annual|0
+222|Est_Earnings_to_Price_Annual|Forecast earnings to price, based on last ann filing date|0
+223|Est_Earnings_to_Price_12MFL_Quarterly|12-month forward-looking etp, based on last qtr filing date|0
+224|Est_Earnings_to_Price_12MFL_Annual|12-month forward-looking etp, based on last ann filing date|0
+229|Random_Factor|Random_Factor|0
+230|Market_Sensitivity_CN|Market_Sensitivity_CN|0
+231|Market_Sensitivity_EM|Market_Sensitivity_EM|0
+232|Market_Sensitivity_CN_104W|Market_Sensitivity_CN_104W|0
+233|Market_Sensitivity_EM_104W|Market_Sensitivity_EM_104W|0
+264|Market_Sensitivity_CN_52W|Market_Sensitivity_CN_52W|0
+265|Market_Sensitivity_EM_52W|Market_Sensitivity_EM_52W|0
+266|XRate_104W_XDR_V2|104-week exchange-rate sensitivity to SDR Version 2|0|1
+267|Debt_to_MarketCap_Annual|Debt_to_MarketCap_Annual|0|0
+302|USLTRate_Sensitivity_104W|USLTRate_Sensitivity_104W|0|1
+303|USLTRate_Sensitivity_NoMkt_104W|USLTRate_Sensitivity_NoMkt_104W|0|1
+304|USSTRate_Sensitivity_104W|USSTRate_Sensitivity_104W|0|1
+305|USSTRate_Sensitivity_NoMkt_104W|USSTRate_Sensitivity_NoMkt_104W|0|1
+306|USTermSpread_Sensitivity_104W|USTermSpread_Sensitivity_104W|0|1
+307|USTermSpread_Sensitivity_NoMkt_104W|USTermSpread_Sensitivity_NoMkt_104W|0|1
+308|APAC_Regional_Market_Sensitivity_250D|APAC Market Sensitivity descriptor for regional models|0|1
+309|APAC_Regional_Market_Sensitivity_500D|APAC Market Sensitivity descriptor for regional models|0|1
+310|EM_Regional_Market_Sensitivity_250D|EM Market Sensitivity descriptor for regional models|0|1
+311|EM_Regional_Market_Sensitivity_500D|EM Market Sensitivity descriptor for regional models|0|1
+312|Volatility_USSC_125D|Volatility_USSC_125D|0
+313|Market_Sensitivity_USSC_250D|Market_Sensitivity_USSC_250D|0
+314|Volatility_USSC_60D|Volatility_USSC_60D|0
+315|Market_Sensitivity_USSC_125D|Market_Sensitivity_USSC_125D|0
+316|USCreditSpread_Sensitivity_104W|USCreditSpread_Sensitivity_104W|0|1
+317|USCreditSpread_Sensitivity_NoMkt_104W|USCreditSpread_Sensitivity_NoMkt_104W|0|1
+318|Oil_Sensitivity_104W|Oil_Sensitivity_104W|0|1
+319|Oil_Sensitivity_NoMkt_104W|Oil_Sensitivity_NoMkt_104W|0|1
+320|Gold_Sensitivity_104W|Gold_Sensitivity_104W|0|1
+321|Gold_Sensitivity_NoMkt_104W|Gold_Sensitivity_NoMkt_104W|0|1
+322|Commodity_Sensitivity_104W|Commodity_Sensitivity_104W|0|1
+323|Commodity_Sensitivity_NoMkt_104W|Commodity_Sensitivity_NoMkt_104W|0|1
+324|USBEI_Sensitivity_104W|USBEI_Sensitivity_104W|0|1
+325|USBEI_Sensitivity_NoMkt_104W|USBEI_Sensitivity_NoMkt_104W|0|1
+326|GBLTRate_Sensitivity_104W|GBLTRate_Sensitivity_104W|0|1
+327|GBLTRate_Sensitivity_NoMkt_104W|GBLTRate_Sensitivity_NoMkt_104W|0|1
+328|JPLTRate_Sensitivity_104W|JPLTRate_Sensitivity_104W|0|1
+329|JPLTRate_Sensitivity_NoMkt_104W|JPLTRate_Sensitivity_NoMkt_104W|0|1
+330|EULTRate_Sensitivity_104W|EULTRate_Sensitivity_104W|0|1
+331|EULTRate_Sensitivity_NoMkt_104W|EULTRate_Sensitivity_NoMkt_104W|0|1
+332|GBSTRate_Sensitivity_104W|GBSTRate_Sensitivity_104W|0|1
+333|GBSTRate_Sensitivity_NoMkt_104W|GBSTRate_Sensitivity_NoMkt_104W|0|1
+334|JPSTRate_Sensitivity_104W|JPSTRate_Sensitivity_104W|0|1
+335|JPSTRate_Sensitivity_NoMkt_104W|JPSTRate_Sensitivity_NoMkt_104W|0|1
+336|EUSTRate_Sensitivity_104W|EUSTRate_Sensitivity_104W|0|1
+337|EUSTRate_Sensitivity_NoMkt_104W|EUSTRate_Sensitivity_NoMkt_104W|0|1
+338|GBTermSpread_Sensitivity_104W|GBTermSpread_Sensitivity_104W|0|1
+339|GBTermSpread_Sensitivity_NoMkt_104W|GBTermSpread_Sensitivity_NoMkt_104W|0|1
+340|JPTermSpread_Sensitivity_104W|JPTermSpread_Sensitivity_104W|0|1
+341|JPTermSpread_Sensitivity_NoMkt_104W|JPTermSpread_Sensitivity_NoMkt_104W|0|1
+342|EUTermSpread_Sensitivity_104W|EUTermSpread_Sensitivity_104W|0|1
+343|EUTermSpread_Sensitivity_NoMkt_104W|EUTermSpread_Sensitivity_NoMkt_104W|0|1
+344|USCreditSpread_Sensitivity_36M|USCreditSpread_Sensitivity_36M|0|1
+345|USCreditSpread_Sensitivity_NoMkt_36M|USCreditSpread_Sensitivity_NoMkt_36M|0|1
+346|GBCreditSpread_Sensitivity_104W|GBCreditSpread_Sensitivity_104W|0|1
+347|GBCreditSpread_Sensitivity_NoMkt_104W|GBCreditSpread_Sensitivity_NoMkt_104W|0|1
+348|JPCreditSpread_Sensitivity_104W|JPCreditSpread_Sensitivity_104W|0|1
+349|JPCreditSpread_Sensitivity_NoMkt_104W|JPCreditSpread_Sensitivity_NoMkt_104W|0|1
+350|EUCreditSpread_Sensitivity_104W|EUCreditSpread_Sensitivity_104W|0|1
+351|EUCreditSpread_Sensitivity_NoMkt_104W|EUCreditSpread_Sensitivity_NoMkt_104W|0|1
+352|GBCreditSpread_Sensitivity_36M|GBCreditSpread_Sensitivity_36M|0|1
+353|GBCreditSpread_Sensitivity_NoMkt_36M|GBCreditSpread_Sensitivity_NoMkt_36M|0|1
+354|JPCreditSpread_Sensitivity_36M|JPCreditSpread_Sensitivity_36M|0|1
+355|JPCreditSpread_Sensitivity_NoMkt_36M|JPCreditSpread_Sensitivity_NoMkt_36M|0|1
+356|EUCreditSpread_Sensitivity_36M|EUCreditSpread_Sensitivity_36M|0|1
+357|EUCreditSpread_Sensitivity_NoMkt_36M|EUCreditSpread_Sensitivity_NoMkt_36M|0|1
+358|APAC_Volatility_60D|60 day PACE Volatility for APAC region|0|1
+359|APAC_Volatility_125D|125 day PACE Volatility for APAC region|0|1
+360|Volatility_CN_60D|60-day CrossSectional Volatility for CN Region|0|1
+361|Volatility_CN_125D|125-day CrossSectional Volatility for CN Region|0|1
+362|Market_Sensitivity_XC_104W|104-week market sensitivity to Domestic China market|0|1
+363|Market_Sensitivity_XC_52W|52-week market sensitivity to Domestic China market|0|1
+364|Amihud_Liquidity_Adj_60D|60-day Amihud liquidity adjusted by free floating|0|1
+365|Amihud_Liquidity_Adj_125D|125-day Amihud liquidity adjusted by free floating|0|1
+366|Market_Sensitivity_52W|52-week market sensitivity used originally for CN4|0|1
+368|Europe_Volatility_60D|60 day PACE Volatility for Europe region|0|1
+369|Europe_Volatility_125D|125 day PACE Volatility for Europe region|0|1
+370|EM_Volatility_60D|60 day PACE Volatility for EM region|0|1
+371|EM_Volatility_125D|125 day PACE Volatility for EM region|0|1
+372|Market_Sensitivity_250D_NoSWAdj|250-day local market sensitivity|0|1
+373|UK_Volatility_60D|60 day PACE Volatility for UK market|0|1
+374|UK_Volatility_125D|125 day PACE Volatility for UK market|0|1
+376|CAOil_Sensitivity_NetOfSec_104W|CAOil_Sensitivity_NetOfSec_104W|0|1
+377|CAOil_Sensitivity_NetOfActiveSec_104W|CAOil_Sensitivity_NetOfActiveSec_104W|0|1
+380|CAGold_Sensitivity_NetOfSec_104W|CAGold_Sensitivity_NetOfSec_104W|0|1
+381|CAGold_Sensitivity_NetOfActiveSec_104W|CAGold_Sensitivity_NetOfActiveSec_104W|0|1
+383|CA_Volatility_60D|60 day PACE Volatility for CA market|0|1
+384|CA_Volatility_125D|125 day PACE Volatility for CA market|0|1
+385|NA_Volatility_125D|125 day PACE Volatility for NA market|0|1
+386|NA_Volatility_60D|60 day PACE Volatility for NA market|0|1
+387|CAGold_Sensitivity_NetOfSecBeta_104W|CAGold_Sensitivity_NetOfSecBeta_104W|0|1
+388|CAGold_Sensitivity_NetOfSecUnit_104W|CAGold_Sensitivity_NetOfSecUnit_104W|0|1
+389|CAOil_Sensitivity_NetOfSecBeta_104W|CAOil_Sensitivity_NetOfSecBeta_104W|0|1
+390|CAOil_Sensitivity_NetOfSecUnit_104W|CAOil_Sensitivity_NetOfSecUnit_104W|0|1
+391|NA_Regional_Market_Sensitivity_500D|NA market sensitivity descriptor for regional model|0|1
+392|NA_Regional_Market_Sensitivity_250D|NA market sensitivity descriptor for regional model|0|1
+393|CAGold_Sensitivity_NetOfSecBeta_52W|CAGold_Sensitivity_NetOfSecBeta_52W|0|1
+394|CAOil_Sensitivity_NetOfSecBeta_52W|CAOil_Sensitivity_NetOfSecBeta_52W|0|1
+395|Market_Sensitivity_250D_NoSWAdj|Market_Sensitivity_250D_NoSWAdj|0|1
+396|Momentum_260x21D_NoTrapWt|260-day momentum less the first month without trapezoidal weighting|0|1
+397|Momentum_5D|5-day momentum|0|1
+398|DMxUS_Regional_Market_Sensitivity_500D|104-week market sensitivity to DMxUS market|0|1
+399|DMxUS_Regional_Market_Sensitivity_250D|52-week market sensitivity to DMxUS market|0|1
+400|DMxUS_Volatility_125D|125-day PACE Volatility for DMxUS region|0|1
+401|DMxUS_Volatility_60D|60-day PACE Volatility for DMxUS region|0|1
+402|Market_Sensitivity_125D_Legacy|125-day local market sensitivity|0|1
+403|Dividend_Yield_PartialMCap_Annual|Dividend_Yield_PartialMCap_Annual|0
+404|RMG_Volatility_125D|125-day PACE Volatility for local market|0|1
+405|RMG_Volatility_60D|60-day PACE Volatility for local market|0|1

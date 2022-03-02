@@ -1,0 +1,5 @@
+{
+    "generateCurvesCommands": [
+        "~~~CurveGenerator.generateCurves('DEV', '2011-11-15', '2019-01-08', ['EEX:F7BY'],use_research_table=False)"
+    ]
+}

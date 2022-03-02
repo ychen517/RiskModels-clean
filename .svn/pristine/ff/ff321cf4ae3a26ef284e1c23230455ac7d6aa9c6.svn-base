@@ -1,0 +1,36 @@
+[source]
+user=modeldb_global
+passwd=modeldb_global
+sid=glprod
+
+[target]
+user=modeldb_global
+passwd=modeldb_global
+sid=glprod
+
+[general]
+date=2002-12-31
+
+#[sub-issue-cumulative-return]
+#sync-to-rev=2009-05-07 19:00:00
+#sub-issues=D353BW5Y4811
+
+#[factor-cumulative-return]
+#rms-id-pairs=10:10
+#src-table=JP_FUND_FACTOR_RET_20090327
+# sync EU21-MH-Pre2009 with EU21-MH
+#rms-id-pairs=113:112
+#date=2008-12-31
+# sync EU21-MH-Pre2003 with EU21-MH-Pre2009
+#rms-id-pairs=112:111
+#date=2002-12-31
+# sync WW21-SH-Pre2009 with WW21-SH
+#rms-id-pairs=83:82
+#date=2008-12-31
+# sync WW21-SH-Pre2003 with WW21-SH-Pre2009
+#rms-id-pairs=82:81
+#date=2002-12-31
+
+#[cumulative-risk-free-rate]
+#currencies=USD
+#src-table=TMP_USD_RFR_20090416

@@ -1,0 +1,9 @@
+{
+    "sid": "glsdg",
+    "qaReportsCommands": [
+        "runQaReportsForEquitiesAndMutualFunds(sid,allMarketIdStr, \"lbianchi\")"
+    ],
+    "assetAdditionCommands": [
+        "processBulk(marketDbConnections, modelDbConnections, \"GH48FXGPG0\" , \"2020-05-25|2020-05-31\" ,[('', '', '', '', '', '', '', '', '', '', '', '')], [('', '', '', '', '', '', '', '', '', '', '', '')], [('', '', '', '', '', '', '', '', '', '', '', '')], [('', '')], \"2\" ,\"907\" ,\"bulk addition by lbianchi: DIA-3548 test #16b\" ,\"lbianchi\" , True)"
+    ]
+}

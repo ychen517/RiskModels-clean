@@ -1,0 +1,21 @@
+[handlers]
+keys=stdout
+
+[formatters]
+keys=standard
+
+[loggers]
+keys=root
+
+[formatter_standard]
+format=%(asctime)s %(levelname)s %(message)s
+
+[handler_stdout]
+class=StreamHandler
+level=DEBUG
+formatter=standard
+args=(sys.stdout,)
+
+[logger_root]
+level=DEBUG
+handlers=stdout

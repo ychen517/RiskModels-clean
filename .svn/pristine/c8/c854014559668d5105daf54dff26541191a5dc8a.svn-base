@@ -1,0 +1,12 @@
+
+{
+    "macdbId": "devtest",
+    "assetAdditionCommands": [
+        "processBulk(connections, connections,  \"\" ,\"\" ,[], [],[], 1, \"909\" ,\"test from etfAddition2\" ,\"npermikova\" ,True)",
+        "ETFHelperUtility2.performAction('populateCompositeMemberTable',\n                        connections,\n                        'B88JWF3,US2330511500-US',\n                        forceProcess=False,\n                        user='npermikova',\n                        setDisDate=None,\n                        ref='from etfAddition2',\n                        macDb=macDb)",
+        "subprocess.run('D:/31_versionControl/MarketDbDailyControl/scripts/findUnmappedEquityEtfs.sh',input = '<configparser.ConfigParser object at 0x7f1926c68668>\\nB88JWF3,US2330511500-US\\n2020-01-16\\2020-01-21\\n'.encode())",
+        "ETFHelperUtility2.performAction('populateInstrumentVendorDataTable',\n                        connections,\n                        'BKX4QR7,BZ03SC1,BG12N30,B2NXVM8,BSBN360,B39ZVY7,2897404,2947268',\n                        forceProcess=False,\n                        user='npermikova',\n                        setDisDate=None,\n                        ref='from etfAddition2',\n                        macDb=macDb)",
+        "subprocess.run('D:/31_versionControl/MarketDbDailyControl/scripts/findUnmappedNonEquityEtfs.sh',input = '<configparser.ConfigParser object at 0x7f1926c68668>\\ndevtest.config\\n467225.2310895,235421.2949653,745937.2765262,93226.469465,507854.2376784,82943.773287,236653.734023,236704.714384\\n2020-01-16\\2020-01-21\\n'.encode())"
+    ],
+    "sid": "glsdg"
+}
